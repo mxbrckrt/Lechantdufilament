@@ -1,3 +1,6 @@
+/// Author : Clément Bossut
+/// Licence GNU GPL v3.0
+
 inlets = 1;
 outlets = 3;
 setinletassist(0, "bang computes the max of previously send lists of argument's values");
