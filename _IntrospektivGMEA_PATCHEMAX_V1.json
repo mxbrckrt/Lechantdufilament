@@ -32,6 +32,49 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-22",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 349.5, 217.5, 99.0, 20.0 ],
+					"text" : "versionning help"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 442.0, 181.0, 60.0, 20.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-8",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 442.0, 212.0, 171.0, 31.0 ],
+					"text" : ";\rmax sortpatcherdictonsave 1;\r"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-136",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -694,7 +737,7 @@
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 337.5, 543.921692, 100.0, 20.0 ],
-					"prefix" : "Politburo:/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/Loops/",
+					"prefix" : "Politburo:/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/Loops/",
 					"presentation" : 1,
 					"presentation_rect" : [ 1176.0, 514.0, 70.0, 20.0 ],
 					"textcolor" : [ 0.149, 0.149, 0.149, 1.0 ]
@@ -5617,7 +5660,7 @@
 					"name" : "Matrice.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"offset" : [ 1.0, 1.0 ],
+					"offset" : [ -326.0, 1.0 ],
 					"patching_rect" : [ 809.0, 420.174438, 231.0, 117.599792 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 5.0, 61.0, 327.0, 319.0 ]
@@ -7842,6 +7885,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -8158,241 +8210,241 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-149::obj-82" : [ "live.text[7]", "live.text[1]", 0 ],
-			"obj-134::obj-488" : [ "live.text", "live.text", 0 ],
-			"obj-149::obj-79" : [ "live.text[16]", "live.text[1]", 0 ],
-			"obj-149::obj-22" : [ "live.slider[6]", "LemLoop1Sub", 0 ],
-			"obj-149::obj-59" : [ "live.text[2]", "live.text[1]", 0 ],
-			"obj-149::obj-56" : [ "live.text[1]", "live.text[1]", 0 ],
 			"obj-149::obj-91" : [ "live.text[10]", "live.text[1]", 0 ],
-			"obj-149::obj-113" : [ "live.slider[10]", "AgentSub", 0 ],
-			"obj-149::obj-108" : [ "live.text[17]", "live.text[1]", 0 ],
-			"obj-149::obj-186" : [ "live.text[22]", "live.text[1]", 0 ],
-			"obj-149::obj-54" : [ "live.slider[9]", "LemLoop4Sub", 0 ],
-			"obj-149::obj-76" : [ "live.slider[13]", "GOLLoopSub", 0 ],
-			"obj-149::obj-32" : [ "live.text[15]", "live.text[1]", 0 ],
-			"obj-149::obj-189" : [ "live.slider[17]", "MonoLoopSub", 0 ],
-			"obj-149::obj-51" : [ "live.slider[8]", "LemLoop3Sub", 0 ],
-			"obj-149::obj-148" : [ "live.text[19]", "live.text[1]", 0 ],
-			"obj-149::obj-93" : [ "live.text[11]", "live.text[1]", 0 ],
-			"obj-149::obj-63" : [ "live.text[4]", "live.text[1]", 0 ],
-			"obj-149::obj-73" : [ "live.slider[12]", "AgentLoopSub", 0 ],
-			"obj-180::obj-145" : [ "live.slider[18]", "Densite", 0 ],
-			"obj-149::obj-84" : [ "live.text[8]", "live.text[1]", 0 ],
-			"obj-149::obj-48" : [ "live.slider[7]", "LemLoop2Sub", 0 ],
 			"obj-149::obj-149" : [ "live.text[20]", "live.text[1]", 0 ],
-			"obj-149::obj-120" : [ "live.slider[19]", "SlideDown", 0 ],
-			"obj-17::obj-102" : [ "live.slider", "Intensite", 0 ],
-			"obj-149::obj-162" : [ "live.slider[14]", "Master", 0 ],
-			"obj-149::obj-28" : [ "live.slider[4]", "GOLSub", 0 ],
-			"obj-149::obj-46" : [ "live.slider[5]", "SlideUp", 0 ],
-			"obj-55" : [ "live.text[12]", "live.text[1]", 0 ],
-			"obj-149::obj-169" : [ "live.slider[15]", "PlayersSpeed", 0 ],
-			"obj-149::obj-128" : [ "live.slider[16]", "SpatMonoSub", 0 ],
-			"obj-17::obj-106" : [ "live.slider[1]", "Remanence", 0 ],
+			"obj-149::obj-76" : [ "live.slider[13]", "GOLLoopSub", 0 ],
+			"obj-149::obj-59" : [ "live.text[2]", "live.text[1]", 0 ],
+			"obj-149::obj-79" : [ "live.text[16]", "live.text[1]", 0 ],
+			"obj-149::obj-73" : [ "live.slider[12]", "AgentLoopSub", 0 ],
 			"obj-149::obj-88" : [ "live.text[9]", "live.text[1]", 0 ],
-			"obj-149::obj-61" : [ "live.text[3]", "live.text[1]", 0 ],
-			"obj-149::obj-68" : [ "live.text[13]", "live.text[1]", 0 ],
-			"obj-149::obj-77" : [ "live.text[14]", "live.text[1]", 0 ],
-			"obj-149::obj-157" : [ "live.slider[11]", "PostLoopSub", 0 ],
-			"obj-149::obj-102" : [ "live.slider[2]", "LemurSub", 0 ],
+			"obj-149::obj-46" : [ "live.slider[5]", "SlideUp", 0 ],
 			"obj-149::obj-184" : [ "live.text[21]", "live.text[1]", 0 ],
+			"obj-149::obj-32" : [ "live.text[15]", "live.text[1]", 0 ],
+			"obj-149::obj-63" : [ "live.text[4]", "live.text[1]", 0 ],
+			"obj-149::obj-84" : [ "live.text[8]", "live.text[1]", 0 ],
+			"obj-149::obj-82" : [ "live.text[7]", "live.text[1]", 0 ],
+			"obj-149::obj-93" : [ "live.text[11]", "live.text[1]", 0 ],
+			"obj-149::obj-162" : [ "live.slider[14]", "Master", 0 ],
+			"obj-149::obj-48" : [ "live.slider[7]", "LemLoop2Sub", 0 ],
+			"obj-134::obj-488" : [ "live.text", "live.text", 0 ],
+			"obj-149::obj-102" : [ "live.slider[2]", "LemurSub", 0 ],
+			"obj-149::obj-111" : [ "live.text[18]", "live.text[1]", 0 ],
+			"obj-149::obj-120" : [ "live.slider[19]", "SlideDown", 0 ],
+			"obj-17::obj-106" : [ "live.slider[1]", "Remanence", 0 ],
+			"obj-149::obj-22" : [ "live.slider[6]", "LemLoop1Sub", 0 ],
+			"obj-149::obj-148" : [ "live.text[19]", "live.text[1]", 0 ],
+			"obj-149::obj-128" : [ "live.slider[16]", "SpatMonoSub", 0 ],
+			"obj-149::obj-186" : [ "live.text[22]", "live.text[1]", 0 ],
+			"obj-55" : [ "live.text[12]", "live.text[1]", 0 ],
+			"obj-149::obj-108" : [ "live.text[17]", "live.text[1]", 0 ],
+			"obj-149::obj-77" : [ "live.text[14]", "live.text[1]", 0 ],
+			"obj-149::obj-51" : [ "live.slider[8]", "LemLoop3Sub", 0 ],
+			"obj-149::obj-54" : [ "live.slider[9]", "LemLoop4Sub", 0 ],
+			"obj-180::obj-145" : [ "live.slider[18]", "Densite", 0 ],
+			"obj-149::obj-56" : [ "live.text[1]", "live.text[1]", 0 ],
 			"obj-149::obj-86" : [ "live.text[5]", "live.text[1]", 0 ],
-			"obj-149::obj-111" : [ "live.text[18]", "live.text[1]", 0 ]
+			"obj-149::obj-68" : [ "live.text[13]", "live.text[1]", 0 ],
+			"obj-149::obj-169" : [ "live.slider[15]", "PlayersSpeed", 0 ],
+			"obj-149::obj-157" : [ "live.slider[11]", "PostLoopSub", 0 ],
+			"obj-149::obj-61" : [ "live.text[3]", "live.text[1]", 0 ],
+			"obj-149::obj-189" : [ "live.slider[17]", "MonoLoopSub", 0 ],
+			"obj-149::obj-113" : [ "live.slider[10]", "AgentSub", 0 ],
+			"obj-17::obj-102" : [ "live.slider", "Intensite", 0 ],
+			"obj-149::obj-28" : [ "live.slider[4]", "GOLSub", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "Remotes.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/modules",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules",
 				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OM-2.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/dependencies/MX",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/dependencies/MX",
 				"patcherrelativepath" : "./dependencies/MX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OLine.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/dependencies/MX",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/dependencies/MX",
 				"patcherrelativepath" : "./dependencies/MX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SRinhibit.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/dependencies/MX",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/dependencies/MX",
 				"patcherrelativepath" : "./dependencies/MX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "-rs.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/utils",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Multiballs.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/modules/MultiSpat",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules/MultiSpat",
 				"patcherrelativepath" : "./modules/MultiSpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "AmbiRemote.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/modules/MultiSpat/SpatLibs",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules/MultiSpat/SpatLibs",
 				"patcherrelativepath" : "./modules/MultiSpat/SpatLibs",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "traj.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/modules/MultiSpat/SpatLibs",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules/MultiSpat/SpatLibs",
 				"patcherrelativepath" : "./modules/MultiSpat/SpatLibs",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "outils.pct",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/modules/MultiSpat/SpatLibs",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules/MultiSpat/SpatLibs",
 				"patcherrelativepath" : "./modules/MultiSpat/SpatLibs",
 				"type" : "PICT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "exampleKnob.pct",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/modules/MultiSpat/SpatLibs",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules/MultiSpat/SpatLibs",
 				"patcherrelativepath" : "./modules/MultiSpat/SpatLibs",
 				"type" : "PICT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "traj_subpatch",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/modules/MultiSpat/SpatLibs",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules/MultiSpat/SpatLibs",
 				"patcherrelativepath" : "./modules/MultiSpat/SpatLibs",
 				"type" : "maxb",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "FilterMap.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/utils",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "setLights.js",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/javascript",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/javascript",
 				"patcherrelativepath" : "./javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OOsc.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/modules",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules",
 				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MXtgtOSC.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/dependencies/MX",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/dependencies/MX",
 				"patcherrelativepath" : "./dependencies/MX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "TUNGoscdestinations.txt",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/IntrospektColl",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/IntrospektColl",
 				"patcherrelativepath" : "./IntrospektColl",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MXmapOSC.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/dependencies/MX",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/dependencies/MX",
 				"patcherrelativepath" : "./dependencies/MX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "TUNGoscinputs.txt",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/IntrospektColl",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/IntrospektColl",
 				"patcherrelativepath" : "./IntrospektColl",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MXpattrPaths.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/dependencies/MX",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/dependencies/MX",
 				"patcherrelativepath" : "./dependencies/MX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OscMapping.json",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/IntrospektColl",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/IntrospektColl",
 				"patcherrelativepath" : "./IntrospektColl",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Matrice.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/modules",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules",
 				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Interface.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/modules",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules",
 				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "matrixView.js",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/javascript",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/javascript",
 				"patcherrelativepath" : "./javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "comp.js",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/javascript",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/javascript",
 				"patcherrelativepath" : "./javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Looper.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/utils",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Algo.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/modules",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules",
 				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "agent.js",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/javascript",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/javascript",
 				"patcherrelativepath" : "./javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MinuitInterface.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/dependencies/Jamoma interface",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/dependencies/Jamoma interface",
 				"patcherrelativepath" : "./dependencies/Jamoma interface",
 				"type" : "JSON",
 				"implicit" : 1
