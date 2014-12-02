@@ -252,7 +252,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 234.0, 120.0, 119.0, 20.0 ],
-					"text" : "jcom.oscroute"
+					"text" : "j.oscroute"
 				}
 
 			}

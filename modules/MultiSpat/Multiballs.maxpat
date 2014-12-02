@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 9,
+			"revision" : 7,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ -45.0, 51.0, 1440.0, 806.0 ],
+		"rect" : [ 0.0, 51.0, 1440.0, 806.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -619,7 +619,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 9,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -1174,7 +1174,7 @@
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 131.799988, 403.5, 38.0, 20.0 ],
-					"prefix" : "Politburo:/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/modules/MultiSpat/trajs/",
+					"prefix" : "JaimeSSD:/Users/jaimechao/Documents/Max/Lechantdufilament/modules/MultiSpat/trajs",
 					"prefix_mode" : 1,
 					"presentation" : 1,
 					"presentation_rect" : [ 292.0, 262.0, 61.0, 20.0 ],
@@ -1283,7 +1283,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 9,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -1838,7 +1838,7 @@
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 132.799988, 319.5, 38.0, 20.0 ],
-					"prefix" : "Politburo:/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/modules/MultiSpat/trajs/",
+					"prefix" : "JaimeSSD:/Users/jaimechao/Documents/Max/Lechantdufilament/modules/MultiSpat/trajs",
 					"prefix_mode" : 1,
 					"presentation" : 1,
 					"presentation_rect" : [ 230.0, 262.0, 61.0, 20.0 ],
@@ -1947,7 +1947,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 9,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -2502,7 +2502,7 @@
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 133.799988, 235.5, 38.0, 20.0 ],
-					"prefix" : "Politburo:/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/modules/MultiSpat/trajs/",
+					"prefix" : "JaimeSSD:/Users/jaimechao/Documents/Max/Lechantdufilament/modules/MultiSpat/trajs",
 					"prefix_mode" : 1,
 					"presentation" : 1,
 					"presentation_rect" : [ 166.0, 262.0, 61.0, 20.0 ],
@@ -3292,7 +3292,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 9,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -3903,7 +3903,7 @@
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 134.799988, 151.5, 38.0, 20.0 ],
-					"prefix" : "Politburo:/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/TungstenGMEA_dec2014/modules/MultiSpat/trajs/",
+					"prefix" : "JaimeSSD:/Users/jaimechao/Documents/Max/Lechantdufilament/modules/MultiSpat/trajs",
 					"prefix_mode" : 1,
 					"presentation" : 1,
 					"presentation_rect" : [ 101.0, 262.0, 61.0, 20.0 ],
@@ -4164,8 +4164,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 901.0, 638.5, 376.0, 20.0 ],
-					"text" : "jcom.dbap @dimensions 2 @num_sources 5 @num_destinations 81"
+					"patching_rect" : [ 901.0, 638.5, 353.0, 20.0 ],
+					"text" : "j.dbap @dimensions 2 @num_sources 5 @num_destinations 81"
 				}
 
 			}
@@ -5506,6 +5506,106 @@
 					"source" : [ "obj-95", 0 ]
 				}
 
+			}
+ ],
+		"parameters" : 		{
+			"obj-106" : [ "live.slider[1]", "Remanence", 0 ],
+			"obj-102" : [ "live.slider", "Intensite", 0 ]
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "OM-2.maxpat",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/dependencies/MX",
+				"patcherrelativepath" : "../../dependencies/MX",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "OLine.maxpat",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/dependencies/MX",
+				"patcherrelativepath" : "../../dependencies/MX",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "SRinhibit.maxpat",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/dependencies/MX",
+				"patcherrelativepath" : "../../dependencies/MX",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "AmbiRemote.maxpat",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/modules/MultiSpat/SpatLibs",
+				"patcherrelativepath" : "./SpatLibs",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "traj.maxpat",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/modules/MultiSpat/SpatLibs",
+				"patcherrelativepath" : "./SpatLibs",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "outils.pct",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/modules/MultiSpat/SpatLibs",
+				"patcherrelativepath" : "./SpatLibs",
+				"type" : "PICT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "exampleKnob.pct",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/modules/MultiSpat/SpatLibs",
+				"patcherrelativepath" : "./SpatLibs",
+				"type" : "PICT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "traj_subpatch",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/modules/MultiSpat/SpatLibs",
+				"patcherrelativepath" : "./SpatLibs",
+				"type" : "maxb",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "-rs.maxpat",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/utils",
+				"patcherrelativepath" : "../../utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "FilterMap.maxpat",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/utils",
+				"patcherrelativepath" : "../../utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.dbap.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "ambimonitor.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "ambicontrol.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.remote.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.parameter.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.model.mxo",
+				"type" : "iLaX"
 			}
  ]
 	}
