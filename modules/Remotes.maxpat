@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 351.0, 66.0, 638.0, 705.0 ],
+		"rect" : [ 677.0, 181.0, 638.0, 705.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -28,38 +28,6 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
-				"box" : 				{
-					"color" : [ 0.239216, 0.643137, 0.709804, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-27",
-					"linecount" : 2,
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 135.0, 8.382812, 100.0, 33.0 ],
-					"text" : "-rs GOLSub /Algo/GOLSub"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.239216, 0.643137, 0.709804, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-34",
-					"linecount" : 2,
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 7.5, 8.382812, 124.0, 33.0 ],
-					"text" : "-rs LemurSub /Multiballs/LemurSub"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -548,115 +516,6 @@
 					"text" : "Play",
 					"texton" : "Play",
 					"varname" : "live.text[20]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 1.0, 1.0, 0.0, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-159",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 883.0, 291.860046, 118.0, 20.0 ],
-					"text" : "s RemoteSpatGains"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 1.0, 1.0, 0.0, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-158",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 919.5, 265.382812, 108.0, 20.0 ],
-					"text" : "s From-SpatGains"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 1.0, 1.0, 0.0, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-147",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 919.5, 234.382812, 74.0, 20.0 ],
-					"text" : "r SpatGains"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-					"contdata" : 1,
-					"ghostbar" : 57,
-					"id" : "obj-129",
-					"maxclass" : "multislider",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"orientation" : 0,
-					"outlettype" : [ "", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 883.0, 234.382812, 32.5, 50.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 685.0, 436.5, 108.5, 97.0 ],
-					"setminmax" : [ 0.0, 1.0 ],
-					"size" : 4,
-					"slidercolor" : [ 0.15917, 0.15917, 0.15917, 1.0 ],
-					"spacing" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.239216, 0.643137, 0.709804, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-126",
-					"linecount" : 2,
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 359.5, 8.382812, 150.0, 33.0 ],
-					"text" : "-rs SpatMonoSub /Multiballs/SpatMonoSub"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 3,
-					"fontsize" : 12.0,
-					"id" : "obj-128",
-					"maxclass" : "live.slider",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 342.5, 8.382812, 64.0, 50.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 249.5, 413.0, 92.0, 283.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_longname" : "live.slider[16]",
-							"parameter_shortname" : "SpatMonoSub",
-							"parameter_type" : 0,
-							"parameter_mmax" : 1.0,
-							"parameter_unitstyle" : 1
-						}
-
-					}
-,
-					"varname" : "live.slider[13]"
 				}
 
 			}
@@ -1783,52 +1642,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 883.0, 508.054504, 136.0, 20.0 ],
 					"text" : "s PostLoopPlayRemote"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.239216, 0.643137, 0.709804, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-112",
-					"linecount" : 2,
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "int", "bang" ],
-					"patching_rect" : [ 237.0, 8.382812, 99.0, 33.0 ],
-					"text" : "OM-2 AgentSub /Algo/AgentSub"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 3,
-					"fontsize" : 12.0,
-					"id" : "obj-113",
-					"maxclass" : "live.slider",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 245.0, 8.382812, 60.0, 50.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 193.5, 413.0, 56.0, 283.0 ],
-					"relative" : 1,
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_longname" : "live.slider[10]",
-							"parameter_shortname" : "AgentSub",
-							"parameter_type" : 0,
-							"parameter_mmax" : 1.0,
-							"parameter_unitstyle" : 1,
-							"parameter_exponent" : 1.2
-						}
-
-					}
-,
-					"varname" : "live.slider[7]"
 				}
 
 			}
@@ -3999,65 +3812,6 @@
 				"box" : 				{
 					"fontface" : 3,
 					"fontsize" : 12.0,
-					"id" : "obj-28",
-					"maxclass" : "live.slider",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 135.0, 8.382812, 60.0, 50.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 134.0, 413.0, 56.0, 283.0 ],
-					"relative" : 1,
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_longname" : "live.slider[4]",
-							"parameter_shortname" : "GOLSub",
-							"parameter_type" : 0,
-							"parameter_mmax" : 1.0,
-							"parameter_unitstyle" : 1,
-							"parameter_exponent" : 1.2
-						}
-
-					}
-,
-					"varname" : "live.slider[2]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 3,
-					"fontsize" : 12.0,
-					"id" : "obj-102",
-					"maxclass" : "live.slider",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 23.0, 8.382812, 60.0, 50.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 68.0, 413.0, 66.0, 283.0 ],
-					"relative" : 1,
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_longname" : "live.slider[2]",
-							"parameter_shortname" : "LemurSub",
-							"parameter_type" : 0,
-							"parameter_mmax" : 1.0,
-							"parameter_unitstyle" : 1
-						}
-
-					}
-,
-					"varname" : "live.slider"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 3,
-					"fontsize" : 12.0,
 					"id" : "obj-157",
 					"maxclass" : "live.slider",
 					"numinlets" : 1,
@@ -4085,15 +3839,6 @@
 			}
  ],
 		"lines" : [ 			{
-				"patchline" : 				{
-					"destination" : [ "obj-34", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-102", 0 ]
-				}
-
-			}
-, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-108", 0 ],
 					"disabled" : 0,
@@ -4194,24 +3939,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-113", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-112", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-112", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-113", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-59", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4302,42 +4029,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-128", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-126", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-126", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-128", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-158", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-129", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-159", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-129", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-131", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4423,15 +4114,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-142", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-129", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-147", 0 ]
 				}
 
 			}
@@ -4707,24 +4389,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-27", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-28", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-108", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4756,15 +4420,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-32", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-102", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-34", 0 ]
 				}
 
 			}
@@ -5470,6 +5125,63 @@
 					"source" : [ "obj-93", 0 ]
 				}
 
+			}
+ ],
+		"parameters" : 		{
+			"obj-149" : [ "live.text[20]", "live.text[1]", 0 ],
+			"obj-91" : [ "live.text[10]", "live.text[1]", 0 ],
+			"obj-76" : [ "live.slider[13]", "GOLLoopSub", 0 ],
+			"obj-59" : [ "live.text[2]", "live.text[1]", 0 ],
+			"obj-79" : [ "live.text[16]", "live.text[1]", 0 ],
+			"obj-73" : [ "live.slider[12]", "AgentLoopSub", 0 ],
+			"obj-88" : [ "live.text[9]", "live.text[1]", 0 ],
+			"obj-46" : [ "live.slider[5]", "SlideUp", 0 ],
+			"obj-32" : [ "live.text[15]", "live.text[1]", 0 ],
+			"obj-184" : [ "live.text[21]", "live.text[1]", 0 ],
+			"obj-63" : [ "live.text[4]", "live.text[1]", 0 ],
+			"obj-84" : [ "live.text[8]", "live.text[1]", 0 ],
+			"obj-82" : [ "live.text[7]", "live.text[1]", 0 ],
+			"obj-93" : [ "live.text[11]", "live.text[1]", 0 ],
+			"obj-162" : [ "live.slider[14]", "Master", 0 ],
+			"obj-48" : [ "live.slider[7]", "LemLoop2Sub", 0 ],
+			"obj-111" : [ "live.text[18]", "live.text[1]", 0 ],
+			"obj-120" : [ "live.slider[19]", "SlideDown", 0 ],
+			"obj-22" : [ "live.slider[6]", "LemLoop1Sub", 0 ],
+			"obj-148" : [ "live.text[19]", "live.text[1]", 0 ],
+			"obj-186" : [ "live.text[22]", "live.text[1]", 0 ],
+			"obj-108" : [ "live.text[17]", "live.text[1]", 0 ],
+			"obj-77" : [ "live.text[14]", "live.text[1]", 0 ],
+			"obj-51" : [ "live.slider[8]", "LemLoop3Sub", 0 ],
+			"obj-54" : [ "live.slider[9]", "LemLoop4Sub", 0 ],
+			"obj-86" : [ "live.text[5]", "live.text[1]", 0 ],
+			"obj-56" : [ "live.text[1]", "live.text[1]", 0 ],
+			"obj-68" : [ "live.text[13]", "live.text[1]", 0 ],
+			"obj-169" : [ "live.slider[15]", "PlayersSpeed", 0 ],
+			"obj-157" : [ "live.slider[11]", "PostLoopSub", 0 ],
+			"obj-61" : [ "live.text[3]", "live.text[1]", 0 ],
+			"obj-189" : [ "live.slider[17]", "MonoLoopSub", 0 ]
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "OM-2.maxpat",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/dependencies/MX",
+				"patcherrelativepath" : "../dependencies/MX",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "OLine.maxpat",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/dependencies/MX",
+				"patcherrelativepath" : "../dependencies/MX",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "SRinhibit.maxpat",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/dependencies/MX",
+				"patcherrelativepath" : "../dependencies/MX",
+				"type" : "JSON",
+				"implicit" : 1
 			}
  ]
 	}
