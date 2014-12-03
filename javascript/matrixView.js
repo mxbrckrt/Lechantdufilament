@@ -54,7 +54,11 @@ function draw()
             for(j=0;j<ncols;j++) // iterate through the rows
             {
                 moveto((j*colstep + colstep/2)-1.0, 1.0 - (i*rowstep + rowstep/2), 0.); // move the drawing point
-                glcolor(255, 255, 0, state[i][j]); //alpha value is between 0. and 1.
+				intensity = state[i][j];
+				if(intensity > 0.01) {
+					intensity += 1/(10*Math.exp(5*intensity));
+				}
+                glcolor(255, 255, intensity*255, intensity); //alpha value is between 0. and 1.
                 circle(radius); // draw the circle
             }
         }                  
@@ -146,18 +150,35 @@ function brgb(r,g,b)
     bang(); // draw and refresh display
 }
 
+// 
+function resizeView(string)
+{
+	//post("resizeView", string);
+	//post(this.patcher.wind.location[0]);
+	if(string == "small") { //switch to small size
+		this.patcher.wind.location[0] = 100;//(100,100,400,400); DONT WORK ??
+		//post("woorked ?", this.patcher.wind.location);
+		onresize(300,300);
+		}
+	else if (string == "full") { // switch to full size
+		var sizeWindow = new Array(2); 
+		sizeWindow = this.patcher.wind.size;
+		onresize(sizeWindow[0],sizeWindow[1]);
+	}
+}
+
 // onresize -- deal with a resized jsui box
 function forcesize(w,h)
 {
-	if (w!=h) {
-		h = w;
-		box.size(w,h);
-	}
+	var cote = Math.min(w,h);
+	//post("forceresize", cote);
+	box.size(cote,cote);
 }
 forcesize.local = 1; //private
 
 function onresize(w,h)
 {
+	//post("onresize", w, h);
 	forcesize(w,h);
 	bang();
 }
