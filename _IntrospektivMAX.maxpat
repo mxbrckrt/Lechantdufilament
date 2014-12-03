@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 9,
+			"revision" : 7,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 5.0, 50.0, 1045.0, 698.0 ],
+		"rect" : [ 140.0, 71.0, 1045.0, 698.0 ],
 		"bgcolor" : [ 0.694118, 0.694118, 0.694118, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -42,7 +42,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 9,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -262,7 +262,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "open" ],
 					"patching_rect" : [ 1030.0, 447.0, 44.0, 20.0 ],
-					"presentation_rect" : [ 1030.5, 449.0, 0.0, 0.0 ],
 					"text" : "t open"
 				}
 
@@ -461,7 +460,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 9,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -648,7 +647,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 9,
+											"revision" : 7,
 											"architecture" : "x86"
 										}
 ,
@@ -1224,7 +1223,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 9,
+											"revision" : 7,
 											"architecture" : "x86"
 										}
 ,
@@ -2183,7 +2182,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 9,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -2412,7 +2411,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 9,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -2684,7 +2683,7 @@
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 337.5, 544.921692, 100.0, 20.0 ],
-					"prefix" : "Politburo:/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/Loops/",
+					"prefix" : "JaimeSSD:/Users/jaimechao/Documents/Max/TungstenLyon/Loops/",
 					"presentation" : 1,
 					"presentation_rect" : [ 881.5, 360.5, 153.0, 20.0 ],
 					"textcolor" : [ 0.149, 0.149, 0.149, 1.0 ]
@@ -2800,7 +2799,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 9,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -3194,11 +3193,11 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 9,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 40.0, 48.0, 1327.0, 776.0 ],
+						"rect" : [ 612.0, 207.0, 1327.0, 776.0 ],
 						"bgcolor" : [ 0.861592, 0.861592, 0.861592, 1.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
@@ -3293,7 +3292,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 9,
+											"revision" : 7,
 											"architecture" : "x86"
 										}
 ,
@@ -3399,7 +3398,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 9,
+											"revision" : 7,
 											"architecture" : "x86"
 										}
 ,
@@ -3821,7 +3820,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 9,
+											"revision" : 7,
 											"architecture" : "x86"
 										}
 ,
@@ -4103,7 +4102,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 9,
+											"revision" : 7,
 											"architecture" : "x86"
 										}
 ,
@@ -4245,7 +4244,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 9,
+											"revision" : 7,
 											"architecture" : "x86"
 										}
 ,
@@ -4654,7 +4653,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 9,
+											"revision" : 7,
 											"architecture" : "x86"
 										}
 ,
@@ -5091,7 +5090,7 @@
 														"appversion" : 														{
 															"major" : 6,
 															"minor" : 1,
-															"revision" : 9,
+															"revision" : 7,
 															"architecture" : "x86"
 														}
 ,
@@ -7455,7 +7454,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 9,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -7675,7 +7674,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 9,
+											"revision" : 7,
 											"architecture" : "x86"
 										}
 ,
@@ -8469,7 +8468,7 @@
 									"fontsize" : 11.0,
 									"hint" : "",
 									"id" : "obj-69",
-									"items" : "Built-in Microphone",
+									"items" : [ "Built-in Microphone", ",", "Built-in Input" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -9981,276 +9980,276 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-13::obj-186" : [ "live.text[22]", "live.text[1]", 0 ],
-			"obj-13::obj-68" : [ "live.text[13]", "live.text[1]", 0 ],
-			"obj-134::obj-488" : [ "live.text", "live.text", 0 ],
-			"obj-149::obj-169" : [ "live.slider[15]", "PlayersSpeed", 0 ],
+			"obj-13::obj-88" : [ "live.text[9]", "live.text[1]", 0 ],
 			"obj-13::obj-91" : [ "live.text[10]", "live.text[1]", 0 ],
-			"obj-149::obj-162" : [ "live.slider[14]", "Master", 0 ],
-			"obj-55" : [ "live.text[12]", "live.text[1]", 0 ],
-			"obj-13::obj-84" : [ "live.text[8]", "live.text[1]", 0 ],
-			"obj-180::obj-194::obj-113" : [ "live.slider[10]", "AgentSub", 0 ],
-			"obj-13::obj-111" : [ "live.text[18]", "live.text[1]", 0 ],
-			"obj-13::obj-79" : [ "live.text[16]", "live.text[1]", 0 ],
+			"obj-13::obj-22" : [ "live.slider[6]", "LemLoop1Sub", 0 ],
 			"obj-149::obj-46" : [ "live.slider[5]", "SlideUp", 0 ],
+			"obj-180::obj-188::obj-145" : [ "live.slider[18]", "Densite", 0 ],
+			"obj-180::obj-194::obj-113" : [ "live.slider[10]", "AgentSub", 0 ],
+			"obj-13::obj-189" : [ "live.slider[17]", "MonoLoopSub", 0 ],
+			"obj-13::obj-186" : [ "live.text[22]", "live.text[1]", 0 ],
+			"obj-17::obj-102" : [ "live.slider", "Intensite", 0 ],
+			"obj-17::obj-106" : [ "live.slider[1]", "Remanence", 0 ],
+			"obj-13::obj-79" : [ "live.text[16]", "live.text[1]", 0 ],
+			"obj-13::obj-68" : [ "live.text[13]", "live.text[1]", 0 ],
+			"obj-180::obj-188::obj-28" : [ "live.slider[4]", "GOLSub", 0 ],
+			"obj-13::obj-184" : [ "live.text[21]", "live.text[1]", 0 ],
+			"obj-13::obj-149" : [ "live.text[20]", "live.text[1]", 0 ],
+			"obj-13::obj-77" : [ "live.text[14]", "live.text[1]", 0 ],
+			"obj-13::obj-108" : [ "live.text[17]", "live.text[1]", 0 ],
+			"obj-13::obj-111" : [ "live.text[18]", "live.text[1]", 0 ],
+			"obj-149::obj-169" : [ "live.slider[15]", "PlayersSpeed", 0 ],
+			"obj-17::obj-61" : [ "live.slider[2]", "SpatMulti-Sub", 0 ],
+			"obj-13::obj-84" : [ "live.text[8]", "live.text[1]", 0 ],
+			"obj-13::obj-93" : [ "live.text[11]", "live.text[1]", 0 ],
+			"obj-13::obj-86" : [ "live.text[5]", "live.text[1]", 0 ],
+			"obj-13::obj-32" : [ "live.text[15]", "live.text[1]", 0 ],
+			"obj-13::obj-73" : [ "live.slider[12]", "AgentLoopSub", 0 ],
+			"obj-13::obj-148" : [ "live.text[19]", "live.text[1]", 0 ],
+			"obj-17::obj-42" : [ "live.slider[16]", "SpatMono-Sub", 0 ],
+			"obj-13::obj-56" : [ "live.text[1]", "live.text[1]", 0 ],
+			"obj-134::obj-488" : [ "live.text", "live.text", 0 ],
+			"obj-13::obj-157" : [ "live.slider[11]", "PostLoopSub", 0 ],
+			"obj-149::obj-120" : [ "live.slider[19]", "SlideDown", 0 ],
+			"obj-13::obj-51" : [ "live.slider[8]", "LemLoop3Sub", 0 ],
+			"obj-13::obj-76" : [ "live.slider[13]", "GOLLoopSub", 0 ],
+			"obj-55" : [ "live.text[12]", "live.text[1]", 0 ],
 			"obj-13::obj-59" : [ "live.text[2]", "live.text[1]", 0 ],
 			"obj-13::obj-63" : [ "live.text[4]", "live.text[1]", 0 ],
-			"obj-149::obj-120" : [ "live.slider[19]", "SlideDown", 0 ],
 			"obj-13::obj-54" : [ "live.slider[9]", "LemLoop4Sub", 0 ],
-			"obj-17::obj-42" : [ "live.slider[16]", "SpatMono-Sub", 0 ],
-			"obj-13::obj-108" : [ "live.text[17]", "live.text[1]", 0 ],
-			"obj-13::obj-148" : [ "live.text[19]", "live.text[1]", 0 ],
-			"obj-13::obj-76" : [ "live.slider[13]", "GOLLoopSub", 0 ],
-			"obj-13::obj-48" : [ "live.slider[7]", "LemLoop2Sub", 0 ],
-			"obj-13::obj-149" : [ "live.text[20]", "live.text[1]", 0 ],
-			"obj-180::obj-188::obj-28" : [ "live.slider[4]", "GOLSub", 0 ],
-			"obj-13::obj-88" : [ "live.text[9]", "live.text[1]", 0 ],
-			"obj-13::obj-32" : [ "live.text[15]", "live.text[1]", 0 ],
-			"obj-17::obj-106" : [ "live.slider[1]", "Remanence", 0 ],
-			"obj-180::obj-188::obj-145" : [ "live.slider[18]", "Densite", 0 ],
-			"obj-13::obj-93" : [ "live.text[11]", "live.text[1]", 0 ],
-			"obj-13::obj-61" : [ "live.text[3]", "live.text[1]", 0 ],
-			"obj-13::obj-22" : [ "live.slider[6]", "LemLoop1Sub", 0 ],
-			"obj-17::obj-102" : [ "live.slider", "Intensite", 0 ],
-			"obj-13::obj-157" : [ "live.slider[11]", "PostLoopSub", 0 ],
+			"obj-149::obj-162" : [ "live.slider[14]", "Master", 0 ],
 			"obj-13::obj-82" : [ "live.text[7]", "live.text[1]", 0 ],
-			"obj-13::obj-56" : [ "live.text[1]", "live.text[1]", 0 ],
-			"obj-13::obj-189" : [ "live.slider[17]", "MonoLoopSub", 0 ],
-			"obj-13::obj-77" : [ "live.text[14]", "live.text[1]", 0 ],
-			"obj-13::obj-51" : [ "live.slider[8]", "LemLoop3Sub", 0 ],
-			"obj-17::obj-61" : [ "live.slider[2]", "SpatMulti-Sub", 0 ],
-			"obj-13::obj-86" : [ "live.text[5]", "live.text[1]", 0 ],
-			"obj-13::obj-73" : [ "live.slider[12]", "AgentLoopSub", 0 ],
-			"obj-13::obj-184" : [ "live.text[21]", "live.text[1]", 0 ]
+			"obj-13::obj-48" : [ "live.slider[7]", "LemLoop2Sub", 0 ],
+			"obj-13::obj-61" : [ "live.text[3]", "live.text[1]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "MasterRemotes.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/modules",
 				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "-rs.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/utils",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OM-2.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/dependencies/MX",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/dependencies/MX",
 				"patcherrelativepath" : "./dependencies/MX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OLine.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/dependencies/MX",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/dependencies/MX",
 				"patcherrelativepath" : "./dependencies/MX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SRinhibit.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/dependencies/MX",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/dependencies/MX",
 				"patcherrelativepath" : "./dependencies/MX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Lemur.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules/MultiSpat",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/modules/MultiSpat",
 				"patcherrelativepath" : "./modules/MultiSpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "AmbiRemote.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules/MultiSpat/SpatLibs",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/modules/MultiSpat/SpatLibs",
 				"patcherrelativepath" : "./modules/MultiSpat/SpatLibs",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "traj.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules/MultiSpat/SpatLibs",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/modules/MultiSpat/SpatLibs",
 				"patcherrelativepath" : "./modules/MultiSpat/SpatLibs",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "outils.pct",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules/MultiSpat/SpatLibs",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/modules/MultiSpat/SpatLibs",
 				"patcherrelativepath" : "./modules/MultiSpat/SpatLibs",
 				"type" : "PICT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "exampleKnob.pct",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules/MultiSpat/SpatLibs",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/modules/MultiSpat/SpatLibs",
 				"patcherrelativepath" : "./modules/MultiSpat/SpatLibs",
 				"type" : "PICT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "traj_subpatch",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules/MultiSpat/SpatLibs",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/modules/MultiSpat/SpatLibs",
 				"patcherrelativepath" : "./modules/MultiSpat/SpatLibs",
 				"type" : "maxb",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "FilterMap.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/utils",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "setLights.js",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/javascript",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/javascript",
 				"patcherrelativepath" : "./javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OOsc.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/modules",
 				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MXtgtOSC.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/dependencies/MX",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/dependencies/MX",
 				"patcherrelativepath" : "./dependencies/MX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "TUNGoscdestinations.txt",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/IntrospektColl",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/IntrospektColl",
 				"patcherrelativepath" : "./IntrospektColl",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MXmapOSC.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/dependencies/MX",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/dependencies/MX",
 				"patcherrelativepath" : "./dependencies/MX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "TUNGoscinputs.txt",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/IntrospektColl",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/IntrospektColl",
 				"patcherrelativepath" : "./IntrospektColl",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MXpattrPaths.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/dependencies/MX",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/dependencies/MX",
 				"patcherrelativepath" : "./dependencies/MX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OscMapping.json",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/IntrospektColl",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/IntrospektColl",
 				"patcherrelativepath" : "./IntrospektColl",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "comp.js",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/javascript",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/javascript",
 				"patcherrelativepath" : "./javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Looper.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/utils",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Algo.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/modules",
 				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "GameOfLife.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/modules",
 				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Agents.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/modules",
 				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "agent.js",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/javascript",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/javascript",
 				"patcherrelativepath" : "./javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LoopersRemotes.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/modules",
 				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MXkey.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/dependencies/MX",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/dependencies/MX",
 				"patcherrelativepath" : "./dependencies/MX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MinuitInterface.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/dependencies/Jamoma interface",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/dependencies/Jamoma interface",
 				"patcherrelativepath" : "./dependencies/Jamoma interface",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MatriceLights.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/modules",
 				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "matrixView.js",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/javascript",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/javascript",
 				"patcherrelativepath" : "./javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MatriceValue.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/modules",
 				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Interface.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/modules",
 				"patcherrelativepath" : "./modules",
 				"type" : "JSON",
 				"implicit" : 1
