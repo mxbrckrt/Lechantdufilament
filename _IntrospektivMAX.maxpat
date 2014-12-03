@@ -2394,7 +2394,7 @@
 					"name" : "Algo.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"offset" : [ -326.0, 1.0 ],
+					"offset" : [ 1.0, 1.0 ],
 					"patching_rect" : [ 618.0, 112.107361, 240.0, 48.825562 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 492.0, 67.0, 331.0, 319.0 ]
