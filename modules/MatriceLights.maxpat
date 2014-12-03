@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 50.0, 300.0, 250.0 ],
+		"rect" : [ 5.0, 50.0, 775.0, 450.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -36,7 +36,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 369.0, 54.0, 18.0, 18.0 ],
+					"patching_rect" : [ 369.0, 69.0, 18.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 65.0, 68.0, 18.0, 18.0 ],
 					"prototypename" : "Arial9"
@@ -53,7 +53,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 358.0, 29.0, 41.0, 21.0 ],
+					"patching_rect" : [ 358.0, 44.0, 41.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 84.0, 67.0, 41.0, 21.0 ],
 					"text" : "View",
@@ -70,7 +70,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 406.0, 54.0, 18.0, 18.0 ],
+					"patching_rect" : [ 406.0, 69.0, 18.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 176.0, 68.0, 18.0, 18.0 ],
 					"prototypename" : "Arial9"
@@ -87,7 +87,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 395.0, 29.0, 56.0, 21.0 ],
+					"patching_rect" : [ 395.0, 44.0, 56.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 195.0, 67.0, 58.0, 21.0 ],
 					"text" : "NoFloat",
@@ -105,8 +105,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 369.0, 100.0, 62.0, 18.0 ],
-					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "nogrow", "close", "nozoom", "float", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 0, 50, 300, 300, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+					"patching_rect" : [ 369.0, 115.0, 62.0, 18.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "float", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 5, 50, 780, 500, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
 
@@ -1328,7 +1328,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 369.0, 76.0, 56.0, 19.0 ],
+					"patching_rect" : [ 369.0, 91.0, 56.0, 19.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
@@ -1355,7 +1355,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 4,
 					"outlettype" : [ "int", "", "", "int" ],
-					"patching_rect" : [ 471.0, 62.0, 81.0, 20.0 ],
+					"patching_rect" : [ 471.0, 77.0, 81.0, 20.0 ],
 					"text" : "counter 0 0 1"
 				}
 
@@ -1370,7 +1370,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "int" ],
-					"patching_rect" : [ 471.0, 36.0, 64.0, 20.0 ],
+					"patching_rect" : [ 471.0, 51.0, 64.0, 20.0 ],
 					"text" : "MXkey 70"
 				}
 
@@ -1384,7 +1384,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 484.5, 314.0, 87.0, 18.0 ],
+					"patching_rect" : [ 484.5, 329.0, 87.0, 18.0 ],
 					"text" : "resizeView full"
 				}
 
@@ -1398,7 +1398,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 471.0, 281.0, 100.0, 18.0 ],
+					"patching_rect" : [ 471.0, 296.0, 100.0, 18.0 ],
 					"text" : "resizeView small"
 				}
 
@@ -1412,7 +1412,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 471.0, 226.0, 46.0, 20.0 ],
+					"patching_rect" : [ 471.0, 241.0, 46.0, 20.0 ],
 					"text" : "sel 0 1"
 				}
 
@@ -1425,7 +1425,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 471.0, 350.5, 92.0, 20.0 ],
+					"patching_rect" : [ 471.0, 365.5, 92.0, 20.0 ],
 					"text" : "s forMatrixView"
 				}
 
@@ -1439,7 +1439,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 471.0, 133.0, 32.5, 20.0 ],
+					"patching_rect" : [ 471.0, 148.0, 32.5, 20.0 ],
 					"text" : "t i i"
 				}
 
@@ -1453,7 +1453,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 506.5, 182.423096, 76.0, 17.0 ],
+					"patching_rect" : [ 506.5, 197.423096, 76.0, 17.0 ],
 					"text" : "fullscreen $1"
 				}
 
@@ -1466,7 +1466,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 471.0, 93.0, 20.0, 20.0 ]
+					"patching_rect" : [ 471.0, 108.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -1479,7 +1479,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 609.0, 153.0, 150.0, 20.0 ],
+					"patching_rect" : [ 609.0, 168.0, 150.0, 20.0 ],
 					"text" : "pour changer l'offset"
 				}
 
@@ -1493,7 +1493,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 580.0, 219.0, 69.0, 20.0 ],
+					"patching_rect" : [ 580.0, 234.0, 69.0, 20.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -1507,7 +1507,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 580.0, 151.0, 25.0, 25.0 ]
+					"patching_rect" : [ 580.0, 166.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -1520,7 +1520,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 28.0, 16.576904, 90.0, 20.0 ],
+					"patching_rect" : [ 28.0, 31.576904, 90.0, 20.0 ],
 					"text" : "r forMatrixView"
 				}
 
@@ -1535,7 +1535,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 28.0, 58.0, 300.0, 300.0 ],
+					"patching_rect" : [ 28.0, 73.0, 300.0, 300.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 300.0, 300.0 ]
 				}
