@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 7,
+			"revision" : 9,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 176.0, 203.0, 325.0, 313.0 ],
+		"rect" : [ 367.0, 55.0, 325.0, 313.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,

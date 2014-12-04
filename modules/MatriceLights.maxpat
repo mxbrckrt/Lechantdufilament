@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 7,
+			"revision" : 9,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 45.0, 282.0, 297.0, 297.0 ],
+		"rect" : [ 39.0, 57.0, 308.0, 297.0 ],
 		"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,

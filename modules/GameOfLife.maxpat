@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 7,
+			"revision" : 9,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 375.0, 71.0, 1095.0, 757.0 ],
+		"rect" : [ 22.0, 51.0, 1157.0, 725.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -36,7 +36,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 745.701965, 671.320801, 107.0, 20.0 ],
+					"patching_rect" : [ 766.701965, 398.653015, 107.0, 20.0 ],
 					"text" : "Réparer celldraw"
 				}
 
@@ -51,7 +51,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 145.302032, 160.175034, 174.0, 20.0 ],
+					"patching_rect" : [ 79.302032, 154.24968, 174.0, 20.0 ],
 					"text" : "j.model GOL @amenities none"
 				}
 
@@ -65,7 +65,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 355.902008, 96.24968, 60.0, 20.0 ],
+					"patching_rect" : [ 478.902008, 96.24968, 60.0, 20.0 ],
 					"text" : "loadbang"
 				}
 
@@ -128,7 +128,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 7,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -543,7 +543,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 672.701965, 671.320801, 67.0, 20.0 ],
+					"patching_rect" : [ 693.701965, 398.653015, 67.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
@@ -602,11 +602,11 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 7,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 124.0, 187.0, 610.0, 613.0 ],
+						"rect" : [ 820.0, 93.0, 610.0, 613.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -653,7 +653,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 7,
+											"revision" : 9,
 											"architecture" : "x86"
 										}
 ,
@@ -1075,7 +1075,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 7,
+											"revision" : 9,
 											"architecture" : "x86"
 										}
 ,
@@ -1170,7 +1170,7 @@
 														"appversion" : 														{
 															"major" : 6,
 															"minor" : 1,
-															"revision" : 7,
+															"revision" : 9,
 															"architecture" : "x86"
 														}
 ,
@@ -2020,8 +2020,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 322.302032, 46.772049, 431.0, 20.0 ],
-					"text" : "j.parameter Vitesse @type integer @range 22 5000 @clipmode low @priority 3"
+					"patching_rect" : [ 322.302032, 46.772049, 505.0, 20.0 ],
+					"text" : "j.parameter Vitesse @priority 3 @type integer @range 22 5000 @clipmode both @default 22"
 				}
 
 			}
@@ -2035,8 +2035,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 538.701965, 317.178619, 335.0, 20.0 ],
-					"text" : "j.parameter Densite @priority 2 @type integer @range 0 100"
+					"patching_rect" : [ 538.701965, 317.178619, 425.0, 20.0 ],
+					"text" : "j.parameter Densite @priority 2 @type integer @range 0 100 @clipmode both"
 				}
 
 			}
@@ -2050,8 +2050,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 646.901978, 520.178589, 313.0, 20.0 ],
-					"text" : "j.parameter Sub @type decimal @range 0. 1. @priority 1"
+					"patching_rect" : [ 646.901978, 520.178589, 403.0, 20.0 ],
+					"text" : "j.parameter Sub @priority 1 @type decimal @range 0. 1. @clipmode both"
 				}
 
 			}
@@ -2394,7 +2394,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 902.573914, 125.153023, 27.0, 29.0 ],
+					"patching_rect" : [ 44.573914, 394.153015, 27.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.5, 1.0, 325.0, 313.0 ]
 				}
@@ -2646,13 +2646,13 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-145" : [ "live.slider[18]", "Densite", 0 ],
-			"obj-28" : [ "live.slider[4]", "GOLSub", 0 ]
+			"obj-28" : [ "live.slider[4]", "GOLSub", 0 ],
+			"obj-145" : [ "live.slider[18]", "Densite", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "-rs.maxpat",
-				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/utils",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1

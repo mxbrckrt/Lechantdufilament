@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 7,
+			"revision" : 9,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 51.0, 88.0, 1185.0, 738.0 ],
+		"rect" : [ 51.0, 56.0, 1185.0, 738.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -51,7 +51,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 172.302032, 554.184509, 198.0, 20.0 ],
+					"patching_rect" : [ 90.796967, 613.184509, 198.0, 20.0 ],
 					"text" : "j.model AGENTS @amenities none"
 				}
 
@@ -136,7 +136,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 327.0, 91.215576, 105.0, 20.0 ],
+					"patching_rect" : [ 284.796967, 198.715515, 105.0, 20.0 ],
 					"text" : "-rs AgentSub Sub"
 				}
 
@@ -151,7 +151,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 294.0, 41.215576, 68.0, 120.0 ],
+					"patching_rect" : [ 238.796967, 179.215515, 46.0, 59.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.5, 1.0, 56.0, 313.0 ],
 					"relative" : 1,
@@ -181,8 +181,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 576.659119, 554.184509, 384.0, 20.0 ],
-					"text" : "j.parameter BruleCalories @priority 2 @type decimal @range 0 10000"
+					"patching_rect" : [ 576.659119, 554.184509, 474.0, 20.0 ],
+					"text" : "j.parameter BruleCalories @priority 2 @type decimal @range 0 10000 @clipmode both"
 				}
 
 			}
@@ -196,8 +196,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 607.659119, 376.344727, 344.0, 20.0 ],
-					"text" : "j.parameter BcpMiam @priority 2 @type integer @range 0 100"
+					"patching_rect" : [ 607.659119, 376.344727, 434.0, 20.0 ],
+					"text" : "j.parameter BcpMiam @priority 2 @type integer @range 0 100 @clipmode both"
 				}
 
 			}
@@ -270,7 +270,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 67.041992, 254.302002, 79.0, 20.0 ],
+					"patching_rect" : [ 67.041992, 344.302002, 79.0, 20.0 ],
 					"text" : "s FromAgent"
 				}
 
@@ -281,12 +281,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-183",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 67.0, 141.215576, 175.0, 20.0 ],
-					"text" : "j.parameter Vitesse @priority 2"
+					"patching_rect" : [ 67.0, 141.215576, 181.0, 33.0 ],
+					"text" : "j.parameter Vitesse @priority 2 @type integer @clipmode low"
 				}
 
 			}
@@ -300,7 +301,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 238.796967, 195.795898, 50.0, 20.0 ]
+					"patching_rect" : [ 238.796967, 285.795898, 50.0, 20.0 ]
 				}
 
 			}
@@ -318,11 +319,11 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 7,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 959.0, 73.0, 652.0, 751.0 ],
+						"rect" : [ 788.0, 73.0, 652.0, 751.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -341,7 +342,6 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -396,7 +396,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 7,
+											"revision" : 9,
 											"architecture" : "x86"
 										}
 ,
@@ -846,7 +846,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 7,
+											"revision" : 9,
 											"architecture" : "x86"
 										}
 ,
@@ -1611,7 +1611,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 7,
+											"revision" : 9,
 											"architecture" : "x86"
 										}
 ,
@@ -3413,7 +3413,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 67.041992, 222.795898, 190.75499, 20.0 ],
+					"patching_rect" : [ 67.041992, 312.795898, 190.75499, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
@@ -3437,12 +3437,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-36",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 238.796967, 168.583984, 157.0, 20.0 ],
-					"text" : "j.parameter Sub @priority 1"
+					"patching_rect" : [ 238.796967, 247.583984, 246.0, 33.0 ],
+					"text" : "j.parameter Sub @priority 1 @type decimal @range 0. 1. @clipmode both"
 				}
 
 			}
@@ -3916,7 +3917,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "list", "list", "int", "" ],
-					"patching_rect" : [ 238.796967, 254.302002, 200.0, 200.0 ],
+					"patching_rect" : [ 238.796967, 344.302002, 200.0, 200.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 73.0, 102.5, 200.0, 200.0 ]
 				}
@@ -4419,28 +4420,28 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "-rs.maxpat",
-				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/utils",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "agent.js",
-				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/javascript",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "comp.js",
-				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/javascript",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "setLights.js",
-				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/javascript",
+				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
