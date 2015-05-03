@@ -88,7 +88,6 @@ function rows(val)
     }
 }
 
-
 // cols -- change number of columns is jsui
 function cols(val)
 {

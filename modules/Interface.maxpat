@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 7,
 			"architecture" : "x86"
 		}
 ,
@@ -107,7 +107,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "int", "int" ],
+					"outlettype" : [ "", "int" ],
 					"patching_rect" : [ 18.0, 266.0, 37.0, 20.0 ],
 					"text" : "t #1 i"
 				}
@@ -153,7 +153,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 201.0, 245.0, 32.5, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 16.0, 19.0, 25.0, 18.0 ],
+					"presentation_rect" : [ 7.0, 13.0, 25.0, 18.0 ],
 					"text" : "#1",
 					"textcolor" : [ 0.407843, 0.392157, 0.392157, 1.0 ]
 				}
@@ -292,7 +292,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 18.0, 103.0, 47.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 4.0, 32.0, 22.0 ],
+					"presentation_rect" : [ 1.0, -2.0, 32.0, 22.0 ],
 					"triangle" : 0,
 					"tricolor" : [ 0.74902, 0.74902, 0.74902, 0.0 ]
 				}
@@ -308,7 +308,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 175.0, 340.0, 24.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 7.0, 33.403942, 16.0 ],
+					"presentation_rect" : [ 1.0, 1.0, 33.403942, 16.0 ],
 					"rounded" : 6
 				}
 
@@ -453,7 +453,8 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [  ]
 	}
 
 }
