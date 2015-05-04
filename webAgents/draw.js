@@ -13,13 +13,13 @@ var canvas,
     fFactor = 3
 
 agent.draw = function() {
-  var x = scaleX(this.x),
-      y = scaleY(this.y),
+  var x = scaleX(this.p[0]),
+      y = scaleY(this.p[1]),
       e = this.e*eFactor,
-      vx = this.vx*vFactor,
-      vy = this.vy*vFactor,
-      fx = this.fx*fFactor,
-      fy = this.fy*fFactor
+      vx = this.v[0]*vFactor,
+      vy = this.v[1]*vFactor,
+      fx = this.f[0]*fFactor,
+      fy = this.f[1]*fFactor
 
   context.strokeStyle = "black"
   context.beginPath()
