@@ -4,12 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 7,
+			"revision" : 9,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 82.0, 80.0, 331.0, 393.0 ],
-		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+		"rect" : [ 82.0, 80.0, 663.0, 589.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -80,8 +79,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 18.0, 340.0, 63.0, 20.0 ],
-					"text" : "s ToDlight"
+					"patching_rect" : [ 18.0, 340.0, 58.0, 20.0 ],
+					"text" : "s ToOSC"
 				}
 
 			}
@@ -92,10 +91,10 @@
 					"id" : "obj-35",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 18.0, 309.0, 115.0, 20.0 ],
-					"text" : "sprintf /circ/%ld %ld"
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 18.0, 309.0, 41.0, 20.0 ],
+					"text" : "zl join"
 				}
 
 			}
@@ -108,7 +107,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 18.0, 266.0, 37.0, 20.0 ],
+					"patching_rect" : [ 18.0, 266.0, 41.0, 20.0 ],
 					"text" : "t #1 i"
 				}
 
@@ -123,7 +122,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 30.0, 239.0, 59.0, 22.0 ],
-					"text" : "Dlight"
+					"text" : "To OSC"
 				}
 
 			}
