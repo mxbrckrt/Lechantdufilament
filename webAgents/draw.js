@@ -49,10 +49,10 @@ function prepareDraw() {
 }
 
 function drawLoop() {
-  agent.update()
+  update()
   context.clearRect(0,0,canvas.width,canvas.height)
   drawBackground()
-  agent.draw()
+  for (var i = 0 ; i < agents.length ; i++) agents[i].draw()
   computeFPS()
 }
 
