@@ -8,29 +8,24 @@ var space = {
 }
 
 var agent = {
-  p:[0,0], //todo refactor
-  x:0,
-  y:0,
-  v:[2,5], //todo refactor
-  vx:2,
-  vy:5,
-  f:[0,0], //todo refactor
-  fx:0,
-  fy:0,
+  p:[0,0],
+  v:[0,0],
+  f:[0,0],
   e:1,
   forces:[],
-  moves:["move"],
-  lates:["fold"],
+  moves:[],
+  lates:[],
   update:function() {
+    this.f = [0,0]
     for (var i = 0 ; i < this.forces.length ; i++) this[this.forces[i]]()
-    for (var i = 0 ; i < this.moves.length ; i++) this[this.moves[i]]()
-    for (var i = 0 ; i < this.lates.length ; i++) this[this.lates[i]]()
+    for (var j = 0 ; j < this.moves.length ; j++) this[this.moves[j]]()
+    for (var k = 0 ; k < this.lates.length ; k++) this[this.lates[k]]()
   }
 }
 
 agent.seekTarget = [0,0]
 agent.seek = function() {
-  //var todo
+
 }
 
 agent.flee = function() {
@@ -47,29 +42,33 @@ agent.wander = function() {
 
 agent.maxV = 5
 agent.move = function() {
-  this.x += this.vx
-  this.y += this.vy
+  this.p[0] += this.v[0]
+  this.p[1] += this.v[1]
 }
 
 agent.clip = function() {
-  if (this.x < space.x1) this.x = space.x1
-  if (this.x > space.x2) this.x = space.x2
-  if (this.y < space.y1) this.y = space.y1
-  if (this.y > space.y2) this.y = space.y2
+  if (this.p[0] < space.x1) this.p[0] = space.x1
+  else if (this.p[0] > space.x2) this.p[0] = space.x2
+  if (this.p[1] < space.y1) this.p[1] = space.y1
+  else if (this.p[1] > space.y2) this.p[1] = space.y2
 }
 
 agent.wrap = function() {
-  if (this.x < space.x1) this.x += space.x2 - space.x1
-  if (this.x > space.x2) this.x -= space.x2 - space.x1
-  if (this.y < space.y1) this.y += space.y2 - space.y1
-  if (this.y > space.y2) this.y -= space.y2 - space.y1
+  if (this.p[0] < space.x1) this.p[0] += space.x2 - space.x1
+  else if (this.p[0] > space.x2) this.p[0] -= space.x2 - space.x1
+  if (this.p[1] < space.y1) this.p[1] += space.y2 - space.y1
+  else if (this.p[1] > space.y2) this.p[1] -= space.y2 - space.y1
 }
 
 agent.fold = function() {
-  if (this.x < space.x1) this.x = 2*space.x1 - this.x, this.vx = -this.vx
-  if (this.x > space.x2) this.x = 2*space.x2 - this.x, this.vx = -this.vx
-  if (this.y < space.y1) this.y = 2*space.y1 - this.y, this.vy = -this.vy
-  if (this.y > space.y2) this.y = 2*space.y2 - this.y, this.vy = -this.vy
+  if (this.p[0] < space.x1)
+    this.p[0] = 2*space.x1 - this.p[0], this.v[0] = -this.v[0]
+  else if (this.p[0] > space.x2)
+    this.p[0] = 2*space.x2 - this.p[0], this.v[0] = -this.v[0]
+  if (this.p[1] < space.y1)
+    this.p[1] = 2*space.y1 - this.p[1], this.v[1] = -this.v[1]
+  else if (this.p[1] > space.y2)
+    this.p[1] = 2*space.y2 - this.p[1], this.v[1] = -this.v[1]
 }
 
 agent.consumeDose = 0
