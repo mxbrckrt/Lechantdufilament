@@ -67,7 +67,7 @@ function drawBackground() {
   context.strokeStyle = "red"
   context.strokeRect(0, 0, canvas.width, canvas.height)
 
-  /* les ronds suffisent a priori
+  /* Cadre des lampes, mais les ronds suffisent a priori
   context.strokeStyle = "orange"
   context.strokeRect(scaleX(0),
     scaleY(0),

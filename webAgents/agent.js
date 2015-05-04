@@ -23,7 +23,7 @@ var agent = {
   }
 }
 
-agent.seekTarget = [0,0]
+agent.seekTarget = {p:[0,0]}
 agent.seek = function() {
 
 }
@@ -40,7 +40,7 @@ agent.wander = function() {
 
 }
 
-agent.maxV = 5
+agent.maxV = 0
 agent.move = function() {
   this.p[0] += this.v[0]
   this.p[1] += this.v[1]
