@@ -275,11 +275,11 @@ when assigning CCs">
 <WINDOW class="Text" text="Text9" x="354" y="144" width="77" height="48" id="64" state="245" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1926527" content="Remove">
 <VARIABLE name="light=0" send="0" osc_target="-1" osc_trigger="1" osc_message="/Text9/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 </WINDOW>
-<WINDOW class="CustomButton" text="AgentFood" x="350" y="280" width="85" height="75" id="65" state="241" group="0" font="tahoma,20,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" behavior="1" bitmap="0,0" capture="1" color="30928,8329240" label_off="" label_on="" outline="1">
+<WINDOW class="CustomButton" text="AgentFood" x="350" y="205" width="85" height="75" id="65" state="241" group="0" font="tahoma,20,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" behavior="1" bitmap="0,0" capture="1" color="30928,8329240" label_off="" label_on="" outline="1">
 <PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/AgentFood/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/AgentFood/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 </WINDOW>
-<WINDOW class="Text" text="Text10" x="354" y="294" width="77" height="48" id="66" state="245" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1926527" content="Add Food">
+<WINDOW class="Text" text="Text10" x="354" y="219" width="77" height="48" id="66" state="245" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1926527" content="Add Food">
 <VARIABLE name="light=0" send="0" osc_target="-1" osc_trigger="1" osc_message="/Text10/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 </WINDOW>
 <WINDOW class="Fader" text="Burn" x="299" y="35" width="48" height="320" id="67" state="1" group="0" font="tahoma,10,0" send="1" osc_target="0" midi_target="-1" kbmouse_target="-2" capture="1" color="8388608" cursor="0" grid="0" grid_steps="1" label="1" physic="1" precision="3" unit="" value="1" zoom="1.000000">
@@ -290,11 +290,11 @@ when assigning CCs">
 <VARIABLE name="friction=0.9" send="0" osc_target="0" osc_trigger="1" osc_message="/Burn/friction" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="speed=1" send="0" osc_target="0" osc_trigger="1" osc_message="/Burn/speed" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 </WINDOW>
-<WINDOW class="CustomButton" text="AgentFeed" x="350" y="205" width="85" height="75" id="68" state="241" group="0" font="tahoma,20,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" behavior="1" bitmap="0,0" capture="1" color="30928,8329240" label_off="" label_on="" outline="1">
+<WINDOW class="CustomButton" text="AgentFeed" x="343" y="400" width="85" height="75" id="68" state="241" group="0" font="tahoma,20,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" behavior="1" bitmap="0,0" capture="1" color="30928,8329240" label_off="" label_on="" outline="1">
 <PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/AgentFeed/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/AgentFeed/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 </WINDOW>
-<WINDOW class="Text" text="Text11" x="354" y="219" width="77" height="48" id="69" state="245" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1926527" content="Feed">
+<WINDOW class="Text" text="Text11" x="347" y="414" width="77" height="48" id="69" state="245" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1926527" content="Feed">
 <VARIABLE name="light=0" send="0" osc_target="-1" osc_trigger="1" osc_message="/Text11/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 </WINDOW>
 <WINDOW class="Fader" text="Feed" x="251" y="35" width="48" height="320" id="70" state="1" group="0" font="tahoma,10,0" send="1" osc_target="0" midi_target="-1" kbmouse_target="-2" capture="1" color="8388608" cursor="0" grid="0" grid_steps="1" label="1" physic="1" precision="3" unit="" value="1" zoom="1.000000">

@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 204.0, 185.0, 816.0, 710.0 ],
+		"rect" : [ 160.0, 157.0, 816.0, 710.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,20 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-13",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 617.0, 415.0, 50.0, 18.0 ],
+					"text" : "0."
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -206,10 +220,10 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 717.949158, 114.533203, 90.0, 25.795898 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 227.159119, 30.75, 90.0, 25.795898 ],
+					"presentation_rect" : [ 227.159119, 32.75, 90.0, 25.795898 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.text[1]",
+							"parameter_longname" : "live.text[4]",
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2,
 							"parameter_mmax" : 1.0,
@@ -240,7 +254,7 @@
 					"presentation_rect" : [ 227.159119, 9.75, 90.0, 25.795898 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.text",
+							"parameter_longname" : "live.text[1]",
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2,
 							"parameter_mmax" : 1.0,
@@ -527,19 +541,6 @@
 						"digest" : "",
 						"tags" : "",
 						"boxes" : [ 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-15",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 150.01709, 630.643555, 79.0, 20.0 ],
-									"text" : "print srcGain"
-								}
-
-							}
-, 							{
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
@@ -3289,15 +3290,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-15", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-23", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-157", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -3990,8 +3982,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 563.159119, 41.215576, 80.0, 20.0 ],
-					"text" : "r AgentAgent"
+					"patching_rect" : [ 563.159119, 41.215576, 70.0, 20.0 ],
+					"text" : "r AgentAdd"
 				}
 
 			}
@@ -4291,6 +4283,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-141", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-143", 0 ]
 				}
 
 			}
@@ -4653,59 +4654,6 @@
 					"source" : [ "obj-94", 0 ]
 				}
 
-			}
- ],
-		"parameters" : 		{
-			"obj-8" : [ "live.text", "live.text", 0 ],
-			"obj-10" : [ "live.text[2]", "live.text", 0 ],
-			"obj-9" : [ "live.text[1]", "live.text", 0 ],
-			"obj-12" : [ "live.text[3]", "live.text", 0 ],
-			"obj-113" : [ "live.slider[10]", "AgentSub", 0 ]
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "-rs.maxpat",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/utils",
-				"patcherrelativepath" : "../utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "agent.js",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/javascript",
-				"patcherrelativepath" : "../javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "comp.js",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/javascript",
-				"patcherrelativepath" : "../javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "setLights.js",
-				"bootpath" : "/Users/max/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/javascript",
-				"patcherrelativepath" : "../javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.remote.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.parameter.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.dbap.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.model.mxo",
-				"type" : "iLaX"
 			}
  ]
 	}
