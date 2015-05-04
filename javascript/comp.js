@@ -32,7 +32,7 @@ function bang() {
 }
 
 function list() {
-	if (lists.length && arguments.length != lists[0].length) {
+	if (lists.length && (arguments.length != lists[0].length)) {
 		error("comp.js : different list length (" + arguments.length +
 				" instead of " + lists[0].length + ")");
 		return;
