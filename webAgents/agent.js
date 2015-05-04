@@ -75,3 +75,8 @@ agent.consumeDose = 0
 agent.consume = function() {
   this.e = this.e > this.consumeDose ? this.e - this.consumeDose : 0
 }
+
+agent.toDie = false
+agent.die = function() {
+  this.toDie = this.e <= 0
+}
