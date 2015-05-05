@@ -8239,24 +8239,24 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-180::obj-188::obj-28" : [ "live.slider[4]", "GOLSub", 0 ],
+			"obj-180::obj-194::obj-9" : [ "live.text[4]", "live.text", 0 ],
+			"obj-134::obj-488" : [ "live.text", "live.text", 0 ],
+			"obj-180::obj-194::obj-10" : [ "live.text[2]", "live.text", 0 ],
+			"obj-17::obj-106" : [ "live.slider[1]", "Remanence", 0 ],
+			"obj-180::obj-188::obj-145" : [ "live.slider[18]", "Densite", 0 ],
+			"obj-180::obj-194::obj-12" : [ "live.text[3]", "live.text", 0 ],
+			"obj-149::obj-120" : [ "live.slider[19]", "SlideDown", 0 ],
+			"obj-149::obj-162" : [ "live.slider[14]", "Master", 0 ],
+			"obj-17::obj-42" : [ "live.slider[16]", "SpatMono-Sub", 0 ],
+			"obj-180::obj-194::obj-113" : [ "live.slider[10]", "AgentSub", 0 ],
+			"obj-17::obj-102" : [ "live.slider", "Intensite", 0 ],
 			"obj-55" : [ "live.text[12]", "live.text[1]", 0 ],
 			"obj-180::obj-194::obj-8" : [ "live.text[1]", "live.text", 0 ],
 			"obj-1" : [ "live.text[6]", "live.text[1]", 0 ],
-			"obj-149::obj-46" : [ "live.slider[5]", "SlideUp", 0 ],
-			"obj-149::obj-120" : [ "live.slider[19]", "SlideDown", 0 ],
-			"obj-180::obj-194::obj-12" : [ "live.text[3]", "live.text", 0 ],
-			"obj-17::obj-106" : [ "live.slider[1]", "Remanence", 0 ],
-			"obj-180::obj-194::obj-10" : [ "live.text[2]", "live.text", 0 ],
 			"obj-17::obj-61" : [ "live.slider[2]", "SpatMulti-Sub", 0 ],
-			"obj-180::obj-188::obj-145" : [ "live.slider[18]", "Densite", 0 ],
-			"obj-134::obj-488" : [ "live.text", "live.text", 0 ],
-			"obj-180::obj-194::obj-113" : [ "live.slider[10]", "AgentSub", 0 ],
-			"obj-180::obj-194::obj-9" : [ "live.text[4]", "live.text", 0 ],
-			"obj-149::obj-162" : [ "live.slider[14]", "Master", 0 ],
-			"obj-17::obj-42" : [ "live.slider[16]", "SpatMono-Sub", 0 ],
-			"obj-17::obj-102" : [ "live.slider", "Intensite", 0 ],
 			"obj-180::obj-188::obj-7" : [ "live.text[5]", "live.text", 0 ],
-			"obj-180::obj-188::obj-28" : [ "live.slider[4]", "GOLSub", 0 ]
+			"obj-149::obj-46" : [ "live.slider[5]", "SlideUp", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -8508,6 +8508,10 @@
 			}
 , 			{
 				"name" : "ambicontrol.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.dbap.mxo",
 				"type" : "iLaX"
 			}
 , 			{
