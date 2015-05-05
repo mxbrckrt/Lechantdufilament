@@ -1,3 +1,5 @@
+// Author : Clément Bossut
+
 var agents = [],
     scenari = []
 
@@ -19,7 +21,7 @@ var test = {
 }
 
 var danseDuSorbet = {
-  frequency:16,
+  frequency:100,
   remaining:0,
   consumeDose:0.01,
   sorbet:Object.create(agent),

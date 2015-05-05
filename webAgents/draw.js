@@ -1,10 +1,11 @@
+// Author : Clément Bossut
+
 var canvas,
     context,
     scaleX,
     scaleY,
     interval = 16,
     timerID,
-    background,
     lastDate,
     times = [],
     fpsElt,

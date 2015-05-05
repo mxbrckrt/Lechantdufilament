@@ -1,3 +1,5 @@
+// Author : Clément Bossut
+
 outlets = 2;
 setoutletassist(1,"agents");
 setoutletassist(0,"bang when finished");

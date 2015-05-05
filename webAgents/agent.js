@@ -1,3 +1,5 @@
+// Author : Clément Bossut
+
 var space = {
   lamps:[6,6],
   dist:100,
@@ -8,10 +10,12 @@ var space = {
 }
 
 var agent = {
-  p:[0,0],
-  v:[0,0],
-  f:[0,0],
-  e:1,
+  p:[0,0], // position
+  v:[0,0], // velocity
+  f:[0,0], // force / steering / acceleration
+  e:1, // energy
+  s:1, // size
+  m:1, // mass
   forces:[],
   moves:[],
   lates:[],
