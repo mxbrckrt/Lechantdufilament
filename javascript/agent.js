@@ -8,6 +8,8 @@ setoutletassist(0,"bang when finished");
 
 ///////////////////////////////////AGENT.JS
 
+// Author : Clément Bossut
+
 var space = {
   lamps:[6,6],
   dist:100,
@@ -18,10 +20,12 @@ var space = {
 }
 
 var agent = {
-  p:[0,0],
-  v:[0,0],
-  f:[0,0],
-  e:1,
+  p:[0,0], // position
+  v:[0,0], // velocity
+  f:[0,0], // force / steering / acceleration
+  e:1, // energy
+  s:1, // size
+  m:1, // mass
   forces:[],
   moves:[],
   lates:[],
@@ -91,7 +95,10 @@ agent.die = function() {
   this.toDie = this.e <= 0
 }
 
+
 /////////////////////////////////////////SCENARIOS.JS
+
+// Author : Clément Bossut
 
 var agents = [],
     scenari = []
@@ -114,13 +121,12 @@ var test = {
 }
 
 var danseDuSorbet = {
-  frequency:16,
+  frequency:100,
   remaining:0,
   consumeDose:0.01,
   sorbet:Object.create(agent),
   init:function() {
     scenari.push(this)
-    this.sorbet.consumeDose = this.consumeDose
     this.sorbet.lates = ["consume","die"]
   },
   update:function() {
@@ -130,125 +136,46 @@ var danseDuSorbet = {
         Math.floor(Math.random()*space.lamps[0])*space.dist,
         Math.floor(Math.random()*space.lamps[1])*space.dist
       ]
+      newAgent.consumeDose = this.consumeDose
       agents.push(newAgent)
       this.remaining = this.frequency
     }
   },
   stop:function() {
-    for (var i = scenari.length-1 ; i >= 0 ; i++)
+    for (var i = scenari.length-1 ; i >= 0 ; i--)
       if (scenari[i] === this) scenari.splice(i,1)
   }
 }
 
 function update() {
-  for (var i = 0 ; i < agents.length ; i++) agents[i].update()
+  for (var i = agents.length-1 ; i >= 0 ; i--) {
+    agents[i].update()
+    if (agents[i].toDie) agents.splice(i,1)
+  }
   for (var j = 0 ; j < scenari.length ; j++) scenari[j].update()
 }
 
-/////////////////////////////////////////////DRAW.JS
-
-var canvas,
-    context,
-    scaleX,
-    scaleY,
-    interval = 16,
-    timerID,
-    background,
-    lastDate,
-    times = [],
-    fpsElt,
-    eFactor = 5,
-    vFactor = 3,
-    fFactor = 3
-
-agent.draw = function() {
-  var x = scaleX(this.p[0]),
-      y = scaleY(this.p[1]),
-      e = this.e*eFactor,
-      vx = this.v[0]*vFactor,
-      vy = this.v[1]*vFactor,
-      fx = this.f[0]*fFactor,
-      fy = this.f[1]*fFactor
-
-  context.strokeStyle = "black"
-  context.beginPath()
-  context.arc(x, y, e, 0, 2*Math.PI)
-  context.stroke()
-
-  context.strokeStyle = "green"
-  context.moveTo(x, y)
-  context.lineTo(x+vx, y+vy)
-  context.stroke()
-
-  context.strokeStyle = "magenta"
-  context.moveTo(x, y)
-  context.lineTo(x+fx, y+fy)
-  context.stroke()
-}
-
-function prepareDraw() {
-  canvas = document.getElementById("agentView")
-  context = canvas.getContext("2d")
-
-  fpsElt = document.getElementById("FPS")
-
-  lastDate = new Date()
-
-  timerID = setInterval(drawLoop, interval)
-}
-
-function drawLoop() {
-  update()
-  context.clearRect(0,0,canvas.width,canvas.height)
-  drawBackground()
-  for (var i = 0 ; i < agents.length ; i++) agents[i].draw()
-  computeFPS()
-}
-
-function drawBackground() {
-  scaleX = function(x) {
-    return (x - space.x1)*canvas.width/(space.x2 - space.x1)
-  }
-  scaleY = function(y) {
-    return (y - space.y1)*canvas.height/(space.y2 - space.y1)
-  }
-
-  context.strokeStyle = "red"
-  context.strokeRect(0, 0, canvas.width, canvas.height)
-
-  /* Cadre des lampes, mais les ronds suffisent a priori
-   context.strokeStyle = "orange"
-   context.strokeRect(scaleX(0),
-   scaleY(0),
-   scaleX((space.lamps[0]-1)*space.dist),
-   scaleY((space.lamps[1]-1)*space.dist))*/
-
-  context.strokeStyle = "silver"
-  for (var i = 0 ; i < space.lamps[0] ; i++) {
-    for (var j = 0 ; j < space.lamps[1] ; j++) {
-      context.beginPath()
-      context.arc(scaleX(i*space.dist), scaleY(j*space.dist), 3, 0, 2*Math.PI)
-      context.stroke()
-    }
-  }
-}
-
-function computeFPS() {
-  var d = new Date()
-
-  times.push(d - lastDate)
-  while (times.length > 60) times.shift()
-
-  var sum = 0
-  for (var i = 0 ; i < times.length ; i++) {
-    sum += times[i]
-  }
-
-  fpsElt.textContent = Math.floor(1000*times.length/sum)
-  lastDate = d
-}
-
 //////////////////////////////////////////////////MAX STUFF
+
+function t() {
+  danseDuSorbet.init()
+}
+
+function dec(d) {
+  danseDuSorbet.consumeDose = d
+}
+
+function freq(f) {
+  danseDuSorbet.frequency = f
+}
+
+function light(e) {
+  danseDuSorbet.sorbet.e = e
+}
+
+function stop() {
+  danseDuSorbet.stop()
+}
 
 function bang() {
   for(i=0;i<agents.length;i++) {
