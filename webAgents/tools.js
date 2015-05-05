@@ -17,8 +17,8 @@ function sendToMax(tab) {
 
 function formatForDBAP(a) {
   return [
-    a.p[0]*2/space.lamps[0]/space.dist - 1,
-    -(a.p[1]*2/space.lamps[1]/space.dist - 1),
+    a.p[0]*2/(space.lamps[0]-1)/space.dist - 1,
+    -(a.p[1]*2/(space.lamps[1]-1)/space.dist - 1),
     a.e
   ]
 }
