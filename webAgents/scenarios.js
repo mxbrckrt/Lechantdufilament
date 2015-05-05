@@ -27,7 +27,6 @@ var danseDuSorbet = {
   sorbet:Object.create(agent),
   init:function() {
     scenari.push(this)
-    this.sorbet.consumeDose = this.consumeDose
     this.sorbet.lates = ["consume","die"]
   },
   update:function() {
@@ -37,6 +36,7 @@ var danseDuSorbet = {
         Math.floor(Math.random()*space.lamps[0])*space.dist,
         Math.floor(Math.random()*space.lamps[1])*space.dist
       ]
+      newAgent.consumeDose = this.consumeDose
       agents.push(newAgent)
       this.remaining = this.frequency
     }
