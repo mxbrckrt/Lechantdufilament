@@ -52,11 +52,11 @@ function update() {
   for (var i = agents.length-1 ; i >= 0 ; i--) {
     agents[i].update()
     if (agents[i].toDie) agents.splice(i,1)
-    else {
+    /*else {
       var tab = formatForDBAP(agents[i])
-      tab.unshift(i)
+      tab.unshift(i+1)
       sendToMax(tab)
-    }
+    }*/
   }
-  sendToMax(["bang"])
+  //sendToMax(["bang"])
 }
