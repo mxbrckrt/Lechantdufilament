@@ -1,187 +1,202 @@
+// Author : Clément Bossut
+
 outlets = 2;
 setoutletassist(1,"agents");
 setoutletassist(0,"bang when finished");
 
-var speed = 1;
+///////////////////////////////////TOOLS.JS
 
-function setspeed(x) {
-	speed = x;
+///////////////////////////////////AGENT.JS
+
+// Author : Clément Bossut
+
+var space = {
+  lamps:[6,6],
+  dist:100,
+  x1:-100,
+  y1:-100,
+  x2:600,
+  y2:600
 }
-
-var bounds = [0,0,1,1];
-
-function setbounds(x1,y1,x2,y2) {
-	if (arguments.length != 4) {
-		error("agent.js : 4 arguments needed for message setbounds (x1,y1,x2,y2)");
-		return;
-	}
-	
-	bounds = [x1,y1,x2,y2];
-}
-
-var agents = [];
-var deads = [];
-var food;
-var eating = [];
 
 var agent = {
-	x : 0,
-	y : 0,
-	d : Math.PI/3,
-	v : 0.1,
-	t : "agent",
-	e : 1,
-	r : ["eat", "move", "bounce", "burn"],
-	p : {
-		burnrate : 0.01,
-		eatrate : 0.1,
-		eatdist : 1,
-		growrate : 0.1,
-		growlimit : 2
-	},
-	eating : false // crass
+  p:[0,0], // position
+  v:[0,0], // velocity
+  f:[0,0], // force / steering / acceleration
+  e:1, // energy
+  s:1, // size
+  m:1, // mass
+  forces:[],
+  moves:[],
+  lates:[],
+  update:function() {
+    this.f = [0,0]
+    for (var i = 0 ; i < this.forces.length ; i++) this[this.forces[i]]()
+    for (var j = 0 ; j < this.moves.length ; j++) this[this.moves[j]]()
+    for (var k = 0 ; k < this.lates.length ; k++) this[this.lates[k]]()
+  }
 }
 
-Object.defineProperty(agent, "toString",
-	{value : function() {
-		var s = "agent : {";
-		for (var p in this) {
-			s += p + "=" + this[p] + "; ";
-		}
-		return s;
-	},enumarable:false});
+agent.seekTarget = {p:[0,0]}
+agent.seek = function() {
 
-createRandomAgent.local = 1 // private
-function createRandomAgent() { // crass helper
-	var a = Object.create(agent);
-	a.x = Math.random()*(bounds[2]-bounds[0])+bounds[0];
-	a.y = Math.random()*(bounds[3]-bounds[1])+bounds[1];
-	a.d = Math.random() * 2 * Math.PI;
-	a.v = Math.random();
-	return a;
 }
 
-function addagent(nopt, ropt) { // adds n agents
-	var n = nopt > 0 ? nopt : 1;
-	var a = createRandomAgent();
-	if (ropt) a.r = ropt;
-	agents.push(a);
-	if (--n) addagent(n, ropt);
+agent.flee = function() {
+
 }
 
-function addfood(eopt) {
-	var a = createRandomAgent();
-	if (eopt) a.e = eopt;
-	a.r = ["die"];
-	a.t = "food";
-	agents.push(a);
-	food = a;
+agent.arrive = function() {
+
 }
 
-function removeagent(n) { // remove the nth agent or the last
-	var a;
-	if (n) {
-		a = agents.splice(n,1);
-	} else {
-		a = agents.pop();
-	}
-	if (a && a.t == "food") food = undefined;
+agent.wander = function() {
+
 }
 
-function feedall(eopt) {
-	var e = eopt > 0 ? eopt : 1;
-	agents.forEach(function(a) {a.e += e});
+agent.maxV = 0
+agent.move = function() {
+  this.p[0] += this.v[0]
+  this.p[1] += this.v[1]
+}
+
+agent.clip = function() {
+  if (this.p[0] < space.x1) this.p[0] = space.x1
+  else if (this.p[0] > space.x2) this.p[0] = space.x2
+  if (this.p[1] < space.y1) this.p[1] = space.y1
+  else if (this.p[1] > space.y2) this.p[1] = space.y2
+}
+
+agent.wrap = function() {
+  if (this.p[0] < space.x1) this.p[0] += space.x2 - space.x1
+  else if (this.p[0] > space.x2) this.p[0] -= space.x2 - space.x1
+  if (this.p[1] < space.y1) this.p[1] += space.y2 - space.y1
+  else if (this.p[1] > space.y2) this.p[1] -= space.y2 - space.y1
+}
+
+agent.fold = function() {
+  if (this.p[0] < space.x1)
+    this.p[0] = 2*space.x1 - this.p[0], this.v[0] = -this.v[0]
+  else if (this.p[0] > space.x2)
+    this.p[0] = 2*space.x2 - this.p[0], this.v[0] = -this.v[0]
+  if (this.p[1] < space.y1)
+    this.p[1] = 2*space.y1 - this.p[1], this.v[1] = -this.v[1]
+  else if (this.p[1] > space.y2)
+    this.p[1] = 2*space.y2 - this.p[1], this.v[1] = -this.v[1]
+}
+
+agent.consumeDose = 0
+agent.consume = function() {
+  this.e = this.e > this.consumeDose ? this.e - this.consumeDose : 0
+}
+
+agent.toDie = false
+agent.die = function() {
+  this.toDie = this.e <= 0
+}
+
+
+/////////////////////////////////////////SCENARIOS.JS
+
+// Author : Clément Bossut
+
+var agents = [],
+    scenari = []
+
+var test = {
+  v:[2,5],
+  agent:Object.create(agent),
+  init:function() {
+    scenari = [this]
+    this.agent.v = this.v
+    this.agent.moves = ["move"]
+    this.agent.lates = ["fold"]
+    agents = [(Object.create(this.agent))]
+  },
+  update:function() {},
+  stop:function() {
+    scenari = []
+    agents = []
+  }
+}
+
+var danseDuSorbet = {
+  frequency:100,
+  remaining:0,
+  consumeDose:0.01,
+  sorbet:Object.create(agent),
+  init:function() {
+    scenari.push(this)
+    this.sorbet.lates = ["consume","die"]
+  },
+  update:function() {
+    if (--this.remaining <= 0) {
+      var newAgent = Object.create(this.sorbet)
+      newAgent.p = [
+        Math.floor(Math.random()*space.lamps[0])*space.dist,
+        Math.floor(Math.random()*space.lamps[1])*space.dist
+      ]
+      newAgent.consumeDose = this.consumeDose
+      agents.push(newAgent)
+      this.remaining = this.frequency
+    }
+  },
+  stop:function() {
+    for (var i = scenari.length-1 ; i >= 0 ; i--)
+      if (scenari[i] === this) scenari.splice(i,1)
+  }
+}
+
+function update() {
+  for (var j = 0 ; j < scenari.length ; j++) scenari[j].update()
+  for (var i = agents.length-1 ; i >= 0 ; i--) {
+    agents[i].update()
+    if (agents[i].toDie) agents.splice(i,1)
+    /*else {
+     var tab = formatForDBAP(agents[i])
+     tab.unshift(i+1)
+     sendToMax(tab)
+     }*/
+  }
+  //sendToMax(["bang"])
+}
+
+//////////////////////////////////////////////////MAX STUFF
+
+function t() {
+  danseDuSorbet.init()
+}
+
+function dec(d) {
+  danseDuSorbet.consumeDose = d
+}
+
+function freq(f) {
+  danseDuSorbet.frequency = f
+}
+
+function light(e) {
+  danseDuSorbet.sorbet.e = e
+}
+
+function stop() {
+  danseDuSorbet.stop()
 }
 
 function bang() {
-	outlet(0,"bang");
-	for(i=0;i<agents.length;i++) {
-		var a = agents[i];
-		outlet(1,a.x,a.y,a.d,a.v,a.t,a.e);
-		
-		for(rule in a.r) {
-			rules[a.r[rule]](a);
-		}
-	}
-	removeDeads();
+  update()
+  for(i=0;i<agents.length;i++) {
+    var a = agents[i];
+    outlet(1,
+      i+1,
+      a.p[0]*2/(space.lamps[0]-1)/space.dist - 1,
+      -(a.p[1]*2/(space.lamps[1]-1)/space.dist - 1),
+      a.e
+    );
+  }
+  outlet(0,"bang");
 }
 
-var rules = {
-	move : function(agent) {
-		if (!agent.eating) {
-			agent.x += Math.cos(agent.d)*agent.v;
-			agent.y += Math.sin(agent.d)*agent.v;
-		}
-	},
-	bounce : function(agent) {
-		if (agent.x <= bounds[0] || agent.x >= bounds[2]) {
-			agent.d = Math.PI - agent.d;
-			agent.x = clip(agent.x,bounds[0],bounds[2]);
-		}
-		if (agent.y <= bounds[1] || agent.y >= bounds[3]) {
-			agent.d = -agent.d
-			agent.y = clip(agent.y,bounds[1],bounds[3]);
-		}
-	},
-	burn : function(agent) {
-		if (agent.e > agent.p.burnrate) {
-			agent.e -= agent.p.burnrate;
-		} else if (agent.e > 0) {
-			agent.e = 0;
-		}
-	},
-	eat : function(agent) {
-		if (food) {
-			agent.d = (food.x > agent.x ? 0 : Math.PI) + Math.atan((food.y-agent.y)/(food.x-agent.x));
-			if (withinRange(agent.p.eatdist, agent, food)) {
-				if (food.e > agent.p.eatrate) {
-					agent.eating = true;
-					eating.push(agent);
-					agent.e += agent.p.eatrate;
-					food.e -= agent.p.eatrate;
-				} else {
-					agent.e += food.e;
-					eating.forEach(function(agent){agent.eating = false});
-					eating = [];
-					food = undefined;
-				}
-			}
-		}
-	},
-	grow : function(agent) {
-		if (agent.e < agent.p.growlimit-agent.p.growrate) {
-			agent.e += agent.p.growrate;
-		} else if (agent.e < agent.p.growlimit) {
-			agent.e = agent.p.growlimit;
-		}
-	},
-	die : function(agent) {
-		if (!agent.e) dead.push(agent);
-	}
-}
-
-function burnrate(x) {
-	agent.p.burnrate = Math.max(0,x);
-}
-
-clip.local = 1; // private
-function clip(x,min,max) {
-	return Math.min(max,Math.max(min,x));
-}
-
-withinRange.local = 1; // private
-function withinRange(range, a, b) {
-	return (a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y) < range*range;
-}
-
-removeDeads.local = 1; // private
-function removeDeads() { // surely better way to do that
-	for(i=0;i<deads.length;i++) {
-		var dead = deads[i];
-		var found = false;
-		for(j=0;j<agents.length&&!found;j++) {
-			if (dead === agent[j]) found = j;
-		}
-		agent.splice(found,1);
-	}
+function panic() {
+	agents=[]
 }
