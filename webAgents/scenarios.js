@@ -48,9 +48,15 @@ var danseDuSorbet = {
 }
 
 function update() {
+  for (var j = 0 ; j < scenari.length ; j++) scenari[j].update()
   for (var i = agents.length-1 ; i >= 0 ; i--) {
     agents[i].update()
     if (agents[i].toDie) agents.splice(i,1)
+    else {
+      var tab = formatForDBAP(agents[i])
+      tab.unshift(i)
+      sendToMax(tab)
+    }
   }
-  for (var j = 0 ; j < scenari.length ; j++) scenari[j].update()
+  sendToMax(["bang"])
 }
