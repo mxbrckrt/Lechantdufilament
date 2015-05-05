@@ -10,9 +10,10 @@ function normalize(v, n) {
 var socket = new WebSocket("ws://10.204.8.166:8080")
 
 function sendToMax(tab) {
-  var data = ""
-  for (var i = 0 ; i < tab.length ; i++) data += tab[i]
-  socket.send(data)
+  //var data = ""
+  //for (var i = 0 ; i < tab.length ; i++) data += tab[i] + " "
+  socket.send(tab)
+  console.log(tab)
 }
 
 function formatForDBAP(a) {
