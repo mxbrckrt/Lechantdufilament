@@ -148,11 +148,17 @@ var danseDuSorbet = {
 }
 
 function update() {
+  for (var j = 0 ; j < scenari.length ; j++) scenari[j].update()
   for (var i = agents.length-1 ; i >= 0 ; i--) {
     agents[i].update()
     if (agents[i].toDie) agents.splice(i,1)
+    /*else {
+     var tab = formatForDBAP(agents[i])
+     tab.unshift(i+1)
+     sendToMax(tab)
+     }*/
   }
-  for (var j = 0 ; j < scenari.length ; j++) scenari[j].update()
+  //sendToMax(["bang"])
 }
 
 //////////////////////////////////////////////////MAX STUFF
@@ -178,9 +184,15 @@ function stop() {
 }
 
 function bang() {
+  update()
   for(i=0;i<agents.length;i++) {
     var a = agents[i];
-    outlet(1,a.p[0],a.p[1],0,0,"agent",a.e);
+    outlet(1,
+      i+1,
+      a.p[0]*2/(space.lamps[0]-1)/space.dist - 1,
+      -(a.p[1]*2/(space.lamps[1]-1)/space.dist - 1),
+      a.e
+    );
   }
   outlet(0,"bang");
 }
