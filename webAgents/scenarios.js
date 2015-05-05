@@ -42,12 +42,15 @@ var danseDuSorbet = {
     }
   },
   stop:function() {
-    for (var i = scenari.length-1 ; i >= 0 ; i++)
+    for (var i = scenari.length-1 ; i >= 0 ; i--)
       if (scenari[i] === this) scenari.splice(i,1)
   }
 }
 
 function update() {
-  for (var i = 0 ; i < agents.length ; i++) agents[i].update()
+  for (var i = agents.length-1 ; i >= 0 ; i--) {
+    agents[i].update()
+    if (agents[i].toDie) agents.splice(i,1)
+  }
   for (var j = 0 ; j < scenari.length ; j++) scenari[j].update()
 }
