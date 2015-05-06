@@ -6,6 +6,35 @@ setoutletassist(0,"bang when finished");
 
 ///////////////////////////////////TOOLS.JS
 
+// Author : Clément Bossut
+
+var v2D = {
+
+  length:function(v) {
+    return Math.sqrt(v[0]*v[0]+v[1]*v[1])
+  },
+
+  normalize:function(v, n) {
+    if (typeof(n) === 'undefined') n = 1
+    var d = v2D.length(v)
+    return [v[0]*n/d,v[1]*n/d]
+  },
+
+  add:function(v1, v2) {
+    return [v1[0]+v2[0],v1[1]+v2[1]]
+  },
+
+  equal:function(v1, v2) {
+    return v1[0] === v2[0] && v1[1] === v2[1]
+  },
+
+  truncate:function(v, m) {
+    if (v2D.length(v) > m) return v2D.normalize(v, m)
+    return v
+  }
+
+}
+
 ///////////////////////////////////AGENT.JS
 
 // Author : Clément Bossut
@@ -50,31 +79,39 @@ agent.arrive = function() {
 
 }
 
+agent.wanderDistance = 1
+agent.wanderRadius = 1
+agent.wanderAngle = 0
 agent.wander = function() {
-
+  var circleCenter = v2D.normalize(this.v, this.wanderDistance)
+  this.f = v2D.add(this.f,
+    v2D.normalize([Math.cos(this.wanderAngle),
+        Math.sin(this.wanderAngle)],
+      this.wanderRadius))
 }
 
-agent.maxV = 0
-agent.move = function() {
+agent.maxV = -1
+agent.move = function() { // same
+  if (this.maxV !== -1) this.v = v2D.truncate(this.v, this.maxV)
   this.p[0] += this.v[0]
   this.p[1] += this.v[1]
 }
 
-agent.clip = function() {
+agent.clip = function() { // beware, modify prototype ...
   if (this.p[0] < space.x1) this.p[0] = space.x1
   else if (this.p[0] > space.x2) this.p[0] = space.x2
   if (this.p[1] < space.y1) this.p[1] = space.y1
   else if (this.p[1] > space.y2) this.p[1] = space.y2
 }
 
-agent.wrap = function() {
+agent.wrap = function() { // same
   if (this.p[0] < space.x1) this.p[0] += space.x2 - space.x1
   else if (this.p[0] > space.x2) this.p[0] -= space.x2 - space.x1
   if (this.p[1] < space.y1) this.p[1] += space.y2 - space.y1
   else if (this.p[1] > space.y2) this.p[1] -= space.y2 - space.y1
 }
 
-agent.fold = function() {
+agent.fold = function() { // same
   if (this.p[0] < space.x1)
     this.p[0] = 2*space.x1 - this.p[0], this.v[0] = -this.v[0]
   else if (this.p[0] > space.x2)
@@ -90,11 +127,26 @@ agent.consume = function() {
   this.e = this.e > this.consumeDose ? this.e - this.consumeDose : 0
 }
 
-agent.toDie = false
+agent.toDie = false // better done by consume ?
 agent.die = function() {
   this.toDie = this.e <= 0
 }
 
+agent.maxGrow = 1
+agent.growDose = 0
+agent.grow = function() {
+  this.e += this.growDose
+  if (this.e > this.maxGrow) this.e = this.maxGrow
+}
+
+agent.growNdie = function() {
+  if (this.e < this.maxGrow) this.grow()
+  else {
+    this.lates = this.lates.slice()
+    for (var i = 0; i < this.lates.length; i++)
+      if (this.lates[i] === "growNdie") this.lates.splice(i, 1, "consume", "die")
+  }
+}
 
 /////////////////////////////////////////SCENARIOS.JS
 
@@ -121,24 +173,30 @@ var test = {
 }
 
 var danseDuSorbet = {
-  frequency:100,
+  frameLaps:100,
   remaining:0,
-  consumeDose:0.01,
+  lastP:[],
   sorbet:Object.create(agent),
   init:function() {
     scenari.push(this)
-    this.sorbet.lates = ["consume","die"]
+    this.sorbet.lates = ["growNdie"]
+    this.sorbet.e = 0.01
+    this.sorbet.consumeDose = 0.01
+    this.sorbet.growDose = 0.01
+    this.sorbet.growMax = 1
   },
   update:function() {
     if (--this.remaining <= 0) {
       var newAgent = Object.create(this.sorbet)
-      newAgent.p = [
-        Math.floor(Math.random()*space.lamps[0])*space.dist,
-        Math.floor(Math.random()*space.lamps[1])*space.dist
-      ]
-      newAgent.consumeDose = this.consumeDose
+      do {
+        newAgent.p = [
+          Math.floor(Math.random() * space.lamps[0]) * space.dist,
+          Math.floor(Math.random() * space.lamps[1]) * space.dist
+        ]
+      } while (v2D.equal(newAgent.p, this.lastP))
+      this.lastP = newAgent.p
       agents.push(newAgent)
-      this.remaining = this.frequency
+      this.remaining = this.frameLaps
     }
   },
   stop:function() {
@@ -163,20 +221,24 @@ function update() {
 
 //////////////////////////////////////////////////MAX STUFF
 
-function t() {
+function danse() {
   danseDuSorbet.init()
 }
 
+function inc(i) {
+  danseDuSorbet.sorbet.growDose = i
+}
+
 function dec(d) {
-  danseDuSorbet.consumeDose = d
+  danseDuSorbet.sorbet.consumeDose = d
 }
 
-function freq(f) {
-  danseDuSorbet.frequency = f
+function laps(l) {
+  danseDuSorbet.frameLaps = l
 }
 
-function light(e) {
-  danseDuSorbet.sorbet.e = e
+function max(m) {
+  danseDuSorbet.sorbet.maxGrow = m
 }
 
 function stop() {
@@ -198,5 +260,6 @@ function bang() {
 }
 
 function panic() {
-	agents=[]
+  agents = []
+  scenari = []
 }
