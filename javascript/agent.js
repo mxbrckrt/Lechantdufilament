@@ -178,12 +178,15 @@ var danseDuSorbet = {
   lastP:[],
   sorbet:Object.create(agent),
   init:function() {
-    scenari.push(this)
     this.sorbet.lates = ["growNdie"]
     this.sorbet.e = 0.01
     this.sorbet.consumeDose = 0.01
     this.sorbet.growDose = 0.01
     this.sorbet.growMax = 1
+    this.play()
+  },
+  play:function() {
+    scenari.push(this)
   },
   update:function() {
     if (--this.remaining <= 0) {
@@ -222,7 +225,7 @@ function update() {
 //////////////////////////////////////////////////MAX STUFF
 
 function danse() {
-  danseDuSorbet.init()
+  danseDuSorbet.play()
 }
 
 function inc(i) {
@@ -237,7 +240,7 @@ function laps(l) {
   danseDuSorbet.frameLaps = l
 }
 
-function max(m) {
+function light(m) {
   danseDuSorbet.sorbet.maxGrow = m
 }
 
