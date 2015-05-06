@@ -1,2 +1,5 @@
-#git will ignore files below
+# Mac junk
 .DS_Store
+
+# Idea files
+.idea
