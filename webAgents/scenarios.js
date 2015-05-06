@@ -21,7 +21,7 @@ var test = {
 }
 
 var danseDuSorbet = {
-  frequency:100,
+  frameLaps:100,
   remaining:0,
   consumeDose:0.01,
   sorbet:Object.create(agent),
@@ -38,7 +38,7 @@ var danseDuSorbet = {
       ]
       newAgent.consumeDose = this.consumeDose
       agents.push(newAgent)
-      this.remaining = this.frequency
+      this.remaining = this.frameLaps
     }
   },
   stop:function() {
