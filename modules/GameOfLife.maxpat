@@ -57,7 +57,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 502.501984, 222.0, 36.0, 22.0 ],
+					"patching_rect" : [ 502.501984, 281.0, 36.0, 22.0 ],
 					"style" : "",
 					"text" : "sel 1"
 				}
@@ -74,7 +74,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 502.501984, 155.533203, 90.0, 25.795898 ],
+					"patching_rect" : [ 502.501984, 156.0, 90.0, 25.795898 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 192.159119, 7.75, 90.0, 25.795898 ],
 					"saved_attribute_attributes" : 					{
@@ -104,7 +104,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 502.501984, 190.580322, 557.0, 22.0 ],
+					"patching_rect" : [ 502.501984, 214.580322, 557.0, 22.0 ],
 					"style" : "",
 					"text" : "j.parameter GenereMatrice @type integer @priority 6 @range 0 1 @clipmode both @repetitions/filter 1"
 				}
@@ -2925,6 +2925,7 @@
 					"destination" : [ "obj-7", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 512.001953, 254.580322, 484.001953, 254.580322, 484.001953, 144.533203, 512.001953, 144.533203 ],
 					"source" : [ "obj-185", 0 ]
 				}
 

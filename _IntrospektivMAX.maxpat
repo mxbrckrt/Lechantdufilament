@@ -46,7 +46,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 443.0, 278.0, 29.5, 20.0 ],
+					"patching_rect" : [ 443.0, 278.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "+ 1"
 				}
@@ -61,7 +61,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 443.0, 206.966461, 72.0, 20.0 ],
+					"patching_rect" : [ 443.0, 206.966461, 72.0, 22.0 ],
 					"style" : "",
 					"text" : "loadmess 2"
 				}
@@ -76,7 +76,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 443.0, 311.067078, 82.0, 20.0 ],
+					"patching_rect" : [ 443.0, 311.067078, 82.0, 22.0 ],
 					"style" : "",
 					"text" : "s Oscoutputs"
 				}
@@ -336,7 +336,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 926.5, 447.0, 81.0, 20.0 ],
+					"patching_rect" : [ 926.5, 447.0, 81.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -359,7 +359,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "open" ],
-					"patching_rect" : [ 1030.0, 447.0, 44.0, 20.0 ],
+					"patching_rect" : [ 1030.0, 447.0, 44.0, 22.0 ],
 					"style" : "",
 					"text" : "t open"
 				}
@@ -402,7 +402,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "open" ],
-					"patching_rect" : [ 874.5, 447.0, 44.0, 20.0 ],
+					"patching_rect" : [ 874.5, 447.0, 44.0, 22.0 ],
 					"style" : "",
 					"text" : "t open"
 				}
@@ -445,7 +445,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1036.5, 491.689453, 58.0, 21.0 ],
+					"patching_rect" : [ 1036.5, 491.689453, 58.0, 23.0 ],
 					"style" : "",
 					"text" : "pcontrol"
 				}
@@ -460,7 +460,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 874.5, 489.821899, 58.0, 21.0 ],
+					"patching_rect" : [ 874.5, 489.821899, 58.0, 23.0 ],
 					"style" : "",
 					"text" : "pcontrol"
 				}
@@ -474,7 +474,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1036.5, 520.367554, 122.0, 20.0 ],
+					"patching_rect" : [ 1036.5, 520.367554, 122.0, 22.0 ],
 					"style" : "",
 					"text" : "matriceValue.maxpat"
 				}
@@ -488,7 +488,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 874.5, 519.0, 125.0, 20.0 ],
+					"patching_rect" : [ 874.5, 519.0, 125.0, 22.0 ],
 					"style" : "",
 					"text" : "matriceLights.maxpat"
 				}
@@ -517,7 +517,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 618.0, 447.0, 72.0, 20.0 ],
+					"patching_rect" : [ 618.0, 447.0, 72.0, 22.0 ],
 					"style" : "",
 					"text" : "loadmess 0"
 				}
@@ -532,7 +532,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 618.0, 504.0, 153.0, 22.0 ],
+					"patching_rect" : [ 618.0, 504.0, 153.0, 24.0 ],
 					"style" : "",
 					"text" : "MinuitInterface LCDF"
 				}
@@ -2297,7 +2297,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "wclose", "int" ],
-					"patching_rect" : [ 40.0, 357.0, 185.0, 20.0 ],
+					"patching_rect" : [ 40.0, 357.0, 185.0, 22.0 ],
 					"style" : "",
 					"text" : "t wclose 0"
 				}
@@ -2313,7 +2313,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "int" ],
-					"patching_rect" : [ 40.0, 330.0, 64.0, 20.0 ],
+					"patching_rect" : [ 40.0, 330.0, 64.0, 22.0 ],
 					"style" : "",
 					"text" : "MXkey 81"
 				}
@@ -2342,7 +2342,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 399.0, 91.0, 60.0, 20.0 ],
+					"patching_rect" : [ 399.0, 91.0, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -2358,7 +2358,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 399.0, 122.0, 171.0, 31.0 ],
+					"patching_rect" : [ 399.0, 122.0, 171.0, 35.0 ],
 					"style" : "",
 					"text" : ";\rmax sortpatcherdictonsave 1;\r"
 				}
@@ -2373,7 +2373,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 618.0, 6.0, 60.0, 20.0 ],
+					"patching_rect" : [ 618.0, 6.0, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -2388,7 +2388,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 618.0, 33.122803, 24.0, 20.0 ],
+					"patching_rect" : [ 618.0, 33.122803, 24.0, 22.0 ],
 					"style" : "",
 					"text" : "t 0"
 				}
@@ -2403,7 +2403,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 356.5, 428.0, 96.0, 20.0 ],
+					"patching_rect" : [ 356.5, 428.0, 96.0, 22.0 ],
 					"style" : "",
 					"text" : "s TurnOverdrive"
 				}
@@ -2640,7 +2640,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 618.0, 86.254822, 50.0, 20.0 ],
+					"patching_rect" : [ 618.0, 86.254822, 50.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2682,7 +2682,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 91.0, 195.067078, 36.0, 20.0 ],
+					"patching_rect" : [ 91.0, 195.067078, 36.0, 22.0 ],
 					"style" : "",
 					"text" : "sel 1"
 				}
@@ -2698,7 +2698,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 91.0, 173.067078, 34.0, 20.0 ],
+					"patching_rect" : [ 91.0, 173.067078, 34.0, 22.0 ],
 					"style" : "",
 					"text" : "r Init"
 				}
@@ -2718,7 +2718,7 @@
 					"name" : "Algo.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"offset" : [ -1004.0, 1.0 ],
+					"offset" : [ 1.0, 1.0 ],
 					"patching_rect" : [ 618.0, 112.107361, 240.0, 48.825562 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 492.0, 65.0, 338.0, 320.5 ],
@@ -2805,7 +2805,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 64.0, 619.067078, 112.0, 20.0 ],
+					"patching_rect" : [ 64.0, 619.067078, 112.0, 22.0 ],
 					"style" : "",
 					"text" : "s BuildMatrix"
 				}
@@ -2820,7 +2820,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 77.5, 592.462463, 96.0, 20.0 ],
+					"patching_rect" : [ 77.5, 592.462463, 96.0, 22.0 ],
 					"style" : "",
 					"text" : "s LoadPresets"
 				}
@@ -2991,7 +2991,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 242.0, 428.0, 81.0, 20.0 ],
+					"patching_rect" : [ 242.0, 428.0, 81.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3014,7 +3014,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 13.0, 173.067078, 61.0, 20.0 ],
+					"patching_rect" : [ 13.0, 173.067078, 61.0, 22.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -3029,7 +3029,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "path", "IntrospektColl", "int", "int" ],
-					"patching_rect" : [ 13.0, 308.0, 362.5, 20.0 ],
+					"patching_rect" : [ 13.0, 308.0, 362.5, 22.0 ],
 					"style" : "",
 					"text" : "t path IntrospektColl 1 1"
 				}
@@ -3044,7 +3044,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 104.5, 511.067078, 42.0, 20.0 ],
+					"patching_rect" : [ 104.5, 511.067078, 42.0, 22.0 ],
 					"style" : "",
 					"text" : "zl reg"
 				}
@@ -3059,7 +3059,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "bang", "bang", "", "bang" ],
-					"patching_rect" : [ 64.0, 487.067078, 59.5, 20.0 ],
+					"patching_rect" : [ 64.0, 487.067078, 59.5, 22.0 ],
 					"style" : "",
 					"text" : "t b b s b"
 				}
@@ -3075,7 +3075,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 104.5, 535.067078, 70.0, 20.0 ],
+					"patching_rect" : [ 104.5, 535.067078, 70.0, 22.0 ],
 					"style" : "",
 					"text" : "v Daughter"
 				}
@@ -3091,7 +3091,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 91.0, 563.067078, 84.0, 20.0 ],
+					"patching_rect" : [ 91.0, 563.067078, 84.0, 22.0 ],
 					"style" : "",
 					"text" : "v Mother"
 				}
@@ -3106,7 +3106,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 13.0, 465.067078, 70.0, 20.0 ],
+					"patching_rect" : [ 13.0, 465.067078, 70.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"style" : "",
 					"text" : "thispatcher"
@@ -3122,7 +3122,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 391.0, 402.067078, 50.0, 20.0 ],
+					"patching_rect" : [ 391.0, 402.067078, 50.0, 22.0 ],
 					"style" : "",
 					"text" : "s Audio"
 				}
@@ -3137,7 +3137,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 376.0, 380.0, 34.0, 20.0 ],
+					"patching_rect" : [ 376.0, 380.0, 34.0, 22.0 ],
 					"style" : "",
 					"text" : "t 0 0"
 				}
@@ -3152,7 +3152,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 376.0, 357.0, 65.0, 20.0 ],
+					"patching_rect" : [ 376.0, 357.0, 65.0, 22.0 ],
 					"style" : "",
 					"text" : "closebang"
 				}
@@ -3169,8 +3169,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "bang" ],
-					"patching_rect" : [ 179.0, 283.067078, 46.0, 20.0 ],
-					"save" : [ "#N", "qlist", ";", "#X", "insert", "/////", "exctinction", "des", "subs", ";", ";", "#X", "insert", "/////", "fermeture", "des", "subsmaster", ";", ";", "#X", "insert", "LemurSub", "remote", 0, 250, 0, ";", ";", "#X", "insert", "GOLSub", "remote", 0, 250, 0, ";", ";", "#X", "insert", "AgentSub", "remote", 0, 250, 0, ";", ";", "#X", "insert", "SpatMonoSub", "remote", 0, 250, 0, ";", ";", "#X", "insert", 250, ";", ";", "#X", "insert", "/////", "fermeture", "des", "parametres", "de", "jeu", ";", ";", "#X", "insert", "Intensite", 0.25, 0, 800, 0, ";", ";", "#X", "insert", "Remanence", 0, 0, 800, 0, ";", ";", "#X", "insert", "SlideUp", 0, 0, 80, 0, ";", ";", "#X", "insert", "SlideDown", 0, 0, 80, 0, ";", ";", "#X", "insert", "PlayersSpeed", 22, 22, 80, 0, ";", ";", "#X", "insert", "SpatsOff", 0, ";", ";", "#X", "insert", "/////", "fermeture", "des", "subs", "secondaires", "et", "des", "loopers", "du", "Lemur", ";", ";", "#X", "insert", "SpatGains", 0, 0, 0, 0, ";", ";", "#X", "insert", "LemLoop1Sub", "remote", 0, 80, 0, ";", ";", "#X", "insert", "LemLoop2Sub", "remote", 0, 80, 0, ";", ";", "#X", "insert", "LemLoop3Sub", "remote", 0, 80, 0, ";", ";", "#X", "insert", "LemLoop4Sub", "remote", 0, 80, 0, ";", ";", "#X", "insert", "Loop1Play", 0, 0, 80, 0, ";", ";", "#X", "insert", "Loop2Play", 0, 0, 80, 0, ";", ";", "#X", "insert", "Loop3Play", 0, 0, 80, 0, ";", ";", "#X", "insert", "Loop4Play", 0, 0, 80, 0, ";", ";", "#X", "insert", "Loop1Rec", 0, 0, 80, 0, ";", ";", "#X", "insert", "Loop2Rec", 0, 0, 80, 0, ";", ";", "#X", "insert", "Loop3Rec", 0, 0, 80, 0, ";", ";", "#X", "insert", "Loop4Rec", 0, 0, 80, 0, ";", ";", "#X", "insert", "PlayAll", 0, 0, 80, 0, ";", ";", "#X", "insert", "RecAll", 0, 0, 80, 0, ";", ";", "#X", "insert", "/////", "fermeture", "des", "subs", "secondaires", "et", "des", "loopers", "des", "Algos", ";", ";", "#X", "insert", "GOLLoopSub", "remote", 0, 80, 0, ";", ";", "#X", "insert", "AgentLoopSub", "remote", 0, 80, 0, ";", ";", "#X", "insert", "GOLPlay", 0, 0, 80, 0, ";", ";", "#X", "insert", "AgentPlay", 0, 0, 80, 0, ";", ";", "#X", "insert", "GOLRec", 0, 0, 80, 0, ";", ";", "#X", "insert", "AgentRec", 0, 0, 80, 0, ";", ";", "#X", "insert", "PlayAllAlgo", 0, 0, 80, 0, ";", ";", "#X", "insert", "RecAllAlgo", 0, 0, 80, 0, ";", ";", "#X", "insert", "/////", "fermeture", "des", "subs", "du", "PostLooper", ";", ";", "#X", "insert", "PostLoopPlay", "remote", 0, 80, 0, ";", ";", "#X", "insert", "PostLoopSub", "remote", 0, 80, 0, ";", ";", "#X", "insert", 150, ";", ";", "#X", "insert", "/////", "coupure", "brutale", "de", "lampes", ";", ";", "#X", "insert", "AllLights", 0, ";", ";", "#X", "insert", 150, ";", ";", "#X", "insert", "/////", "reouverture", "des", "subs", ";", ";", "#X", "insert", "SpatGains", 1, 1, 1, 1, ";", ";", "#X", "insert", "Master", 0, 1.2, 1000, 0, ";", ";" ],
+					"patching_rect" : [ 179.0, 283.067078, 46.0, 22.0 ],
+					"save" : [ "#N", "qlist", ";", "#X", "insert", "/////", "exctinction", "des", "subs", ";", ";", "#X", "insert", "/////", "fermeture", "des", "subsmaster", ";", ";", "#X", "insert", "LemurSub", "remote", 0, 250, 0, ";", ";", "#X", "insert", "GOLSub", "remote", 0, 250, 0, ";", ";", "#X", "insert", "AgentSub", "remote", 0, 250, 0, ";", ";", "#X", "insert", "SpatMonoSub", "remote", 0, 250, 0, ";", ";", "#X", "insert", 250, ";", ";", "#X", "insert", "/////", "fermeture", "des", "parametres", "de", "jeu", ";", ";", "#X", "insert", "Intensite", 0.25, 0, 800, 0, ";", ";", "#X", "insert", "Remanence", 0, 0, 800, 0, ";", ";", "#X", "insert", "SlideUp", 0, 0, 80, 0, ";", ";", "#X", "insert", "SlideDown", 0, 0, 80, 0, ";", ";", "#X", "insert", "SpatsOff", 0, ";", ";", "#X", "insert", "/////", "fermeture", "des", "subs", "secondaires", "et", "des", "loopers", "du", "Lemur", ";", ";", "#X", "insert", "SpatGains", 0, 0, 0, 0, ";", ";", "#X", "insert", "/////", "fermeture", "des", "subs", "secondaires", "et", "des", "loopers", "des", "Algos", ";", ";", "#X", "insert", "GOLLoopSub", "remote", 0, 80, 0, ";", ";", "#X", "insert", "AgentLoopSub", "remote", 0, 80, 0, ";", ";", "#X", "insert", "GOLPlay", 0, 0, 80, 0, ";", ";", "#X", "insert", "AgentPlay", 0, 0, 80, 0, ";", ";", "#X", "insert", "GOLRec", 0, 0, 80, 0, ";", ";", "#X", "insert", "AgentRec", 0, 0, 80, 0, ";", ";", "#X", "insert", "PlayAllAlgo", 0, 0, 80, 0, ";", ";", "#X", "insert", "RecAllAlgo", 0, 0, 80, 0, ";", ";", "#X", "insert", "/////", "fermeture", "des", "subs", "du", "PostLooper", ";", ";", "#X", "insert", "PostLoopPlay", "remote", 0, 80, 0, ";", ";", "#X", "insert", "PostLoopSub", "remote", 0, 80, 0, ";", ";", "#X", "insert", 150, ";", ";", "#X", "insert", "/////", "coupure", "brutale", "de", "lampes", ";", ";", "#X", "insert", "AllLights", 0, ";", ";", "#X", "insert", 150, ";", ";", "#X", "insert", "/////", "reouverture", "des", "subs", ";", ";", "#X", "insert", "SpatGains", 1, 1, 1, 1, ";", ";", "#X", "insert", "Master", 0, 1.2, 1000, 0, ";", ";" ],
 					"style" : "",
 					"text" : "qlist",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3312,7 +3312,6 @@
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 980.0, 237.0, 50.0, 22.0 ],
-									"presentation_rect" : [ 980.0, 237.0, 0.0, 0.0 ],
 									"style" : ""
 								}
 
@@ -3325,7 +3324,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 972.0, 163.0, 39.0, 22.0 ],
-									"presentation_rect" : [ 972.0, 163.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "zl len"
 								}
@@ -5369,7 +5367,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 179.0, 195.067078, 36.0, 20.0 ],
+					"patching_rect" : [ 179.0, 195.067078, 36.0, 22.0 ],
 					"style" : "",
 					"text" : "sel 1"
 				}
@@ -5385,7 +5383,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 179.0, 173.067078, 47.0, 20.0 ],
+					"patching_rect" : [ 179.0, 173.067078, 47.0, 22.0 ],
 					"style" : "",
 					"text" : "r KillAll"
 				}
@@ -5446,8 +5444,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "bang" ],
-					"patching_rect" : [ 91.0, 283.067078, 46.0, 20.0 ],
-					"save" : [ "#N", "qlist", ";", "#X", "insert", "/////", "coupure", "brutale", "de", "lampes", ";", ";", "#X", "insert", "AllLights", 0, 0, 0, 0, ";", ";", "#X", "insert", "/////", "init", "des", "ports", "OSC", "et", "de", "la", "mémoire", "gérant", "le", "preset", "de", "base", ";", ";", "#X", "insert", "InitOsc", "bang", ";", ";", "#X", "insert", "/////", "fermeture", "des", "subsmaster", ";", ";", "#X", "insert", "MultiSub", 0, ";", ";", "#X", "insert", "GOLSub", 0, ";", ";", "#X", "insert", "AgentSub", 0, ";", ";", "#X", "insert", "SpatMonoSub", 0, ";", ";", "#X", "insert", 250, ";", ";", "#X", "insert", "/////", "fermeture", "des", "parametres", "de", "jeu", ";", ";", "#X", "insert", "Intensite", 0, ";", ";", "#X", "insert", "Remanence", 0, ";", ";", "#X", "insert", "SlideUp", 0, ";", ";", "#X", "insert", "SlideDown", 0, ";", ";", "#X", "insert", "/////", "init", "des", "Algos", ";", ";", "#X", "insert", "GOLVitesse", 250, ";", ";", "#X", "insert", "AgentVitesse", 50, ";", ";", "#X", "insert", "AgentFeedPerc", 20, ";", ";", "#X", "insert", "AgentBurnRate", 5, ";", ";", "#X", "insert", "/////", "distribution", "des", "lampes", "dans", "l'espace", ";", ";", "#X", "insert", "InitLights", "bang", ";", ";", "#X", "insert", 150, ";", ";", "#X", "insert", "/////", "allume", "l'audio", ";", ";", "#X", "insert", "Audio", 1, ";", ";", "#X", "insert", 150, ";", ";", "#X", "insert", "/////", "reouverture", "des", "subs", ";", ";", "#X", "insert", "SpatGains", 1, 1, 1, 1, ";", ";", "#X", "insert", "Master", 1, ";", ";" ],
+					"patching_rect" : [ 91.0, 283.067078, 46.0, 22.0 ],
+					"save" : [ "#N", "qlist", ";", "#X", "insert", "/////", "coupure", "brutale", "de", "lampes", ";", ";", "#X", "insert", "AllLights", 0, 0, 0, 0, ";", ";", "#X", "insert", "/////", "init", "des", "ports", "OSC", "et", "de", "la", "mémoire", "gérant", "le", "preset", "de", "base", ";", ";", "#X", "insert", "InitOsc", "bang", ";", ";", "#X", "insert", "/////", "fermeture", "des", "subsmaster", ";", ";", "#X", "insert", "MultiSub", 0, ";", ";", "#X", "insert", "GOLSub", 0, ";", ";", "#X", "insert", "AgentSub", 0, ";", ";", "#X", "insert", "SpatMonoSub", 0, ";", ";", "#X", "insert", "MSNSub", 0, ";", ";", "#X", "insert", "PINGSub", 0, ";", ";", "#X", "insert", 250, ";", ";", "#X", "insert", "/////", "fermeture", "des", "parametres", "de", "jeu", ";", ";", "#X", "insert", "Intensite", 0, ";", ";", "#X", "insert", "Remanence", 0, ";", ";", "#X", "insert", "SlideUp", 0, ";", ";", "#X", "insert", "SlideDown", 0, ";", ";", "#X", "insert", "/////", "init", "des", "Algos", ";", ";", "#X", "insert", "GOLVitesse", 250, ";", ";", "#X", "insert", "AgentVitesse", 50, ";", ";", "#X", "insert", "/////", "distribution", "des", "lampes", "dans", "l'espace", ";", ";", "#X", "insert", "InitLights", "bang", ";", ";", "#X", "insert", 150, ";", ";", "#X", "insert", "/////", "allume", "l'audio", ";", ";", "#X", "insert", "Audio", 1, ";", ";", "#X", "insert", 150, ";", ";", "#X", "insert", "/////", "reouverture", "des", "subs", ";", ";", "#X", "insert", "SpatGains", 1, 1, 1, 1, ";", ";", "#X", "insert", "Master", 1, ";", ";" ],
 					"style" : "",
 					"text" : "qlist",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -5475,8 +5473,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 179.0, 230.067078, 55.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 883.0, 15.0, 56.0, 24.0 ],
 					"style" : "",
 					"text" : "Kill All",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -8180,7 +8176,7 @@
 					"id" : "obj-17",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "Lemur.maxpat",
+					"name" : "SpatMulti-Mono.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ -2.0, 0.0 ],
@@ -8648,25 +8644,25 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-149::obj-46" : [ "live.slider[5]", "SlideUp", 0 ],
-			"obj-180::obj-1::obj-28" : [ "live.slider[6]", "MSNSub", 0 ],
-			"obj-180::obj-194::obj-9" : [ "live.text[4]", "live.text", 0 ],
-			"obj-180::obj-188::obj-145" : [ "live.slider[18]", "Densite", 0 ],
-			"obj-134::obj-488" : [ "live.text", "live.text", 0 ],
-			"obj-180::obj-3::obj-86" : [ "live.slider[11]", "PINGSub", 0 ],
-			"obj-1" : [ "live.text[6]", "live.text[1]", 0 ],
-			"obj-180::obj-188::obj-7" : [ "live.text[5]", "live.text", 0 ],
-			"obj-149::obj-120" : [ "live.slider[19]", "SlideDown", 0 ],
-			"obj-180::obj-188::obj-28" : [ "live.slider[4]", "GOLSub", 0 ],
-			"obj-180::obj-194::obj-10" : [ "live.text[2]", "live.text", 0 ],
-			"obj-17::obj-61" : [ "live.slider[2]", "SpatMulti-Sub", 0 ],
-			"obj-17::obj-106" : [ "live.slider[1]", "Remanence", 0 ],
-			"obj-180::obj-194::obj-8" : [ "live.text[1]", "live.text", 0 ],
-			"obj-180::obj-194::obj-113" : [ "live.slider[10]", "AgentSub", 0 ],
-			"obj-149::obj-162" : [ "live.slider[14]", "Master", 0 ],
-			"obj-17::obj-102" : [ "live.slider", "Intensite", 0 ],
 			"obj-17::obj-42" : [ "live.slider[16]", "SpatMono-Sub", 0 ],
-			"obj-55" : [ "live.text[12]", "live.text[1]", 0 ]
+			"obj-55" : [ "live.text[12]", "live.text[1]", 0 ],
+			"obj-17::obj-102" : [ "live.slider", "Intensite", 0 ],
+			"obj-149::obj-46" : [ "live.slider[5]", "SlideUp", 0 ],
+			"obj-180::obj-194::obj-9" : [ "live.text[4]", "live.text", 0 ],
+			"obj-180::obj-3::obj-86" : [ "live.slider[11]", "PINGSub", 0 ],
+			"obj-180::obj-194::obj-8" : [ "live.text[1]", "live.text", 0 ],
+			"obj-1" : [ "live.text[6]", "live.text[1]", 0 ],
+			"obj-17::obj-61" : [ "live.slider[2]", "SpatMulti-Sub", 0 ],
+			"obj-180::obj-1::obj-28" : [ "live.slider[6]", "MSNSub", 0 ],
+			"obj-17::obj-106" : [ "live.slider[1]", "Remanence", 0 ],
+			"obj-149::obj-120" : [ "live.slider[19]", "SlideDown", 0 ],
+			"obj-180::obj-188::obj-145" : [ "live.slider[18]", "Densite", 0 ],
+			"obj-180::obj-194::obj-10" : [ "live.text[2]", "live.text", 0 ],
+			"obj-180::obj-194::obj-113" : [ "live.slider[10]", "AgentSub", 0 ],
+			"obj-180::obj-188::obj-7" : [ "live.text[5]", "live.text", 0 ],
+			"obj-149::obj-162" : [ "live.slider[14]", "Master", 0 ],
+			"obj-180::obj-188::obj-28" : [ "live.slider[4]", "GOLSub", 0 ],
+			"obj-134::obj-488" : [ "live.text", "live.text", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -8684,7 +8680,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Lemur.maxpat",
+				"name" : "SpatMulti-Mono.maxpat",
 				"bootpath" : "~/Documents/__Taaaf/1_MaxMspPatches/_Spectacles/VILLENAVE_Introspectiv/Lechantdufilament/modules/MultiSpat",
 				"patcherrelativepath" : "./modules/MultiSpat/./modules/MultiSpat",
 				"type" : "JSON",
