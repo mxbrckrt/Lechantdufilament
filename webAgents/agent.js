@@ -40,8 +40,15 @@ agent.arrive = function() {
 
 }
 
+agent.wanderDistance = 1
+agent.wanderRadius = 1
+agent.wanderAngle = 0
 agent.wander = function() {
-
+  var circleCenter = v2D.normalize(this.v, this.wanderDistance)
+  this.f = v2D.add(this.f,
+                   v2D.normalize([Math.cos(this.wanderAngle),
+                                  Math.sin(this.wanderAngle)],
+                                 this.wanderRadius))
 }
 
 agent.maxV = -1
