@@ -144,7 +144,10 @@ agent.growNdie = function() {
   else {
     this.lates = this.lates.slice()
     for (var i = 0; i < this.lates.length; i++)
-      if (this.lates[i] === "growNdie") this.lates.splice(i, 1, "consume", "die")
+      if (this.lates[i] === "growNdie") {
+		this.lates.splice(i, 1, "consume", "die")
+		this.consume()
+	  }
   }
 }
 
@@ -178,7 +181,6 @@ var danseDuSorbet = {
   lastP:[],
   sorbet:Object.create(agent),
   init:function() {
-    this.sorbet.lates = ["growNdie"]
     this.sorbet.e = 0.01
     this.sorbet.consumeDose = 0.01
     this.sorbet.growDose = 0.01
@@ -186,6 +188,7 @@ var danseDuSorbet = {
     this.play()
   },
   play:function() {
+    this.sorbet.lates = ["growNdie"]
     scenari.push(this)
   },
   update:function() {

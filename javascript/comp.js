@@ -9,13 +9,24 @@ setoutletassist(1, "max of the lists in order");
 setoutletassist(0, "bang when entire list has been send");
 
 var lists = new Array();
+var lastLen = 0;
 
 function bang() {
 	if (!lists.length) {
-	//	post();
-	//	post("comp.js : no lists to compare");
+		
+		if (lastLen) {
+			outlet(2, lastLen);
+			for (var i = 0 ; i < lastLen ; i++) {
+				outlet(1, 0);
+			}
+			outlet(0, "bang");
+			lastLen = 0;
+		}
+		
 		return;
 	}
+	
+	lastLen = lists[0].length;
 	
 	outlet(2, lists[0].length);
 	
