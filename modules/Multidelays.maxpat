@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 243.0, 342.0, 207.0, 95.0 ],
+		"rect" : [ 588.0, 232.0, 270.0, 87.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -59,7 +59,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 118.662766, 158.0, 104.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 31.0, 56.0, 50.0, 20.0 ],
+					"presentation_rect" : [ 31.0, 29.0, 50.0, 20.0 ],
 					"style" : "",
 					"text" : "manuel"
 				}
@@ -93,7 +93,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 90.0, 125.5, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 197.625, 59.5, 68.0, 22.0 ],
+					"presentation_rect" : [ 189.625, 29.0, 68.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -124,7 +124,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 251.5, 259.5, 72.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 167.5, 22.5, 41.0, 20.0 ],
+					"presentation_rect" : [ 152.5, 5.0, 41.0, 20.0 ],
 					"style" : "",
 					"text" : "busy?"
 				}
@@ -172,7 +172,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 167.0, 125.5, 33.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 9.0, 22.5, 33.0, 22.0 ],
+					"presentation_rect" : [ 97.0, 4.0, 33.0, 22.0 ],
 					"style" : "",
 					"text" : "stop"
 				}
@@ -218,7 +218,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 90.0, 100.0, 75.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 197.625, 44.0, 75.0, 20.0 ],
+					"presentation_rect" : [ 106.5, 29.0, 75.0, 20.0 ],
 					"style" : "",
 					"text" : "single delay"
 				}
@@ -263,7 +263,7 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 50.0, 100.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 9.0, 56.0, 20.0, 20.0 ],
+					"presentation_rect" : [ 9.0, 29.0, 20.0, 20.0 ],
 					"style" : ""
 				}
 
@@ -278,7 +278,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 188.8125, 259.5, 44.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 240.8125, 22.5, 31.8125, 20.0 ],
+					"presentation_rect" : [ 225.8125, 5.0, 31.8125, 20.0 ],
 					"style" : "",
 					"text" : "loop"
 				}
@@ -294,7 +294,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 169.625, 259.5, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 221.625, 22.5, 20.0, 20.0 ],
+					"presentation_rect" : [ 206.625, 5.0, 20.0, 20.0 ],
 					"style" : ""
 				}
 
@@ -529,7 +529,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 233.0, 259.5, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 149.0, 22.5, 20.0, 20.0 ],
+					"presentation_rect" : [ 134.0, 5.0, 20.0, 20.0 ],
 					"style" : ""
 				}
 
@@ -588,7 +588,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 317.0, 32.0, 26.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.08139, 3.0, 269.0, 81.5 ],
+					"presentation_rect" : [ 4.08139, 3.0, 269.0, 52.5 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -740,12 +740,12 @@
  ],
 		"styles" : [ 			{
 				"name" : "MyDefault1",
-				"slider" : 				{
-					"color" : [ 0.264126, 0.491047, 0.586341, 1.0 ]
-				}
-,
 				"gain~" : 				{
 					"color" : [ 0.185124, 0.524821, 0.708093, 1.0 ]
+				}
+,
+				"slider" : 				{
+					"color" : [ 0.264126, 0.491047, 0.586341, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -759,12 +759,11 @@
 , 			{
 				"name" : "MyDefault3",
 				"default" : 				{
-					"color" : [ 0.239216, 0.643137, 0.709804, 1.0 ],
 					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-					"accentcolor" : [ 0.479171, 0.485793, 0.505657, 1.0 ],
 					"selectioncolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"patchlinecolor" : [ 0.239216, 0.254902, 0.278431, 0.9 ],
+					"color" : [ 0.239216, 0.643137, 0.709804, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.290196, 0.309804, 0.301961, 0.9 ],
@@ -774,7 +773,8 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"accentcolor" : [ 0.479171, 0.485793, 0.505657, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -783,12 +783,11 @@
 , 			{
 				"name" : "MyDefault3-1",
 				"default" : 				{
-					"color" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-					"accentcolor" : [ 0.479171, 0.485793, 0.505657, 1.0 ],
 					"selectioncolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"patchlinecolor" : [ 0.239216, 0.254902, 0.278431, 0.9 ],
+					"color" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.290196, 0.309804, 0.301961, 0.9 ],
@@ -798,7 +797,8 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"accentcolor" : [ 0.479171, 0.485793, 0.505657, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
