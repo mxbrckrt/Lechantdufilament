@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 9,
+			"revision" : 7,
 			"architecture" : "x86"
 		}
 ,
@@ -54,7 +54,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 502.501984, 155.533203, 90.0, 25.795898 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 242.159119, 24.75, 90.0, 25.795898 ],
+					"presentation_rect" : [ 192.159119, 7.75, 90.0, 25.795898 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.text[5]",
@@ -66,7 +66,7 @@
 
 					}
 ,
-					"text" : "Agent-Plus",
+					"text" : "Genere-Matrice",
 					"texton" : "Eteints-moi!!",
 					"varname" : "live.text"
 				}
@@ -188,7 +188,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 9,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -662,7 +662,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 9,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -713,7 +713,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 9,
+											"revision" : 7,
 											"architecture" : "x86"
 										}
 ,
@@ -1135,7 +1135,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 9,
+											"revision" : 7,
 											"architecture" : "x86"
 										}
 ,
@@ -1314,7 +1314,7 @@
 														"appversion" : 														{
 															"major" : 6,
 															"minor" : 1,
-															"revision" : 9,
+															"revision" : 7,
 															"architecture" : "x86"
 														}
 ,
@@ -2833,6 +2833,32 @@
 					"source" : [ "obj-97", 0 ]
 				}
 
+			}
+ ],
+		"parameters" : 		{
+			"obj-145" : [ "live.slider[18]", "Densite", 0 ],
+			"obj-28" : [ "live.slider[4]", "GOLSub", 0 ],
+			"obj-7" : [ "live.text[5]", "live.text", 0 ]
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "-rs.maxpat",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/utils",
+				"patcherrelativepath" : "../utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.remote.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.parameter.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.model.mxo",
+				"type" : "iLaX"
 			}
  ]
 	}
