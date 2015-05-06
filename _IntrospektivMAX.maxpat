@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 19.0, 71.0, 1131.0, 402.0 ],
+		"rect" : [ 7.0, 47.0, 1131.0, 402.0 ],
 		"bgcolor" : [ 0.694118, 0.694118, 0.694118, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -2530,7 +2530,7 @@
 					"name" : "Algo.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"offset" : [ 1.0, 1.0 ],
+					"offset" : [ -335.0, 1.0 ],
 					"patching_rect" : [ 618.0, 112.107361, 240.0, 48.825562 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 492.0, 65.0, 338.0, 320.5 ],
@@ -3067,6 +3067,7 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"color" : [ 0.963735, 1.0, 0.0, 1.0 ],
@@ -3078,7 +3079,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 855.417358, 42.0, 114.0, 20.0 ],
-									"presentation_rect" : [ 851.607422, 41.0, 0.0, 0.0 ],
 									"text" : "r RemapInstallation"
 								}
 
@@ -3147,7 +3147,7 @@
 									"fontsize" : 12.0,
 									"id" : "obj-51",
 									"maxclass" : "flonum",
-									"maximum" : 100.0,
+									"maximum" : 1000.0,
 									"minimum" : 1.0,
 									"numinlets" : 1,
 									"numoutlets" : 2,
@@ -4953,7 +4953,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 1024.0, 75.0, 525.0, 773.0 ],
+						"rect" : [ 915.0, 75.0, 525.0, 773.0 ],
 						"bgcolor" : [ 0.537255, 0.537255, 0.537255, 1.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
@@ -7862,26 +7862,25 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-17::obj-102" : [ "live.slider", "Intensite", 0 ],
-			"obj-17::obj-61" : [ "live.slider[2]", "SpatMulti-Sub", 0 ],
-			"obj-180::obj-188::obj-145" : [ "live.slider[18]", "Densite", 0 ],
-			"obj-149::obj-162" : [ "live.slider[14]", "Master", 0 ],
 			"obj-180::obj-194::obj-113" : [ "live.slider[10]", "AgentSub", 0 ],
-			"obj-180::obj-1::obj-28" : [ "live.slider[6]", "MSNSub", 0 ],
-			"obj-134::obj-488" : [ "live.text", "live.text", 0 ],
-			"obj-180::obj-188::obj-28" : [ "live.slider[4]", "GOLSub", 0 ],
-			"obj-180::obj-194::obj-12" : [ "live.text[3]", "live.text", 0 ],
-			"obj-180::obj-194::obj-10" : [ "live.text[2]", "live.text", 0 ],
-			"obj-180::obj-3::obj-86" : [ "live.slider[11]", "PINGSub", 0 ],
+			"obj-180::obj-188::obj-145" : [ "live.slider[18]", "Densite", 0 ],
 			"obj-1" : [ "live.text[6]", "live.text[1]", 0 ],
+			"obj-17::obj-102" : [ "live.slider", "Intensite", 0 ],
+			"obj-180::obj-3::obj-86" : [ "live.slider[11]", "PINGSub", 0 ],
 			"obj-149::obj-46" : [ "live.slider[5]", "SlideUp", 0 ],
-			"obj-180::obj-188::obj-7" : [ "live.text[5]", "live.text", 0 ],
-			"obj-17::obj-106" : [ "live.slider[1]", "Remanence", 0 ],
-			"obj-149::obj-120" : [ "live.slider[19]", "SlideDown", 0 ],
+			"obj-180::obj-1::obj-28" : [ "live.slider[6]", "MSNSub", 0 ],
 			"obj-180::obj-194::obj-8" : [ "live.text[1]", "live.text", 0 ],
+			"obj-180::obj-194::obj-10" : [ "live.text[2]", "live.text", 0 ],
+			"obj-149::obj-120" : [ "live.slider[19]", "SlideDown", 0 ],
 			"obj-180::obj-194::obj-9" : [ "live.text[4]", "live.text", 0 ],
 			"obj-17::obj-42" : [ "live.slider[16]", "SpatMono-Sub", 0 ],
-			"obj-55" : [ "live.text[12]", "live.text[1]", 0 ]
+			"obj-134::obj-488" : [ "live.text", "live.text", 0 ],
+			"obj-17::obj-61" : [ "live.slider[2]", "SpatMulti-Sub", 0 ],
+			"obj-17::obj-106" : [ "live.slider[1]", "Remanence", 0 ],
+			"obj-55" : [ "live.text[12]", "live.text[1]", 0 ],
+			"obj-180::obj-188::obj-28" : [ "live.slider[4]", "GOLSub", 0 ],
+			"obj-180::obj-188::obj-7" : [ "live.text[5]", "live.text", 0 ],
+			"obj-149::obj-162" : [ "live.slider[14]", "Master", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

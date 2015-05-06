@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 9,
+			"revision" : 7,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 160.0, 231.0, 815.0, 483.0 ],
+		"rect" : [ 41.0, 164.0, 815.0, 483.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -249,8 +249,9 @@
 							"parameter_longname" : "live.slider[5]",
 							"parameter_shortname" : "SlideUp",
 							"parameter_type" : 0,
-							"parameter_mmax" : 50.0,
-							"parameter_unitstyle" : 1
+							"parameter_mmax" : 1000.0,
+							"parameter_unitstyle" : 1,
+							"parameter_exponent" : 3.5
 						}
 
 					}
@@ -367,6 +368,32 @@
 					"source" : [ "obj-46", 0 ]
 				}
 
+			}
+ ],
+		"parameters" : 		{
+			"obj-46" : [ "live.slider[5]", "SlideUp", 0 ],
+			"obj-120" : [ "live.slider[19]", "SlideDown", 0 ],
+			"obj-162" : [ "live.slider[14]", "Master", 0 ]
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "-rs.maxpat",
+				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/utils",
+				"patcherrelativepath" : "../utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.remote.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.model.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.parameter.mxo",
+				"type" : "iLaX"
 			}
  ]
 	}
