@@ -2,34 +2,44 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 6,
-			"minor" : 1,
-			"revision" : 7,
-			"architecture" : "x86"
+			"major" : 7,
+			"minor" : 0,
+			"revision" : 3,
+			"architecture" : "x86",
+			"modernui" : 1
 		}
 ,
-		"rect" : [ 41.0, 164.0, 815.0, 483.0 ],
+		"rect" : [ 954.0, 196.0, 97.0, 326.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
-		"gridonopen" : 0,
+		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 0,
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
 		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
-		"imprint" : 0,
 		"enablehscroll" : 1,
 		"enablevscroll" : 1,
 		"devicewidth" : 0.0,
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
 					"color" : [ 1.0, 0.558253, 0.0, 1.0 ],
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-21",
@@ -37,14 +47,16 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 258.0, 206.771057, 411.0, 20.0 ],
-					"text" : "j.parameter SlideDown @priority 1 @type decimal @range 0. 1. @default 0"
+					"patching_rect" : [ 258.0, 206.771057, 501.0, 22.0 ],
+					"style" : "",
+					"text" : "j.parameter SlideDown @priority 1 @type decimal @range 0. 1. @default 0 @clipmode both"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"color" : [ 1.0, 0.558253, 0.0, 1.0 ],
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-20",
@@ -52,14 +64,16 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 126.5, 180.771057, 399.0, 20.0 ],
-					"text" : "j.parameter SlideUp @priority 1 @type decimal @range 0. 1. @default 0."
+					"patching_rect" : [ 126.5, 180.771057, 489.0, 22.0 ],
+					"style" : "",
+					"text" : "j.parameter SlideUp @priority 1 @type decimal @range 0. 1. @default 0. @clipmode both"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"color" : [ 1.0, 0.558253, 0.0, 1.0 ],
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-19",
@@ -67,8 +81,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 3.5, 139.771057, 501.0, 20.0 ],
-					"text" : "j.parameter Master @priority 1 @type decimal @range 0. 1. @clipmode low high @default 1"
+					"patching_rect" : [ 3.5, 139.771057, 480.0, 22.0 ],
+					"style" : "",
+					"text" : "j.parameter Master @priority 1 @type decimal @range 0. 1. @clipmode both @default 1"
 				}
 
 			}
@@ -82,7 +97,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 497.659973, 83.041016, 228.0, 20.0 ],
+					"patching_rect" : [ 497.659973, 83.041016, 228.0, 22.0 ],
+					"style" : "",
 					"text" : "j.model MasterRemote @amenities none"
 				}
 
@@ -96,8 +112,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 300.0, 21.382812, 146.0, 20.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 300.0, 21.382812, 146.0, 22.0 ],
+					"style" : "",
 					"text" : "-rs SlideDown SlideDown"
 				}
 
@@ -111,7 +128,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 258.0, 234.382812, 119.0, 20.0 ],
+					"patching_rect" : [ 258.0, 234.382812, 119.0, 22.0 ],
+					"style" : "",
 					"text" : "s RemoteSlideDown"
 				}
 
@@ -153,8 +171,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 34.5, 21.382812, 105.0, 20.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 34.5, 21.382812, 105.0, 22.0 ],
+					"style" : "",
 					"text" : "-rs Master Master"
 				}
 
@@ -168,7 +187,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3.5, 236.382812, 99.0, 20.0 ],
+					"patching_rect" : [ 3.5, 236.382812, 99.0, 22.0 ],
+					"style" : "",
 					"text" : "s RemoteMaster"
 				}
 
@@ -211,8 +231,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 151.5, 21.382812, 115.0, 20.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 151.5, 21.382812, 115.0, 22.0 ],
+					"style" : "",
 					"text" : "-rs SlideUp SlideUp"
 				}
 
@@ -226,7 +247,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 126.5, 234.382812, 104.0, 20.0 ],
+					"patching_rect" : [ 126.5, 234.382812, 104.0, 22.0 ],
+					"style" : "",
 					"text" : "s RemoteSlideUp"
 				}
 
@@ -368,32 +390,6 @@
 					"source" : [ "obj-46", 0 ]
 				}
 
-			}
- ],
-		"parameters" : 		{
-			"obj-46" : [ "live.slider[5]", "SlideUp", 0 ],
-			"obj-120" : [ "live.slider[19]", "SlideDown", 0 ],
-			"obj-162" : [ "live.slider[14]", "Master", 0 ]
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "-rs.maxpat",
-				"bootpath" : "/Users/jaimechao/Documents/Max/Lechantdufilament/utils",
-				"patcherrelativepath" : "../utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.remote.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.model.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.parameter.mxo",
-				"type" : "iLaX"
 			}
  ]
 	}
