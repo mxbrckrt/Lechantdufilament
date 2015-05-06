@@ -44,8 +44,9 @@ agent.wander = function() {
 
 }
 
-agent.maxV = 0
-agent.move = function() {
+agent.maxV = -1
+agent.move = function() { // same
+  if (this.maxV !== -1) this.v = v2D.truncate(this.v, this.maxV)
   this.p[0] += this.v[0]
   this.p[1] += this.v[1]
 }
