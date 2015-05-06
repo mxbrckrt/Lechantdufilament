@@ -1,13 +1,35 @@
 // Author : Clément Bossut
 
-function normalize(v, n) {
-  n = n || 1
-//todo
+var v2D = {
+
+  length:function(v) {
+    return Math.sqrt(v[0]*v[0]+v[1]*v[1])
+  },
+
+  normalize:function(v, n) {
+    if (typeof(n) === 'undefined') n = 1
+    var d = v2D.length(v)
+    return [v[0]*n/d,v[1]*n/d]
+  },
+
+  add:function(v1, v2) {
+    return [v1[0]+v2[0],v1[1]+v2[1]]
+  },
+
+  equal:function(v1, v2) {
+    return v1[0] === v2[0] && v1[1] === v2[1]
+  },
+
+  truncate:function(v, m) {
+    if (v2D.length(v) > m) return v2D.normalize(v, m)
+    return v
+  }
+
 }
 
 ///////////////////// Send to webSocket for Max
 
-var socket = new WebSocket("ws://10.204.8.166:8080")
+//var socket = new WebSocket("ws://10.204.8.166:8080")
 
 function sendToMax(tab) {
   //var data = ""
