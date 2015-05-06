@@ -50,21 +50,21 @@ agent.move = function() {
   this.p[1] += this.v[1]
 }
 
-agent.clip = function() {
+agent.clip = function() { // beware, modify prototype ...
   if (this.p[0] < space.x1) this.p[0] = space.x1
   else if (this.p[0] > space.x2) this.p[0] = space.x2
   if (this.p[1] < space.y1) this.p[1] = space.y1
   else if (this.p[1] > space.y2) this.p[1] = space.y2
 }
 
-agent.wrap = function() {
+agent.wrap = function() { // same
   if (this.p[0] < space.x1) this.p[0] += space.x2 - space.x1
   else if (this.p[0] > space.x2) this.p[0] -= space.x2 - space.x1
   if (this.p[1] < space.y1) this.p[1] += space.y2 - space.y1
   else if (this.p[1] > space.y2) this.p[1] -= space.y2 - space.y1
 }
 
-agent.fold = function() {
+agent.fold = function() { // same
   if (this.p[0] < space.x1)
     this.p[0] = 2*space.x1 - this.p[0], this.v[0] = -this.v[0]
   else if (this.p[0] > space.x2)
@@ -80,7 +80,7 @@ agent.consume = function() {
   this.e = this.e > this.consumeDose ? this.e - this.consumeDose : 0
 }
 
-agent.toDie = false
+agent.toDie = false // better done by consume ?
 agent.die = function() {
   this.toDie = this.e <= 0
 }
