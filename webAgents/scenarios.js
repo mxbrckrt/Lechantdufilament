@@ -23,20 +23,26 @@ var test = {
 var danseDuSorbet = {
   frameLaps:100,
   remaining:0,
-  consumeDose:0.01,
+  lastP:[],
   sorbet:Object.create(agent),
   init:function() {
     scenari.push(this)
-    this.sorbet.lates = ["consume","die"]
+    this.sorbet.lates = ["growNdie"]
+    this.sorbet.e = 0.01
+    this.sorbet.consumeDose = 0.01
+    this.sorbet.growDose = 0.01
+    this.sorbet.growMax = 1
   },
   update:function() {
     if (--this.remaining <= 0) {
       var newAgent = Object.create(this.sorbet)
-      newAgent.p = [
-        Math.floor(Math.random()*space.lamps[0])*space.dist,
-        Math.floor(Math.random()*space.lamps[1])*space.dist
-      ]
-      newAgent.consumeDose = this.consumeDose
+      do {
+        newAgent.p = [
+          Math.floor(Math.random() * space.lamps[0]) * space.dist,
+          Math.floor(Math.random() * space.lamps[1]) * space.dist
+        ]
+      } while (v2D.equal(newAgent.p, this.lastP))
+      this.lastP = newAgent.p
       agents.push(newAgent)
       this.remaining = this.frameLaps
     }

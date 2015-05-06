@@ -84,3 +84,19 @@ agent.toDie = false // better done by consume ?
 agent.die = function() {
   this.toDie = this.e <= 0
 }
+
+agent.maxGrow = 1
+agent.growDose = 0
+agent.grow = function() {
+  this.e += this.growDose
+  if (this.e > this.maxGrow) this.e = this.maxGrow
+}
+
+agent.growNdie = function() {
+  if (this.e < this.maxGrow) this.grow()
+  else {
+    this.lates = this.lates.slice()
+    for (var i = 0; i < this.lates.length; i++)
+      if (this.lates[i] === "growNdie") this.lates.splice(i, 1, "consume", "die")
+  }
+}
