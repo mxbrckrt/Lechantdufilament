@@ -77,8 +77,9 @@ var agent = {
 }
 
 agent.seekTarget = {p:[0,0]}
+agent.seekDist = 0
 agent.seek = function() {
-
+  //todo
 }
 
 agent.fleeTarget = space
@@ -101,11 +102,14 @@ agent.flee = function() {
 }
 
 agent.arrive = function() {
-
+  //todo
 }
 
 agent.wanderDistance = 1
 agent.wanderRadius = 1
+agent.wanderDiff = Math.PI/16
+agent.wanderLaps = 10
+agent.wanderRemaining = 0
 agent.wanderAngle = 0
 agent.wander = function() {
   var circleCenter = v2D.normalize(this.v, this.wanderDistance)
@@ -119,12 +123,17 @@ agent.wander = function() {
   }
 }
 
+agent.avoid = function() {
+  //todo
+}
+
+/*
 agent.maxV = -1
 agent.move = function() { // same
   if (this.maxV !== -1) this.v = v2D.truncate(this.v, this.maxV)
   this.p[0] += this.v[0]
   this.p[1] += this.v[1]
-}
+}*/
 
 agent.clip = function() { // beware, modify prototype ...
   if (this.p[0] < space.x1) this.p[0] = space.x1
@@ -171,8 +180,11 @@ agent.grow = function() {
 agent.growNdie = function() {
   if (this.e < this.maxGrow) this.grow()
   else {
-    this.lates = this.lates.slice()
+    this.lates = this.lates.slice() // make a copy to not modify prototype
     for (var i = 0; i < this.lates.length; i++)
-      if (this.lates[i] === "growNdie") this.lates.splice(i, 1, "consume", "die")
+      if (this.lates[i] === "growNdie") {
+        this.lates.splice(i, 1, "consume", "die")
+        this.consume()
+      }
   }
 }

@@ -26,7 +26,6 @@ var danseDuSorbet = {
   lastP:[],
   sorbet:Object.create(agent),
   init:function() {
-    this.sorbet.lates = ["growNdie"]
     this.sorbet.e = 0.01
     this.sorbet.consumeDose = 0.01
     this.sorbet.growDose = 0.01
@@ -34,6 +33,7 @@ var danseDuSorbet = {
     this.play()
   },
   play:function() {
+    this.sorbet.lates = ["growNdie"]
     scenari.push(this)
   },
   update:function() {

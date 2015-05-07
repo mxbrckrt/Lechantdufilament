@@ -28,11 +28,13 @@ agent.draw = function() {
   context.stroke()
 
   context.strokeStyle = "green"
+  context.beginPath()
   context.moveTo(x, y)
   context.lineTo(x+vx, y+vy)
   context.stroke()
 
   context.strokeStyle = "magenta"
+  context.beginPath()
   context.moveTo(x, y)
   context.lineTo(x+fx, y+fy)
   context.stroke()
