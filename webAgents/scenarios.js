@@ -4,13 +4,20 @@ var agents = [],
     scenari = []
 
 var test = {
-  v:[2,5],
   agent:Object.create(agent),
   init:function() {
     scenari = [this]
-    this.agent.v = this.v
-    this.agent.moves = ["move"]
-    this.agent.lates = ["fold"]
+    this.agent.v = [2,5]
+    this.agent.maxV = 5
+    this.agent.wanderDistance = Math.sqrt(2)
+    this.agent.wanderRadius = 1
+    this.agent.wanderDiff = 0.6
+    this.agent.wanderLaps = 1
+    this.agent.mass = 1
+    this.agent.fleeTarget = space
+    this.agent.fleeDist = 100
+    this.agent.forces = ["wander", "flee"]
+    this.agent.lates = ["wrap"]
     agents = [(Object.create(this.agent))]
   },
   update:function() {},
@@ -55,6 +62,19 @@ var danseDuSorbet = {
       if (scenari[i] === this) scenari.splice(i,1)
   }
 }
+
+var errant = Object.create(agent)
+errant.v = [2,5]
+errant.maxV = 5
+errant.wanderDistance = Math.sqrt(2)
+errant.wanderRadius = 1
+errant.wanderDiff = 0.6
+errant.wanderLaps = 1
+errant.mass = 1
+errant.fleeTarget = space
+errant.fleeDist = 100
+errant.forces = ["wander", "flee"]
+errant.lates = ["wrap"]
 
 function update() {
   for (var j = 0 ; j < scenari.length ; j++) scenari[j].update()
