@@ -113,6 +113,10 @@ agent.wander = function() {
                    v2D.normalize([Math.cos(this.wanderAngle),
                                   Math.sin(this.wanderAngle)],
                                  this.wanderRadius))
+  if (--this.wanderRemaining <= 0) {
+    this.wanderAngle += (Math.random() * 2 - 1) * this.wanderDiff
+    this.wanderRemaining = this.wanderLaps
+  }
 }
 
 agent.maxV = -1
