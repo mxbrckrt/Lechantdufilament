@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 8.0, 47.0, 1144.0, 720.0 ],
+		"rect" : [ 98.0, 44.0, 1144.0, 720.0 ],
 		"bgcolor" : [ 0.694118, 0.694118, 0.694118, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -2544,7 +2544,7 @@
 					"name" : "Algo.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"offset" : [ -670.0, 1.0 ],
+					"offset" : [ 1.0, 1.0 ],
 					"patching_rect" : [ 618.0, 112.107361, 240.0, 48.825562 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 492.0, 65.0, 338.0, 320.5 ],
@@ -8118,11 +8118,10 @@
 			"obj-194::obj-123" : [ "live.text[8]", "live.text", 0 ],
 			"obj-180::obj-1::obj-28" : [ "live.slider[6]", "MSNSub", 0 ],
 			"obj-194::obj-171" : [ "live.slider[26]", "Errant-radius", 0 ],
-			"obj-149::obj-120" : [ "live.slider[19]", "SlideDown", 0 ],
-			"obj-194::obj-7" : [ "live.slider[8]", "Sorbet-Formation", 0 ],
 			"obj-194::obj-8" : [ "live.text[1]", "live.text", 0 ],
-			"obj-194::obj-1" : [ "live.slider[21]", "Sorbet-Fonte", 0 ],
+			"obj-194::obj-7" : [ "live.slider[8]", "Sorbet-Formation", 0 ],
 			"obj-194::obj-122" : [ "live.text[7]", "live.text", 0 ],
+			"obj-194::obj-1" : [ "live.slider[21]", "Sorbet-Fonte", 0 ],
 			"obj-180::obj-188::obj-7" : [ "live.text[5]", "live.text", 0 ],
 			"obj-194::obj-178" : [ "live.slider[27]", "Errant-diff", 0 ],
 			"obj-194::obj-188" : [ "live.slider[28]", "Errant-velocity", 0 ],
@@ -8133,8 +8132,8 @@
 			"obj-17::obj-102" : [ "live.slider", "Intensite", 0 ],
 			"obj-194::obj-92" : [ "live.slider[20]", "Sorbet-Laps creation", 0 ],
 			"obj-194::obj-155" : [ "live.slider[23]", "Errant-Deguerpir", 0 ],
-			"obj-55" : [ "live.text[12]", "live.text[1]", 0 ],
 			"obj-194::obj-166" : [ "live.slider[24]", "Errant-mass", 0 ],
+			"obj-55" : [ "live.text[12]", "live.text[1]", 0 ],
 			"obj-194::obj-113" : [ "live.slider[10]", "AgentSub", 0 ],
 			"obj-149::obj-46" : [ "live.slider[5]", "SlideUp", 0 ],
 			"obj-194::obj-10" : [ "live.text[2]", "live.text", 0 ],
@@ -8143,7 +8142,8 @@
 			"obj-134::obj-488" : [ "live.text", "live.text", 0 ],
 			"obj-180::obj-3::obj-86" : [ "live.slider[11]", "PINGSub", 0 ],
 			"obj-17::obj-106" : [ "live.slider[1]", "Remanence", 0 ],
-			"obj-194::obj-90" : [ "live.slider[7]", "Sorbet-Intensité", 0 ]
+			"obj-194::obj-90" : [ "live.slider[7]", "Sorbet-Intensité", 0 ],
+			"obj-149::obj-1" : [ "live.slider[29]", "SlideDown", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
