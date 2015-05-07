@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 160.0, 44.0, 1179.0, 710.0 ],
+		"rect" : [ 225.0, 122.0, 1179.0, 710.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -38,8 +38,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1001.0, 498.580322, 50.0, 20.0 ],
-					"presentation_rect" : [ 1001.0, 498.580322, 0.0, 0.0 ]
+					"patching_rect" : [ 1001.0, 498.580322, 50.0, 20.0 ]
 				}
 
 			}
@@ -53,7 +52,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "float" ],
 					"patching_rect" : [ 942.5, 399.776001, 32.5, 20.0 ],
-					"presentation_rect" : [ 942.5, 399.776001, 0.0, 0.0 ],
 					"text" : "t b f"
 				}
 
@@ -68,7 +66,6 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 942.5, 432.695679, 115.0, 20.0 ],
-					"presentation_rect" : [ 942.5, 432.695679, 0.0, 0.0 ],
 					"text" : "j.receive AgentLight"
 				}
 
@@ -83,7 +80,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 942.5, 483.776001, 32.5, 20.0 ],
-					"presentation_rect" : [ 942.5, 483.776001, 0.0, 0.0 ],
 					"text" : "/ 1."
 				}
 
@@ -98,7 +94,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "float" ],
 					"patching_rect" : [ 983.75, 560.594849, 32.5, 20.0 ],
-					"presentation_rect" : [ 983.75, 560.594849, 0.0, 0.0 ],
 					"text" : "t b f"
 				}
 
@@ -131,7 +126,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 983.75, 607.656799, 32.5, 20.0 ],
-					"presentation_rect" : [ 983.75, 607.656799, 0.0, 0.0 ],
 					"text" : "* 1."
 				}
 
@@ -146,7 +140,6 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 999.398804, 535.0, 98.0, 20.0 ],
-					"presentation_rect" : [ 999.398804, 535.0, 0.0, 0.0 ],
 					"text" : "j.receive Vitesse"
 				}
 
@@ -263,7 +256,6 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1436.398804, 560.0, 98.0, 20.0 ],
-					"presentation_rect" : [ 1490.02002, 502.0, 0.0, 0.0 ],
 					"text" : "j.receive Vitesse"
 				}
 
@@ -296,7 +288,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1269.02002, 315.715515, 50.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 282.0, 137.75, 45.5, 20.0 ]
+					"presentation_rect" : [ 282.0, 126.75, 45.5, 20.0 ]
 				}
 
 			}
@@ -4316,7 +4308,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 399.907959, 50.215576, 27.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.5, 1.0, 325.0, 313.0 ]
+					"presentation_rect" : [ 3.5, 1.0, 361.0, 313.0 ]
 				}
 
 			}
