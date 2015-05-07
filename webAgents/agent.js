@@ -45,13 +45,33 @@ var agent = {
   e:1, // energy
   s:1, // size
   m:1, // mass
+  maxF:-1,
+  maxV:-1,
+  minV:-1,
   forces:[],
   moves:[],
   lates:[],
   update:function() {
+
+    // Compute forces
     this.f = [0,0]
     for (var i = 0 ; i < this.forces.length ; i++) this[this.forces[i]]()
-    for (var j = 0 ; j < this.moves.length ; j++) this[this.moves[j]]()
+
+    // Truncate forces
+    if (this.maxF !== -1) this.f = v2D.truncate(this.f, this.maxF)
+
+    // Apply forces
+    this.v = v2D.add(this.v, v2D.mult(this.f, 1/this.m))
+
+    // Limit velocity
+    if (this.maxV !== -1) this.v = v2D.truncate(this.v, this.maxV) // max
+    if (v2D.length(this.v) < this.minV)
+      this.v = v2D.normalize(this.v, this.minV) // min
+
+    // Move
+    this.p = v2D.add(this.p, this.v)
+
+    // Late rules
     for (var k = 0 ; k < this.lates.length ; k++) this[this.lates[k]]()
   }
 }
