@@ -197,22 +197,14 @@ agent.wrap = function() { // same
 }
 
 agent.fold = function() { // same
-  if (this.p[0] < space.x1) {
+  if (this.p[0] < space.x1)
     this.p[0] = 2*space.x1 - this.p[0], this.v[0] = -this.v[0]
-//this.wanderAngle = Math.PI - this.wanderAngle
-}
-  else if (this.p[0] > space.x2) {
+  else if (this.p[0] > space.x2)
     this.p[0] = 2*space.x2 - this.p[0], this.v[0] = -this.v[0]
-//this.wanderAngle = Math.PI - this.wanderAngle
-}
-  if (this.p[1] < space.y1) {
+  if (this.p[1] < space.y1)
     this.p[1] = 2*space.y1 - this.p[1], this.v[1] = -this.v[1]
-//this.wanderAngle = -this.wanderAngle
-}
-  else if (this.p[1] > space.y2) {
+  else if (this.p[1] > space.y2)
     this.p[1] = 2*space.y2 - this.p[1], this.v[1] = -this.v[1]
-//this.wanderAngle = -this.wanderAngle
-}
 }
 
 agent.consumeDose = 0
@@ -322,7 +314,7 @@ errant.mass = 1
 errant.fleeTarget = space
 errant.fleeDist = 100
 errant.forces = ["wander", "flee"]
-errant.lates = ["fold"]
+errant.lates = ["wrap"]
 
 function update() {
   for (var j = 0 ; j < scenari.length ; j++) scenari[j].update()
@@ -344,12 +336,9 @@ function update() {
 
 //////////////////// Sorbet
 
-function sorbetPlay() {
-  danseDuSorbet.play()
-}
-
-function sorbetStop() {
-  danseDuSorbet.stop()
+function sorbet(toggle) {
+  if (toggle) danseDuSorbet.play()
+  else danseDuSorbet.stop()
 }
 
 function sorbetIntensity(m) {
@@ -375,7 +364,7 @@ function errantAdd() {
 }
 
 function errantDel() {
-  for (var i = agents.length - 1 ; i >= 0 ; i++) {
+  for (var i = agents.length - 1 ; i >= 0 ; i--) {
     if (errant.isPrototypeOf(agents[i])) {
       agents.splice(i,1)
       break
