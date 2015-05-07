@@ -6,7 +6,36 @@ var space = {
   x1:-100,
   y1:-100,
   x2:600,
-  y2:600
+  y2:600,
+  nearVect:function(p) {
+    var dists = [p[0] - this.x1,
+                 p[1] - this.y1,
+                 this.x2 - p[0],
+                 this.y2 - p[1]],
+        index = 0,
+        min = dists[0]
+    for (var i = 1 ; i < dists.length ; i++) {
+      if (dists[i] < min) {
+        min = dists[i]
+        index = i
+      }
+    }
+    switch (index) {
+      case 0:
+        return [-min, p[1]]
+      case 1:
+        return [p[0], -min]
+      case 2:
+        return [min, p[1]]
+      case 3:
+        return [p[0], min]
+      default:
+        throw "Out of bounds in space"
+    }
+  },
+  isCollide:function(p, v) {
+    //todo
+  }
 }
 
 var agent = {
