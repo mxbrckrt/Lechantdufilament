@@ -16,6 +16,14 @@ var v2D = {
     return [v1[0]+v2[0],v1[1]+v2[1]]
   },
 
+  sub:function(v1, v2) {
+    return [v1[0]-v2[0],v1[1]-v2[1]]
+  },
+
+  mult:function(v, m) {
+    return [v[0]*m,v[1]*m]
+  },
+
   equal:function(v1, v2) {
     return v1[0] === v2[0] && v1[1] === v2[1]
   },
