@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 10.0, 219.0, 1380.0, 413.0 ],
+		"rect" : [ 295.0, 44.0, 790.0, 638.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -39,7 +39,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 139.157013, 423.747986, 163.0, 27.0 ],
+					"patching_rect" : [ 139.157013, 276.747986, 163.0, 27.0 ],
 					"text" : "Make some ping"
 				}
 
@@ -52,9 +52,9 @@
 					"name" : "MSPing.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 7.782986, 420.0, 128.0, 128.0 ],
+					"patching_rect" : [ 7.782986, 273.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1003.624023, 2.0, 339.980988, 317.001984 ],
+					"presentation_rect" : [ 674.624023, 2.0, 339.980988, 317.001984 ],
 					"varname" : "MSPing"
 				}
 
@@ -70,7 +70,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 145.657013, 284.747986, 163.0, 27.0 ],
+					"patching_rect" : [ 145.657013, 137.747986, 163.0, 27.0 ],
 					"text" : "Make some noise"
 				}
 
@@ -84,23 +84,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ -9.0, -15.0 ],
-					"patching_rect" : [ 7.782986, 284.747986, 128.0, 128.0 ],
+					"patching_rect" : [ 7.782986, 137.747986, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 670.624023, 2.0, 209.980988, 317.001984 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"annotation" : "none",
-					"id" : "obj-194",
-					"maxclass" : "bpatcher",
-					"name" : "Agents.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 7.782986, 140.747986, 128.0, 128.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 334.643005, 2.0, 328.980988, 317.001984 ]
+					"presentation_rect" : [ 340.624023, 2.0, 209.980988, 317.001984 ]
 				}
 
 			}
@@ -173,22 +159,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 326.309143, 1.331, 25.0, 25.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.45735, 0.45735, 0.45735, 1.0 ],
-					"fontface" : 3,
-					"fontname" : "Arial",
-					"fontsize" : 18.0,
-					"frgb" : 0.0,
-					"id" : "obj-63",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 145.657013, 140.747986, 150.0, 27.0 ],
-					"text" : "Agents / Boids"
 				}
 
 			}
