@@ -81,8 +81,23 @@ agent.seek = function() {
 
 }
 
+agent.fleeTarget = space
+agent.fleeDist = space.dist
 agent.flee = function() {
+  var desiredVelocity = v2D.sub([0,0], space.nearVect(this.p))
 
+  if (v2D.length(desiredVelocity) < this.fleeDist) {
+    this.f = v2D.add( // f += steer
+      this.f,
+      v2D.sub( // steer = desired - velocity
+        v2D.normalize(
+          desiredVelocity,
+          this.maxV === -1 ? v2D.length(this.v) : this.maxV // maxV
+        ),
+        this.v
+      )
+    )
+  }
 }
 
 agent.arrive = function() {
