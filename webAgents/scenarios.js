@@ -14,7 +14,7 @@ var test = {
     this.agent.wanderDiff = 0.6
     this.agent.wanderLaps = 1
     this.agent.mass = 1
-    this.agent.fleeTarget = space
+    this.agent.fleeObstacle = space
     this.agent.fleeDist = 100
     this.agent.forces = ["wander", "flee"]
     this.agent.lates = ["wrap"]
@@ -30,17 +30,9 @@ var test = {
 var danseDuSorbet = {
   frameLaps:100,
   remaining:0,
-  lastP:[],
+  lastP:[0,0],
   sorbet:Object.create(agent),
-  init:function() {
-    this.sorbet.e = 0.01
-    this.sorbet.consumeDose = 0.01
-    this.sorbet.growDose = 0.01
-    this.sorbet.growMax = 1
-    this.play()
-  },
   play:function() {
-    this.sorbet.lates = ["growNdie"]
     scenari.push(this)
   },
   update:function() {
@@ -62,6 +54,41 @@ var danseDuSorbet = {
       if (scenari[i] === this) scenari.splice(i,1)
   }
 }
+danseDuSorbet.sorbet.e = 0.01
+danseDuSorbet.sorbet.consumeDose = 0.01
+danseDuSorbet.sorbet.growDose = 0.01
+danseDuSorbet.sorbet.growMax = 1
+danseDuSorbet.sorbet.lates = ["growNdie"]
+
+var seeker = {
+  dist:100,
+  seeker:Object.create(agent),
+  play:function() {
+    scenari.push(this)
+    agents.push(this.seeker)
+  },
+  update:function() {
+    var a = this.seeker
+    if (v2D.length(v2D.sub(a.seekTarget.p, a.p)) < this.dist) {
+      this.target = [
+        Math.floor(Math.random() * (space.x2 - space.x1)) + space.x1,
+        Math.floor(Math.random() * (space.y2 - space.y1)) + space.y1
+      ]
+      a.seekTarget = {p:this.target}
+    }
+  },
+  stop:function() {
+    for (var i = scenari.length-1 ; i >= 0 ; i--)
+      if (scenari[i] === this) scenari.splice(i,1)
+    for (var j = agents.length-1 ; i >= 0 ; i--)
+      if (agents[i] === this.seeker) agents.splice(i,1)
+  }
+}
+seeker.seeker.forces = ["seek"]
+seeker.seeker.seekTarget.p = [0,0]
+seeker.seeker.seekDist = -1
+seeker.seeker.lates = ["fold"]
+seeker.seeker.maxV = 5
 
 var errant = Object.create(agent)
 errant.v = [2,5]
@@ -71,7 +98,7 @@ errant.wanderRadius = 1
 errant.wanderDiff = 0.6
 errant.wanderLaps = 1
 errant.mass = 1
-errant.fleeTarget = space
+errant.fleeObstacle = space
 errant.fleeDist = 100
 errant.forces = ["wander", "flee"]
 errant.lates = ["wrap"]

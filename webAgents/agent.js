@@ -77,17 +77,30 @@ var agent = {
 }
 
 agent.seekTarget = {p:[0,0]}
-agent.seekDist = 0
+agent.seekDist = -1
 agent.seek = function() {
-  //todo
+  var desiredVelocity = v2D.sub(this.seekTarget.p, this.p)
+
+  if (this.seekDist !== -1 && v2D.length(desiredVelocity) < this.seekDist) {
+    this.f = v2D.add(
+      this.f,
+      v2D.sub(
+        v2D.normalize(
+          desiredVelocity,
+          this.maxV === -1 ? v2D.length(this.v) : this.maxV
+        ),
+        this.v
+      )
+    )
+  }
 }
 
-agent.fleeTarget = space
+agent.fleeObstacle = space
 agent.fleeDist = space.dist
 agent.flee = function() {
-  var desiredVelocity = v2D.sub([0,0], space.nearVect(this.p))
+  var desiredVelocity = v2D.sub([0,0], this.fleeObstacle.nearVect(this.p))
 
-  if (v2D.length(desiredVelocity) < this.fleeDist) {
+  if (this.fleeDist !== -1 && v2D.length(desiredVelocity) < this.fleeDist) {
     this.f = v2D.add( // f += steer
       this.f,
       v2D.sub( // steer = desired - velocity
