@@ -37,7 +37,8 @@ var v2D = {
 
 ///////////////////// Send to webSocket for Max
 
-//var socket = new WebSocket("ws://10.204.8.166:8080")
+/*
+var socket = new WebSocket("ws://10.204.8.166:8080")
 
 function sendToMax(tab) {
   //var data = ""
@@ -53,3 +54,4 @@ function formatForDBAP(a) {
     a.e
   ]
 }
+*/
