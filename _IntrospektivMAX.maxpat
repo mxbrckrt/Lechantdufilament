@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 98.0, 44.0, 1144.0, 720.0 ],
+		"rect" : [ 74.0, 62.0, 1144.0, 720.0 ],
 		"bgcolor" : [ 0.694118, 0.694118, 0.694118, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -36,9 +36,9 @@
 					"name" : "Agents.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 22.782986, 155.747986, 128.0, 128.0 ],
+					"patching_rect" : [ 618.0, 183.932922, 240.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 386.0, 1121.980957, 330.001984 ]
+					"presentation_rect" : [ 6.0, 386.0, 935.0, 286.001984 ]
 				}
 
 			}
@@ -322,7 +322,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 926.5, 447.0, 81.0, 20.0 ],
+					"patching_rect" : [ 844.5, 484.0, 81.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
@@ -349,7 +349,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "open" ],
-					"patching_rect" : [ 1030.0, 447.0, 44.0, 20.0 ],
+					"patching_rect" : [ 954.5, 484.0, 44.0, 20.0 ],
 					"text" : "t open"
 				}
 
@@ -365,7 +365,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1030.0, 421.067078, 55.0, 20.0 ],
+					"patching_rect" : [ 954.5, 458.067078, 55.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 492.0, 6.0, 59.0, 20.0 ],
 					"text" : "Values",
@@ -382,7 +382,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "open" ],
-					"patching_rect" : [ 874.5, 447.0, 44.0, 20.0 ],
+					"patching_rect" : [ 792.5, 484.0, 44.0, 20.0 ],
 					"text" : "t open"
 				}
 
@@ -398,7 +398,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 874.5, 421.067078, 52.0, 20.0 ],
+					"patching_rect" : [ 792.5, 458.067078, 52.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 561.0, 6.0, 59.0, 20.0 ],
 					"text" : "Lights",
@@ -415,7 +415,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1036.5, 491.689453, 58.0, 21.0 ],
+					"patching_rect" : [ 954.5, 528.689453, 58.0, 21.0 ],
 					"text" : "pcontrol"
 				}
 
@@ -429,7 +429,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 874.5, 489.821899, 58.0, 21.0 ],
+					"patching_rect" : [ 792.5, 526.821899, 58.0, 21.0 ],
 					"text" : "pcontrol"
 				}
 
@@ -442,7 +442,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1036.5, 520.367554, 122.0, 20.0 ],
+					"patching_rect" : [ 954.5, 557.367554, 122.0, 20.0 ],
 					"text" : "matriceValue.maxpat"
 				}
 
@@ -455,7 +455,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 874.5, 519.0, 125.0, 20.0 ],
+					"patching_rect" : [ 792.5, 556.0, 125.0, 20.0 ],
 					"text" : "matriceLights.maxpat"
 				}
 
@@ -469,7 +469,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 648.5, 477.0, 172.0, 20.0 ],
+					"patching_rect" : [ 580.5, 514.0, 172.0, 20.0 ],
 					"text" : "liaison avec I-Score via Minuit"
 				}
 
@@ -483,7 +483,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 618.0, 447.0, 72.0, 20.0 ],
+					"patching_rect" : [ 550.0, 484.0, 72.0, 20.0 ],
 					"text" : "loadmess 0"
 				}
 
@@ -497,7 +497,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 618.0, 504.0, 153.0, 22.0 ],
+					"patching_rect" : [ 550.0, 541.0, 153.0, 22.0 ],
 					"text" : "MinuitInterface LCDF"
 				}
 
@@ -510,7 +510,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 618.0, 473.0, 24.0, 24.0 ]
+					"patching_rect" : [ 550.0, 510.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -2120,7 +2120,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 618.0, 410.0, 92.0, 28.0 ],
+					"patching_rect" : [ 550.0, 447.0, 92.0, 28.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 946.5, 356.5, 171.5, 28.0 ],
 					"saved_object_attributes" : 					{
@@ -7659,7 +7659,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ -2.0, 0.0 ],
-					"patching_rect" : [ 618.0, 277.067078, 240.0, 50.825562 ],
+					"patching_rect" : [ 618.0, 259.067078, 240.0, 50.825562 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 7.0, 83.0, 486.0, 303.0 ]
 				}
@@ -7674,7 +7674,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 1.0, -1.0 ],
-					"patching_rect" : [ 866.0, 183.932922, 123.0, 223.067078 ],
+					"patching_rect" : [ 904.5, 112.107361, 123.0, 223.067078 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 837.0, 58.5, 96.5, 326.0 ]
 				}
@@ -8118,25 +8118,24 @@
 			"obj-194::obj-123" : [ "live.text[8]", "live.text", 0 ],
 			"obj-180::obj-1::obj-28" : [ "live.slider[6]", "MSNSub", 0 ],
 			"obj-194::obj-171" : [ "live.slider[26]", "Errant-radius", 0 ],
-			"obj-194::obj-8" : [ "live.text[1]", "live.text", 0 ],
 			"obj-194::obj-7" : [ "live.slider[8]", "Sorbet-Formation", 0 ],
+			"obj-194::obj-8" : [ "live.text[1]", "live.text", 0 ],
 			"obj-194::obj-122" : [ "live.text[7]", "live.text", 0 ],
 			"obj-194::obj-1" : [ "live.slider[21]", "Sorbet-Fonte", 0 ],
 			"obj-180::obj-188::obj-7" : [ "live.text[5]", "live.text", 0 ],
 			"obj-194::obj-178" : [ "live.slider[27]", "Errant-diff", 0 ],
 			"obj-194::obj-188" : [ "live.slider[28]", "Errant-velocity", 0 ],
-			"obj-194::obj-9" : [ "live.text[4]", "live.text", 0 ],
 			"obj-194::obj-168" : [ "live.slider[25]", "Errant-Distance", 0 ],
+			"obj-194::obj-9" : [ "live.text[4]", "live.text", 0 ],
 			"obj-180::obj-188::obj-28" : [ "live.slider[4]", "GOLSub", 0 ],
 			"obj-149::obj-162" : [ "live.slider[14]", "Master", 0 ],
 			"obj-17::obj-102" : [ "live.slider", "Intensite", 0 ],
 			"obj-194::obj-92" : [ "live.slider[20]", "Sorbet-Laps creation", 0 ],
 			"obj-194::obj-155" : [ "live.slider[23]", "Errant-Deguerpir", 0 ],
-			"obj-194::obj-166" : [ "live.slider[24]", "Errant-mass", 0 ],
 			"obj-55" : [ "live.text[12]", "live.text[1]", 0 ],
+			"obj-194::obj-166" : [ "live.slider[24]", "Errant-mass", 0 ],
 			"obj-194::obj-113" : [ "live.slider[10]", "AgentSub", 0 ],
 			"obj-149::obj-46" : [ "live.slider[5]", "SlideUp", 0 ],
-			"obj-194::obj-10" : [ "live.text[2]", "live.text", 0 ],
 			"obj-194::obj-150" : [ "live.slider[22]", "Errant-Laps creation", 0 ],
 			"obj-180::obj-188::obj-145" : [ "live.slider[18]", "Densite", 0 ],
 			"obj-134::obj-488" : [ "live.text", "live.text", 0 ],
