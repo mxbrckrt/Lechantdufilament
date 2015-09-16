@@ -6,12 +6,15 @@
     <script type="text/javascript" src="agent.js"></script>
     <script type="text/javascript" src="scenarios.js"></script>
     <script type="text/javascript" src="draw.js"></script>
+    <script type="text/javascript" src="GUI.js"></script>
     <title>Web Agents Test View</title>
 </head>
-<body onload="prepareDraw()">
+<body onload="prepareDraw(),GUI.init()">
     <canvas id="agentView" width="300" height="300"></canvas>
     <p id="FPS"></p>
-    <input type="button" value="PANIC" onclick="clearInterval(timerID)">
-    <input type="button" value="Play Sorbet" onclick="play('sorbet')">
+
+    <input type="button" value="PANIC"
+           onclick="GUI.panic()">
+
 </body>
 </html>
