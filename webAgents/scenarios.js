@@ -5,7 +5,7 @@ var agents = [],
 
 var test = {
   agent:Object.create(agent),
-  init:function() {
+  play:function() {
     scenari = [this]
     this.agent.v = [2,5]
     this.agent.maxV = 5
@@ -57,7 +57,7 @@ var danseDuSorbet = {
 danseDuSorbet.sorbet.e = 0.01
 danseDuSorbet.sorbet.consumeDose = 0.01
 danseDuSorbet.sorbet.growDose = 0.01
-danseDuSorbet.sorbet.growMax = 1
+danseDuSorbet.sorbet.maxGrow = 1
 danseDuSorbet.sorbet.lates = ["growNdie"]
 
 var seeker = {
