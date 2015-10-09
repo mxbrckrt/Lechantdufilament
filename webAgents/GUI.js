@@ -3,6 +3,15 @@
 var GUI = {
 
   names:{
+    space:space,
+    lamps:space.lamps,
+    X:"0",
+    Y:"1",
+    distLamps:"dist",
+    x1:"x1",
+    x2:"x2",
+    y1:"y1",
+    y2:"y2",
     sorbet:danseDuSorbet,
     sorbetagent:danseDuSorbet.sorbet,
     laps:"frameLaps",
