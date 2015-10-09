@@ -30,16 +30,20 @@ var GUI = {
 
   range:function(range) {
     var number = document.getElementsByName(range.name)
-    number = number[0] === range ? number[1] : number[0]
-    number.value = range.value
+    if (number.length > 1) {
+      number       = number[0] === range ? number[1] : number[0]
+      number.value = range.value
+    }
     GUI.names[range.name.split('_')[0]]
         [GUI.names[range.name.split('_')[1]]] = parseFloat(range.value)
   },
 
   number:function(number) {
     var range = document.getElementsByName(number.name)
-    range = range[0] === number ? range[1] : range[0]
-    range.value = number.value
+    if (range.length > 1) {
+      range       = range[0] === number ? range[1] : range[0]
+      range.value = number.value
+    }
     GUI.names[number.name.split('_')[0]]
         [GUI.names[number.name.split('_')[1]]] = parseFloat(number.value)
   },
