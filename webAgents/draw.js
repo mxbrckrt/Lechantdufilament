@@ -60,22 +60,30 @@ function drawLoop() {
 }
 
 function drawBackground() {
+  scaleDistX = function(x) {
+    return x*canvas.width/(space.x2 - space.x1)
+  }
+  scaleDistY = function(y) {
+    return y*canvas.height/(space.y2 - space.y1)
+  }
   scaleX = function(x) {
-    return (x - space.x1)*canvas.width/(space.x2 - space.x1)
+    return scaleDistX(x - space.x1)
   }
   scaleY = function(y) {
-    return (y - space.y1)*canvas.height/(space.y2 - space.y1)
+    return scaleDistX(y - space.y1)
   }
 
   context.strokeStyle = "red"
   context.strokeRect(0, 0, canvas.width, canvas.height)
 
-  /* Cadre des lampes, mais les ronds suffisent a priori
+  // Viewport (indicatif)
   context.strokeStyle = "orange"
-  context.strokeRect(scaleX(0),
-    scaleY(0),
-    scaleX((space.lamps[0]-1)*space.dist),
-    scaleY((space.lamps[1]-1)*space.dist))*/
+  context.strokeRect(
+    scaleX(-space.dist),
+    scaleY(-space.dist),
+    scaleDistX((space.lamps[0]+1)*space.dist),
+    scaleDistY((space.lamps[1]+1)*space.dist)
+  )
 
   context.strokeStyle = "silver"
   for (var i = 0 ; i < space.lamps[0] ; i++) {
