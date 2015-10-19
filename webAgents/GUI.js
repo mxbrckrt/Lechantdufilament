@@ -65,6 +65,17 @@ var GUI = {
   init:function() {
     var inputs = document.getElementsByTagName("input")
     for (var i = inputs.length-1 ; i >= 0 ; i--) inputs[i].focus()
+  },
+
+  save:function() {
+    var inputs = document.getElementsByTagName("input")
+    var toWrite = ""
+    for (var i = 0 ; i < inputs.length ; i++) {
+      if (inputs[i].type === "number") {
+        toWrite += inputs[i].name + ',' + inputs[i].value + ';'
+      }
+    }
+    saveAs(new window.Blob([toWrite]),"parameters.txt")
   }
 
 }
