@@ -47,6 +47,10 @@
            onchange="canvas.height = this.value" onblur="this.value = canvas.height">
            -->
 
+    <label for="zoom">Zoom</label>
+    <input type="range" name="zoom" min="0" max="1000" id="zoom"
+           oninput="GUI.zoom(this)" onblur="this.value = -space.x1">
+
     <br><br> <!--                                                               SORBET -->
     <input type="button" name="sorbet" value="Play Sorbet"
            onclick="GUI.play(this)">

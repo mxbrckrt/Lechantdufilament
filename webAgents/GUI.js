@@ -68,6 +68,11 @@ var GUI = {
     canvas.width = canvas.height = range.value
   },
 
+  zoom:function(range) {
+    space.x1 = space.y1 = -range.value
+    space.x2 = space.y2 = space.dist*(space.lamps[0]-1)+parseInt(range.value)
+  },
+
   panic:function() {
     clearInterval(timerID)
     fpsElt.textContent = "PANICKED !!"
