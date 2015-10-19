@@ -18,11 +18,13 @@ var GUI = {
     dec:"consumeDose",
     inc:"growDose",
     max:"maxGrow",
-    errant:test,
-    errantagent:test.agent,
+    errant:errants,
+    errantagent:errants.errant,
     v:"maxV",
     dist:"wanderDistance",
-    rad:"wanderRadius"
+    rad:"wanderRadius",
+    diff:"wanderDiff",
+    wlaps:"wanderLaps"
   },
 
   play:function(button) {
