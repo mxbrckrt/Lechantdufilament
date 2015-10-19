@@ -3,62 +3,94 @@
 var agents = [],
     scenari = []
 
-var test = {
-  agent:Object.create(agent),
-  play:function() {
-    scenari = [this]
-    this.agent.v = [2,5]
-    this.agent.maxV = 5
-    this.agent.wanderDistance = Math.sqrt(2)
-    this.agent.wanderRadius = 1
-    this.agent.wanderDiff = 0.6
-    this.agent.wanderLaps = 1
-    this.agent.mass = 1
-    this.agent.fleeObstacle = space
-    this.agent.fleeDist = 100
-    this.agent.forces = ["wander", "flee"]
-    this.agent.lates = ["wrap"]
-    agents = [(Object.create(this.agent))]
-  },
-  update:function() {},
-  stop:function() {
-    scenari = []
-    agents = []
-  }
-}
-
-var danseDuSorbet = {
-  frameLaps:100,
-  remaining:0,
-  lastP:[0,0],
-  sorbet:Object.create(agent),
+var scenario = {
+  agents:[],
   play:function() {
     scenari.push(this)
   },
-  update:function() {
-    if (--this.remaining <= 0) {
-      var newAgent = Object.create(this.sorbet)
-      do {
-        newAgent.p = [
-          Math.floor(Math.random() * space.lamps[0]) * space.dist,
-          Math.floor(Math.random() * space.lamps[1]) * space.dist
-        ]
-      } while (v2D.equal(newAgent.p, this.lastP))
-      this.lastP = newAgent.p
-      agents.push(newAgent)
-      this.remaining = this.frameLaps
+  stop:function() { //TODO weird ?
+    for (var i = scenari.length - 1 ; i >= 0 ; i--)
+      if (scenari[i] === this) scenari.splice(i, 1)
+    for (var i = 0 ; i < this.agents.length ; i++) {
+      for (var j = agents.length - 1 ; j >= 0 ; j--)
+        if (agents[j] === this.agents[i]) {
+          agents.splice(i, 1)
+        }
     }
+    this.agents = []
   },
-  stop:function() {
-    for (var i = scenari.length-1 ; i >= 0 ; i--)
-      if (scenari[i] === this) scenari.splice(i,1)
-  }
+  update:function(){}
 }
-danseDuSorbet.sorbet.e = 0.01
-danseDuSorbet.sorbet.consumeDose = 0.01
-danseDuSorbet.sorbet.growDose = 0.01
-danseDuSorbet.sorbet.maxGrow = 1
-danseDuSorbet.sorbet.lates = ["growNdie"]
+
+var danseDuSorbet = Object.create(scenario)
+Object.assign(danseDuSorbet,
+  {
+    frameLaps:100,
+    remaining:0,
+    lastP:[0,0],
+    sorbet:Object.create(agent),
+    update:function() {
+      if (--this.remaining <= 0) {
+        var newAgent = Object.create(this.sorbet)
+        do {
+          newAgent.p = [
+            Math.floor(Math.random() * space.lamps[0]) * space.dist,
+            Math.floor(Math.random() * space.lamps[1]) * space.dist
+          ]
+        } while (v2D.equal(newAgent.p, this.lastP))
+        this.lastP = newAgent.p
+        agents.push(newAgent)
+        this.remaining = this.frameLaps
+      }
+    }
+  }
+)
+Object.assign(danseDuSorbet.sorbet,
+  {
+    e:0.01,
+    consumeDose:0.01,
+    growDose:0.01,
+    maxGrow:1,
+    lates:["growNdie"]
+  }
+)
+
+var errants = Object.create(scenario)
+Object.assign(errants,
+  {
+    n:0,
+    errant:Object.create(agent),
+    update:function() { //todo temporary
+      if (this.agents === []) {
+        this.agents.push(errant)
+        agents.push(errant)
+      }
+    },
+    add:function() {
+      var newAgent = Object.create(errant)
+      this.agents.push(newAgent)
+      agents.push(newAgent)
+    },
+    remove:function(i) {
+
+    }
+  }
+)
+Object.assign(errants.errant,
+  {
+    v:[2,5],
+    maxV:5,
+    wanderDistance:Math.sqrt(2),
+    wanderRadius:1,
+    wanderDiff:0.6,
+    wanderLaps:1,
+    mass:1,
+    fleeObstacle:space,
+    fleeDist:100,
+    forces:["wander", "flee"],
+    lates:["wrap"]
+  }
+)
 
 var seeker = {
   dist:100,
@@ -90,19 +122,6 @@ seeker.seeker.seekDist = -1
 seeker.seeker.lates = ["fold"]
 seeker.seeker.maxV = 5
 
-var errant = Object.create(agent)
-errant.v = [2,5]
-errant.maxV = 5
-errant.wanderDistance = Math.sqrt(2)
-errant.wanderRadius = 1
-errant.wanderDiff = 0.6
-errant.wanderLaps = 1
-errant.mass = 1
-errant.fleeObstacle = space
-errant.fleeDist = 100
-errant.forces = ["wander", "flee"]
-errant.lates = ["wrap"]
-
 function update() {
   for (var j = 0 ; j < scenari.length ; j++) scenari[j].update()
   for (var i = agents.length-1 ; i >= 0 ; i--) {
@@ -115,4 +134,28 @@ function update() {
     }*/
   }
   //sendToMax(["bang"])
+}
+
+var test = {
+  agent:Object.create(agent),
+  play:function() {
+    scenari = [this]
+    this.agent.v = [2,5]
+    this.agent.maxV = 5
+    this.agent.wanderDistance = Math.sqrt(2)
+    this.agent.wanderRadius = 1
+    this.agent.wanderDiff = 0.6
+    this.agent.wanderLaps = 1
+    this.agent.mass = 1
+    this.agent.fleeObstacle = space
+    this.agent.fleeDist = 100
+    this.agent.forces = ["wander", "flee"]
+    this.agent.lates = ["wrap"]
+    agents = [(Object.create(this.agent))]
+  },
+  update:function() {},
+  stop:function() {
+    scenari = []
+    agents = []
+  }
 }
