@@ -17,8 +17,10 @@
 
     <input type="button" value="PANIC"
            onclick="GUI.panic()">
+    <input type="button" value="Save"
+           onclick="GUI.save()">
 
-    <br><br>
+    <br><br> <!--                                                               SPACE -->
     <label for="lamps">Lampes</label>
     <input type="number" name="lamps" min="1" max="20" id="lamps"
            onchange="GUI.lamps(this)" onblur="this.value = space.lamps[0]">
@@ -45,7 +47,7 @@
            onchange="canvas.height = this.value" onblur="this.value = canvas.height">
            -->
 
-    <br><br>
+    <br><br> <!--                                                               SORBET -->
     <input type="button" name="sorbet" value="Play Sorbet"
            onclick="GUI.play(this)">
 
@@ -73,7 +75,7 @@
     <input type="range" name="sorbetagent_max" min="1" max="10"
            oninput="GUI.range(this)" onblur="this.value = danseDuSorbet.sorbet.maxGrow">
 
-    <br><br>
+    <br><br> <!--                                                               ERRANT -->
     <input type="button" name="errant" value="Play Errant"
            onclick="GUI.play(this)">
 
@@ -96,8 +98,6 @@
            oninput="GUI.range(this)" onblur="this.value = test.agent.wanderRadius">
 
     <br><br>
-    <input type="button" value="Save"
-           onclick="GUI.save()">
 
 </body>
 </html>
