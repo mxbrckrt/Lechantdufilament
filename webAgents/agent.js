@@ -1,12 +1,12 @@
 // Author : Clément Bossut
 
 var space = {
-  lamps:[6,6],
+  lamps:[9,9],
   dist:100,
   x1:-100,
   y1:-100,
-  x2:600,
-  y2:600,
+  x2:900,
+  y2:900,
   nearVect:function(p) {
     var dists = [p[0] - this.x1,
                  p[1] - this.y1,

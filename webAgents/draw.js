@@ -2,6 +2,8 @@
 
 var canvas,
     context,
+    scaleDistX,
+    scaleDistY,
     scaleX,
     scaleY,
     interval = 16,
@@ -76,7 +78,7 @@ function drawBackground() {
   context.strokeStyle = "red"
   context.strokeRect(0, 0, canvas.width, canvas.height)
 
-  // Viewport (indicatif)
+  // Viewport (indicatif) //TODO buggy !
   context.strokeStyle = "orange"
   context.strokeRect(
     scaleX(-space.dist),
