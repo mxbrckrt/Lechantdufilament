@@ -70,7 +70,7 @@ function drawBackground() {
     return scaleDistX(x - space.x1)
   }
   scaleY = function(y) {
-    return scaleDistX(y - space.y1)
+    return scaleDistY(y - space.y1)
   }
 
   context.strokeStyle = "red"
