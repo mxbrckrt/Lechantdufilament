@@ -19,6 +19,10 @@
            onclick="GUI.panic()">
 
     <br><br>
+    <label for="lamps">Lampes</label>
+    <input type="number" name="lamps" min="1" max="20" id="lamps"
+           onchange="GUI.lamps(this)" onblur="this.value = space.lamps[0]">
+    <!--
     <label for="lamps_X">Lampes</label>
     <input type="number" name="lamps_X" min="1" max="20" id="lamps_X"
            onchange="GUI.number(this)" onblur="this.value = space.lamps[0]">
@@ -28,12 +32,18 @@
            onchange="GUI.number(this)" onblur="this.value = space.dist">
     <input type="range" name="space_distLamps" min="10" max="200"
            oninput="GUI.range(this)" onblur="this.value = space.dist">
+           -->
 
+    <label for="canvas">Canvas</label>
+    <input type="range" name="canvas" min="10" max="1000" id="canvas"
+           oninput="GUI.canvas(this)" onblur="this.value = canvas.width">
+    <!--
     <label for="canvas_x">Canvas</label>
     <input type="number" name="canvas_x" min="10" max="1000" id="canvas_x"
            onchange="canvas.width = this.value" onblur="this.value = canvas.width">
     <input type="number" name="canvas_y" min="10" max="1000"
            onchange="canvas.height = this.value" onblur="this.value = canvas.height">
+           -->
 
     <br><br>
     <input type="button" name="sorbet" value="Play Sorbet"

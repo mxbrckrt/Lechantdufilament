@@ -57,6 +57,15 @@ var GUI = {
         [GUI.names[number.name.split('_')[1]]] = parseFloat(number.value)
   },
 
+  lamps:function(number) {
+    space.lamps[0] = space.lamps[1] = number.value
+    space.x2 = space.y2 = number.value*space.dist
+  },
+
+  canvas:function(range) {
+    canvas.width = canvas.height = range.value
+  },
+
   panic:function() {
     clearInterval(timerID)
     fpsElt.textContent = "PANICKED !!"
