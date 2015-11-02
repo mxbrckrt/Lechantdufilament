@@ -5,7 +5,9 @@ var agents = [],
 
 var scenario = {
   agents:[],
+  init:function() {},
   play:function() {
+    this.init()
     scenari.push(this)
   },
   stop:function() { //TODO weird ?
@@ -61,11 +63,9 @@ Object.assign(errants,
   {
     n:0,
     errant:Object.create(agent),
-    update:function() { //todo temporary
-      if (this.agents === []) {
-        this.agents.push(errant)
-        agents.push(errant)
-      }
+    init:function() {
+      this.agents = [this.errant] //new array
+      agents.push(this.errant)
     },
     add:function() { //TODO
       var newAgent = Object.create(this.errant)
