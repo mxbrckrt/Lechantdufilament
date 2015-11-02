@@ -49,7 +49,7 @@ var agent = {
   maxV:-1,
   minV:-1,
   forces:[],
-  moves:[],
+  moves:[], // todo doesn't exist anymore ? see // Move in update()
   lates:[],
   update:function() {
 
@@ -75,6 +75,8 @@ var agent = {
     for (var k = 0 ; k < this.lates.length ; k++) this[this.lates[k]]()
   }
 }
+
+//////////////////////////// FORCES
 
 agent.seekTarget = {p:[0,0]}
 agent.seekDist = -1
@@ -148,6 +150,8 @@ agent.move = function() { // same
   this.p[1] += this.v[1]
 }*/
 
+////////////////////////////////// LATES - BORDERS
+
 agent.clip = function() { // beware, modify prototype ...
   if (this.p[0] < space.x1) this.p[0] = space.x1
   else if (this.p[0] > space.x2) this.p[0] = space.x2
@@ -181,6 +185,8 @@ agent.fold = function() { // same
   }
 }
 
+////////////////////////////////// LATES - ENERGY
+
 agent.consumeDose = 0
 agent.consume = function() {
   this.e = this.e > this.consumeDose ? this.e - this.consumeDose : 0
@@ -198,6 +204,9 @@ agent.grow = function() {
   if (this.e > this.maxGrow) this.e = this.maxGrow
 }
 
+/////////////////////////////////// COMPLEX
+
+// LATE
 agent.growNdie = function() {
   if (this.e < this.maxGrow) this.grow()
   else {

@@ -55,7 +55,8 @@ Object.assign(danseDuSorbet.sorbet,
   }
 )
 
-var errants = Object.create(scenario)
+
+var errants = Object.create(scenario) //TODO CLEAN
 Object.assign(errants,
   {
     n:0,
@@ -66,8 +67,8 @@ Object.assign(errants,
         agents.push(errant)
       }
     },
-    add:function() {
-      var newAgent = Object.create(errant)
+    add:function() { //TODO
+      var newAgent = Object.create(this.errant)
       this.agents.push(newAgent)
       agents.push(newAgent)
     },
@@ -92,6 +93,7 @@ Object.assign(errants.errant,
   }
 )
 
+
 var seeker = {
   dist:100,
   seeker:Object.create(agent),
@@ -112,7 +114,7 @@ var seeker = {
   stop:function() {
     for (var i = scenari.length-1 ; i >= 0 ; i--)
       if (scenari[i] === this) scenari.splice(i,1)
-    for (var j = agents.length-1 ; i >= 0 ; i--)
+    for (var i = agents.length-1 ; i >= 0 ; i--)
       if (agents[i] === this.seeker) agents.splice(i,1)
   }
 }
@@ -121,6 +123,7 @@ seeker.seeker.seekTarget.p = [0,0]
 seeker.seeker.seekDist = -1
 seeker.seeker.lates = ["fold"]
 seeker.seeker.maxV = 5
+
 
 function update() {
   for (var j = 0 ; j < scenari.length ; j++) scenari[j].update()
