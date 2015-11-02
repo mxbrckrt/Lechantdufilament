@@ -218,3 +218,12 @@ agent.growNdie = function() {
       }
   }
 }
+
+// FORCE //todo really ? but needs to change v ... is it an agent ?
+agent.destination = [0,0]
+agent.goNdie = function() {
+  if (v2D.equal(this.p, this.destination)) this.toDie = true
+  else {
+    this.v = v2D.sub(this.destination, this.p)
+  }
+}

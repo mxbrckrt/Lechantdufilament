@@ -2,7 +2,7 @@
 
 var GUI = {
 
-  names:{
+  names:{//todo could we use same names and transform directly string into var ?
     space:space,
     lamps:space.lamps,
     X:"0",
@@ -12,6 +12,15 @@ var GUI = {
     x2:"x2",
     y1:"y1",
     y2:"y2",
+    v:"maxV",
+    m:"mass",
+    bGD:bGD,
+    bDG:bDG,
+    bHB:bHB,
+    bBH:bBH,
+    bCP:bCP,
+    bCF:bCF,
+    balai:balayage.balayeur,
     sorbet:danseDuSorbet,
     sorbetagent:danseDuSorbet.sorbet,
     laps:"frameLaps",
@@ -20,11 +29,14 @@ var GUI = {
     max:"maxGrow",
     errant:errants,
     errantagent:errants.errant,
-    v:"maxV",
     dist:"wanderDistance",
     rad:"wanderRadius",
     diff:"wanderDiff",
     wlaps:"wanderLaps"
+  },
+
+  launch:function(button) {
+    GUI.names[button.name].play()
   },
 
   play:function(button) {

@@ -24,6 +24,63 @@ var scenario = {
   update:function(){}
 }
 
+
+
+var balayage = Object.create(scenario)
+Object.assign(balayage,
+  {
+    starts:[],
+    destinations:[],
+    balayeur:Object.create(agent),
+    init:function() {
+      this.agents = []
+      for (var i = 0 ; i < this.starts.length ; i++) {
+        var b = Object.create(this.balayeur)
+        b.p = this.starts[i].slice() //copy
+        b.destination = this.destinations[i].slice() //copy
+        this.agents.push(b) //todo could be independant agents
+        agents.push(b)
+      }
+    }, //todo cf up : here call goNdie on this.agents cutting update ?
+    update:function() {
+      for (var i = this.agents.length-1 ; i >= 0 ; i--) {
+        if (this.agents[i].toDie) this.agents.splice(i, 1)
+      }
+      if (!this.agents.length) this.stop()
+    }
+  }
+)
+Object.assign(balayage.balayeur,
+  {
+    maxV:5,
+    forces:["goNdie"]
+  }
+)
+var bGD = Object.create(balayage),
+    bDG = Object.create(balayage),
+    bHB = Object.create(balayage),
+    bBH = Object.create(balayage),
+    bCP = Object.create(balayage),//todo
+    bCF = Object.create(balayage),//todo
+    bals = [bGD,bDG,bHB,bBH,bCP,bCF]
+for (var i = 0 ; i < bals.length ; i++) {
+  bals[i].starts = [], bals[i].destinations = []
+}
+for (var i = 0 ; i < space.lamps[1] ; i++) {
+  bGD.starts.push([0, space.dist * i])
+  bGD.destinations.push([(space.lamps[0] - 1) * space.dist, space.dist * i])
+}
+bDG.starts = bGD.destinations, bDG.destinations = bGD.starts
+for (var i = 0 ; i < space.lamps[0] ; i++) {
+  bHB.starts.push([space.dist*i,0])
+  bHB.destinations.push([space.dist*i,(space.lamps[1]-1)*space.dist])
+}
+bBH.starts = bHB.destinations, bBH.destinations = bHB.starts
+
+
+
+
+
 var danseDuSorbet = Object.create(scenario)
 Object.assign(danseDuSorbet,
   {
