@@ -136,17 +136,26 @@ Object.assign(errants,
 )
 Object.assign(errants.errant,
   {
-    v:[2,5],
     maxV:5,
+    maxF:0.1,
+    mass:1,
+    /*
+    seekTarget:{p:[0,0]},
+    */
     wanderDistance:Math.sqrt(2),
     wanderRadius:1,
     wanderDiff:0.6,
     wanderLaps:1,
-    mass:1,
+    /*
     fleeObstacle:space,
     fleeDist:100,
-    forces:["wander", "flee"],
-    lates:["wrap"]
+    */
+    insideDist:space.dist,
+    insideSquare:[0,0,space.dist*(space.lamps[0]-1),space.dist*(space.lamps[1]-1)],
+    insideRule:"wander",
+
+    forces:["inside"],
+    lates:[]
   }
 )
 

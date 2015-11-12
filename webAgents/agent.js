@@ -78,7 +78,7 @@ var agent = {
 
 //////////////////////////// FORCES
 
-agent.seekTarget = {p:[0,0]}
+agent.seekTarget = {p:undefined} //todo : is it a good idea ?
 agent.seekDist = -1
 agent.seek = function() {
   var desiredVelocity = v2D.sub(this.seekTarget.p, this.p)
