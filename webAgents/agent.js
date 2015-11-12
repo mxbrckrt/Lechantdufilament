@@ -39,6 +39,7 @@ var space = {
 }
 
 var agent = {
+  color:"black", // For debug draw purposes only
   p:[0,0], // position
   v:[0,0], // velocity
   f:[0,0], // force / steering / acceleration

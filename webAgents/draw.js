@@ -2,6 +2,7 @@
 
 var canvas,
     context,
+    debug = false,
     scaleDistX,
     scaleDistY,
     scaleX,
@@ -24,22 +25,52 @@ agent.draw = function() {
       fx = this.f[0]*fFactor,
       fy = this.f[1]*fFactor
 
-  context.strokeStyle = "black"
+  context.strokeStyle = debug ? this.color : "black"
   context.beginPath()
   context.arc(x, y, e, 0, 2*Math.PI)
   context.stroke()
 
-  context.strokeStyle = "green"
-  context.beginPath()
-  context.moveTo(x, y)
-  context.lineTo(x+vx, y+vy)
-  context.stroke()
+  if (debug) {
+    context.strokeStyle = "green"
+    context.beginPath()
+    context.moveTo(x, y)
+    context.lineTo(x + vx, y + vy)
+    context.stroke()
 
-  context.strokeStyle = "magenta"
-  context.beginPath()
-  context.moveTo(x, y)
-  context.lineTo(x+fx, y+fy)
-  context.stroke()
+    context.strokeStyle = "magenta"
+    context.beginPath()
+    context.moveTo(x, y)
+    context.lineTo(x + fx, y + fy)
+    context.stroke()
+
+    if (this.seekTarget.p) {
+      context.strokeStyle = "red"
+      context.beginPath()
+      context.arc(
+        scaleX(this.seekTarget.p[0]),
+        scaleY(this.seekTarget.p[1]),
+        5, 0, 2 * Math.PI
+      )
+      context.stroke()
+    }
+
+    if (this.insideSquare) {
+      var x = scaleX(this.insideSquare[0]),
+          y = scaleY(this.insideSquare[1]),
+          dx = scaleDistX(this.insideSquare[2] - this.insideSquare[0]),
+          dy = scaleDistY(this.insideSquare[3] - this.insideSquare[1])
+      context.strokeStyle = "purple"
+      context.lineWidth = 3
+      context.strokeRect(x, y, dx, dy)
+      context.lineWidth = 1
+      context.strokeRect(
+        x + scaleDistX(this.insideDist),
+        y + scaleDistY(this.insideDist),
+        dx - 2*scaleDistX(this.insideDist),
+        dy - 2*scaleDistY(this.insideDist)
+      )
+    }
+  }
 }
 
 function prepareDraw() {
