@@ -84,7 +84,7 @@ agent.seekDist = -1
 agent.seek = function() {
   var desiredVelocity = v2D.sub(this.seekTarget.p, this.p)
 
-  if (this.seekDist !== -1 && v2D.length(desiredVelocity) < this.seekDist) {
+  if (this.seekDist == -1 || v2D.length(desiredVelocity) < this.seekDist) {
     this.f = v2D.add(
       this.f,
       v2D.sub(
