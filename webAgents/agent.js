@@ -139,6 +139,15 @@ agent.wander = function() {
   }
 }
 
+agent.wanderSeek = function() {
+  if (v2D.length(v2D.sub(this.seekTarget.p, this.p)) <= v2D.length(this.v)) {
+    this.seekTarget =
+      {p:[Math.random() * space.dist * (space.lamps[0]-1),
+          Math.random() * space.dist * (space.lamps[1]-1)]}
+  }
+  this.seek()
+}
+
 agent.avoid = function() {
   //todo
 }
@@ -150,6 +159,31 @@ agent.move = function() { // same
   this.p[0] += this.v[0]
   this.p[1] += this.v[1]
 }*/
+
+agent.insideDist = space.dist
+agent.insideSquare = undefined //todo : is it a good idea ?
+agent.insideRule = "wander"
+agent.inside = function() {
+  var maxV = this.maxV == -1 ? v2D.length(this.v) : this.maxV
+  var f = [0,0]
+  if (this.p[0] < this.insideSquare[0] + this.insideDist) {
+    f = [maxV - this.v[0], 0]
+  } else if (this.p[0] > this.insideSquare[2] - this.insideDist) {
+    f = [-maxV - this.v[0], 0]
+  }
+  if (this.p[1] < this.insideSquare[1] + this.insideDist) {
+    f = v2D.add(f, [0, maxV - this.v[1]])
+  } else if (this.p[1] > this.insideSquare[3] - this.insideDist) {
+    f = v2D.add(f, [0, -maxV - this.v[1]])
+  }
+  if (v2D.equal(f, [0,0])) {
+    this.color = "black"
+    this[this.insideRule]()
+  } else {
+    this.color = "purple"
+    this.f = v2D.add(this.f, f)
+  }
+}
 
 ////////////////////////////////// LATES - BORDERS
 
