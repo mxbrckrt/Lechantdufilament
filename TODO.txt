@@ -1,0 +1,8 @@
+SetLight+Audio
+	à vérif : changer les valeurs de lignes et colonnes doivent être envoyées après appui du bouton "reset speakers" sous peine d'incohérence du nb de lampes dans le patch
+	view_update 0 pour économiser du calcul de dbap
+	où est initialisé le textedit pour adresse vers dlight ?
+MainPatch
+	est-ce que le patch I-score est encore fonctionnel avec i-score 1.0 ?
+CentraleLogique
+	mxj ej.lslide portage en gen car oblige à telecharger une version obsolete de java juste pour un objet

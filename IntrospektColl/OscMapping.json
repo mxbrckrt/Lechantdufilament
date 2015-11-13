@@ -1,13 +1,13 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u105002964",
+		"name" : "u405003036",
 		"slots" : 		{
 			"1000" : 			{
 				"id" : 1000,
 				"data" : 				{
 					"OscParams" : [ "192.168.20.1", 8000 ],
 					"OscParams[1]" : [ 8000 ],
-					"OscToDlight" : [ "169.254.147.197", 7000 ],
+					"OscToDlight" : [ "127.0.0.1", 7000 ],
 					"MXtgtOSC::MapMax" : [ 1.0 ],
 					"MXtgtOSC::MapMin" : [ 0.0 ],
 					"MXtgtOSC::Max" : [ 1.0 ],
