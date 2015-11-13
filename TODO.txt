@@ -6,3 +6,8 @@ MainPatch
 	est-ce que le patch I-score est encore fonctionnel avec i-score 1.0 ?
 CentraleLogique
 	mxj ej.lslide portage en gen car oblige à telecharger une version obsolete de java juste pour un objet
+Life
+	toggle Eteins-Moi à l'air cassé
+
+Global
+	mousefilter sur les SUB ?
