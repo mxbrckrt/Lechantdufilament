@@ -597,11 +597,13 @@ function sorbetMaxEnergy(m) {
 }
 
 function sorbetIncFrames(ti) {
+  if (ti < 1) ti = 1
   with(danseDuSorbet.sorbet)
     growDose = maxGrow / ti
 }
 
 function sorbetDecFrames(td) {
+  if (td < 1) td = 1
   with(danseDuSorbet.sorbet)
   consumeDose = maxGrow / td
 }
