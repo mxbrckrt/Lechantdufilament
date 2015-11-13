@@ -589,6 +589,7 @@ function sorbet(toggle) {
 }
 
 function sorbetMaxEnergy(m) {
+  if (!m) return
   with(danseDuSorbet) {
     sorbet.growDose *= m / sorbet.maxGrow
     sorbet.consumDose *= m / sorbet.maxGrow
