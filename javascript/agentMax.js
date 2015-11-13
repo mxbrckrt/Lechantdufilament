@@ -4,6 +4,14 @@ outlets = 2;
 setoutletassist(1,"agents");
 setoutletassist(0,"bang when finished");
 
+Object.assign = function(obj, props) {
+  for (var prop in props) {
+    if (props.hasOwnProperty(prop)) {
+      obj[prop] = props[prop]
+    }
+  }
+}
+
 ///////////////////////////////////TOOLS.JS
 
 // Author : Clément Bossut
