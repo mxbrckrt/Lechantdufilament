@@ -607,12 +607,12 @@ function sorbetLaps(l) {
 /////////////////// Errant
 
 function errantAdd() {
-  agents.push(Object.create(errant))
+  agents.push(Object.create(errants.errant))
 }
 
 function errantDel() {
   for (var i = agents.length - 1 ; i >= 0 ; i--) {
-    if (errant.isPrototypeOf(agents[i])) {
+    if (errants.errant.isPrototypeOf(agents[i])) {
       agents.splice(i,1)
       break
     }
@@ -620,31 +620,31 @@ function errantDel() {
 }
 
 function errantLaps(l) {
-  errant.wanderLaps = l
-}
-
-function errantDeguerpir(d) {
-  errant.fleeDist = d
+  errants.errant.wanderLaps = l
 }
 
 function errantDistance(d) {
-  errant.wanderDistance = d
+  errants.errant.wanderDistance = d
 }
 
 function errantRadius(r) {
-  errant.wanderRadius = r
+  errants.errant.wanderRadius = r
 }
 
 function errantDiff(d) {
-  errant.wanderDiff = d
+  errants.errant.wanderDiff = d
 }
 
 function errantMass(m) {
-  errant.mass = m
+  errants.errant.mass = m
 }
 
 function errantVelocity(maxV) {
-  errant.maxV = maxV
+  errants.errant.maxV = maxV
+}
+
+function errantForce(maxF) {
+  errants.errant.maxF = maxV
 }
 
 //////////////////// Update & Panic
