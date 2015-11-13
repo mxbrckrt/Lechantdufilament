@@ -588,19 +588,25 @@ function sorbet(toggle) {
   else danseDuSorbet.stop()
 }
 
-function sorbetIntensity(m) {
-  danseDuSorbet.sorbet.maxGrow = m
+function sorbetMaxEnergy(m) {
+  with(danseDuSorbet) {
+    sorbet.growDose *= m / sorbet.maxGrow
+    sorbet.consumDose *= m / sorbet.maxGrow
+    sorbet.growDose = m
+  }
 }
 
-function sorbetInc(i) {
-  danseDuSorbet.sorbet.growDose = i
+function sorbetIncFrames(ti) {
+  with(danseDuSorbet.sorbet)
+    growDose = maxGrow / ti
 }
 
-function sorbetDec(d) {
-  danseDuSorbet.sorbet.consumeDose = d
+function sorbetDecFrames(td) {
+  with(danseDuSorbet.sorbet)
+  consumeDose = maxGrow / td
 }
 
-function sorbetLaps(l) {
+function sorbetLapsFrames(l) {
   danseDuSorbet.frameLaps = l
 }
 
