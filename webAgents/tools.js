@@ -9,6 +9,7 @@ var v2D = {
   normalize:function(v, n) {
     if (typeof(n) === 'undefined') n = 1
     var d = v2D.length(v)
+    if (!d) return [0,0]
     return [v[0]*n/d,v[1]*n/d]
   },
 
