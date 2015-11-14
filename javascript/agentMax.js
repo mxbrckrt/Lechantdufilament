@@ -433,6 +433,7 @@ Object.assign(danseDuSorbet,
     lastP:[0,0],
     sorbet:Object.create(agent),
     update:function() {
+      if (this.remaining > this.frameLaps) this.remaining = this.frameLaps
       if (--this.remaining <= 0) {
         var newAgent = Object.create(this.sorbet)
         do {
@@ -628,7 +629,7 @@ function errantDel() {
   }
 }
 
-function errantLaps(l) {
+function errantLapsFrames(l) {
   errants.errant.wanderLaps = l
 }
 
@@ -660,7 +661,7 @@ function errantForce(maxF) {
 
 function bang() {
   update()
-  for(i=0;i<agents.length;i++) {
+  for(var i=0;i<agents.length;i++) {
     var a = agents[i];
     outlet(1,
       i+1,
