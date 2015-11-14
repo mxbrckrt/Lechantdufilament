@@ -628,7 +628,7 @@ function errantDel() {
   }
 }
 
-function errantLaps(l) {
+function errantLapsFrames(l) {
   errants.errant.wanderLaps = l
 }
 
