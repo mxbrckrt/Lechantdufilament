@@ -661,7 +661,7 @@ function errantForce(maxF) {
 
 function bang() {
   update()
-  for(i=0;i<agents.length;i++) {
+  for(var i=0;i<agents.length;i++) {
     var a = agents[i];
     outlet(1,
       i+1,
