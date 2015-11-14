@@ -89,6 +89,7 @@ Object.assign(danseDuSorbet,
     lastP:[0,0],
     sorbet:Object.create(agent),
     update:function() {
+      if (this.remaining < this.frameLaps) this.remaining = this.frameLaps
       if (--this.remaining <= 0) {
         var newAgent = Object.create(this.sorbet)
         do {
