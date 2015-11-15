@@ -53,13 +53,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-45",
-					"linecount" : 8,
+					"linecount" : 7,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 542.0, 431.067078, 134.0, 116.0 ],
+					"patching_rect" : [ 542.0, 431.067078, 166.0, 102.0 ],
 					"style" : "",
-					"text" : "j.minuit_device @local/name LCDF @local/port 9998 @local/ip 127.0.0.1 @remote/name i-score @remote/port 13579 @remote/ip 127.0.0.1 @active 1 @print 0"
+					"text" : "j.minuit_device @local/name LCDF @local/port 9998 @local/ip 127.0.0.1 @remote/name i-score @remote/port 13579 @remote/ip 127.0.0.1 @active 1 @print 1"
 				}
 
 			}
@@ -8645,8 +8645,8 @@
 		"parameters" : 		{
 			"obj-180::obj-188::obj-7" : [ "live.text[5]", "live.text", 0 ],
 			"obj-17::obj-61" : [ "live.slider[2]", "SpatMulti-Sub", 0 ],
-			"obj-194::obj-139::obj-120::obj-22" : [ "live.slider[12]", "Errant-force", 0 ],
 			"obj-194::obj-139::obj-120::obj-123" : [ "live.text[8]", "live.text", 0 ],
+			"obj-194::obj-139::obj-120::obj-22" : [ "live.slider[12]", "Errant-force", 0 ],
 			"obj-194::obj-139::obj-129::obj-92" : [ "live.slider[20]", "Sorbet-temps-creation", 0 ],
 			"obj-134::obj-488" : [ "live.text", "live.text", 0 ],
 			"obj-55" : [ "live.text[12]", "live.text[1]", 0 ],
