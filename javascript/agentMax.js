@@ -624,8 +624,9 @@ function change(parameter, value) {
 
 }
 
-function lamps(l) {
-  space.lamps[0] = space.lamps[1] = l
+function lamps(lx, ly) {
+  space.lamps[0] = lx
+  space.lamps[1] = ly
 }
 
 //////////////////// Sorbet
