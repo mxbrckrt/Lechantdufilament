@@ -12,22 +12,22 @@ var canvas,
     lastDate,
     times = [],
     fpsElt,
-    eFactor = 5,
     vFactor = 3,
     fFactor = 3
 
 agent.draw = function() {
   var x = scaleX(this.p[0]),
       y = scaleY(this.p[1]),
-      e = this.e*eFactor,
+      r = scaleDistX(this.s*space.dist),// TODO : forced square space
+      alpha = this.e,
       vx = this.v[0]*vFactor,
       vy = this.v[1]*vFactor,
       fx = this.f[0]*fFactor,
       fy = this.f[1]*fFactor
 
-  context.strokeStyle = debug ? this.color : "black"
+  context.strokeStyle = debug ? this.color : "rgba(0,0,0," + alpha + ")"
   context.beginPath()
-  context.arc(x, y, e, 0, 2*Math.PI)
+  context.arc(x, y, r, 0, 2*Math.PI)
   context.stroke()
 
   if (debug) {
@@ -118,12 +118,18 @@ function drawBackground() {
     scaleDistY((space.lamps[1]+1)*space.dist)
   )
 
+  if (agents.length) var lights = map()
+
   context.strokeStyle = "silver"
   for (var i = 0 ; i < space.lamps[0] ; i++) {
     for (var j = 0 ; j < space.lamps[1] ; j++) {
       context.beginPath()
       context.arc(scaleX(i*space.dist), scaleY(j*space.dist), 3, 0, 2*Math.PI)
       context.stroke()
+      if (lights) {
+        context.fillStyle = "rgba(255,255,0," + lights[i][j]/255 + ")"
+        context.fill()
+      }
     }
   }
 }

@@ -92,11 +92,17 @@
     <input type="range" name="sorbetagent_inc" min="0.01" max="1" step="0.01"
            oninput="GUI.range(this)" onblur="this.value = danseDuSorbet.sorbet.growDose">
 
-    <label for="sorbetagent_max">Taille max</label>
-    <input type="number" name="sorbetagent_max" min="1" max="10" id="sorbetagent_max"
+    <label for="sorbetagent_max">Energie max</label>
+    <input type="number" name="sorbetagent_max" min="0" max="1" step="0.01" id="sorbetagent_max"
            onchange="GUI.number(this)" onblur="this.value = danseDuSorbet.sorbet.maxGrow">
-    <input type="range" name="sorbetagent_max" min="1" max="10"
+    <input type="range" name="sorbetagent_max" min="0" max="1" step="0.01"
            oninput="GUI.range(this)" onblur="this.value = danseDuSorbet.sorbet.maxGrow">
+
+    <label for="sorbetagent_size">Taille</label>
+    <input type="number" name="sorbetagent_size" min="0" max="5" step="0.1" id="sorbetagent_size"
+           onchange="GUI.number(this)" onblur="this.value = danseDuSorbet.sorbet.s">
+    <input type="range" name="sorbetagent_size" min="0" max="5" step="0.1"
+           oninput="GUI.range(this)" onblur="this.value = danseDuSorbet.sorbet.s">
 
     <br><br> <!--                                                               ERRANT -->
     <input type="button" name="errant" value="Play Errant ONCE"

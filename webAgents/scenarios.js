@@ -115,6 +115,7 @@ Object.assign(danseDuSorbet.sorbet,
     consumeDose:0.01,
     growDose:0.01,
     maxGrow:1,
+    s:0.5,
     lates:["growNdie"]
   }
 )
