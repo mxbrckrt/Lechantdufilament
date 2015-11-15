@@ -46,6 +46,12 @@ function map() {
   }
   for (var k = 0; k < agents.length; k++) {
     with (agents[k]) {
+      if (!s) {
+        if (!(p[0] % 100) && !(p[1] % 100)) {
+          lights[p[0] / 100][p[1] / 100] = e*255
+        }
+        continue
+      }
       var square = [
         Math.max(0, Math.floor(p[0]/space.dist - s)),
         Math.min(space.lamps[0]-1, Math.ceil(p[0]/space.dist + s)),

@@ -27,7 +27,7 @@ agent.draw = function() {
 
   context.strokeStyle = debug ? this.color : "rgba(0,0,0," + alpha + ")"
   context.beginPath()
-  context.arc(x, y, r, 0, 2*Math.PI)
+  context.arc(x, y, r||1, 0, 2*Math.PI)
   context.stroke()
 
   if (debug) {
