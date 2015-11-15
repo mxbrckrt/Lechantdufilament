@@ -712,6 +712,14 @@ function errantForce(maxF) {
   errants.errant.maxF = maxF
 }
 
+function errantEnergy(e) {
+  errants.errant.e = e
+}
+
+function errantSize(s) {
+  errants.errant.s = s
+}
+
 //////////////////// Update & Panic
 
 function bang() {
