@@ -635,6 +635,10 @@ function sorbet(toggle) {
   else danseDuSorbet.stop()
 }
 
+function sorbetSize(s) {
+  danseDuSorbet.sorbet.s = s
+}
+
 function sorbetMaxEnergy(m) {
   if (m <= 0) return
   with(danseDuSorbet) {
@@ -708,8 +712,8 @@ function errantForce(maxF) {
 function bang() {
   update()
   var lights = map()
-  for (var j = 0 ; j < space.lamps[1]-1 ; j++) {
-    for (var i = 0 ; i < space.lamps[0]-1 ; i++) {
+  for (var j = 0 ; j < space.lamps[1] ; j++) {
+    for (var i = 0 ; i < space.lamps[0] ; i++) {
       outlet(1,lights[i][j])
     }
   }
