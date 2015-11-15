@@ -93,7 +93,7 @@ function drawLoop() {
 }
 
 function drawBackground() {
-  scaleDistX = function(x) { //todo : wrong place fot that
+  scaleDistX = function(x) { //todo : wrong place for that
     return x*canvas.width/(space.x2 - space.x1)
   }
   scaleDistY = function(y) {

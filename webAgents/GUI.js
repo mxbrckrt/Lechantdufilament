@@ -1,4 +1,4 @@
-// Author : Clément Bossut
+// Author : ClÃ©ment Bossut
 
 var GUI = {
 

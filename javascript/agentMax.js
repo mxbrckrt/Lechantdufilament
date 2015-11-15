@@ -582,6 +582,10 @@ function change(parameter, value) {
 
 }
 
+function lamps(l) {
+  space.lamps[0] = space.lamps[1] = l
+}
+
 //////////////////// Sorbet
 
 function sorbet(toggle) {
