@@ -704,7 +704,7 @@ function errantVelocity(maxV) {
 }
 
 function errantForce(maxF) {
-  errants.errant.maxF = maxV
+  errants.errant.maxF = maxF
 }
 
 //////////////////// Update & Panic
