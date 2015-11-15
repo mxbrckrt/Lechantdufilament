@@ -75,12 +75,13 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "Agents.maxpat",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 618.0, 183.932922, 240.0, 53.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 6.0, 386.0, 935.0, 312.001984 ],
+					"varname" : "Agents",
 					"viewvisibility" : 1
 				}
 
@@ -2466,7 +2467,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 92.0, 220.0, 90.0, 18.0 ],
+									"patching_rect" : [ 92.0, 220.0, 90.0, 22.0 ],
 									"style" : "",
 									"text" : "offset -1004. 1."
 								}
@@ -2481,7 +2482,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 70.0, 190.0, 84.0, 18.0 ],
+									"patching_rect" : [ 70.0, 190.0, 84.0, 22.0 ],
 									"style" : "",
 									"text" : "offset -670. 1."
 								}
@@ -2496,7 +2497,7 @@
 									"numinlets" : 5,
 									"numoutlets" : 5,
 									"outlettype" : [ "bang", "bang", "bang", "bang", "" ],
-									"patching_rect" : [ 26.0, 63.0, 107.0, 20.0 ],
+									"patching_rect" : [ 26.0, 63.0, 107.0, 22.0 ],
 									"style" : "",
 									"text" : "sel 0 1 2 3"
 								}
@@ -2511,7 +2512,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 26.0, 110.0, 60.0, 18.0 ],
+									"patching_rect" : [ 26.0, 110.0, 60.0, 22.0 ],
 									"style" : "",
 									"text" : "offset 1 1"
 								}
@@ -2526,7 +2527,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 48.0, 151.0, 84.0, 18.0 ],
+									"patching_rect" : [ 48.0, 151.0, 84.0, 22.0 ],
 									"style" : "",
 									"text" : "offset -335. 1."
 								}
@@ -8642,39 +8643,38 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-194::obj-90" : [ "live.slider[9]", "Sorbet-Energie", 0 ],
-			"obj-149::obj-1" : [ "live.slider[29]", "SlideDown", 0 ],
-			"obj-55" : [ "live.text[12]", "live.text[1]", 0 ],
-			"obj-17::obj-61" : [ "live.slider[2]", "SpatMulti-Sub", 0 ],
-			"obj-180::obj-188::obj-7" : [ "live.text[5]", "live.text", 0 ],
-			"obj-194::obj-166" : [ "live.slider[24]", "Errant-mass", 0 ],
-			"obj-1" : [ "live.slider[30]", "Sorbet-Fonte", 0 ],
-			"obj-17::obj-42" : [ "live.slider[16]", "SpatMono-Sub", 0 ],
+			"obj-194::obj-139::obj-120::obj-178" : [ "live.slider[27]", "Errant-diff", 0 ],
+			"obj-194::obj-139::obj-129::obj-7" : [ "live.slider[8]", "Sorbet-Formation", 0 ],
+			"obj-194::obj-139::obj-120::obj-122" : [ "live.text[7]", "live.text", 0 ],
+			"obj-194::obj-139::obj-120::obj-22" : [ "live.slider[12]", "Errant-force", 0 ],
 			"obj-17::obj-106" : [ "live.slider[1]", "Remanence", 0 ],
-			"obj-194::obj-122" : [ "live.text[7]", "live.text", 0 ],
-			"obj-194::obj-9" : [ "live.text[4]", "live.text", 0 ],
-			"obj-194::obj-178" : [ "live.slider[27]", "Errant-diff", 0 ],
-			"obj-194::obj-8" : [ "live.text[1]", "live.text", 0 ],
-			"obj-194::obj-171" : [ "live.slider[26]", "Errant-radius", 0 ],
-			"obj-194::obj-7" : [ "live.slider[8]", "Sorbet-Formation", 0 ],
-			"obj-194::obj-101" : [ "live.slider[13]", "Sorbet-Taille", 0 ],
-			"obj-194::obj-19" : [ "live.slider[7]", "Temps-inter-sorbets", 0 ],
-			"obj-134::obj-488" : [ "live.text", "live.text", 0 ],
-			"obj-180::obj-188::obj-28" : [ "live.slider[4]", "GOLSub", 0 ],
-			"obj-194::obj-188" : [ "live.slider[28]", "Errant-velocity", 0 ],
-			"obj-180::obj-188::obj-145" : [ "live.slider[18]", "Densite", 0 ],
-			"obj-194::obj-113" : [ "live.slider[10]", "AgentSub", 0 ],
-			"obj-194::obj-150" : [ "live.slider[22]", "Errant-Laps Frames", 0 ],
-			"obj-180::obj-1::obj-28" : [ "live.slider[6]", "MSNSub", 0 ],
-			"obj-194::obj-1" : [ "live.slider[21]", "Sorbet-Fonte", 0 ],
-			"obj-194::obj-22" : [ "live.slider[12]", "Errant-force", 0 ],
-			"obj-194::obj-168" : [ "live.slider[25]", "Errant-Distance", 0 ],
-			"obj-149::obj-46" : [ "live.slider[5]", "SlideUp", 0 ],
-			"obj-17::obj-102" : [ "live.slider", "Intensite", 0 ],
 			"obj-180::obj-3::obj-86" : [ "live.slider[11]", "PINGSub", 0 ],
+			"obj-17::obj-42" : [ "live.slider[16]", "SpatMono-Sub", 0 ],
+			"obj-180::obj-188::obj-7" : [ "live.text[5]", "live.text", 0 ],
+			"obj-194::obj-139::obj-120::obj-171" : [ "live.slider[26]", "Errant-radius", 0 ],
+			"obj-180::obj-188::obj-145" : [ "live.slider[18]", "Densite", 0 ],
+			"obj-194::obj-139::obj-129::obj-1" : [ "live.slider[21]", "Sorbet-Fonte", 0 ],
+			"obj-194::obj-139::obj-129::obj-19" : [ "live.slider[7]", "Temps-inter-sorbets", 0 ],
+			"obj-194::obj-139::obj-129::obj-92" : [ "live.slider[20]", "Sorbet-temps-creation", 0 ],
+			"obj-194::obj-139::obj-120::obj-123" : [ "live.text[8]", "live.text", 0 ],
+			"obj-17::obj-61" : [ "live.slider[2]", "SpatMulti-Sub", 0 ],
+			"obj-134::obj-488" : [ "live.text", "live.text", 0 ],
+			"obj-194::obj-139::obj-120::obj-168" : [ "live.slider[25]", "Errant-Distance", 0 ],
 			"obj-149::obj-162" : [ "live.slider[14]", "Master", 0 ],
-			"obj-194::obj-92" : [ "live.slider[20]", "Sorbet-temps-creation", 0 ],
-			"obj-194::obj-123" : [ "live.text[8]", "live.text", 0 ]
+			"obj-1" : [ "live.slider[30]", "Sorbet-Fonte", 0 ],
+			"obj-194::obj-139::obj-129::obj-101" : [ "live.slider[13]", "Sorbet-Taille", 0 ],
+			"obj-55" : [ "live.text[12]", "live.text[1]", 0 ],
+			"obj-149::obj-1" : [ "live.slider[29]", "SlideDown", 0 ],
+			"obj-180::obj-1::obj-28" : [ "live.slider[6]", "MSNSub", 0 ],
+			"obj-180::obj-188::obj-28" : [ "live.slider[4]", "GOLSub", 0 ],
+			"obj-194::obj-139::obj-129::obj-9" : [ "live.text[4]", "live.text", 0 ],
+			"obj-17::obj-102" : [ "live.slider", "Intensite", 0 ],
+			"obj-194::obj-139::obj-120::obj-188" : [ "live.slider[28]", "Errant-velocity", 0 ],
+			"obj-194::obj-139::obj-129::obj-90" : [ "live.slider[9]", "Sorbet-Energie", 0 ],
+			"obj-194::obj-139::obj-120::obj-166" : [ "live.slider[24]", "Errant-mass", 0 ],
+			"obj-194::obj-139::obj-120::obj-150" : [ "live.slider[22]", "Errant-Laps Frames", 0 ],
+			"obj-194::obj-113" : [ "live.slider[10]", "AgentSub", 0 ],
+			"obj-149::obj-46" : [ "live.slider[5]", "SlideUp", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -8936,6 +8936,24 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "AgentsOffsetPatch.maxpat",
+				"bootpath" : "~/Workspace/Lechantdufilament/modules",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Sorbet.maxpat",
+				"bootpath" : "~/Workspace/Lechantdufilament/modules",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Errant.maxpat",
+				"bootpath" : "~/Workspace/Lechantdufilament/modules",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "j.minuit_device.maxpat",
 				"bootpath" : "~/Workspace/JamomaMax/Jamoma/patchers/components/protocol",
 				"type" : "JSON",
@@ -8975,6 +8993,10 @@
 			}
 , 			{
 				"name" : "j.receive.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.send.mxo",
 				"type" : "iLaX"
 			}
 , 			{
