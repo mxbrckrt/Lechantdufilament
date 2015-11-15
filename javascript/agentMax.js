@@ -667,12 +667,12 @@ function sorbetLapsFrames(l) {
 /////////////////// Errant
 
 function errantAdd() {
-  agents.push(Object.create(errants.errant))
+  agents.push(errants.errant)
 }
 
 function errantDel() {
   for (var i = agents.length - 1 ; i >= 0 ; i--) {
-    if (errants.errant.isPrototypeOf(agents[i])) {
+    if (errants.errant === agents[i]) {
       agents.splice(i,1)
       break
     }
