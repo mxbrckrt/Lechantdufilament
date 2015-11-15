@@ -223,7 +223,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"color" : [ 1.0, 1.0, 0.0, 1.0 ],
@@ -3597,7 +3596,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u790005155"
+					"varname" : "u726017869"
 				}
 
 			}
@@ -3692,7 +3691,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @savemode 0 @autorestore 0",
-					"varname" : "u557016257"
+					"varname" : "u846013588"
 				}
 
 			}
