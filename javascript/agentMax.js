@@ -630,6 +630,8 @@ function lamps(l) {
 
 //////////////////// Sorbet
 
+var incFrames, decFrames
+
 function sorbet(toggle) {
   if (toggle) danseDuSorbet.play()
   else danseDuSorbet.stop()
@@ -642,22 +644,24 @@ function sorbetSize(s) {
 function sorbetMaxEnergy(m) {
   if (m <= 0) return
   with(danseDuSorbet) {
-    sorbet.growDose *= m / sorbet.maxGrow
-    sorbet.consumDose *= m / sorbet.maxGrow
     sorbet.growDose = m
+    sorbet.growDose = m / incFrames
+    sorbet.consumDose = m / decFrames
   }
 }
 
 function sorbetIncFrames(ti) {
   if (ti < 1) ti = 1
+  incFrames = ti
   with(danseDuSorbet.sorbet)
     growDose = maxGrow / ti
 }
 
 function sorbetDecFrames(td) {
   if (td < 1) td = 1
+  decFrames = td
   with(danseDuSorbet.sorbet)
-  consumeDose = maxGrow / td
+    consumeDose = maxGrow / td
 }
 
 function sorbetLapsFrames(l) {
