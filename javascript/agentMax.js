@@ -644,7 +644,7 @@ function sorbetSize(s) {
 function sorbetMaxEnergy(m) {
   if (m <= 0) return
   with(danseDuSorbet) {
-    sorbet.growDose = m
+    sorbet.maxGrow = m
     sorbet.growDose = m / incFrames
     sorbet.consumDose = m / decFrames
   }
