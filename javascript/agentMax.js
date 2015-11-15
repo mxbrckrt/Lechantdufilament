@@ -52,6 +52,43 @@ var v2D = {
 
 }
 
+function map() {
+  var lights = []
+  for (var i = 0 ; i < space.lamps[0] ; i++) {
+    lights[i] = []
+    for (var j = 0 ; j < space.lamps[1] ; j++) {
+      lights[i][j] = 0
+    }
+  }
+  for (var k = 0; k < agents.length; k++) {
+    with (agents[k]) {
+      var square = [
+        Math.max(0, Math.floor(p[0]/space.dist - s)),
+        Math.min(space.lamps[0]-1, Math.ceil(p[0]/space.dist + s)),
+        Math.max(0, Math.floor(p[1]/space.dist - s)),
+        Math.min(space.lamps[1]-1, Math.ceil(p[1]/space.dist + s))
+      ]
+      for (var i = square[0] ; i <= square[1] ; i++) {
+        for (var j = square[2] ; j <= square[3] ; j++) {
+          lights[i][j] = Math.max(
+            lights[i][j],
+            e*255*(1-v2D.length(// Energy * max light *
+              v2D.sub(          // dist between
+                p,              // agent and
+                v2D.mult(       // lamp
+                  [i,j],        // (position *
+                  space.dist    // dist)
+                )
+              )
+            )/(s*space.dist))    // / size
+          )
+        }
+      }
+    }
+  }
+  return lights
+}
+
 ///////////////////// Send to webSocket for Max
 
 /*
@@ -430,8 +467,12 @@ Object.assign(danseDuSorbet,
   {
     frameLaps:100,
     remaining:0,
-    lastP:[0,0],
+    lastP:[-1,-1],
     sorbet:Object.create(agent),
+    init:function() {
+      this.remaining = 0
+      this.lastP = [-1,-1]
+    },
     update:function() {
       if (this.remaining > this.frameLaps) this.remaining = this.frameLaps
       if (--this.remaining <= 0) {
@@ -455,6 +496,7 @@ Object.assign(danseDuSorbet.sorbet,
     consumeDose:0.01,
     growDose:0.01,
     maxGrow:1,
+    s:0.5,
     lates:["growNdie"]
   }
 )
@@ -665,14 +707,11 @@ function errantForce(maxF) {
 
 function bang() {
   update()
-  for(var i=0;i<agents.length;i++) {
-    var a = agents[i];
-    outlet(1,
-      i+1,
-      a.p[0]*2/(space.lamps[0]-1)/space.dist - 1,
-      -(a.p[1]*2/(space.lamps[1]-1)/space.dist - 1),
-      a.e
-    );
+  var lights = map()
+  for (var j = 0 ; j < space.lamps[1]-1 ; j++) {
+    for (var i = 0 ; i < space.lamps[0]-1 ; i++) {
+      outlet(1,lights[i][j])
+    }
   }
   outlet(0,"bang");
 }
