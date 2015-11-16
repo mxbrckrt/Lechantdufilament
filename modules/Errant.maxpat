@@ -38,6 +38,7 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"annotation" : "none",
 					"id" : "obj-34",
 					"maxclass" : "live.text",
 					"mode" : 0,
@@ -46,7 +47,8 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 156.333344, 259.613525, 40.0, 20.0 ],
-					"presentation_rect" : [ 46.5, 308.170654, 0.0, 0.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 141.333344, 11.17157, 40.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.text[9]",
@@ -67,6 +69,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "none",
 					"id" : "obj-32",
 					"maxclass" : "live.text",
 					"mode" : 0,
@@ -75,6 +78,8 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 42.874474, 252.17157, 40.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 55.874474, 11.17157, 40.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.text[3]",
