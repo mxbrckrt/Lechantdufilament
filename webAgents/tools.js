@@ -36,6 +36,16 @@ var v2D = {
 
 }
 
+function removeFrom(tab, elt, unique) { // Todo check where it could be used
+  if (unique === undefined) unique = true
+  for (var i = tab.length-1 ; i >=0 ; i--) {
+    if (tab[i] === elt) {
+      tab.splice(i, 1)
+      if (unique) return
+    }
+  }
+}
+
 function map() {
   var lights = []
   for (var i = 0 ; i < space.lamps[0] ; i++) {

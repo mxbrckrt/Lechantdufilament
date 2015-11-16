@@ -52,6 +52,16 @@ var v2D = {
 
 }
 
+function removeFrom(tab, elt, unique) { // Todo check where it could be used
+  if (unique === undefined) unique = true
+  for (var i = tab.length-1 ; i >=0 ; i--) {
+    if (tab[i] === elt) {
+      tab.splice(i, 1)
+      if (unique) return
+    }
+  }
+}
+
 function map() {
   var lights = []
   for (var i = 0 ; i < space.lamps[0] ; i++) {
@@ -62,6 +72,12 @@ function map() {
   }
   for (var k = 0; k < agents.length; k++) {
     with (agents[k]) {
+      if (!s) {
+        if (!(p[0] % 100) && !(p[1] % 100)) {
+          lights[p[0] / 100][p[1] / 100] = e*255
+        }
+        continue
+      }
       var square = [
         Math.max(0, Math.floor(p[0]/space.dist - s)),
         Math.min(space.lamps[0]-1, Math.ceil(p[0]/space.dist + s)),
@@ -513,20 +529,20 @@ Object.assign(errants,
   {
     n:0,
     errant:Object.create(agent),
-    init:function() {
-      this.agents = [this.errant] //new array
-      agents.push(this.errant)
-    },
-    add:function() { //TODO
+    add:function() {
       var newAgent = Object.create(this.errant)
-      this.agents.push(newAgent)
-      agents.push(newAgent)
+      Object.assign(newAgent, this.current)
+      this.current = newAgent
+      this.agents.push(this.current)
+      agents.push(this.current)
     },
-    remove:function(i) {
-
+    remove:function() { //TODO should select which errant to remove
+      removeFrom(agents, this.agents.pop())
+      this.current = this.agents[this.agents.length-1]
     }
   }
 )
+errants.current = errants.errant
 Object.assign(errants.errant,
   {
     maxV:5,
@@ -681,52 +697,47 @@ function sorbetLapsFrames(l) {
 /////////////////// Errant
 
 function errantAdd() {
-  agents.push(errants.errant)
+  errants.add()
 }
 
 function errantDel() {
-  for (var i = agents.length - 1 ; i >= 0 ; i--) {
-    if (errants.errant === agents[i]) {
-      agents.splice(i,1)
-      break
-    }
-  }
+  errants.remove()
 }
 
 function errantLapsFrames(l) {
-  errants.errant.wanderLaps = l
+  errants.current.wanderLaps = l
 }
 
 function errantDistance(d) {
-  errants.errant.wanderDistance = d
+  errants.current.wanderDistance = d
 }
 
 function errantRadius(r) {
-  errants.errant.wanderRadius = r
+  errants.current.wanderRadius = r
 }
 
 function errantDiff(d) {
-  errants.errant.wanderDiff = d*Math.PI/180
+  errants.current.wanderDiff = d*Math.PI/180
 }
 
 function errantMass(m) {
-  errants.errant.mass = m
+  errants.current.mass = m
 }
 
 function errantVelocity(maxV) {
-  errants.errant.maxV = maxV
+  errants.current.maxV = maxV
 }
 
 function errantForce(maxF) {
-  errants.errant.maxF = maxF
+  errants.current.maxF = maxF
 }
 
 function errantEnergy(e) {
-  errants.errant.e = e
+  errants.current.e = e
 }
 
 function errantSize(s) {
-  errants.errant.s = s
+  errants.current.s = s
 }
 
 //////////////////// Update & Panic

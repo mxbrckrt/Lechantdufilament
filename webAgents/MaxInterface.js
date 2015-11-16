@@ -78,52 +78,47 @@ var MaxInterface = {
 /////////////////// Errant
 
   errantAdd:function() {
-    agents.push(errants.errant)
+    errants.add()
   },
 
   errantDel:function() {
-    for (var i = agents.length - 1; i >= 0; i--) {
-      if (errants.errant === agents[i]) {
-        agents.splice(i, 1)
-        break
-      }
-    }
+    errants.remove()
   },
 
   errantLapsFrames:function(l) {
-    errants.errant.wanderLaps = l
+    errants.current.wanderLaps = l
   },
 
   errantDistance:function(d) {
-    errants.errant.wanderDistance = d
+    errants.current.wanderDistance = d
   },
 
   errantRadius:function(r) {
-    errants.errant.wanderRadius = r
+    errants.current.wanderRadius = r
   },
 
   errantDiff:function(d) {
-    errants.errant.wanderDiff = d*Math.PI/180
+    errants.current.wanderDiff = d*Math.PI/180
   },
 
   errantMass:function(m) {
-    errants.errant.mass = m
+    errants.current.mass = m
   },
 
   errantVelocity:function(maxV) {
-    errants.errant.maxV = maxV
+    errants.current.maxV = maxV
   },
 
   errantForce:function(maxF) {
-    errants.errant.maxF = maxF
+    errants.current.maxF = maxF
   },
 
   errantEnergy:function(e) {
-    errants.errant.e = e
+    errants.current.e = e
   },
 
   errantSize:function(s) {
-    errants.errant.s = s
+    errants.current.s = s
   }
 
 }
