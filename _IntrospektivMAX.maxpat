@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 44.0, 83.0, 1131.0, 710.0 ],
+		"rect" : [ 81.0, 95.0, 1131.0, 710.0 ],
 		"bgcolor" : [ 0.694118, 0.694118, 0.694118, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -162,7 +162,7 @@
 					"presentation_rect" : [ 945.5, 186.5, 172.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.slider[30]",
+							"parameter_longname" : "live.slider[31]",
 							"parameter_shortname" : "Sorbet-Fonte",
 							"parameter_type" : 2,
 							"parameter_mmax" : 1.0,
@@ -8704,13 +8704,15 @@
 			"obj-194::obj-139::obj-120::obj-171" : [ "live.slider[26]", "Radius", 0 ],
 			"obj-55" : [ "live.text[12]", "live.text[1]", 0 ],
 			"obj-149::obj-46" : [ "live.slider[5]", "SlideUp", 0 ],
+			"obj-194::obj-3" : [ "live.text[6]", "live.text[3]", 0 ],
 			"obj-194::obj-139::obj-129::obj-101" : [ "live.slider[13]", "Taille", 0 ],
 			"obj-180::obj-1::obj-28" : [ "live.slider[6]", "MSNSub", 0 ],
 			"obj-194::obj-139::obj-120::obj-178" : [ "live.slider[27]", "Diff", 0 ],
 			"obj-194::obj-113" : [ "live.slider[10]", "AgentSub", 0 ],
+			"obj-1" : [ "live.slider[31]", "Sorbet-Fonte", 0 ],
 			"obj-180::obj-188::obj-28" : [ "live.slider[4]", "GOLSub", 0 ],
 			"obj-194::obj-139::obj-129::obj-1" : [ "live.slider[21]", "Sorbet-Fonte", 0 ],
-			"obj-1" : [ "live.slider[30]", "Sorbet-Fonte", 0 ],
+			"obj-194::obj-150" : [ "live.slider[30]", "Vitesse Agents", 0 ],
 			"obj-149::obj-1" : [ "live.slider[29]", "SlideDown", 0 ],
 			"obj-194::obj-139::obj-120::obj-188" : [ "live.slider[28]", "Vélocité", 0 ],
 			"obj-180::obj-3::obj-86" : [ "live.slider[11]", "PINGSub", 0 ],
