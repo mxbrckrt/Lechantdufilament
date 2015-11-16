@@ -700,7 +700,7 @@ function errantRadius(r) {
 }
 
 function errantDiff(d) {
-  errants.errant.wanderDiff = d
+  errants.errant.wanderDiff = d*Math.PI/180
 }
 
 function errantMass(m) {
