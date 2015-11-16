@@ -144,7 +144,7 @@ Object.assign(errants.errant,
   {
     maxV:5,
     maxF:0.1,
-    mass:1,
+    m:1,
     /*
     seekTarget:{p:[0,0]},
     */
