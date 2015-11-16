@@ -14,6 +14,7 @@ var GUI = {
     y2:"y2",
     v:"maxV",
     m:"m",
+    f:"maxF",
     size:"s",
     bGD:bGD,
     bDG:bDG,

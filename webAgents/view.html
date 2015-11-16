@@ -133,9 +133,9 @@
 
 
     <label for="errantagent_dist">Distance</label>
-    <input type="number" name="errantagent_dist" min="1" max="10" step="0.1" id="errantagent_dist"
+    <input type="number" name="errantagent_dist" min="0" max="10" step="0.1" id="errantagent_dist"
            onchange="GUI.number(this)" onblur="this.value = errants.errant.wanderDistance">
-    <input type="range" name="errantagent_dist" min="1" max="10" step="0.1"
+    <input type="range" name="errantagent_dist" min="0" max="10" step="0.1"
            oninput="GUI.range(this)" onblur="this.value = errants.errant.wanderDistance">
 
     <label for="errantagent_rad">Rayon</label>
