@@ -143,8 +143,9 @@ Object.assign(errants,
 Object.assign(errants.errant,
   {
     maxV:5,
-    maxF:0.1,
+    maxF:0.5,
     m:1,
+    s:1,
     /*
     seekTarget:{p:[0,0]},
     */
