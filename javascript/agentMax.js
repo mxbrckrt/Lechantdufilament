@@ -756,6 +756,9 @@ function bang() {
 }
 
 function panic() {
-  agents = []
+  agents  = []
+  for (var i = 0 ; i < scenari.length ; i++) {
+    scenari.agents = []
+  }
   scenari = []
 }
