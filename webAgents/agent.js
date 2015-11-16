@@ -130,9 +130,10 @@ agent.wanderAngle = 0
 agent.wander = function() {
   var circleCenter = v2D.normalize(this.v, this.wanderDistance)
   this.f = v2D.add(this.f,
-                   v2D.normalize([Math.cos(this.wanderAngle),
-                                  Math.sin(this.wanderAngle)],
-                                 this.wanderRadius))
+                   v2D.add(v2D.normalize([Math.cos(this.wanderAngle),
+                                          Math.sin(this.wanderAngle)],
+                                         this.wanderRadius),
+                           circleCenter))
   if (--this.wanderRemaining <= 0) {
     this.wanderAngle += (Math.random() * 2 - 1) * this.wanderDiff
     this.wanderRemaining = this.wanderLaps
