@@ -126,20 +126,20 @@ Object.assign(errants,
   {
     n:0,
     errant:Object.create(agent),
-    init:function() {
-      this.agents = [this.errant] //new array
-      agents.push(this.errant)
-    },
-    add:function() { //TODO
+    add:function() {
       var newAgent = Object.create(this.errant)
-      this.agents.push(newAgent)
-      agents.push(newAgent)
+      Object.assign(newAgent, this.current)
+      this.current = newAgent
+      this.agents.push(this.current)
+      agents.push(this.current)
     },
-    remove:function(i) {
-
+    remove:function() { //TODO should select which errant to remove
+      removeFrom(agents, this.agents.pop())
+      this.current = this.agents[this.agents.length-1]
     }
   }
 )
+errants.current = errants.errant
 Object.assign(errants.errant,
   {
     maxV:5,

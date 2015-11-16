@@ -30,7 +30,7 @@ var GUI = {
     inc:"growDose",
     max:"maxGrow",
     errant:errants,
-    errantagent:errants.errant,
+    errantagent:errants.current, // TODO should get the variable, not the ref
     dist:"wanderDistance",
     rad:"wanderRadius",
     diff:"wanderDiff",

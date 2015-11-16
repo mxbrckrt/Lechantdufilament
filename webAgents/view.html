@@ -106,56 +106,58 @@
            oninput="GUI.range(this)" onblur="this.value = danseDuSorbet.sorbet.s">
 
     <br><br> <!--                                                               ERRANT -->
+    <!--
     <input type="button" name="errant" value="Play Errant ONCE"
            onclick="GUI.play(this)">
-
-    <!--
-    <input type="button" name="add_errant" value="Add Errant"
-           onclick="agents.push(errants.errant)">
     -->
 
+    <input type="button" name="add_errant" value="Add Errant"
+           onclick="errants.add()">
+    <input type="button" name="del_errant" value="Del Errant"
+           onclick="errants.remove()">
+
     <label for="errantagent_v">Vitesse</label>
-    <input type="number" name="errantagent_v" min="1" max="50" step="0.1" id="errantagent_v"
-           onchange="GUI.number(this)" onblur="this.value = errants.errant.maxV">
-    <input type="range" name="errantagent_v" min="1" max="50" step="0.1"
-           oninput="GUI.range(this)" onblur="this.value = errants.errant.maxV">
+    <input type="number" name="errantagent_v" min="0" max="50" step="0.1" id="errantagent_v"
+           onchange="GUI.number(this)" onblur="this.value = errants.current.maxV">
+    <input type="range" name="errantagent_v" min="0" max="50" step="0.1"
+           oninput="GUI.range(this)" onblur="this.value = errants.current.maxV">
 
     <label for="errantagent_m">Masse</label>
     <input type="number" name="errantagent_m" min="1" max="50" step="0.1" id="errantagent_m"
-           onchange="GUI.number(this)" onblur="this.value = errants.errant.m">
+           onchange="GUI.number(this)" onblur="this.value = errants.current.m">
     <input type="range" name="errantagent_m" min="1" max="50" step="0.1"
-           oninput="GUI.range(this)" onblur="this.value = errants.errant.m">
+           oninput="GUI.range(this)" onblur="this.value = errants.current.m">
 
     <label for="errantagent_f">Force</label>
     <input type="number" name="errantagent_f" min="0.01" max="5" step="0.01" id="errantagent_f"
-           onchange="GUI.number(this)" onblur="this.value = errants.errant.maxF">
+           onchange="GUI.number(this)" onblur="this.value = errants.current.maxF">
     <input type="range" name="errantagent_f" min="0.01" max="5" step="0.01"
-           oninput="GUI.range(this)" onblur="this.value = errants.errant.maxF">
+           oninput="GUI.range(this)" onblur="this.value = errants.current.maxF">
 
 
     <label for="errantagent_dist">Distance</label>
     <input type="number" name="errantagent_dist" min="0" max="10" step="0.1" id="errantagent_dist"
-           onchange="GUI.number(this)" onblur="this.value = errants.errant.wanderDistance">
+           onchange="GUI.number(this)" onblur="this.value = errants.current.wanderDistance">
     <input type="range" name="errantagent_dist" min="0" max="10" step="0.1"
-           oninput="GUI.range(this)" onblur="this.value = errants.errant.wanderDistance">
+           oninput="GUI.range(this)" onblur="this.value = errants.current.wanderDistance">
 
     <label for="errantagent_rad">Rayon</label>
     <input type="number" name="errantagent_rad" min="1" max="10" step="0.1" id="errantagent_rad"
-           onchange="GUI.number(this)" onblur="this.value = errants.errant.wanderRadius">
+           onchange="GUI.number(this)" onblur="this.value = errants.current.wanderRadius">
     <input type="range" name="errantagent_rad" min="1" max="10" step="0.1"
-           oninput="GUI.range(this)" onblur="this.value = errants.errant.wanderRadius">
+           oninput="GUI.range(this)" onblur="this.value = errants.current.wanderRadius">
 
     <label for="errantagent_diff">Diff</label>
     <input type="number" name="errantagent_diff" min="0" max="5" step="0.01" id="errantagent_diff"
-           onchange="GUI.number(this)" onblur="this.value = errants.errant.wanderDiff">
+           onchange="GUI.number(this)" onblur="this.value = errants.current.wanderDiff">
     <input type="range" name="errantagent_diff" min="0" max="5" step="0.01"
-           oninput="GUI.range(this)" onblur="this.value = errants.errant.wanderDiff">
+           oninput="GUI.range(this)" onblur="this.value = errants.current.wanderDiff">
 
     <label for="errantagent_wlaps">Laps</label>
     <input type="number" name="errantagent_wlaps" min="1" max="100" id="errantagent_wlaps"
-           onchange="GUI.number(this)" onblur="this.value = errants.errant.wanderLaps">
+           onchange="GUI.number(this)" onblur="this.value = errants.current.wanderLaps">
     <input type="range" name="errantagent_wlaps" min="1" max="100"
-           oninput="GUI.range(this)" onblur="this.value = errants.errant.wanderLaps">
+           oninput="GUI.range(this)" onblur="this.value = errants.current.wanderLaps">
 
 
     <br><br>
