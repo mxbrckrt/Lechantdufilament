@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 96.0, 168.0, 929.0, 205.0 ],
+		"rect" : [ 27.0, 159.0, 930.0, 205.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -178,9 +178,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1723.408447, 92.188416, 496.0, 22.0 ],
+					"patching_rect" : [ 1783.408447, 92.188416, 579.0, 22.0 ],
 					"style" : "default",
-					"text" : "j.parameter Felin/minTimeLent @type integer @priority 6 @range 1 20000 @clipmode both"
+					"text" : "j.parameter Felin/minTimeLent @type integer @priority 6 @range 1 20000 @clipmode both @default 3500"
 				}
 
 			}
@@ -191,9 +191,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1723.408447, 65.188416, 499.0, 22.0 ],
+					"patching_rect" : [ 1783.408447, 65.188416, 581.0, 22.0 ],
 					"style" : "default",
-					"text" : "j.parameter Felin/maxTimeLent @type integer @priority 5 @range 1 20000 @clipmode both"
+					"text" : "j.parameter Felin/maxTimeLent @type integer @priority 5 @range 1 20000 @clipmode both @default 8000"
 				}
 
 			}
@@ -204,9 +204,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1723.408447, 34.188416, 510.0, 22.0 ],
+					"patching_rect" : [ 1783.408447, 34.188416, 596.0, 22.0 ],
 					"style" : "default",
-					"text" : "j.parameter Felin/minTimeRapide @type integer @priority 6 @range 1 20000 @clipmode both"
+					"text" : "j.parameter Felin/minTimeRapide @type integer @priority 6 @range 1 20000 @clipmode both @default 2000"
 				}
 
 			}
@@ -217,9 +217,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1723.408447, 7.188416, 514.0, 22.0 ],
+					"patching_rect" : [ 1783.408447, 7.188416, 595.0, 22.0 ],
 					"style" : "default",
-					"text" : "j.parameter Felin/maxTimeRapide @type integer @priority 5 @range 1 20000 @clipmode both"
+					"text" : "j.parameter Felin/maxTimeRapide @type integer @priority 5 @range 1 20000 @clipmode both @default 5000"
 				}
 
 			}
@@ -230,9 +230,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1218.428467, 92.188416, 469.0, 22.0 ],
+					"patching_rect" : [ 1218.428467, 92.188416, 538.0, 22.0 ],
 					"style" : "default",
-					"text" : "j.parameter Felin/minLent @type integer @priority 6 @range 1 20000 @clipmode both"
+					"text" : "j.parameter Felin/minLent @type integer @priority 6 @range 1 20000 @clipmode both @default 90"
 				}
 
 			}
@@ -243,9 +243,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1218.428467, 65.188416, 473.0, 22.0 ],
+					"patching_rect" : [ 1218.428467, 65.188416, 548.0, 22.0 ],
 					"style" : "default",
-					"text" : "j.parameter Felin/maxLent @type integer @priority 5 @range 1 20000 @clipmode both"
+					"text" : "j.parameter Felin/maxLent @type integer @priority 5 @range 1 20000 @clipmode both @default 150"
 				}
 
 			}
@@ -269,9 +269,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1218.428467, 34.188416, 484.0, 22.0 ],
+					"patching_rect" : [ 1218.428467, 34.188416, 546.0, 22.0 ],
 					"style" : "default",
-					"text" : "j.parameter Felin/minRapide @type integer @priority 6 @range 1 20000 @clipmode both"
+					"text" : "j.parameter Felin/minRapide @type integer @priority 6 @range 1 20000 @clipmode both @default 2"
 				}
 
 			}
@@ -282,9 +282,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1218.428467, 7.188416, 487.0, 22.0 ],
+					"patching_rect" : [ 1218.428467, 7.188416, 549.0, 22.0 ],
 					"style" : "default",
-					"text" : "j.parameter Felin/maxRapide @type integer @priority 5 @range 1 20000 @clipmode both"
+					"text" : "j.parameter Felin/maxRapide @type integer @priority 5 @range 1 20000 @clipmode both @default 5"
 				}
 
 			}
@@ -827,9 +827,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 72.541138, 155.435791, 500.0, 22.0 ],
+					"patching_rect" : [ 72.541138, 155.435791, 496.0, 22.0 ],
 					"style" : "",
-					"text" : "j.parameter energy @type integer @priority 2 @range 0 255 @clipmode both @default 50"
+					"text" : "j.parameter energy @type integer @priority 2 @range 0 255 @clipmode both @default 100"
 				}
 
 			}
@@ -936,9 +936,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 72.541138, 90.06311, 543.0, 22.0 ],
+					"patching_rect" : [ 72.541138, 90.06311, 530.0, 22.0 ],
 					"style" : "",
-					"text" : "j.parameter lapsFrames @type decimal @priority 2 @range 1. 5000. @clipmode both @default 300."
+					"text" : "j.parameter lapsFrames @type decimal @priority 2 @range 1. 5000. @clipmode both @default 1."
 				}
 
 			}
@@ -1328,9 +1328,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 72.541138, 124.496216, 489.648926, 22.0 ],
+					"patching_rect" : [ 72.541138, 124.496216, 480.0, 22.0 ],
 					"style" : "",
-					"text" : "j.parameter force @type decimal @priority 6 @range 0. 5. @clipmode both @default 0.1"
+					"text" : "j.parameter force @type decimal @priority 6 @range 0. 5. @clipmode both @default 0.5"
 				}
 
 			}
@@ -1369,7 +1369,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 680.0, 69.290466, 421.0, 22.0 ],
 					"style" : "",
-					"text" : "j.parameter diff @type decimal @range 0. 180. @clipmode both @default 30."
+					"text" : "j.parameter diff @type decimal @range 0. 180. @clipmode both @default 50."
 				}
 
 			}
@@ -1380,9 +1380,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 72.541138, 59.994629, 462.0, 22.0 ],
+					"patching_rect" : [ 72.541138, 59.994629, 498.0, 22.0 ],
 					"style" : "",
-					"text" : "j.parameter distance @type decimal @priority 6 @range 1. 15. @clipmode both"
+					"text" : "j.parameter distance @type decimal @priority 6 @range 1. 15. @clipmode both @default 4."
 				}
 
 			}
