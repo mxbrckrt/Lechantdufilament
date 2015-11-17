@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 87.0, 481.0, 935.0, 312.0 ],
+		"rect" : [ 103.0, 465.0, 1035.0, 305.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -152,6 +152,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "none",
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-132",
@@ -323,9 +324,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 48.0, 151.0, 84.0, 22.0 ],
+									"patching_rect" : [ 48.0, 151.0, 90.0, 22.0 ],
 									"style" : "",
-									"text" : "offset -850. 1."
+									"text" : "offset -1050. 1."
 								}
 
 							}
@@ -453,7 +454,7 @@
 					"offset" : [ 1.0, 1.0 ],
 					"patching_rect" : [ 605.0, 149.107361, 240.0, 48.825562 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 80.5, 61.0, 835.0, 205.5 ],
+					"presentation_rect" : [ 80.5, 61.0, 917.0, 205.5 ],
 					"varname" : "Algo",
 					"viewvisibility" : 1
 				}
@@ -3264,7 +3265,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 880.414917, 31.746277, 27.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.5, 1.0, 929.0, 306.0 ],
+					"presentation_rect" : [ 3.5, 1.0, 1020.0, 300.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
