@@ -300,9 +300,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 226.0, 541.0, 114.0, 22.0 ],
+									"patching_rect" : [ 226.0, 541.0, 109.0, 22.0 ],
 									"style" : "",
-									"text" : "sprintf /seq/go %ld"
+									"text" : "sprintf \"/seq/go 1\""
 								}
 
 							}
@@ -3811,7 +3811,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u449008764"
+					"varname" : "u068008794"
 				}
 
 			}
@@ -3906,7 +3906,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @savemode 0 @autorestore 0",
-					"varname" : "u150003370"
+					"varname" : "u564003400"
 				}
 
 			}
