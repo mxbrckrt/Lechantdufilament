@@ -22,6 +22,9 @@ function lamps(lx, ly) {
 
 function panic() {
   agents  = []
+  for (var i = 0 ; i < scenari.length ; i++) {
+    scenari.agents = []
+  }
   scenari = []
 }
 

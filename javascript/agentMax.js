@@ -533,6 +533,8 @@ Object.assign(errants,
       var newAgent = Object.create(this.errant)
       Object.assign(newAgent, this.current)
       this.current = newAgent
+      this.current.p = [Math.random()*space.lamps[0]*space.dist,
+        Math.random()*space.lamps[1]*space.dist]
       this.agents.push(this.current)
       agents.push(this.current)
     },
@@ -754,6 +756,9 @@ function bang() {
 }
 
 function panic() {
-  agents = []
+  agents  = []
+  for (var i = 0 ; i < scenari.length ; i++) {
+    scenari.agents = []
+  }
   scenari = []
 }
