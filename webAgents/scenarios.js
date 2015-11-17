@@ -136,8 +136,7 @@ Object.assign(errants,
       agents.push(this.current)
     },
     remove:function() { //TODO should select which errant to remove
-      removeFrom(agents, this.agents.pop())
-      this.current = this.agents[this.agents.length-1]
+      removeFrom(agents, this.agents.shift())
     }
   }
 )
