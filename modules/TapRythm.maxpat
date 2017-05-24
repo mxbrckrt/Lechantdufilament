@@ -3,7 +3,7 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
+			"minor" : 3,
 			"revision" : 3,
 			"architecture" : "x86",
 			"modernui" : 1
@@ -23,10 +23,10 @@
 		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
 		"toolbarvisible" : 1,
-		"lefttoolbarpinned" : 2,
-		"toptoolbarpinned" : 2,
-		"righttoolbarpinned" : 2,
-		"bottomtoolbarpinned" : 2,
+		"lefttoolbarpinned" : 1,
+		"toptoolbarpinned" : 1,
+		"righttoolbarpinned" : 1,
+		"bottomtoolbarpinned" : 1,
 		"toolbars_unpinned_last_save" : 15,
 		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
@@ -58,7 +58,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 395.083313, 411.0, 33.0, 20.0 ],
-					"presentation_rect" : [ 397.0, 482.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "loop"
 				}
@@ -71,7 +70,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 391.0, 274.5, 118.0, 20.0 ],
-					"presentation_rect" : [ 390.0, 409.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "offset compensation"
 				}
@@ -132,11 +130,11 @@
 				"box" : 				{
 					"comment" : "index for poly",
 					"id" : "obj-16",
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.583313, 450.0, 30.0, 30.0 ],
-					"presentation_rect" : [ 84.666626, 746.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -240,6 +238,7 @@
 				"box" : 				{
 					"comment" : "bang",
 					"id" : "obj-5",
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -253,6 +252,7 @@
 				"box" : 				{
 					"comment" : "list index + del time",
 					"id" : "obj-12",
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -293,6 +293,7 @@
 				"box" : 				{
 					"comment" : "test with m-multidel",
 					"id" : "obj-7",
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -351,6 +352,7 @@
 				"box" : 				{
 					"comment" : "bang out",
 					"id" : "obj-13",
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -625,6 +627,7 @@
 					"destination" : [ "obj-10", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -634,6 +637,7 @@
 					"destination" : [ "obj-16", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -798,6 +802,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 57.083313, 100.583313, 13.5, 100.583313 ],
+					"order" : 1,
 					"source" : [ "obj-30", 0 ]
 				}
 
@@ -807,6 +812,7 @@
 					"destination" : [ "obj-144", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-30", 0 ]
 				}
 
@@ -843,6 +849,7 @@
 					"destination" : [ "obj-4", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-39", 1 ]
 				}
 
@@ -852,6 +859,7 @@
 					"destination" : [ "obj-40", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-39", 1 ]
 				}
 
@@ -992,6 +1000,14 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "m-countbang.maxpat",
+				"bootpath" : "~/Workspace/Lechantdufilament/dependencies/MX",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "MyDefault1",
 				"gain~" : 				{
@@ -1013,11 +1029,12 @@
 , 			{
 				"name" : "MyDefault3",
 				"default" : 				{
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"accentcolor" : [ 0.479171, 0.485793, 0.505657, 1.0 ],
 					"selectioncolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.239216, 0.643137, 0.709804, 1.0 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"patchlinecolor" : [ 0.239216, 0.254902, 0.278431, 0.9 ],
-					"color" : [ 0.239216, 0.643137, 0.709804, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.290196, 0.309804, 0.301961, 0.9 ],
@@ -1027,8 +1044,7 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-,
-					"accentcolor" : [ 0.479171, 0.485793, 0.505657, 1.0 ]
+
 				}
 ,
 				"parentstyle" : "",
@@ -1037,11 +1053,12 @@
 , 			{
 				"name" : "MyDefault3-1",
 				"default" : 				{
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"accentcolor" : [ 0.479171, 0.485793, 0.505657, 1.0 ],
 					"selectioncolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"patchlinecolor" : [ 0.239216, 0.254902, 0.278431, 0.9 ],
-					"color" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.290196, 0.309804, 0.301961, 0.9 ],
@@ -1051,8 +1068,7 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-,
-					"accentcolor" : [ 0.479171, 0.485793, 0.505657, 1.0 ]
+
 				}
 ,
 				"parentstyle" : "",

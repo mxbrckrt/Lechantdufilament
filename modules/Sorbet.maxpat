@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 6,
+			"minor" : 3,
+			"revision" : 3,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 42.0, 118.0, 605.0, 223.0 ],
+		"rect" : [ 182.0, 413.0, 605.0, 223.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -43,7 +43,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 914.0, 625.0, 156.0, 48.0 ],
+					"patching_rect" : [ 914.0, 625.0, 156.0, 47.0 ],
 					"style" : "",
 					"text" : "Ce bang ne colle pas avec le switch entre temps inter et temps créa, mais bon ..."
 				}
@@ -179,18 +179,14 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 1.0, 0.558253, 0.0, 1.0 ],
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-20",
 					"linecount" : 5,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 48.490356, 184.370361, 102.0, 77.0 ],
-					"style" : "",
+					"patching_rect" : [ 48.490356, 184.370361, 102.0, 76.0 ],
+					"style" : "jamomaLCDF",
 					"text" : "j.parameter Play @type integer @priority 6 @range 0 1 @clipmode both"
 				}
 
@@ -292,9 +288,9 @@
 					"orientation" : 1,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 432.52002, 255.870361, 103.0, 46.0 ],
+					"patching_rect" : [ 432.52002, 255.870361, 103.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 14.090881, 103.75, 278.0, 46.0 ],
+					"presentation_rect" : [ 14.090881, 103.75, 278.0, 45.0 ],
 					"relative" : 1,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -662,9 +658,9 @@
 					"orientation" : 1,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 647.091553, 555.626404, 99.0, 46.0 ],
+					"patching_rect" : [ 647.091553, 555.626404, 99.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 14.090881, 150.75, 278.0, 46.0 ],
+					"presentation_rect" : [ 14.090881, 150.75, 278.0, 45.0 ],
 					"relative" : 1,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -770,7 +766,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 725.091553, 225.370361, 50.0, 34.0 ],
+					"patching_rect" : [ 725.091553, 225.370361, 50.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 298.840881, 13.40509, 58.0, 20.0 ],
 					"style" : "",
@@ -936,9 +932,9 @@
 					"orientation" : 1,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 57.490356, 652.046082, 110.0, 46.0 ],
+					"patching_rect" : [ 57.490356, 652.046082, 110.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 296.090881, 103.75, 278.0, 46.0 ],
+					"presentation_rect" : [ 296.090881, 103.75, 278.0, 45.0 ],
 					"relative" : 1,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -1016,9 +1012,9 @@
 					"orientation" : 1,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 300.439514, 654.011047, 103.0, 46.0 ],
+					"patching_rect" : [ 300.439514, 654.011047, 103.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 296.090881, 150.75, 278.0, 46.0 ],
+					"presentation_rect" : [ 296.090881, 150.75, 278.0, 45.0 ],
 					"relative" : 1,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -1094,9 +1090,9 @@
 					"orientation" : 1,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 891.5, 681.626404, 99.0, 46.0 ],
+					"patching_rect" : [ 891.5, 681.626404, 99.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 296.090881, 56.75, 278.0, 46.0 ],
+					"presentation_rect" : [ 296.090881, 56.75, 278.0, 45.0 ],
 					"relative" : 1,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -1127,9 +1123,9 @@
 					"orientation" : 1,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 219.939514, 249.447083, 103.0, 46.0 ],
+					"patching_rect" : [ 219.939514, 249.447083, 103.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 14.090881, 56.75, 278.0, 46.0 ],
+					"presentation_rect" : [ 14.090881, 56.75, 278.0, 45.0 ],
 					"relative" : 1,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -1542,6 +1538,7 @@
 					"destination" : [ "obj-86", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-28", 0 ]
 				}
 
@@ -1551,6 +1548,7 @@
 					"destination" : [ "obj-92", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-28", 0 ]
 				}
 
@@ -1625,6 +1623,7 @@
 					"destination" : [ "obj-26", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-43", 1 ]
 				}
 
@@ -1635,6 +1634,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 1112.02002, 455.683289, 911.5, 455.683289 ],
+					"order" : 1,
 					"source" : [ "obj-43", 1 ]
 				}
 
@@ -1969,6 +1969,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 901.0, 739.683289, 819.0, 739.683289 ],
+					"order" : 1,
 					"source" : [ "obj-92", 0 ]
 				}
 
@@ -1978,6 +1979,7 @@
 					"destination" : [ "obj-134", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-92", 0 ]
 				}
 
@@ -1997,6 +1999,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 656.591553, 932.683289, 852.5, 932.683289, 852.5, 746.683289, 901.0, 746.683289 ],
+					"order" : 1,
 					"source" : [ "obj-99", 0 ]
 				}
 
@@ -2007,43 +2010,25 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 656.591553, 932.683289, 853.5, 932.683289, 853.5, 839.683289, 901.0, 839.683289 ],
+					"order" : 0,
 					"source" : [ "obj-99", 0 ]
 				}
 
 			}
  ],
-		"parameters" : 		{
-			"obj-90" : [ "live.slider[9]", "Sorbet-Energie", 0 ],
-			"obj-101" : [ "live.slider[13]", "Taille", 0 ],
-			"obj-9" : [ "live.text[4]", "live.text", 0 ],
-			"obj-7" : [ "live.slider[8]", "Sorbet-Formation", 0 ],
-			"obj-19" : [ "live.slider[7]", "Temps-inter-sorbets", 0 ],
-			"obj-92" : [ "live.slider[20]", "Sorbet-temps-creation", 0 ],
-			"obj-1" : [ "live.slider[21]", "Sorbet-Fonte", 0 ]
-		}
+		"styles" : [ 			{
+				"name" : "jamomaLCDF",
+				"default" : 				{
+					"accentcolor" : [ 1.0, 0.558253, 0.0, 1.0 ],
+					"fontname" : [ "Arial" ],
+					"fontface" : [ 0 ],
+					"fontsize" : [ 12.0 ]
+				}
 ,
-		"dependency_cache" : [ 			{
-				"name" : "j.send.mxe",
-				"type" : "iLaF"
+				"parentstyle" : "",
+				"multi" : 0
 			}
-, 			{
-				"name" : "j.remote.mxe",
-				"type" : "iLaF"
-			}
-, 			{
-				"name" : "j.receive.mxe",
-				"type" : "iLaF"
-			}
-, 			{
-				"name" : "j.parameter.mxe",
-				"type" : "iLaF"
-			}
-, 			{
-				"name" : "j.model.mxe",
-				"type" : "iLaF"
-			}
- ],
-		"embedsnapshot" : 0
+ ]
 	}
 
 }
