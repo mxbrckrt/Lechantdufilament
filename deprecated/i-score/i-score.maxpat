@@ -43,36 +43,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 50.0, 328.0, 154.0, 47.0 ],
+					"patching_rect" : [ 30.0, 90.0, 154.0, 47.0 ],
 					"style" : "",
 					"text" : "TODO est-ce que ce patch est encore fonctionnel avec i-score 1.0 ?"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-45",
-					"linecount" : 7,
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 50.0, 124.0, 166.0, 102.0 ],
-					"style" : "",
-					"text" : "j.minuit_device @local/name LCDF @local/port 9998 @local/ip 127.0.0.1 @remote/name i-score @remote/port 13579 @remote/ip 127.0.0.1 @active 1 @print 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-34",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 50.0, 100.0, 172.0, 20.0 ],
-					"style" : "",
-					"text" : "liaison avec I-Score via Minuit"
 				}
 
 			}
@@ -84,7 +57,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 50.0, 272.0, 190.0, 19.0 ],
+					"patching_rect" : [ 30.0, 34.0, 190.0, 19.0 ],
 					"style" : "",
 					"text" : "Communication avec I-Score"
 				}
@@ -138,6 +111,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -1799,7 +1773,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 50.0, 293.932922, 92.0, 30.0 ],
+					"patching_rect" : [ 30.0, 55.932922, 92.0, 30.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1815,7 +1789,9 @@
 
 			}
  ],
-		"lines" : [  ]
+		"lines" : [  ],
+		"dependency_cache" : [  ],
+		"autosave" : 0
 	}
 
 }
