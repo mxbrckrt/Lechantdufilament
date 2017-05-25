@@ -741,6 +741,15 @@ function errantSize(s) {
   errants.current.s = s
 }
 
+function errantSquare(x, y, dx, dy) { // x y in lamps from 1, apply to all errants
+  errants.errant.insideSquare = [
+    (x - 1) * space.dist,
+    (y - 1) * space.dist,
+    (x + dx - 1) * space.dist,
+    (y + dy - 1) * space.dist
+  ]
+}
+
 //////////////////// Update & Panic
 
 function bang() {
