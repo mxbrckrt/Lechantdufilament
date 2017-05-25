@@ -57,7 +57,7 @@ function map() {
   for (var k = 0; k < agents.length; k++) {
     with (agents[k]) {
       if (!s) {
-        if (!(p[0] % 100) && !(p[1] % 100)) {
+        if (!(p[0] % 100) && !(p[1] % 100)) { // TODO 100 should be dist ?
           lights[p[0] / 100][p[1] / 100] = e*255
         }
         continue
