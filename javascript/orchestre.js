@@ -43,18 +43,17 @@ function bang() {
     nothing = true
     for (var i = 0 ; i < lights.length ; i++) {
       outlet(1, lights[i])
+      if (nothing && lights[i]) nothing = false
     }
-    for (var i = 1 ; i < inlets ; i++) {
-      if (banged[i] > 1) {
-        banged[i]--
-      } else if (banged[i] == 1) {
-        for (var i = 0 ; i < lists[inlet].length ; i++) {
-          lights[lists[inlet][i]] -= dec
-          if (lights[lists[inlet][i]] < 0) {
-            lights[lists[inlet][i]] = 0
-            banged[i] = 0
-          } else {
-            nothing = false
+    for (var j = 1 ; j < inlets ; j++) {
+      if (banged[j] > 1) {
+        banged[j]--
+      } else if (banged[j] == 1) {
+        for (var i = 0 ; i < lists[j].length ; i++) {
+          lights[lists[j][i]] -= dec
+          if (lights[lists[j][i]] < 0) {
+            lights[lists[j][i]] = 0
+            banged[j] = 0
           }
         }
       }
@@ -76,6 +75,10 @@ function fOn(i) {
   framesOn = i
 }
 
-function sub(i) {
+function plus(i) {
   val = i
+}
+
+function moins(i) {
+  dec = i
 }
