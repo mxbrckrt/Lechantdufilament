@@ -9,8 +9,8 @@ outlets = 2;
 setoutletassist(1,"agents");
 setoutletassist(0,"bang when finished");
 
-var dec = jsarguments[2] || 1,
-    val = 10,
+var dec = jsarguments[2] || 255,
+    val = 255,
     lamps = [
       jsarguments[3] || 9,
       jsarguments[4] || jsarguments[3] | 9
