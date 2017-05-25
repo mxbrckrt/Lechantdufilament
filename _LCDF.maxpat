@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 3,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ -9.0, 152.0, 1372.0, 783.0 ],
+		"rect" : [ 42.0, 152.0, 1372.0, 783.0 ],
 		"bgcolor" : [ 0.694118, 0.694118, 0.694118, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -49,7 +49,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -80,7 +80,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-8",
@@ -256,7 +255,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 233.0, 179.0, 154.0, 47.0 ],
+									"patching_rect" : [ 233.0, 179.0, 154.0, 48.0 ],
 									"style" : "",
 									"text" : "Open patch dependancies/NanoKontrol/KorgController.maxpat\n"
 								}
@@ -334,7 +333,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 38.0, 166.0, 102.0 ],
+									"patching_rect" : [ 10.0, 38.0, 166.0, 105.0 ],
 									"style" : "",
 									"text" : "j.minuit_device @local/name LCDF @local/port 9998 @local/ip 127.0.0.1 @remote/name i-score @remote/port 13579 @remote/ip 127.0.0.1 @active 1 @print 1"
 								}
@@ -475,9 +474,9 @@
  ]
 					}
 ,
-					"patching_rect" : [ 13.0, 137.666656, 157.0, 30.0 ],
+					"patching_rect" : [ 13.0, 137.666656, 157.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 946.0, 304.0, 128.0, 30.0 ],
+					"presentation_rect" : [ 946.0, 304.0, 128.0, 29.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -621,7 +620,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -878,9 +877,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 954.5, 458.067078, 55.0, 24.0 ],
+					"patching_rect" : [ 954.5, 458.067078, 55.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 492.0, 6.0, 59.0, 24.0 ],
+					"presentation_rect" : [ 492.0, 6.0, 59.0, 25.0 ],
 					"style" : "",
 					"text" : "Values",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -921,9 +920,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 792.5, 458.067078, 52.0, 24.0 ],
+					"patching_rect" : [ 792.5, 458.067078, 52.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 561.0, 6.0, 59.0, 24.0 ],
+					"presentation_rect" : [ 561.0, 6.0, 59.0, 25.0 ],
 					"style" : "",
 					"text" : "Lights",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -1060,7 +1059,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 399.0, 122.0, 171.0, 35.0 ],
 					"style" : "",
-					"text" : ";\rmax sortpatcherdictonsave 1;\r"
+					"text" : ";\r\nmax sortpatcherdictonsave 1;\r\n"
 				}
 
 			}
@@ -1124,7 +1123,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -1439,9 +1438,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 191.0, 129.666656, 190.0, 38.0 ],
+					"patching_rect" : [ 191.0, 129.666656, 190.0, 39.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 157.0, 30.0, 319.0, 22.0 ],
+					"presentation_rect" : [ 157.0, 30.0, 319.0, 23.0 ],
 					"style" : "",
 					"text" : "dev. Max Bruckert / Clement Bossut / Jaime Chao"
 				}
@@ -1458,9 +1457,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 191.0, 81.666664, 190.0, 42.0 ],
+					"patching_rect" : [ 191.0, 81.666664, 190.0, 43.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 6.0, 474.0, 24.0 ],
+					"presentation_rect" : [ 7.0, 6.0, 474.0, 25.0 ],
 					"style" : "",
 					"text" : "Introspectiv Tungsten - Nicolas Villenave",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -1543,7 +1542,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -1956,11 +1955,11 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 417.0, 127.0, 803.0, 659.0 ],
+						"rect" : [ 152.0, 102.0, 1309.0, 659.0 ],
 						"bgcolor" : [ 0.861592, 0.861592, 0.861592, 1.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
@@ -1988,7 +1987,177 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-83",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1096.0, 558.0, 93.0, 22.0 ],
+									"style" : "",
+									"text" : "space 4 8 8 2 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-82",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1077.0, 526.0, 93.0, 22.0 ],
+									"style" : "",
+									"text" : "space 3 1 8 2 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-81",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1060.0, 493.0, 93.0, 22.0 ],
+									"style" : "",
+									"text" : "space 2 8 1 2 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-80",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1044.0, 464.0, 93.0, 22.0 ],
+									"style" : "",
+									"text" : "space 1 1 1 2 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-78",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 934.0, 464.0, 29.5, 22.0 ],
+									"style" : "",
+									"text" : "1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-76",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "" ],
+									"patching_rect" : [ 870.5, 419.0, 153.0, 22.0 ],
+									"style" : "",
+									"text" : "j.receive vitesseMainMetro"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-73",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 1044.0, 419.0, 60.0, 22.0 ],
+									"style" : "",
+									"text" : "loadbang"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-72",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 995.0, 499.0, 35.0, 20.0 ],
+									"style" : "",
+									"text" : "Sub"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-69",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 819.917358, 499.0, 39.0, 20.0 ],
+									"style" : "",
+									"text" : "Metro"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-66",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 934.0, 499.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-64",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 870.5, 499.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"color" : [ 0.447059, 0.584314, 1.0, 1.0 ],
+									"fontname" : "Arial Bold Italic",
+									"fontsize" : 14.0,
+									"id" : "obj-59",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1158.0, 11.0, 121.0, 25.0 ],
+									"style" : "",
+									"text" : "r FromOrchestre"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 0,
+									"patching_rect" : [ 870.5, 542.0, 63.0, 22.0 ],
+									"style" : "",
+									"text" : "Orchestre"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"color" : [ 1.0, 0.558253, 0.0, 1.0 ],
 									"fontface" : 0,
@@ -2000,7 +2169,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 430.5, 210.0, 189.082642, 49.0 ],
+									"patching_rect" : [ 430.5, 210.0, 189.082642, 50.0 ],
 									"style" : "",
 									"text" : "j.parameter vitesseMainMetro @priority 1 @type integer @default 22"
 								}
@@ -2016,7 +2185,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 914.0, 312.0, 416.0, 35.0 ],
+									"patching_rect" : [ 914.0, 312.0, 419.0, 36.0 ],
 									"style" : "",
 									"text" : "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
 								}
@@ -2149,7 +2318,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 978.417358, 11.0, 85.0, 24.0 ],
+									"patching_rect" : [ 978.417358, 11.0, 85.0, 25.0 ],
 									"style" : "",
 									"text" : "r FromPing"
 								}
@@ -2211,7 +2380,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 766.417358, 11.0, 93.0, 24.0 ],
+									"patching_rect" : [ 766.417358, 11.0, 93.0, 25.0 ],
 									"style" : "",
 									"text" : "r FromNoise"
 								}
@@ -2268,7 +2437,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 3,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -2363,7 +2532,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 459.417358, 11.0, 105.0, 24.0 ],
+									"patching_rect" : [ 459.417358, 11.0, 105.0, 25.0 ],
 									"style" : "",
 									"text" : "r FromLemur5"
 								}
@@ -2409,7 +2578,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 642.5, 246.0, 100.0, 22.0 ],
+									"patching_rect" : [ 642.5, 246.0, 100.0, 23.0 ],
 									"style" : "",
 									"text" : "PlayersClock"
 								}
@@ -2539,7 +2708,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 3,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -2837,7 +3006,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 639.417358, 352.0, 212.0, 22.0 ],
+									"patching_rect" : [ 639.417358, 352.0, 212.0, 23.0 ],
 									"style" : "",
 									"text" : "Pour les comments des Qlists"
 								}
@@ -2858,7 +3027,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 3,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -2981,7 +3150,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 3,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -3145,7 +3314,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 661.417358, 11.0, 94.0, 24.0 ],
+									"patching_rect" : [ 661.417358, 11.0, 94.0, 25.0 ],
 									"style" : "",
 									"text" : "r FromAgent"
 								}
@@ -3188,7 +3357,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 430.5, 176.0, 86.0, 22.0 ],
+									"patching_rect" : [ 430.5, 176.0, 86.0, 23.0 ],
 									"style" : "",
 									"text" : "Main clock"
 								}
@@ -3204,7 +3373,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 348.252045, 11.0, 105.0, 24.0 ],
+									"patching_rect" : [ 348.252045, 11.0, 105.0, 25.0 ],
 									"style" : "",
 									"text" : "r FromLemur4"
 								}
@@ -3220,7 +3389,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 234.834686, 11.0, 105.0, 24.0 ],
+									"patching_rect" : [ 234.834686, 11.0, 105.0, 25.0 ],
 									"style" : "",
 									"text" : "r FromLemur3"
 								}
@@ -3236,7 +3405,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 121.417328, 11.0, 105.0, 24.0 ],
+									"patching_rect" : [ 121.417328, 11.0, 105.0, 25.0 ],
 									"style" : "",
 									"text" : "r FromLemur2"
 								}
@@ -3312,7 +3481,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 7.5, 174.0, 122.0, 24.0 ],
+									"patching_rect" : [ 7.5, 174.0, 122.0, 25.0 ],
 									"saved_object_attributes" : 									{
 										"filename" : "comp.js",
 										"parameter_enable" : 0
@@ -3410,7 +3579,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 568.0, 11.0, 85.0, 24.0 ],
+									"patching_rect" : [ 568.0, 11.0, 85.0, 25.0 ],
 									"style" : "",
 									"text" : "r FromGOL"
 								}
@@ -3426,7 +3595,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 7.999973, 11.0, 105.0, 24.0 ],
+									"patching_rect" : [ 7.999973, 11.0, 105.0, 25.0 ],
 									"style" : "",
 									"text" : "r FromLemur1"
 								}
@@ -3577,8 +3746,8 @@
 									"id" : "obj-27",
 									"maxclass" : "newobj",
 									"numinlets" : 3,
-									"numoutlets" : 2,
-									"outlettype" : [ "list", "" ],
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 59.0, 291.0, 115.0, 22.0 ],
 									"style" : "",
 									"text" : "mxj ej.lslide 1. 1."
@@ -4051,6 +4220,16 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-13", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 1167.5, 123.0, 1095.0, 123.0, 1095.0, 150.0, 108.0, 150.0, 108.0, 168.0, 17.0, 168.0 ],
+									"source" : [ "obj-59", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-104", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -4078,6 +4257,24 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-64", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-66", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-13", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -4088,10 +4285,118 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-78", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"order" : 4,
+									"source" : [ "obj-73", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-80", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"order" : 3,
+									"source" : [ "obj-73", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-81", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"order" : 2,
+									"source" : [ "obj-73", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-82", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"order" : 1,
+									"source" : [ "obj-73", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-83", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"order" : 0,
+									"source" : [ "obj-73", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-64", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-76", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-66", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-78", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-15", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-8", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 2 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 1053.5, 489.0, 1047.0, 489.0, 1047.0, 537.0, 924.0, 537.0 ],
+									"source" : [ "obj-80", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 2 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 1069.5, 516.0, 1041.0, 516.0, 1041.0, 537.0, 924.0, 537.0 ],
+									"source" : [ "obj-81", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 2 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 1086.5, 549.0, 945.0, 549.0, 945.0, 537.0, 924.0, 537.0 ],
+									"source" : [ "obj-82", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 2 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 1105.5, 582.0, 945.0, 582.0, 945.0, 537.0, 924.0, 537.0 ],
+									"source" : [ "obj-83", 0 ]
 								}
 
 							}
@@ -4107,9 +4412,9 @@
  ]
 					}
 ,
-					"patching_rect" : [ 13.0, 6.0, 172.0, 30.0 ],
+					"patching_rect" : [ 13.0, 6.0, 172.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 946.0, 258.928589, 172.0, 30.0 ],
+					"presentation_rect" : [ 946.0, 258.928589, 172.0, 29.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -4189,9 +4494,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 91.0, 231.067078, 39.0, 24.0 ],
+					"patching_rect" : [ 91.0, 231.067078, 39.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 837.0, 15.0, 42.0, 24.0 ],
+					"presentation_rect" : [ 837.0, 15.0, 42.0, 25.0 ],
 					"style" : "",
 					"text" : "INIT",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -4252,9 +4557,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 179.0, 230.067078, 55.0, 24.0 ],
+					"patching_rect" : [ 179.0, 230.067078, 55.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 882.0, 15.0, 55.0, 24.0 ],
+					"presentation_rect" : [ 882.0, 15.0, 55.0, 25.0 ],
 					"style" : "",
 					"text" : "Kill All",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -4267,9 +4572,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 91.0, 72.0, 30.0 ],
+					"patching_rect" : [ 13.0, 91.0, 72.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 945.5, 143.928574, 170.0, 30.0 ],
+					"presentation_rect" : [ 945.5, 143.928574, 170.0, 29.0 ],
 					"style" : "patchLCDF",
 					"text" : "OOsc2",
 					"varname" : "OSc"
@@ -4288,7 +4593,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -4811,7 +5116,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 3,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -5267,7 +5572,7 @@
 									"fontsize" : 11.0,
 									"hint" : "",
 									"id" : "obj-48",
-									"items" : [ 1, ",", 2, ",", 4, ",", 8, ",", 16, ",", 32, ",", 64, ",", 128, ",", 256, ",", 512, ",", 1024, ",", 2048, ",", 4096 ],
+									"items" : [ 1, ",", 2, ",", 4, ",", 8, ",", 16, ",", 32, ",", 64, ",", 128, ",", 256, ",", 512, ",", 1024, ",", 2048 ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -5375,7 +5680,7 @@
 									"fontsize" : 11.0,
 									"hint" : "",
 									"id" : "obj-93",
-									"items" : [ 44100, ",", 48000, ",", 88200, ",", 96000 ],
+									"items" : [ 11025, ",", 12000, ",", 16000, ",", 22050, ",", 24000, ",", 32000, ",", 44100, ",", 48000, ",", 88200, ",", 96000, ",", 192000 ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -5502,7 +5807,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 12.0, 101.0, 109.0, 20.0 ],
 									"style" : "",
-									"text" : "Output Destination",
+									"text" : "Thread Priority",
 									"textcolor" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
 									"textjustification" : 0,
 									"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -5651,7 +5956,7 @@
 									"fontsize" : 11.0,
 									"hint" : "",
 									"id" : "obj-64",
-									"items" : [ "Built-in Output", ",", "Soundflower (2ch)", ",", "Soundflower (64ch)", ",", "Périphérique à sortie multiple" ],
+									"items" : [ "None", ",", "Haut-parleurs (Realtek High Def" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -5696,7 +6001,7 @@
 									"fontsize" : 11.0,
 									"hint" : "",
 									"id" : "obj-69",
-									"items" : [ "Built-in Microphone", ",", "Soundflower (2ch)", ",", "Soundflower (64ch)" ],
+									"items" : [ "None", ",", "Microphone (Realtek High Defini" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -5741,7 +6046,7 @@
 									"fontsize" : 11.0,
 									"hint" : "",
 									"id" : "obj-71",
-									"items" : [ "None", ",", "Core Audio", ",", "NonRealTime", ",", "ad_portaudio", "Core Audio", ",", "ad_rewire", ",", "Live" ],
+									"items" : [ "None", ",", "ad_directsound", "", ",", "ad_mme", "", ",", "NonRealTime", ",", "ad_rewire", ",", "Live" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -6048,8 +6353,8 @@
 									"number_font_name" : "Arial",
 									"numbers" : 1,
 									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 164.0, 340.0, 74.0, 74.0 ],
 									"point_color" : [ 0.823529, 0.976471, 0.211765, 1.0 ],
 									"point_color1" : [ 0.74902, 0.0, 0.0, 1.0 ],
@@ -6187,7 +6492,7 @@
 									"fontsize" : 11.0,
 									"hint" : "",
 									"id" : "obj-62",
-									"items" : "<empty>",
+									"items" : [ "Low", ",", "Medium", ",", "High", ",", "Highest" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -6732,7 +7037,7 @@
 									"destination" : [ "obj-72", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 168.166672, 191.0, 173.5, 191.0 ],
+									"midpoints" : [ 168.166667, 191.0, 173.5, 191.0 ],
 									"source" : [ "obj-65", 1 ]
 								}
 
@@ -6934,9 +7239,9 @@
  ]
 					}
 ,
-					"patching_rect" : [ 13.0, 47.666664, 172.0, 30.0 ],
+					"patching_rect" : [ 13.0, 47.666664, 172.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 945.5, 31.5, 171.0, 30.0 ],
+					"presentation_rect" : [ 945.5, 31.5, 171.0, 29.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -7414,389 +7719,387 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-194::obj-139::obj-120::obj-178" : [ "live.slider[27]", "Diff", 0 ],
-			"obj-149::obj-162" : [ "live.slider[14]", "Master", 0 ],
-			"obj-194::obj-139::obj-120::obj-168" : [ "live.slider[25]", "Distance", 0 ],
-			"obj-194::obj-139::obj-120::obj-34" : [ "live.text[9]", "live.text[3]", 0 ],
-			"obj-149::obj-46" : [ "live.slider[5]", "SlideUp", 0 ],
-			"obj-180::obj-188::obj-7" : [ "live.text[5]", "live.text", 0 ],
-			"obj-17::obj-42" : [ "live.slider[16]", "SpatMono-Sub", 0 ],
-			"obj-194::obj-139::obj-120::obj-188" : [ "live.slider[28]", "Vélocité", 0 ],
-			"obj-17::obj-102" : [ "live.slider", "Intensite", 0 ],
-			"obj-17::obj-61" : [ "live.slider[2]", "SpatMulti-Sub", 0 ],
-			"obj-194::obj-113" : [ "live.slider[10]", "AgentSub", 0 ],
-			"obj-194::obj-139::obj-120::obj-32" : [ "live.text[3]", "live.text[3]", 0 ],
-			"obj-180::obj-1::obj-28" : [ "live.slider[6]", "MSNSub", 0 ],
-			"obj-194::obj-139::obj-129::obj-1" : [ "live.slider[21]", "Sorbet-Fonte", 0 ],
-			"obj-1" : [ "live.slider[19]", "Sorbet-Fonte", 0 ],
-			"obj-180::obj-3::obj-86" : [ "live.slider[11]", "PINGSub", 0 ],
 			"obj-194::obj-139::obj-129::obj-90" : [ "live.slider[9]", "Sorbet-Energie", 0 ],
+			"obj-180::obj-188::obj-7" : [ "live.text[5]", "live.text", 0 ],
+			"obj-194::obj-139::obj-120::obj-22" : [ "live.slider[12]", "Force", 0 ],
 			"obj-194::obj-139::obj-120::obj-13" : [ "live.slider[15]", "Taille", 0 ],
 			"obj-194::obj-139::obj-120::obj-166" : [ "live.slider[24]", "Masse", 0 ],
-			"obj-194::obj-139::obj-129::obj-19" : [ "live.slider[7]", "Temps-inter-sorbets", 0 ],
+			"obj-194::obj-139::obj-120::obj-32" : [ "live.text[3]", "live.text[3]", 0 ],
 			"obj-194::obj-139::obj-120::obj-150" : [ "live.slider[22]", "Changement direction", 0 ],
-			"obj-180::obj-188::obj-28" : [ "live.slider[4]", "GOLSub", 0 ],
-			"obj-55" : [ "live.text[12]", "live.text[1]", 0 ],
-			"obj-194::obj-139::obj-129::obj-101" : [ "live.slider[13]", "Taille", 0 ],
-			"obj-194::obj-3" : [ "live.text[6]", "live.text[3]", 0 ],
-			"obj-134::obj-488" : [ "live.text", "live.text", 0 ],
-			"obj-180::obj-188::obj-145" : [ "live.slider[18]", "Densite", 0 ],
-			"obj-194::obj-139::obj-120::obj-24" : [ "live.slider[17]", "Energie", 0 ],
+			"obj-149::obj-162" : [ "live.slider[14]", "Master", 0 ],
 			"obj-194::obj-139::obj-120::obj-171" : [ "live.slider[26]", "Radius", 0 ],
-			"obj-17::obj-106" : [ "live.slider[1]", "Remanence", 0 ],
-			"obj-194::obj-139::obj-129::obj-7" : [ "live.slider[8]", "Sorbet-Formation", 0 ],
+			"obj-194::obj-139::obj-129::obj-19" : [ "live.slider[7]", "Temps-inter-sorbets", 0 ],
+			"obj-180::obj-1::obj-28" : [ "live.slider[6]", "MSNSub", 0 ],
+			"obj-194::obj-139::obj-129::obj-92" : [ "live.slider[20]", "Sorbet-temps-creation", 0 ],
 			"obj-194::obj-150" : [ "live.slider[30]", "Vitesse Agents", 0 ],
-			"obj-149::obj-1" : [ "live.slider[29]", "SlideDown", 0 ],
+			"obj-17::obj-106" : [ "live.slider[1]", "Remanence", 0 ],
+			"obj-194::obj-139::obj-120::obj-24" : [ "live.slider[17]", "Energie", 0 ],
+			"obj-17::obj-102" : [ "live.slider", "Intensite", 0 ],
+			"obj-194::obj-139::obj-129::obj-7" : [ "live.slider[8]", "Sorbet-Formation", 0 ],
 			"obj-194::obj-139::obj-129::obj-9" : [ "live.text[4]", "live.text", 0 ],
-			"obj-194::obj-139::obj-120::obj-22" : [ "live.slider[12]", "Force", 0 ],
-			"obj-194::obj-139::obj-129::obj-92" : [ "live.slider[20]", "Sorbet-temps-creation", 0 ]
+			"obj-180::obj-188::obj-145" : [ "live.slider[18]", "Densite", 0 ],
+			"obj-17::obj-42" : [ "live.slider[16]", "SpatMono-Sub", 0 ],
+			"obj-194::obj-139::obj-120::obj-178" : [ "live.slider[27]", "Diff", 0 ],
+			"obj-194::obj-113" : [ "live.slider[10]", "AgentSub", 0 ],
+			"obj-194::obj-139::obj-120::obj-168" : [ "live.slider[25]", "Distance", 0 ],
+			"obj-134::obj-488" : [ "live.text", "live.text", 0 ],
+			"obj-194::obj-139::obj-129::obj-101" : [ "live.slider[13]", "Taille", 0 ],
+			"obj-17::obj-61" : [ "live.slider[2]", "SpatMulti-Sub", 0 ],
+			"obj-194::obj-3" : [ "live.text[6]", "live.text[3]", 0 ],
+			"obj-194::obj-139::obj-120::obj-188" : [ "live.slider[28]", "Vélocité", 0 ],
+			"obj-55" : [ "live.text[12]", "live.text[1]", 0 ],
+			"obj-180::obj-188::obj-28" : [ "live.slider[4]", "GOLSub", 0 ],
+			"obj-194::obj-139::obj-120::obj-34" : [ "live.text[9]", "live.text[3]", 0 ],
+			"obj-149::obj-1" : [ "live.slider[29]", "SlideDown", 0 ],
+			"obj-180::obj-3::obj-86" : [ "live.slider[11]", "PINGSub", 0 ],
+			"obj-149::obj-46" : [ "live.slider[5]", "SlideUp", 0 ],
+			"obj-1" : [ "live.slider[19]", "Sorbet-Fonte", 0 ],
+			"obj-194::obj-139::obj-129::obj-1" : [ "live.slider[21]", "Sorbet-Fonte", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "MasterRemotes.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
+				"bootpath" : "~/Documents/workspace/LCDF/modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "-rs.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/utils",
+				"bootpath" : "~/Documents/workspace/LCDF/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SpatMulti-Mono.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules/MultiSpat",
+				"bootpath" : "~/Documents/workspace/LCDF/modules/MultiSpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "AmbiRemote.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules/MultiSpat/SpatLibs",
+				"bootpath" : "~/Documents/workspace/LCDF/dependencies/SpatLibs",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "traj.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules/MultiSpat/SpatLibs",
+				"bootpath" : "~/Documents/workspace/LCDF/dependencies/SpatLibs",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "outils.pct",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules/MultiSpat/SpatLibs",
-				"type" : "PICT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "exampleKnob.pct",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules/MultiSpat/SpatLibs",
+				"bootpath" : "~/Documents/workspace/LCDF/dependencies/SpatLibs",
 				"type" : "PICT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "traj_subpatch",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules/MultiSpat/SpatLibs",
+				"bootpath" : "~/Documents/workspace/LCDF/dependencies/SpatLibs",
 				"type" : "maxb",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "FilterMap.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/utils",
+				"bootpath" : "~/Documents/workspace/LCDF/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OM-2.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/dependencies/MX",
+				"bootpath" : "~/Documents/workspace/LCDF/dependencies/MX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OLine.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/dependencies/MX",
+				"bootpath" : "~/Documents/workspace/LCDF/dependencies/MX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SRinhibit.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/dependencies/MX",
+				"bootpath" : "~/Documents/workspace/LCDF/dependencies/MX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "setLights.js",
-				"bootpath" : "~/Workspace/Lechantdufilament/javascript",
+				"bootpath" : "~/Documents/workspace/LCDF/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OOsc2.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
+				"bootpath" : "~/Documents/workspace/LCDF/modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MXtgtOSC.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/dependencies/MX",
+				"bootpath" : "~/Documents/workspace/LCDF/dependencies/MX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "TUNGoscdestinations.txt",
-				"bootpath" : "~/Workspace/Lechantdufilament/IntrospektColl",
+				"bootpath" : "~/Documents/workspace/LCDF//IntrospektColl",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MXmapOSC.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/dependencies/MX",
+				"bootpath" : "~/Documents/workspace/LCDF/dependencies/MX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "TUNGoscinputs.txt",
-				"bootpath" : "~/Workspace/Lechantdufilament/IntrospektColl",
+				"bootpath" : "~/Documents/workspace/LCDF//IntrospektColl",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MXpattrPaths.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/dependencies/MX",
+				"bootpath" : "~/Documents/workspace/LCDF/dependencies/MX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OscMapping.json",
-				"bootpath" : "~/Workspace/Lechantdufilament/IntrospektColl",
+				"bootpath" : "~/Documents/workspace/LCDF//IntrospektColl",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "FeuilleDePatche.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
+				"bootpath" : "~/Documents/workspace/LCDF/modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "FeuilleDePatcheClean.txt",
-				"bootpath" : "~/Workspace/Lechantdufilament/IntrospektColl",
+				"bootpath" : "~/Documents/workspace/LCDF/IntrospektColl",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "comp.js",
-				"bootpath" : "~/Workspace/Lechantdufilament/javascript",
+				"bootpath" : "~/Documents/workspace/LCDF/javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Orchestre.maxpat",
+				"bootpath" : "~/Documents/workspace/LCDF/modules",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "orchestre.js",
+				"bootpath" : "~/Documents/workspace/LCDF/javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "agentMax.js",
+				"bootpath" : "~/Documents/workspace/LCDF/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Algo.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
+				"bootpath" : "~/Documents/workspace/LCDF/modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "GameOfLife.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
+				"bootpath" : "~/Documents/workspace/LCDF/modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MSNoise.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
+				"bootpath" : "~/Documents/workspace/LCDF/modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MakeSomeNoise.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
+				"bootpath" : "~/Documents/workspace/LCDF/modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MSPing.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
+				"bootpath" : "~/Documents/workspace/LCDF/modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "AudioPing.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
+				"bootpath" : "~/Documents/workspace/LCDF/modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "TapRythm.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
+				"bootpath" : "~/Documents/workspace/LCDF/modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m-countbang.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/dependencies/MX",
+				"bootpath" : "~/Documents/workspace/LCDF/dependencies/MX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Multidelays.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
+				"bootpath" : "~/Documents/workspace/LCDF/modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m-multidel.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/dependencies/MX",
+				"bootpath" : "~/Documents/workspace/LCDF/dependencies/MX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MakeSomePings.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
+				"bootpath" : "~/Documents/workspace/LCDF/modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m-del.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/dependencies/MX",
+				"bootpath" : "~/Documents/workspace/LCDF/dependencies/MX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m-lramp.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/dependencies/MX",
+				"bootpath" : "~/Documents/workspace/LCDF/dependencies/MX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MXkey.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/dependencies/MX",
+				"bootpath" : "~/Documents/workspace/LCDF/dependencies/MX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MatriceLights.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
+				"bootpath" : "~/Documents/workspace/LCDF/modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "matrixView.js",
-				"bootpath" : "~/Workspace/Lechantdufilament/javascript",
+				"bootpath" : "~/Documents/workspace/LCDF/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MatriceValue.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
+				"bootpath" : "~/Documents/workspace/LCDF/modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Interface.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
+				"bootpath" : "~/Documents/workspace/LCDF/modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Agents.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
+				"bootpath" : "~/Documents/workspace/LCDF/modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "agentMax.js",
-				"bootpath" : "~/Workspace/Lechantdufilament/javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "AgentsOffsetPatch.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
+				"bootpath" : "~/Documents/workspace/LCDF/modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Sorbet.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
+				"bootpath" : "~/Documents/workspace/LCDF/modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Errant.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
+				"bootpath" : "~/Documents/workspace/LCDF/modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "randBetween.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
+				"bootpath" : "~/Documents/workspace/LCDF/modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "j.minuit_device.maxpat",
-				"bootpath" : "~/Workspace/JamomaMax/Jamoma/patchers/components/protocol",
+				"bootpath" : "C:/ProgramData/Max 7/Packages/Jamoma/patchers/components/protocol",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "nanoKontrolHelper.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/dependencies/nanoKontrol2",
+				"bootpath" : "~/Documents/workspace/LCDF/dependencies/nanoKontrol2",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "j.remote.mxo",
-				"type" : "iLaX"
+				"name" : "j.remote.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "j.model.mxo",
-				"type" : "iLaX"
+				"name" : "j.model.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
-				"type" : "iLaX"
+				"name" : "j.parameter.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "ambimonitor.mxo",
-				"type" : "iLaX"
+				"name" : "j.dbap.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "ambicontrol.mxo",
-				"type" : "iLaX"
+				"name" : "j.oscroute.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "j.dbap.mxo",
-				"type" : "iLaX"
+				"name" : "j.receive.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "OpenSoundControl.mxo",
-				"type" : "iLaX"
+				"name" : "jit.pass.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "j.oscroute.mxo",
-				"type" : "iLaX"
+				"name" : "j.send.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "j.receive.mxo",
-				"type" : "iLaX"
+				"name" : "j.namespace.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "j.send.mxo",
-				"type" : "iLaX"
+				"name" : "j.modular.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "j.namespace.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.modular.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.pass.mxo",
-				"type" : "iLaX"
+				"name" : "j.pass.mxe64",
+				"type" : "mx64"
 			}
  ],
 		"autosave" : 0,
@@ -7804,11 +8107,11 @@
 				"name" : "patchLCDF",
 				"default" : 				{
 					"accentcolor" : [ 0.556863, 0.556863, 0.556863, 1.0 ],
-					"fontname" : [ "Helvetica Neue Bold" ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 0.15 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontface" : [ 3 ],
-					"fontsize" : [ 18.0 ]
+					"fontsize" : [ 18.0 ],
+					"fontname" : [ "Helvetica Neue Bold" ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.15 ]
 				}
 ,
 				"parentstyle" : "",
