@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 152.0, 1372.0, 783.0 ],
+		"rect" : [ 34.0, 79.0, 1372.0, 783.0 ],
 		"bgcolor" : [ 0.694118, 0.694118, 0.694118, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -39,6 +39,38 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 11.0,
+					"id" : "obj-34",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 206.0, 21.0, 190.0, 19.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 742.5, 727.0, 172.0, 19.0 ],
+					"style" : "",
+					"text" : "Sortie OSC vers OLA ou DLight"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 11.0,
+					"id" : "obj-28",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 206.0, 21.0, 190.0, 19.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 379.0, 727.0, 172.0, 19.0 ],
+					"style" : "",
+					"text" : "Interface NanoKontrol2 & I-score"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-29",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -53,7 +85,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 173.0, 129.0, 755.0, 538.0 ],
+						"rect" : [ 197.0, 429.0, 755.0, 538.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -80,13 +112,27 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 618.5, 325.0, 198.0, 22.0 ],
+									"style" : "",
+									"text" : "j.send SpatMulti-Mono/Remanence"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-7",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 526.0, 243.0, 97.0, 22.0 ],
+									"patching_rect" : [ 660.5, 356.0, 97.0, 22.0 ],
 									"style" : "",
 									"text" : "s enableKeypad"
 								}
@@ -99,7 +145,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 448.5, 209.0, 213.0, 22.0 ],
+									"patching_rect" : [ 579.5, 286.0, 213.0, 22.0 ],
 									"style" : "",
 									"text" : "j.send SpatMulti-Mono/SpatMono-Sub"
 								}
@@ -112,9 +158,9 @@
 									"numinlets" : 0,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 448.5, 179.0, 174.0, 22.0 ],
+									"patching_rect" : [ 579.5, 256.0, 181.0, 22.0 ],
 									"style" : "",
-									"text" : "nanoKontrolHelper 3 0. 1. 0. 1."
+									"text" : "nanoKontrolHelper 3 0. 1. 0. 50."
 								}
 
 							}
@@ -126,7 +172,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 401.5, 378.0, 24.0, 24.0 ],
+									"patching_rect" : [ 393.5, 377.0, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -138,7 +184,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 401.5, 415.0, 213.0, 22.0 ],
+									"patching_rect" : [ 393.5, 414.0, 213.0, 22.0 ],
 									"style" : "",
 									"text" : "j.send Algo/MSPing/MSP-opposition"
 								}
@@ -151,7 +197,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 325.0, 351.0, 137.0, 22.0 ],
+									"patching_rect" : [ 315.0, 325.0, 137.0, 22.0 ],
 									"style" : "",
 									"text" : "j.send Algo/MSPing/Tap"
 								}
@@ -306,7 +352,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 850.75, 312.0, 191.0, 22.0 ],
+									"patching_rect" : [ 880.75, 109.0, 191.0, 22.0 ],
 									"style" : "",
 									"text" : "j.send MasterRemotes/SlideDown"
 								}
@@ -319,7 +365,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 807.0, 280.0, 171.0, 22.0 ],
+									"patching_rect" : [ 837.0, 77.0, 171.0, 22.0 ],
 									"style" : "",
 									"text" : "j.send MasterRemotes/Master"
 								}
@@ -332,7 +378,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 807.0, 250.0, 194.0, 22.0 ],
+									"patching_rect" : [ 837.0, 47.0, 194.0, 22.0 ],
 									"style" : "",
 									"text" : "nanoKontrolHelper 8 0. 1. 0. 1000."
 								}
@@ -345,7 +391,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 613.75, 312.0, 176.0, 22.0 ],
+									"patching_rect" : [ 643.75, 109.0, 176.0, 22.0 ],
 									"style" : "",
 									"text" : "j.send MasterRemotes/SlideUp"
 								}
@@ -358,7 +404,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 570.0, 250.0, 194.0, 22.0 ],
+									"patching_rect" : [ 600.0, 47.0, 194.0, 22.0 ],
 									"style" : "",
 									"text" : "nanoKontrolHelper 7 0. 1. 0. 1000."
 								}
@@ -493,6 +539,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-4", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -532,7 +587,7 @@
 ,
 					"patching_rect" : [ 13.0, 137.666656, 157.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 946.0, 304.0, 128.0, 30.0 ],
+					"presentation_rect" : [ 379.0, 745.928589, 172.0, 30.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -643,7 +698,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 443.0, 243.067078, 40.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 945.5, 186.5, 172.0, 20.0 ],
+					"presentation_rect" : [ 742.5, 753.0, 172.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.slider[19]",
@@ -935,7 +990,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 954.5, 458.067078, 55.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 492.0, 6.0, 59.0, 24.0 ],
+					"presentation_rect" : [ 7.0, 31.0, 55.0, 24.0 ],
 					"style" : "",
 					"text" : "Values",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -978,7 +1033,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 792.5, 458.067078, 52.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 561.0, 6.0, 59.0, 24.0 ],
+					"presentation_rect" : [ 76.0, 31.0, 55.0, 24.0 ],
 					"style" : "",
 					"text" : "Lights",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -1475,7 +1530,7 @@
 					"name" : "Algo.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"offset" : [ -670.0, 1.0 ],
+					"offset" : [ 1.0, 1.0 ],
 					"patching_rect" : [ 618.0, 112.107361, 240.0, 48.825562 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 492.0, 65.0, 338.0, 320.5 ],
@@ -1496,29 +1551,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 191.0, 129.666656, 190.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 157.0, 30.0, 319.0, 22.0 ],
+					"presentation_rect" : [ 157.0, 30.0, 324.0, 22.0 ],
 					"style" : "",
 					"text" : "dev. Max Bruckert / Clement Bossut / Jaime Chao"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.408606, 0.408606, 0.408606, 0.6 ],
-					"fontface" : 3,
-					"fontname" : "Arial",
-					"fontsize" : 16.0,
-					"id" : "obj-64",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 191.0, 81.666664, 190.0, 42.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 6.0, 474.0, 24.0 ],
-					"style" : "",
-					"text" : "Introspectiv Tungsten - Nicolas Villenave",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -1535,7 +1570,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 242.0, 402.067078, 40.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 58.5, 68.0, 20.0 ],
+					"presentation_rect" : [ 409.0, 7.5, 68.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.text[12]",
@@ -1961,7 +1996,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 191.0, 56.666664, 190.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 945.5, 240.0, 171.0, 19.0 ],
+					"presentation_rect" : [ 191.5, 727.0, 171.0, 19.0 ],
 					"style" : "",
 					"text" : "Gestion de toutes les données"
 				}
@@ -1977,7 +2012,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 191.0, 6.0, 190.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 945.0, 125.0, 172.0, 19.0 ],
+					"presentation_rect" : [ 563.0, 727.0, 172.0, 19.0 ],
 					"style" : "",
 					"text" : "Ports entrants et sortants OSC"
 				}
@@ -1993,7 +2028,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 191.0, 32.0, 190.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 945.5, 10.5, 171.0, 19.0 ],
+					"presentation_rect" : [ 7.0, 727.0, 171.0, 19.0 ],
 					"style" : "",
 					"text" : "Edition des lampes + carte son"
 				}
@@ -2015,7 +2050,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 97.0, 102.0, 1309.0, 659.0 ],
+						"rect" : [ 61.0, 137.0, 1309.0, 659.0 ],
 						"bgcolor" : [ 0.861592, 0.861592, 0.861592, 1.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
@@ -2043,7 +2078,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"format" : 6,
@@ -4503,7 +4537,7 @@
 ,
 					"patching_rect" : [ 13.0, 6.0, 172.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 946.0, 258.928589, 172.0, 30.0 ],
+					"presentation_rect" : [ 192.0, 745.928589, 172.0, 30.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -4664,7 +4698,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 13.0, 91.0, 72.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 945.5, 143.928574, 170.0, 30.0 ],
+					"presentation_rect" : [ 563.5, 745.928589, 170.0, 30.0 ],
 					"style" : "patchLCDF",
 					"text" : "OOsc2",
 					"varname" : "OSc"
@@ -7331,7 +7365,7 @@
 ,
 					"patching_rect" : [ 13.0, 47.666664, 172.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 945.5, 31.5, 171.0, 30.0 ],
+					"presentation_rect" : [ 7.0, 748.0, 171.0, 30.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -7405,6 +7439,26 @@
 					"presentation_rect" : [ 833.5, 8.5, 107.5, 376.0 ],
 					"proportion" : 0.39,
 					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.408606, 0.408606, 0.408606, 0.6 ],
+					"fontface" : 3,
+					"fontname" : "Arial",
+					"fontsize" : 16.0,
+					"id" : "obj-64",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 191.0, 81.666664, 190.0, 42.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 7.0, 6.0, 474.0, 24.0 ],
+					"style" : "",
+					"text" : "Introspectiv Tungsten - Nicolas Villenave",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -7809,42 +7863,42 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-194::obj-139::obj-129::obj-92" : [ "live.slider[20]", "Sorbet-temps-creation", 0 ],
-			"obj-149::obj-1" : [ "live.slider[29]", "SlideDown", 0 ],
-			"obj-194::obj-139::obj-120::obj-178" : [ "live.slider[27]", "Diff", 0 ],
-			"obj-194::obj-150" : [ "live.slider[30]", "Vitesse Agents", 0 ],
-			"obj-194::obj-139::obj-129::obj-90" : [ "live.slider[9]", "Sorbet-Energie", 0 ],
-			"obj-194::obj-139::obj-129::obj-101" : [ "live.slider[13]", "Taille", 0 ],
-			"obj-194::obj-139::obj-129::obj-19" : [ "live.slider[7]", "Temps-inter-sorbets", 0 ],
-			"obj-55" : [ "live.text[12]", "live.text[1]", 0 ],
-			"obj-134::obj-488" : [ "live.text", "live.text", 0 ],
-			"obj-194::obj-139::obj-120::obj-22" : [ "live.slider[12]", "Force", 0 ],
-			"obj-17::obj-61" : [ "live.slider[2]", "SpatMulti-Sub", 0 ],
-			"obj-194::obj-139::obj-129::obj-9" : [ "live.text[4]", "live.text", 0 ],
-			"obj-17::obj-42" : [ "live.slider[16]", "SpatMono-Sub", 0 ],
-			"obj-194::obj-139::obj-120::obj-13" : [ "live.slider[15]", "Taille", 0 ],
-			"obj-194::obj-139::obj-129::obj-7" : [ "live.slider[8]", "Sorbet-Formation", 0 ],
-			"obj-194::obj-3" : [ "live.text[6]", "live.text[3]", 0 ],
 			"obj-17::obj-102" : [ "live.slider", "Intensite", 0 ],
-			"obj-194::obj-139::obj-120::obj-188" : [ "live.slider[28]", "Vélocité", 0 ],
-			"obj-180::obj-188::obj-145" : [ "live.slider[18]", "Densite", 0 ],
-			"obj-180::obj-3::obj-86" : [ "live.slider[11]", "PINGSub", 0 ],
-			"obj-194::obj-139::obj-120::obj-171" : [ "live.slider[26]", "Radius", 0 ],
-			"obj-149::obj-162" : [ "live.slider[14]", "Master", 0 ],
-			"obj-180::obj-1::obj-28" : [ "live.slider[6]", "MSNSub", 0 ],
-			"obj-17::obj-106" : [ "live.slider[1]", "Remanence", 0 ],
-			"obj-180::obj-188::obj-7" : [ "live.text[5]", "live.text", 0 ],
-			"obj-194::obj-139::obj-120::obj-168" : [ "live.slider[25]", "Distance", 0 ],
-			"obj-194::obj-139::obj-129::obj-1" : [ "live.slider[21]", "Sorbet-Fonte", 0 ],
-			"obj-194::obj-139::obj-120::obj-34" : [ "live.text[9]", "live.text[3]", 0 ],
-			"obj-149::obj-46" : [ "live.slider[5]", "SlideUp", 0 ],
-			"obj-194::obj-139::obj-120::obj-24" : [ "live.slider[17]", "Energie", 0 ],
-			"obj-194::obj-113" : [ "live.slider[10]", "AgentSub", 0 ],
+			"obj-194::obj-139::obj-129::obj-90" : [ "live.slider[9]", "Sorbet-Energie", 0 ],
+			"obj-17::obj-42" : [ "live.slider[16]", "SpatMono-Sub", 0 ],
 			"obj-194::obj-139::obj-120::obj-166" : [ "live.slider[24]", "Masse", 0 ],
 			"obj-194::obj-139::obj-120::obj-150" : [ "live.slider[22]", "Changement direction", 0 ],
+			"obj-194::obj-139::obj-120::obj-13" : [ "live.slider[15]", "Taille", 0 ],
+			"obj-180::obj-188::obj-145" : [ "live.slider[18]", "Densite", 0 ],
+			"obj-194::obj-139::obj-120::obj-178" : [ "live.slider[27]", "Diff", 0 ],
 			"obj-180::obj-188::obj-28" : [ "live.slider[4]", "GOLSub", 0 ],
+			"obj-194::obj-139::obj-129::obj-7" : [ "live.slider[8]", "Sorbet-Formation", 0 ],
+			"obj-194::obj-150" : [ "live.slider[30]", "Vitesse Agents", 0 ],
+			"obj-194::obj-139::obj-129::obj-1" : [ "live.slider[21]", "Sorbet-Fonte", 0 ],
+			"obj-17::obj-106" : [ "live.slider[1]", "Remanence", 0 ],
+			"obj-194::obj-139::obj-120::obj-22" : [ "live.slider[12]", "Force", 0 ],
+			"obj-180::obj-3::obj-86" : [ "live.slider[11]", "PINGSub", 0 ],
+			"obj-194::obj-139::obj-129::obj-101" : [ "live.slider[13]", "Taille", 0 ],
+			"obj-194::obj-139::obj-120::obj-32" : [ "live.text[3]", "live.text[3]", 0 ],
 			"obj-1" : [ "live.slider[19]", "Sorbet-Fonte", 0 ],
-			"obj-194::obj-139::obj-120::obj-32" : [ "live.text[3]", "live.text[3]", 0 ]
+			"obj-194::obj-139::obj-129::obj-92" : [ "live.slider[20]", "Sorbet-temps-creation", 0 ],
+			"obj-180::obj-1::obj-28" : [ "live.slider[6]", "MSNSub", 0 ],
+			"obj-194::obj-139::obj-129::obj-9" : [ "live.text[4]", "live.text", 0 ],
+			"obj-149::obj-1" : [ "live.slider[29]", "SlideDown", 0 ],
+			"obj-194::obj-139::obj-120::obj-188" : [ "live.slider[28]", "Vélocité", 0 ],
+			"obj-180::obj-188::obj-7" : [ "live.text[5]", "live.text", 0 ],
+			"obj-194::obj-139::obj-120::obj-171" : [ "live.slider[26]", "Radius", 0 ],
+			"obj-194::obj-139::obj-129::obj-19" : [ "live.slider[7]", "Temps-inter-sorbets", 0 ],
+			"obj-194::obj-139::obj-120::obj-24" : [ "live.slider[17]", "Energie", 0 ],
+			"obj-134::obj-488" : [ "live.text", "live.text", 0 ],
+			"obj-149::obj-162" : [ "live.slider[14]", "Master", 0 ],
+			"obj-194::obj-113" : [ "live.slider[10]", "AgentSub", 0 ],
+			"obj-149::obj-46" : [ "live.slider[5]", "SlideUp", 0 ],
+			"obj-194::obj-3" : [ "live.text[6]", "live.text[3]", 0 ],
+			"obj-194::obj-139::obj-120::obj-34" : [ "live.text[9]", "live.text[3]", 0 ],
+			"obj-194::obj-139::obj-120::obj-168" : [ "live.slider[25]", "Distance", 0 ],
+			"obj-17::obj-61" : [ "live.slider[2]", "SpatMulti-Sub", 0 ],
+			"obj-55" : [ "live.text[12]", "live.text[1]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -7974,7 +8028,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "FeuilleDePatcheClean.txt",
+				"name" : "FeuilleDePatcheOLA_KDK.txt",
 				"bootpath" : "~/Workspace/Lechantdufilament/IntrospektColl",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -8202,6 +8256,10 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "j.send.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "OpenSoundControl.mxo",
 				"type" : "iLaX"
 			}
@@ -8211,10 +8269,6 @@
 			}
 , 			{
 				"name" : "j.receive.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.send.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -8235,11 +8289,11 @@
 				"name" : "patchLCDF",
 				"default" : 				{
 					"fontface" : [ 3 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontsize" : [ 18.0 ],
 					"accentcolor" : [ 0.556863, 0.556863, 0.556863, 1.0 ],
-					"fontname" : [ "Helvetica Neue Bold" ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 0.15 ]
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.15 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontname" : [ "Helvetica Neue Bold" ]
 				}
 ,
 				"parentstyle" : "",
