@@ -39,6 +39,38 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 11.0,
+					"id" : "obj-34",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 206.0, 21.0, 190.0, 19.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 742.5, 727.0, 172.0, 19.0 ],
+					"style" : "",
+					"text" : "Sortie OSC vers OLA ou DLight"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 11.0,
+					"id" : "obj-28",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 206.0, 21.0, 190.0, 19.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 379.0, 727.0, 172.0, 19.0 ],
+					"style" : "",
+					"text" : "Interface NanoKontrol2 & I-score"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-29",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -555,7 +587,7 @@
 ,
 					"patching_rect" : [ 13.0, 137.666656, 157.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 946.0, 304.0, 128.0, 30.0 ],
+					"presentation_rect" : [ 379.0, 745.928589, 172.0, 30.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -666,7 +698,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 443.0, 243.067078, 40.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 945.5, 186.5, 172.0, 20.0 ],
+					"presentation_rect" : [ 742.5, 753.0, 172.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.slider[19]",
@@ -958,7 +990,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 954.5, 458.067078, 55.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 492.0, 6.0, 59.0, 24.0 ],
+					"presentation_rect" : [ 7.0, 31.0, 55.0, 24.0 ],
 					"style" : "",
 					"text" : "Values",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -1001,7 +1033,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 792.5, 458.067078, 52.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 561.0, 6.0, 59.0, 24.0 ],
+					"presentation_rect" : [ 76.0, 31.0, 55.0, 24.0 ],
 					"style" : "",
 					"text" : "Lights",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -1519,29 +1551,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 191.0, 129.666656, 190.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 157.0, 30.0, 319.0, 22.0 ],
+					"presentation_rect" : [ 157.0, 30.0, 324.0, 22.0 ],
 					"style" : "",
 					"text" : "dev. Max Bruckert / Clement Bossut / Jaime Chao"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.408606, 0.408606, 0.408606, 0.6 ],
-					"fontface" : 3,
-					"fontname" : "Arial",
-					"fontsize" : 16.0,
-					"id" : "obj-64",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 191.0, 81.666664, 190.0, 42.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 6.0, 474.0, 24.0 ],
-					"style" : "",
-					"text" : "Introspectiv Tungsten - Nicolas Villenave",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -1558,7 +1570,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 242.0, 402.067078, 40.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 58.5, 68.0, 20.0 ],
+					"presentation_rect" : [ 409.0, 7.5, 68.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.text[12]",
@@ -1984,7 +1996,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 191.0, 56.666664, 190.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 945.5, 240.0, 171.0, 19.0 ],
+					"presentation_rect" : [ 191.5, 727.0, 171.0, 19.0 ],
 					"style" : "",
 					"text" : "Gestion de toutes les données"
 				}
@@ -2000,7 +2012,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 191.0, 6.0, 190.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 945.0, 125.0, 172.0, 19.0 ],
+					"presentation_rect" : [ 563.0, 727.0, 172.0, 19.0 ],
 					"style" : "",
 					"text" : "Ports entrants et sortants OSC"
 				}
@@ -2016,7 +2028,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 191.0, 32.0, 190.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 945.5, 10.5, 171.0, 19.0 ],
+					"presentation_rect" : [ 7.0, 727.0, 171.0, 19.0 ],
 					"style" : "",
 					"text" : "Edition des lampes + carte son"
 				}
@@ -4525,7 +4537,7 @@
 ,
 					"patching_rect" : [ 13.0, 6.0, 172.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 946.0, 258.928589, 172.0, 30.0 ],
+					"presentation_rect" : [ 192.0, 745.928589, 172.0, 30.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -4686,7 +4698,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 13.0, 91.0, 72.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 945.5, 143.928574, 170.0, 30.0 ],
+					"presentation_rect" : [ 563.5, 745.928589, 170.0, 30.0 ],
 					"style" : "patchLCDF",
 					"text" : "OOsc2",
 					"varname" : "OSc"
@@ -7353,7 +7365,7 @@
 ,
 					"patching_rect" : [ 13.0, 47.666664, 172.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 945.5, 31.5, 171.0, 30.0 ],
+					"presentation_rect" : [ 7.0, 748.0, 171.0, 30.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -7427,6 +7439,26 @@
 					"presentation_rect" : [ 833.5, 8.5, 107.5, 376.0 ],
 					"proportion" : 0.39,
 					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.408606, 0.408606, 0.408606, 0.6 ],
+					"fontface" : 3,
+					"fontname" : "Arial",
+					"fontsize" : 16.0,
+					"id" : "obj-64",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 191.0, 81.666664, 190.0, 42.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 7.0, 6.0, 474.0, 24.0 ],
+					"style" : "",
+					"text" : "Introspectiv Tungsten - Nicolas Villenave",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -7863,8 +7895,8 @@
 			"obj-194::obj-113" : [ "live.slider[10]", "AgentSub", 0 ],
 			"obj-149::obj-46" : [ "live.slider[5]", "SlideUp", 0 ],
 			"obj-194::obj-3" : [ "live.text[6]", "live.text[3]", 0 ],
-			"obj-194::obj-139::obj-120::obj-168" : [ "live.slider[25]", "Distance", 0 ],
 			"obj-194::obj-139::obj-120::obj-34" : [ "live.text[9]", "live.text[3]", 0 ],
+			"obj-194::obj-139::obj-120::obj-168" : [ "live.slider[25]", "Distance", 0 ],
 			"obj-17::obj-61" : [ "live.slider[2]", "SpatMulti-Sub", 0 ],
 			"obj-55" : [ "live.text[12]", "live.text[1]", 0 ]
 		}
