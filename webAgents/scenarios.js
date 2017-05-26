@@ -70,7 +70,7 @@ Object.assign(tourneur,
       ag.trajectory = this.mkTraj(rad)
     },
     add:function(rad) {
-      this.agents = this.agents.splice() //TODO this copy could be made by init, see scenario
+      this.agents = this.agents.slice() //TODO this copy could be made by init, see scenario
       var ag = Object.create(this.derviche)
       ag.trajectory = this.mkTraj(rad)
       ag.p = ag.trajectory[0]
