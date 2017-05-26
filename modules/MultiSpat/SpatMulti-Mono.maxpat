@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 225.0, 79.0, 738.0, 783.0 ],
+		"rect" : [ 311.0, 302.0, 738.0, 783.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -115,7 +115,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 190.0, 175.25, 123.0, 40.0 ],
 					"style" : "",
-					"text" : "Keypad",
+					"text" : "Souris",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -7856,24 +7856,6 @@
 					}
 ,
 					"varname" : "live.slider"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 3,
-					"fontname" : "Arial",
-					"fontsize" : 30.0,
-					"id" : "obj-112",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 928.603394, 702.477417, 112.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 77.0, 175.25, 106.0, 40.0 ],
-					"style" : "",
-					"text" : "Lemur",
-					"textcolor" : [ 0.0, 0.0, 0.0, 0.17 ]
 				}
 
 			}
