@@ -275,3 +275,51 @@ agent.goNdie = function() {
     this.v = v2D.sub(this.destination, this.p)
   }
 }
+
+// Similar as above
+
+// ONLY
+agent.trajectory = [[0,0], [200,200]]
+agent.trajectPoint = 1
+agent.trajectMode = 0 // 0 : One shot then die, 1 : Loop, 2 : Auto-reverse
+agent.trajectForward = true
+agent.traject = function() {
+  if (v2D.equal(this.p, this.trajectory[this.trajectPoint])) {
+    if (this.trajectForward) {                                    // Forward
+      this.trajectPoint++
+      if (this.trajectPoint == this.trajectory.length) {        // End
+        switch (this.trajectMode){
+          case 0:                                             // Die
+            this.toDie = true
+            return;
+          case 1:                                             // Loop
+            this.trajectPoint = 0
+            break;
+          case 2:                                             // Reverse
+            this.trajectPoint -= 2
+            this.trajectForward = false
+        }
+      }
+    } else {                                                      // Backward
+      this.trajectPoint--
+      if (this.trajectPoint < 0) {                              // End
+        switch (this.trajectMode) {
+          case 0:                                             // Die
+            this.toDie = true
+            return;
+          case 1:                                             // Loop
+            this.trajectPoint = this.trajectory.length - 1
+            break;
+          case 2:                                             // Reverse
+            this.trajectPoint = 0
+            this.trajectForward = true
+        }
+      }
+    }
+  }
+  this.v = v2D.sub(this.trajectory[this.trajectPoint], this.p)
+}
+agent.trajectReverse = function() {
+  this.trajectPoint = (this.trajectPoint + (this.trajectForward ? -1 : 1)) % this.trajectory.length
+  this.trajectForward = !this.trajectForward
+}
