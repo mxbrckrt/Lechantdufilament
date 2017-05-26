@@ -139,9 +139,9 @@ var space = {
   y2:900,
   nearVect:function(p) {
     var dists = [p[0] - this.x1,
-          p[1] - this.y1,
-          this.x2 - p[0],
-          this.y2 - p[1]],
+                 p[1] - this.y1,
+                 this.x2 - p[0],
+                 this.y2 - p[1]],
         index = 0,
         min = dists[0]
     for (var i = 1 ; i < dists.length ; i++) {
@@ -169,7 +169,7 @@ var space = {
 }
 
 var agent = {
-  color:"black", // For debug draw purposes only
+  color:"black", //TODO could be a state variable not directly color For debug draw purposes only
   p:[0,0], // position
   v:[0,0], // velocity
   f:[0,0], // force / steering / acceleration
@@ -182,17 +182,24 @@ var agent = {
   forces:[],
   moves:[], // todo doesn't exist anymore ? see // Move in update()
   lates:[],
+  only:undefined, // For complex rules down there, special pseudo-agents en devenir, instead of forces
   update:function() {
 
-    // Compute forces
-    this.f = [0,0]
-    for (var i = 0 ; i < this.forces.length ; i++) this[this.forces[i]]()
+    if (this.only) {
+      this.only()
+    } else {
+    
+      // Compute forces
+      this.f = [0,0]
+      for (var i = 0 ; i < this.forces.length ; i++) this[this.forces[i]]()
 
-    // Truncate forces
-    if (this.maxF !== -1) this.f = v2D.truncate(this.f, this.maxF)
+      // Truncate forces
+      if (this.maxF !== -1) this.f = v2D.truncate(this.f, this.maxF)
 
-    // Apply forces
-    this.v = v2D.add(this.v, v2D.mult(this.f, 1/this.m))
+      // Apply forces
+      this.v = v2D.add(this.v, v2D.mult(this.f, 1/this.m))
+      
+    }
 
     // Limit velocity
     if (this.maxV !== -1) this.v = v2D.truncate(this.v, this.maxV) // max
@@ -209,7 +216,7 @@ var agent = {
 
 //////////////////////////// FORCES
 
-agent.seekTarget = {p:undefined} //todo : is it a good idea ?
+agent.seekTarget = {p:undefined} //todo : is it a good idea ? it is in fact initialised, don't know how
 agent.seekDist = -1
 agent.seek = function() {
   var desiredVelocity = v2D.sub(this.seekTarget.p, this.p)
@@ -260,10 +267,10 @@ agent.wanderAngle = 0
 agent.wander = function() {
   var circleCenter = v2D.normalize(this.v, this.wanderDistance)
   this.f = v2D.add(this.f,
-    v2D.add(v2D.normalize([Math.cos(this.wanderAngle),
-        Math.sin(this.wanderAngle)],
-      this.wanderRadius),
-      circleCenter))
+                   v2D.add(v2D.normalize([Math.cos(this.wanderAngle),
+                                          Math.sin(this.wanderAngle)],
+                                         this.wanderRadius),
+                           circleCenter))
   if (--this.wanderRemaining <= 0) {
     this.wanderAngle += (Math.random() * 2 - 1) * this.wanderDiff
     this.wanderRemaining = this.wanderLaps
@@ -273,8 +280,8 @@ agent.wander = function() {
 agent.wanderSeek = function() {
   if (v2D.length(v2D.sub(this.seekTarget.p, this.p)) <= v2D.length(this.v)) {
     this.seekTarget =
-    {p:[Math.random() * space.dist * (space.lamps[0]-1),
-      Math.random() * space.dist * (space.lamps[1]-1)]}
+      {p:[Math.random() * space.dist * (space.lamps[0]-1),
+          Math.random() * space.dist * (space.lamps[1]-1)]}
   }
   this.seek()
 }
@@ -284,12 +291,12 @@ agent.avoid = function() {
 }
 
 /*
- agent.maxV = -1
- agent.move = function() { // same
- if (this.maxV !== -1) this.v = v2D.truncate(this.v, this.maxV)
- this.p[0] += this.v[0]
- this.p[1] += this.v[1]
- }*/
+agent.maxV = -1
+agent.move = function() { // same
+  if (this.maxV !== -1) this.v = v2D.truncate(this.v, this.maxV)
+  this.p[0] += this.v[0]
+  this.p[1] += this.v[1]
+}*/
 
 agent.insideDist = space.dist
 agent.insideSquare = undefined //todo : is it a good idea ?
@@ -383,13 +390,14 @@ agent.growNdie = function() {
   else {
     this.lates = this.lates.slice() // make a copy to not modify prototype
     for (var i = 0; i < this.lates.length; i++)
-      if (this.lates[i] === "growNdie") {
+      if (this.lates[i] === "growNdie") { //todo indexof ?
         this.lates.splice(i, 1, "consume", "die")
         this.consume()
       }
   }
 }
 
+//TODO Suppress, traject is better
 // FORCE //todo really ? but needs to change v ... is it an agent ?
 agent.destination = [0,0]
 agent.goNdie = function() {
@@ -397,6 +405,54 @@ agent.goNdie = function() {
   else {
     this.v = v2D.sub(this.destination, this.p)
   }
+}
+
+// Similar as above
+
+// ONLY
+agent.trajectory = [[0,0], [200,200]]
+agent.trajectPoint = 1
+agent.trajectMode = 0 // 0 : One shot then die, 1 : Loop, 2 : Auto-reverse
+agent.trajectForward = true
+agent.traject = function() {
+  if (v2D.equal(this.p, this.trajectory[this.trajectPoint])) {
+    if (this.trajectForward) {                                    // Forward
+      this.trajectPoint++
+      if (this.trajectPoint == this.trajectory.length) {        // End
+        switch (this.trajectMode){
+          case 0:                                             // Die
+            this.toDie = true
+            return;
+          case 1:                                             // Loop
+            this.trajectPoint = 0
+            break;
+          case 2:                                             // Reverse
+            this.trajectPoint -= 2
+            this.trajectForward = false
+        }
+      }
+    } else {                                                      // Backward
+      this.trajectPoint--
+      if (this.trajectPoint < 0) {                              // End
+        switch (this.trajectMode) {
+          case 0:                                             // Die
+            this.toDie = true
+            return;
+          case 1:                                             // Loop
+            this.trajectPoint = this.trajectory.length - 1
+            break;
+          case 2:                                             // Reverse
+            this.trajectPoint = 0
+            this.trajectForward = true
+        }
+      }
+    }
+  }
+  this.v = v2D.sub(this.trajectory[this.trajectPoint], this.p)
+}
+agent.trajectReverse = function() {
+  this.trajectPoint = (this.trajectPoint + (this.trajectForward ? -1 : 1)) % this.trajectory.length
+  this.trajectForward = !this.trajectForward
 }
 
 /////////////////////////////////////////SCENARIOS.JS
@@ -408,7 +464,16 @@ var agents = [],
 
 var scenario = {
   agents:[],
-  init:function() {},
+  sel:-1,
+  changeSel:function() { //TODO use that in other scenarios (see tourneur)
+    if (!this.agents.length) this.sel = -1
+    else {
+      this.sel = ++this.sel % this.agents.length
+    }
+  },
+  init:function() {
+    this.agents = [] // Create copy into new scenario to prevent modifying prototype
+  },
   play:function() {
     this.init()
     scenari.push(this)
@@ -429,7 +494,43 @@ var scenario = {
 
 
 
-var balayage = Object.create(scenario)
+var tourneur = Object.create(scenario)
+Object.assign(tourneur,
+  {
+    derviche:Object.create(agent),
+    mkTraj:function(rad) {
+      var center = [(space.lamps[0]-1)/2, (space.lamps[1]-1)/2]
+      return [
+        [(center[0]-rad)*space.dist, (center[1]-rad)*space.dist],
+        [(center[0]+rad)*space.dist, (center[1]-rad)*space.dist],
+        [(center[0]+rad)*space.dist, (center[1]+rad)*space.dist],
+        [(center[0]-rad)*space.dist, (center[1]+rad)*space.dist]
+      ]
+    },
+    add:function(rad) {
+      this.agents = this.agents.splice() //TODO this copy could be made by init, see scenario
+      var ag = Object.create(this.derviche)
+      ag.trajectory = this.mkTraj(rad)
+      ag.p = ag.trajectory[0]
+      this.sel = this.agents.push(ag) - 1
+      agents.push(ag)
+    },
+    removeSel:function() {
+      this.agents[this.sel].toDie = true
+      this.agents.splice(this.sel, 1)
+      this.sel--
+    }
+  }
+)
+Object.assign(tourneur.derviche,
+  {
+    maxV:5,
+    only:agent.traject,
+    trajectMode:1
+  }
+)
+
+var balayage = Object.create(scenario) //TODO Use traject
 Object.assign(balayage,
   {
     starts:[],
@@ -445,7 +546,7 @@ Object.assign(balayage,
         agents.push(b)
       }
     }, //todo cf up : here call goNdie on this.agents cutting update ?
-    update:function() {
+    update:function() { // Why do this scenario kills its own agents ? They couldd die by themselves
       for (var i = this.agents.length-1 ; i >= 0 ; i--) {
         if (this.agents[i].toDie) this.agents.splice(i, 1)
       }
@@ -534,8 +635,8 @@ Object.assign(errants,
       Object.assign(newAgent, this.current)
       this.current = newAgent
       this.current.p = [Math.random()*space.lamps[0]*space.dist,
-        Math.random()*space.lamps[1]*space.dist]
-      this.agents.push(this.current)
+                        Math.random()*space.lamps[1]*space.dist]
+      this.agents.push(this.current) //TODO pushing into prototype ? see scenario.init
       agents.push(this.current)
     },
     remove:function() { //TODO should select which errant to remove
@@ -551,16 +652,16 @@ Object.assign(errants.errant,
     m:1,
     s:1,
     /*
-     seekTarget:{p:[0,0]},
-     */
+    seekTarget:{p:[0,0]},
+    */
     wanderDistance:Math.sqrt(2),
     wanderRadius:1,
     wanderDiff:0.6,
     wanderLaps:1,
     /*
-     fleeObstacle:space,
-     fleeDist:100,
-     */
+    fleeObstacle:space,
+    fleeDist:100,
+    */
     insideDist:space.dist,
     insideSquare:[0,0,space.dist*(space.lamps[0]-1),space.dist*(space.lamps[1]-1)],
     insideRule:"wander",
@@ -608,10 +709,10 @@ function update() {
     agents[i].update()
     if (agents[i].toDie) agents.splice(i,1)
     /*else {
-     var tab = formatForDBAP(agents[i])
-     tab.unshift(i+1)
-     sendToMax(tab)
-     }*/
+      var tab = formatForDBAP(agents[i])
+      tab.unshift(i+1)
+      sendToMax(tab)
+    }*/
   }
   //sendToMax(["bang"])
 }
@@ -653,6 +754,18 @@ function change(parameter, value) {
 function lamps(lx, ly) {
   space.lamps[0] = lx
   space.lamps[1] = ly
+}
+
+//////////////////// Tourneur
+  
+function tourneurAdd(rad) {tourneur.add(rad)}
+  
+function tourneurChg() {tourneur.changeSel()}
+  
+function tourneurRm() {tourneur.removeSel()}
+  
+function tourneurSub(s) { //TODO sub per agent and sub per scenario, how to mix the two ?
+  tourneur.derviche.s = s
 }
 
 //////////////////// Sorbet
