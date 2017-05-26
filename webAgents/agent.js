@@ -267,6 +267,7 @@ agent.growNdie = function() {
   }
 }
 
+//TODO Suppress, traject is better
 // FORCE //todo really ? but needs to change v ... is it an agent ?
 agent.destination = [0,0]
 agent.goNdie = function() {
