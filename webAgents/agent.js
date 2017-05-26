@@ -39,7 +39,7 @@ var space = {
 }
 
 var agent = {
-  color:"black", // For debug draw purposes only
+  color:"black", //TODO could be a state variable not directly color For debug draw purposes only
   p:[0,0], // position
   v:[0,0], // velocity
   f:[0,0], // force / steering / acceleration
@@ -79,7 +79,7 @@ var agent = {
 
 //////////////////////////// FORCES
 
-agent.seekTarget = {p:undefined} //todo : is it a good idea ?
+agent.seekTarget = {p:undefined} //todo : is it a good idea ? it is in fact initialised, don't know how
 agent.seekDist = -1
 agent.seek = function() {
   var desiredVelocity = v2D.sub(this.seekTarget.p, this.p)
@@ -253,7 +253,7 @@ agent.growNdie = function() {
   else {
     this.lates = this.lates.slice() // make a copy to not modify prototype
     for (var i = 0; i < this.lates.length; i++)
-      if (this.lates[i] === "growNdie") {
+      if (this.lates[i] === "growNdie") { //todo indexof ?
         this.lates.splice(i, 1, "consume", "die")
         this.consume()
       }

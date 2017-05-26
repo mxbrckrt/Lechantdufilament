@@ -42,7 +42,7 @@ Object.assign(balayage,
         agents.push(b)
       }
     }, //todo cf up : here call goNdie on this.agents cutting update ?
-    update:function() {
+    update:function() { // Why do this scenario kills its own agents ? They couldd die by themselves
       for (var i = this.agents.length-1 ; i >= 0 ; i--) {
         if (this.agents[i].toDie) this.agents.splice(i, 1)
       }

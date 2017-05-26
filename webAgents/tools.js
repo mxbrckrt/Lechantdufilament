@@ -46,7 +46,7 @@ function removeFrom(tab, elt, unique) { // Todo check where it could be used
   }
 }
 
-function map() {
+function map() { //TODO should take agents as argument ?
   var lights = []
   for (var i = 0 ; i < space.lamps[0] ; i++) {
     lights[i] = []
