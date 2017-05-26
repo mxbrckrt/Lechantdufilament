@@ -9,7 +9,7 @@ var scenario = {
   changeSel:function() { //TODO use that in other scenarios (see tourneur)
     if (!this.agents.length) this.sel = -1
     else {
-      this.sel = ++this.sel % this.agents.length
+      this.sel = (this.sel + 1) % this.agents.length
     }
   },
   init:function() {

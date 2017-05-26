@@ -63,11 +63,25 @@ function bang() {
 }
 
 function space(banger, x, y, dx, dy) { //TODO something if out of bounds ( < 1 | > lamps)
+  var oldList = lists[banger]
   lists[banger] = []
   for (var i = x - 1 ; i < x + dx - 1 ; i++) {
     for (var j = y - 1 ; j < y + dy - 1; j++) {
-      lists[banger].push(j*lamps[0] + i)
+      var newLight = j*lamps[0] + i,
+          found = false,
+          k = 0
+      while (!found && k < oldList.length) {
+        if (oldList[k] == newLight) {
+          found = true
+          oldList.splice(k, 1)
+        }
+        k++
+      }
+      lists[banger].push(newLight)
     }
+  }
+  for (var k = 0 ; k < oldList ; k++) {
+    lights[oldList[k]] = 0
   }
 }
 
