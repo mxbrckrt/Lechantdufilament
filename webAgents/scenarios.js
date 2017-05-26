@@ -5,6 +5,13 @@ var agents = [],
 
 var scenario = {
   agents:[],
+  sel:-1,
+  changeSel:function() { //TODO use that in other scenarios (see tourneur)
+    if (!this.agents.length) this.sel = -1
+    else {
+      this.sel = ++this.sel % this.agents.length
+    }
+  },
   init:function() {
     this.agents = [] // Create copy into new scenario to prevent modifying prototype
   },
