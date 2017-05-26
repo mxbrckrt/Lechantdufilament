@@ -507,11 +507,33 @@ Object.assign(tourneur,
         [(center[0]-rad)*space.dist, (center[1]+rad)*space.dist]
       ]
     },
+    tpSel:function(rad) {
+      var ag = this.agents[this.sel],
+          side = ag.trajectForward ? ag.trajectPoint - 1 : ag.trajectPoint,
+          d = space.dist * (ag.rad - rad)
+      switch (side) { // beware, is p own property of ag ?
+        case 0:
+          ag.p[1] += d
+          break;
+        case 1:
+          ag.p[0] -= d
+          break;
+        case 2:
+          ag.p[1] -= d
+          break;
+        case 3:
+          ag.p[0] += d
+          break;
+      }
+      ag.rad = rad
+      ag.trajectory = this.mkTraj(rad)
+    },
     add:function(rad) {
       this.agents = this.agents.splice() //TODO this copy could be made by init, see scenario
       var ag = Object.create(this.derviche)
       ag.trajectory = this.mkTraj(rad)
       ag.p = ag.trajectory[0]
+      ag.rad = rad
       this.sel = this.agents.push(ag) - 1
       agents.push(ag)
     },
@@ -763,6 +785,14 @@ function tourneurAdd(rad) {tourneur.add(rad)}
 function tourneurChg() {tourneur.changeSel()}
   
 function tourneurRm() {tourneur.removeSel()}
+  
+function tourneurReverseSel () {
+  tourneur.agents[tourneur.sel].trajectReverse()
+}
+  
+function tourneurTeleport (rad) {
+  tourneur.tpSel(rad)
+}
   
 function tourneurSub(s) { //TODO sub per agent and sub per scenario, how to mix the two ?
   tourneur.derviche.s = s

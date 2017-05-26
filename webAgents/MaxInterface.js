@@ -45,6 +45,12 @@ var MaxInterface = {
   
   tourneurRm:tourneur.removeSel,
   
+  tourneurReverseSel:function() {
+    tourneur.agents[tourneur.sel].trajectReverse()
+  },
+  
+  tourneurTeleport:tourneur.tpSel,
+  
   tourneurSub:function(s) { //TODO sub per agent and sub per scenario, how to mix the two ?
     tourneur.derviche.s = s
   },
