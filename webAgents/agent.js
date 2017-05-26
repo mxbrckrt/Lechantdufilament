@@ -52,17 +52,24 @@ var agent = {
   forces:[],
   moves:[], // todo doesn't exist anymore ? see // Move in update()
   lates:[],
+  only:undefined, // For complex rules down there, special pseudo-agents en devenir, instead of forces
   update:function() {
 
-    // Compute forces
-    this.f = [0,0]
-    for (var i = 0 ; i < this.forces.length ; i++) this[this.forces[i]]()
+    if (this.only) {
+      this.only()
+    } else {
+    
+      // Compute forces
+      this.f = [0,0]
+      for (var i = 0 ; i < this.forces.length ; i++) this[this.forces[i]]()
 
-    // Truncate forces
-    if (this.maxF !== -1) this.f = v2D.truncate(this.f, this.maxF)
+      // Truncate forces
+      if (this.maxF !== -1) this.f = v2D.truncate(this.f, this.maxF)
 
-    // Apply forces
-    this.v = v2D.add(this.v, v2D.mult(this.f, 1/this.m))
+      // Apply forces
+      this.v = v2D.add(this.v, v2D.mult(this.f, 1/this.m))
+      
+    }
 
     // Limit velocity
     if (this.maxV !== -1) this.v = v2D.truncate(this.v, this.maxV) // max
