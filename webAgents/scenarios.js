@@ -5,7 +5,16 @@ var agents = [],
 
 var scenario = {
   agents:[],
-  init:function() {},
+  sel:-1,
+  changeSel:function() { //TODO use that in other scenarios (see tourneur)
+    if (!this.agents.length) this.sel = -1
+    else {
+      this.sel = ++this.sel % this.agents.length
+    }
+  },
+  init:function() {
+    this.agents = [] // Create copy into new scenario to prevent modifying prototype
+  },
   play:function() {
     this.init()
     scenari.push(this)
@@ -26,7 +35,43 @@ var scenario = {
 
 
 
-var balayage = Object.create(scenario)
+var tourneur = Object.create(scenario)
+Object.assign(tourneur,
+  {
+    derviche:Object.create(agent),
+    mkTraj:function(rad) {
+      var center = [(space.lamps[0]-1)/2, (space.lamps[1]-1)/2]
+      return [
+        [(center[0]-rad)*space.dist, (center[1]-rad)*space.dist],
+        [(center[0]+rad)*space.dist, (center[1]-rad)*space.dist],
+        [(center[0]+rad)*space.dist, (center[1]+rad)*space.dist],
+        [(center[0]-rad)*space.dist, (center[1]+rad)*space.dist]
+      ]
+    },
+    add:function(rad) {
+      this.agents = this.agents.splice() //TODO this copy could be made by init, see scenario
+      var ag = Object.create(this.derviche)
+      ag.trajectory = this.mkTraj(rad)
+      ag.p = ag.trajectory[0]
+      this.sel = this.agents.push(ag) - 1
+      agents.push(ag)
+    },
+    removeSel:function() {
+      this.agents[this.sel].toDie = true
+      this.agents.splice(this.sel, 1)
+      this.sel--
+    }
+  }
+)
+Object.assign(tourneur.derviche,
+  {
+    maxV:5,
+    only:agent.traject,
+    trajectMode:1
+  }
+)
+
+var balayage = Object.create(scenario) //TODO Use traject
 Object.assign(balayage,
   {
     starts:[],
@@ -132,7 +177,7 @@ Object.assign(errants,
       this.current = newAgent
       this.current.p = [Math.random()*space.lamps[0]*space.dist,
                         Math.random()*space.lamps[1]*space.dist]
-      this.agents.push(this.current)
+      this.agents.push(this.current) //TODO pushing into prototype ? see scenario.init
       agents.push(this.current)
     },
     remove:function() { //TODO should select which errant to remove
