@@ -35,6 +35,42 @@ var scenario = {
 
 
 
+var tourneur = Object.create(scenario)
+Object.assign(tourneur,
+  {
+    derviche:Object.create(agent),
+    mkTraj:function(rad) {
+      var center = [(space.lamps[0]-1)/2, (space.lamps[1]-1)/2]
+      return [
+        [(center[0]-rad)*space.dist, (center[1]-rad)*space.dist],
+        [(center[0]+rad)*space.dist, (center[1]-rad)*space.dist],
+        [(center[0]+rad)*space.dist, (center[1]+rad)*space.dist],
+        [(center[0]-rad)*space.dist, (center[1]+rad)*space.dist]
+      ]
+    },
+    add:function(rad) {
+      this.agents = this.agents.splice() //TODO this copy could be made by init, see scenario
+      var ag = Object.create(this.derviche)
+      ag.trajectory = this.mkTraj(rad)
+      ag.p = ag.trajectory[0]
+      this.sel = this.agents.push(ag) - 1
+      agents.push(ag)
+    },
+    removeSel:function() {
+      this.agents[this.sel].toDie = true
+      this.agents.splice(this.sel, 1)
+      this.sel--
+    }
+  }
+)
+Object.assign(tourneur.derviche,
+  {
+    maxV:5,
+    only:agent.traject,
+    trajectMode:1
+  }
+)
+
 var balayage = Object.create(scenario) //TODO Use traject
 Object.assign(balayage,
   {

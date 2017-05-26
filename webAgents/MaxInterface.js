@@ -36,6 +36,18 @@ var MaxInterface = {
   {
 
   },
+  
+//////////////////// Tourneur
+  
+  tourneurAdd:tourneur.add,
+  
+  tourneurChg:tourneur.changeSel,
+  
+  tourneurRm:tourneur.removeSel,
+  
+  tourneurSub:function(s) { //TODO sub per agent and sub per scenario, how to mix the two ?
+    tourneur.derviche.s = s
+  },
 
 //////////////////// Sorbet
 
