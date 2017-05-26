@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 419.0, 153.0, 1035.0, 305.0 ],
+		"rect" : [ 82.0, 110.0, 1035.0, 305.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -870,8 +870,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 85.519867, 258.5, 151.0, 22.0 ],
-									"style" : "",
+									"patching_rect" : [ 75.269943, 265.359039, 151.0, 22.0 ],
+									"style" : "Jamoma_highlighted_orange",
 									"text" : "j.receive agentParameters"
 								}
 
@@ -3230,6 +3230,16 @@
 									"source" : [ "obj-9", 0 ]
 								}
 
+							}
+ ],
+						"styles" : [ 							{
+								"name" : "Jamoma_highlighted_orange",
+								"default" : 								{
+									"accentcolor" : [ 1.0, 0.5, 0.0, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
 							}
  ]
 					}

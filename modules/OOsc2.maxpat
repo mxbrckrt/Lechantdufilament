@@ -213,6 +213,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Helvetica Neue",
@@ -223,7 +224,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 599.5, 145.0, 169.0, 22.0 ],
-									"presentation_rect" : [ 640.5, 144.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "FeuilleDePatcheOLA_KDK.txt"
 								}
@@ -3839,7 +3839,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u856010808"
+					"varname" : "u123010258"
 				}
 
 			}
@@ -3934,7 +3934,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @savemode 0 @autorestore 0",
-					"varname" : "u845005412"
+					"varname" : "u923004860"
 				}
 
 			}
