@@ -781,21 +781,27 @@ function lamps(lx, ly) {
 //////////////////// Tourneur
   
 function tourneurAdd(rad) {tourneur.add(rad)}
-  
-function tourneurChg() {tourneur.changeSel()}
-  
+
+function tourneurChange() {tourneur.changeSel()}
+
 function tourneurRm() {tourneur.removeSel()}
-  
+
 function tourneurReverseSel () {
   tourneur.agents[tourneur.sel].trajectReverse()
 }
-  
-function tourneurTeleport (rad) {
-  tourneur.tpSel(rad)
+
+function tourneurTeleport (rad) {tourneur.tpSel(rad)}
+
+function tourneurSub(e) { //TODO sub per agent and sub per scenario, how to mix the two ?
+  tourneur.derviche.e = e
 }
-  
-function tourneurSub(s) { //TODO sub per agent and sub per scenario, how to mix the two ?
-  tourneur.derviche.s = s
+
+function touneurVitesseSel (v) {
+  tourneur.agents[tourneur.sel].maxV = v
+}
+
+function tourneurSizeSel (s) {
+  tourneur.agents[tourneur.sel].s = s
 }
 
 //////////////////// Sorbet
