@@ -1,5 +1,13 @@
 // Author : Clément Bossut
 
+Object.assign = function(obj, props) { 
+  for (var prop in props) { 
+    if (props.hasOwnProperty(prop)) { 
+      obj[prop] = props[prop] 
+    } 
+  } 
+} 
+
 include("tools")
 include("agent")
 include("scenarios")
