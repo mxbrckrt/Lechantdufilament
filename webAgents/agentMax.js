@@ -1,6 +1,14 @@
 // Author : Clément Bossut
 
-function anything() {
+include("tools")
+include("agent")
+include("scenarios")
+
+outlets = 2
+setoutletassist(1,"agents")
+setoutletassist(0,"bang when finished")
+
+function anything() { //TODO Should use apply to call functions with any args number
   MaxInterface[messagename](arguments[0])
 }
 
@@ -15,12 +23,12 @@ function bang() {
   outlet(0, "bang");
 }
 
-function lamps(lx, ly) {
+function lamps(lx, ly) { // Should go in MaxInterface (see comment for anything())
   space.lamps[0] = lx
   space.lamps[1] = ly
 }
 
-function panic() {
+function panic() { // Should go in MaxInterface (see comment for anything())
   agents  = []
   for (var i = 0 ; i < scenari.length ; i++) {
     scenari.agents = []
