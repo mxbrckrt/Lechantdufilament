@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
+			"minor" : 3,
 			"revision" : 3,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 610.0, 205.0, 210.0, 317.0 ],
+		"rect" : [ 34.0, 79.0, 1372.0, 783.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -345,7 +345,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 131.5, 36.0, 125.0, 20.0 ],
+					"patching_rect" : [ 147.5, 32.0, 125.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 117.0, 28.0, 91.0, 20.0 ],
 					"style" : "",
@@ -873,7 +873,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 146.573914, 525.153015, 27.0, 29.0 ],
+					"patching_rect" : [ 32.573914, 18.0, 27.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 9.5, 16.0, 206.5, 313.0 ],
 					"proportion" : 0.39,
@@ -952,6 +952,7 @@
 					"destination" : [ "obj-59", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -961,6 +962,7 @@
 					"destination" : [ "obj-97", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -979,6 +981,7 @@
 					"destination" : [ "obj-120", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-185", 0 ]
 				}
 
@@ -989,6 +992,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 527.0, 207.580322, 494.0, 207.580322, 494.0, 68.0, 527.0, 68.0 ],
+					"order" : 1,
 					"source" : [ "obj-185", 0 ]
 				}
 
@@ -998,6 +1002,7 @@
 					"destination" : [ "obj-68", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -1007,6 +1012,7 @@
 					"destination" : [ "obj-69", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -1063,6 +1069,7 @@
 					"destination" : [ "obj-27", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-28", 0 ]
 				}
 
@@ -1072,6 +1079,7 @@
 					"destination" : [ "obj-49", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-28", 0 ]
 				}
 
@@ -1081,6 +1089,7 @@
 					"destination" : [ "obj-5", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 2,
 					"source" : [ "obj-28", 0 ]
 				}
 
@@ -1126,6 +1135,7 @@
 					"destination" : [ "obj-38", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-34", 0 ]
 				}
 
@@ -1135,6 +1145,7 @@
 					"destination" : [ "obj-39", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-34", 0 ]
 				}
 
@@ -1243,6 +1254,7 @@
 					"destination" : [ "obj-120", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -1253,6 +1265,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 751.0, 211.0, 727.0, 211.0, 727.0, 63.0, 751.0, 63.0 ],
+					"order" : 1,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -1298,6 +1311,7 @@
 					"destination" : [ "obj-11", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -1307,6 +1321,7 @@
 					"destination" : [ "obj-6", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -1329,7 +1344,37 @@
 				}
 
 			}
- ]
+ ],
+		"parameters" : 		{
+			"obj-28" : [ "live.slider[6]", "MSNSub", 0 ]
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "MakeSomeNoise.maxpat",
+				"bootpath" : "~/Workspace/Lechantdufilament/modules",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "-rs.maxpat",
+				"bootpath" : "~/Workspace/Lechantdufilament/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.parameter.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.remote.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.model.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }

@@ -85,7 +85,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 628.0, 339.0, 755.0, 538.0 ],
+						"rect" : [ 634.0, 238.0, 755.0, 538.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -112,7 +112,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-16",
@@ -1003,7 +1002,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 793.5, 357.0, 55.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 31.0, 55.0, 24.0 ],
+					"presentation_rect" : [ 92.0, 29.5, 59.0, 24.0 ],
 					"style" : "",
 					"text" : "Values",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -1046,7 +1045,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 631.5, 357.0, 52.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 76.0, 31.0, 55.0, 24.0 ],
+					"presentation_rect" : [ 156.0, 29.5, 59.0, 24.0 ],
 					"style" : "",
 					"text" : "Lights",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -1543,7 +1542,7 @@
 					"name" : "Algo.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"offset" : [ -335.0, 1.0 ],
+					"offset" : [ 1.0, 1.0 ],
 					"patching_rect" : [ 618.0, 112.107361, 240.0, 48.825562 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 492.0, 65.0, 338.0, 320.5 ],
@@ -1556,17 +1555,18 @@
 				"box" : 				{
 					"fontface" : 2,
 					"fontname" : "Arial",
-					"fontsize" : 14.0,
+					"fontsize" : 11.0,
 					"id" : "obj-65",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 405.0, 56.666664, 190.0, 38.0 ],
+					"patching_rect" : [ 405.0, 56.666664, 158.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 157.0, 30.0, 324.0, 22.0 ],
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 340.0, 0.5, 173.0, 31.0 ],
 					"style" : "",
-					"text" : "dev. Max Bruckert / Clement Bossut / Jaime Chao"
+					"text" : "developpement Max Bruckert \nClement Bossut / Jaime Chao"
 				}
 
 			}
@@ -1583,7 +1583,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 242.0, 402.067078, 40.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 409.0, 7.5, 68.0, 20.0 ],
+					"presentation_rect" : [ 13.0, 32.5, 68.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.text[12]",
@@ -7410,7 +7410,7 @@
 					"offset" : [ -2.0, 0.0 ],
 					"patching_rect" : [ 618.0, 259.067078, 240.0, 50.825562 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 83.0, 486.0, 303.0 ],
+					"presentation_rect" : [ 7.0, 59.0, 486.0, 303.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -7468,7 +7468,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 399.0, 6.0, 190.0, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 6.0, 474.0, 24.0 ],
+					"presentation_rect" : [ 7.0, 4.0, 486.0, 24.0 ],
 					"style" : "",
 					"text" : "Introspectiv Tungsten - Nicolas Villenave",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -7884,8 +7884,8 @@
 			"obj-180::obj-188::obj-28" : [ "live.slider[4]", "GOLSub", 0 ],
 			"obj-1" : [ "live.slider[19]", "Sorbet-Fonte", 0 ],
 			"obj-194::obj-139::obj-120::obj-166" : [ "live.slider[24]", "Masse", 0 ],
-			"obj-194::obj-139::obj-120::obj-150" : [ "live.slider[22]", "Changement direction", 0 ],
 			"obj-194::obj-139::obj-129::obj-1" : [ "live.slider[21]", "Sorbet-Fonte", 0 ],
+			"obj-194::obj-139::obj-120::obj-150" : [ "live.slider[22]", "Changement direction", 0 ],
 			"obj-194::obj-3" : [ "live.text[14]", "live.text[3]", 0 ],
 			"obj-194::obj-139::obj-120::obj-22" : [ "live.slider[12]", "Force", 0 ],
 			"obj-194::obj-139::obj-2::obj-71" : [ "live.slider[33]", "SubTourneur", 0 ],
@@ -7898,29 +7898,29 @@
 			"obj-194::obj-139::obj-129::obj-7" : [ "live.slider[20]", "Sorbet-Formation", 0 ],
 			"obj-194::obj-139::obj-2::obj-26" : [ "live.text[7]", "live.text[3]", 0 ],
 			"obj-149::obj-1" : [ "live.slider[29]", "SlideDown", 0 ],
-			"obj-194::obj-139::obj-120::obj-188" : [ "live.slider[28]", "Vélocité", 0 ],
 			"obj-194::obj-139::obj-129::obj-9" : [ "live.text[4]", "live.text", 0 ],
+			"obj-194::obj-139::obj-120::obj-188" : [ "live.slider[28]", "Vélocité", 0 ],
 			"obj-149::obj-162" : [ "live.slider[14]", "Master", 0 ],
 			"obj-194::obj-139::obj-129::obj-92" : [ "live.slider[31]", "Sorbet-temps-creation", 0 ],
 			"obj-180::obj-188::obj-7" : [ "live.text[5]", "live.text", 0 ],
-			"obj-55" : [ "live.text[12]", "live.text[1]", 0 ],
 			"obj-194::obj-139::obj-120::obj-178" : [ "live.slider[27]", "Diff", 0 ],
+			"obj-55" : [ "live.text[12]", "live.text[1]", 0 ],
 			"obj-149::obj-46" : [ "live.slider[5]", "SlideUp", 0 ],
 			"obj-17::obj-106" : [ "live.slider[1]", "Remanence", 0 ],
 			"obj-194::obj-150" : [ "live.slider[30]", "Vitesse Agents", 0 ],
-			"obj-194::obj-139::obj-2::obj-34" : [ "live.text[6]", "live.text[3]", 0 ],
 			"obj-194::obj-139::obj-120::obj-171" : [ "live.slider[26]", "Radius", 0 ],
+			"obj-194::obj-139::obj-2::obj-34" : [ "live.text[6]", "live.text[3]", 0 ],
 			"obj-194::obj-139::obj-120::obj-168" : [ "live.slider[25]", "Distance", 0 ],
 			"obj-180::obj-188::obj-145" : [ "live.slider[18]", "Densite", 0 ],
 			"obj-180::obj-3::obj-86" : [ "live.slider[11]", "PINGSub", 0 ],
-			"obj-194::obj-139::obj-120::obj-24" : [ "live.slider[17]", "Energie", 0 ],
 			"obj-194::obj-139::obj-129::obj-19" : [ "live.slider[10]", "Temps-inter-sorbets", 0 ],
+			"obj-194::obj-139::obj-120::obj-24" : [ "live.slider[17]", "Energie", 0 ],
 			"obj-17::obj-42" : [ "live.slider[16]", "SpatMono-Sub", 0 ],
 			"obj-17::obj-61" : [ "live.slider[2]", "SpatMulti-Sub", 0 ],
-			"obj-194::obj-139::obj-2::obj-19" : [ "live.text[10]", "live.text[3]", 0 ],
 			"obj-194::obj-139::obj-120::obj-32" : [ "live.text[3]", "live.text[3]", 0 ],
-			"obj-194::obj-139::obj-2::obj-42" : [ "live.slider[7]", "SizeSel", 0 ],
-			"obj-194::obj-139::obj-2::obj-6" : [ "live.slider[9]", "Distance", 0 ]
+			"obj-194::obj-139::obj-2::obj-19" : [ "live.text[10]", "live.text[3]", 0 ],
+			"obj-194::obj-139::obj-2::obj-6" : [ "live.slider[9]", "Distance", 0 ],
+			"obj-194::obj-139::obj-2::obj-42" : [ "live.slider[7]", "SizeSel", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
