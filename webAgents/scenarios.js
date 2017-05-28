@@ -204,6 +204,11 @@ Object.assign(errants,
     },
     remove:function() { //TODO should select which errant to remove
       removeFrom(agents, this.agents.shift())
+    },
+    removeSel:function() {
+      this.agents[this.sel].toDie = true
+      this.agents.splice(this.sel, 1)
+      this.sel--
     }
   }
 )

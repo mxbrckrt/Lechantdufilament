@@ -452,6 +452,7 @@ agent.traject = function() {
 }
 agent.trajectReverse = function() {
   this.trajectPoint = (this.trajectPoint + (this.trajectForward ? -1 : 1)) % this.trajectory.length
+  if (this.trajectPoint < 0) this.trajectPoint += this.trajectory.length
   this.trajectForward = !this.trajectForward
 }
 
@@ -663,6 +664,11 @@ Object.assign(errants,
     },
     remove:function() { //TODO should select which errant to remove
       removeFrom(agents, this.agents.shift())
+    },
+    removeSel:function() {
+      this.agents[this.sel].toDie = true
+      this.agents.splice(this.sel, 1)
+      this.sel--
     }
   }
 )
@@ -849,45 +855,70 @@ function sorbetLapsFrames(l) {
 function errantAdd() {
   errants.add()
 }
+  
+function errantChange() {
+  errants.changeSel()
+}
 
 function errantDel() {
-  errants.remove()
+  errants.removeSel()
 }
 
 function errantLapsFrames(l) {
-  errants.current.wanderLaps = l
+  errants.agents[errants.sel].wanderLaps = l
 }
 
 function errantDistance(d) {
-  errants.current.wanderDistance = d
+  errants.agents[errants.sel].wanderDistance = d
 }
 
 function errantRadius(r) {
-  errants.current.wanderRadius = r
+  errants.agents[errants.sel].wanderRadius = r
 }
 
 function errantDiff(d) {
-  errants.current.wanderDiff = d*Math.PI/180
+  errants.agents[errants.sel].wanderDiff = d*Math.PI/180
 }
 
 function errantMass(m) {
-  errants.current.mass = m
+  errants.agents[errants.sel].mass = m
 }
 
 function errantVelocity(maxV) {
-  errants.current.maxV = maxV
+  errants.agents[errants.sel].maxV = maxV
 }
 
 function errantForce(maxF) {
-  errants.current.maxF = maxF
+  errants.agents[errants.sel].maxF = maxF
 }
 
 function errantEnergy(e) {
-  errants.current.e = e
+  errants.agents[errants.sel].e = e
 }
 
 function errantSize(s) {
-  errants.current.s = s
+  errants.agents[errants.sel].s = s
+}
+  
+function errantMode(m) { // 0:inside, 1:fold, 2:wrap, 3:clip
+  var ag = errants.agents[errants.sel]
+  if (m == 0) {
+    ag.forces = ["inside"]
+    ag.lates = []
+  } else {
+    ag.forces = ["wander"]
+    switch(m) {
+      case 1:
+        ag.lates = ["fold"]
+        break;
+      case 2:
+        ag.lates = ["wrap"]
+        break;
+      case 3:
+        ag.lates = ["clip"]
+        break;
+    }
+  }
 }
 
 function errantSquare(x, y, dx, dy) { // x y in lamps from 1, apply to all errants
