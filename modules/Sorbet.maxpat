@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 182.0, 413.0, 605.0, 223.0 ],
+		"rect" : [ 34.0, 79.0, 1372.0, 783.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -51,99 +51,78 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 1.0, 0.558253, 0.0, 1.0 ],
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-17",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 782.02002, 144.370361, 411.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 782.02002, 141.370361, 411.0, 22.0 ],
+					"style" : "jamomaLCDF",
 					"text" : "j.parameter goBtwn @type integer @priority 7 @range 0 1 @clipmode both"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 1.0, 0.558253, 0.0, 1.0 ],
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-12",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 782.02002, 111.626404, 518.0, 22.0 ],
-					"style" : "",
+					"style" : "jamomaLCDF",
 					"text" : "j.parameter minBtwn @type integer @priority 6 @range 1 20000 @clipmode both @default 500"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 1.0, 0.558253, 0.0, 1.0 ],
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 782.02002, 84.626404, 538.0, 22.0 ],
-					"style" : "",
+					"style" : "jamomaLCDF",
 					"text" : "j.parameter maxBtwn @type integer @priority 5 @range 1 20000 @clipmode both @default 2000"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-38",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 782.02002, 16.852844, 510.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 194.091553, 105.852844, 510.0, 22.0 ],
+					"style" : "jamomaLCDF",
 					"text" : "j.parameter fonte @priority 2 @type decimal @range 1 30000 @clipmode both @default 3500"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-36",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 227.52002, 84.626404, 534.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 193.091553, 76.040527, 534.0, 22.0 ],
+					"style" : "jamomaLCDF",
 					"text" : "j.parameter formation @priority 2 @type decimal @range 1 30000 @clipmode both @default 1500"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-35",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 227.52002, 53.84729, 489.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 193.091553, 45.261414, 489.0, 22.0 ],
+					"style" : "jamomaLCDF",
 					"text" : "j.parameter energy @priority 2 @type integer @range 0 255 @clipmode both @default 50"
 				}
 
@@ -163,16 +142,13 @@
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-22",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 227.52002, 22.852844, 485.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 193.091553, 14.266968, 485.0, 22.0 ],
+					"style" : "jamomaLCDF",
 					"text" : "j.parameter taille @priority 2 @type decimal @range 0. 20. @clipmode both @default 0.2"
 				}
 
@@ -325,16 +301,13 @@
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-109",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 432.52002, 311.852844, 82.0, 22.0 ],
-					"style" : "",
+					"style" : "jamomaLCDF",
 					"text" : "j.remote taille"
 				}
 
@@ -503,16 +476,13 @@
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-77",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 782.02002, 47.84729, 546.0, 22.0 ],
-					"style" : "",
+					"style" : "jamomaLCDF",
 					"text" : "j.parameter lapsCreation @priority 2 @type integer @range 1 20000 @clipmode both @default 2000"
 				}
 
@@ -970,16 +940,13 @@
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-21",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 57.490356, 709.626404, 107.0, 22.0 ],
-					"style" : "",
+					"style" : "jamomaLCDF",
 					"text" : "j.remote formation"
 				}
 
@@ -1050,16 +1017,13 @@
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-61",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 300.439514, 709.626404, 84.0, 22.0 ],
-					"style" : "",
+					"style" : "jamomaLCDF",
 					"text" : "j.remote fonte"
 				}
 
@@ -1174,16 +1138,13 @@
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-45",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 219.939514, 302.429565, 94.0, 22.0 ],
-					"style" : "",
+					"style" : "jamomaLCDF",
 					"text" : "j.remote energy"
 				}
 
@@ -2016,6 +1977,38 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-92" : [ "live.slider[20]", "Sorbet-temps-creation", 0 ],
+			"obj-7" : [ "live.slider[8]", "Sorbet-Formation", 0 ],
+			"obj-101" : [ "live.slider[13]", "Taille", 0 ],
+			"obj-19" : [ "live.slider[7]", "Temps-inter-sorbets", 0 ],
+			"obj-9" : [ "live.text[4]", "live.text", 0 ],
+			"obj-1" : [ "live.slider[21]", "Sorbet-Fonte", 0 ],
+			"obj-90" : [ "live.slider[9]", "Sorbet-Energie", 0 ]
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "j.send.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.remote.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.receive.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.parameter.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.model.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "jamomaLCDF",
 				"default" : 				{

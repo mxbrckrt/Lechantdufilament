@@ -3839,7 +3839,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u123010258"
+					"varname" : "u431010634"
 				}
 
 			}
@@ -3934,7 +3934,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @savemode 0 @autorestore 0",
-					"varname" : "u923004860"
+					"varname" : "u787005236"
 				}
 
 			}
