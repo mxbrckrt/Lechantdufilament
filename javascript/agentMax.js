@@ -649,17 +649,18 @@ Object.assign(danseDuSorbet.sorbet,
 
 
 var errants = Object.create(scenario) //TODO CLEAN
-Object.assign(errants,
+Object.assign(errants, //TODO many things are more or less copy of tourneur => generalisation in proto
   {
     n:0,
     errant:Object.create(agent),
     add:function() {
+      this.agents = this.agents.slice() // copy to prevent modifying proto
       var newAgent = Object.create(this.errant)
       Object.assign(newAgent, this.current)
       this.current = newAgent
       this.current.p = [Math.random()*space.lamps[0]*space.dist,
                         Math.random()*space.lamps[1]*space.dist]
-      this.agents.push(this.current) //TODO pushing into prototype ? see scenario.init
+      this.sel = this.agents.push(this.current) - 1 //TODO pushing into prototype ? see scenario.init
       agents.push(this.current)
     },
     remove:function() { //TODO should select which errant to remove
