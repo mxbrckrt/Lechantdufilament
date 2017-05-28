@@ -141,7 +141,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 994.0, 202.251266, 150.0, 20.0 ],
+					"patching_rect" : [ 994.0, 202.251266, 39.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 35.989868, 223.5, 27.0, 20.0 ],
 					"style" : "",
@@ -156,7 +156,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 731.52002, 113.253723, 79.0, 22.0 ],
+					"patching_rect" : [ 730.52002, 98.253723, 79.0, 22.0 ],
 					"style" : "",
 					"text" : "j.remote Sub"
 				}
@@ -199,7 +199,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 731.52002, 40.0, 46.0, 59.0 ],
+					"patching_rect" : [ 730.52002, 25.0, 46.0, 59.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 14.509888, 29.5, 74.0, 161.0 ],
 					"relative" : 1,
@@ -1003,7 +1003,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u928021158"
+													"varname" : "u205010650"
 												}
 
 											}
@@ -8020,7 +8020,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u135021166"
+													"varname" : "u893010642"
 												}
 
 											}
@@ -12574,7 +12574,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u614021169"
+													"varname" : "u659010639"
 												}
 
 											}
@@ -17128,7 +17128,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u428021172"
+													"varname" : "u676010636"
 												}
 
 											}
@@ -21372,9 +21372,9 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 739.0, 138.0, 151.0, 32.0 ],
 									"saved_object_attributes" : 									{
-										"client_rect" : [ 218, 50, 590, 567 ],
+										"client_rect" : [ 217, 99, 707, 589 ],
 										"parameter_enable" : 0,
-										"storage_rect" : [ 220, 49, 877, 199 ]
+										"storage_rect" : [ 842, 68, 1334, 357 ]
 									}
 ,
 									"style" : "",
@@ -21808,7 +21808,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u976021174"
+													"varname" : "u549010633"
 												}
 
 											}
@@ -27819,8 +27819,8 @@
 					"destination" : [ "obj-113", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 781.02002, 146.253723, 716.52002, 146.253723, 716.52002, 35.253723, 741.02002, 35.253723 ],
-					"source" : [ "obj-28", 2 ]
+					"midpoints" : [ 740.02002, 131.253723, 715.52002, 131.253723, 715.52002, 20.253723, 740.02002, 20.253723 ],
+					"source" : [ "obj-28", 0 ]
 				}
 
 			}
@@ -27839,6 +27839,7 @@
 					"destination" : [ "obj-77", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 760.02002, 139.578659, 450.019928, 139.578659 ],
 					"order" : 1,
 					"source" : [ "obj-28", 1 ]
 				}
@@ -27924,8 +27925,8 @@
 					"destination" : [ "obj-33", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 919.353333, 173.253723, 845.52002, 173.253723, 845.52002, 86.253723, 870.02002, 86.253723 ],
-					"source" : [ "obj-38", 2 ]
+					"midpoints" : [ 870.02002, 167.0, 846.0, 167.0, 846.0, 97.0, 870.02002, 97.0 ],
+					"source" : [ "obj-38", 0 ]
 				}
 
 			}
@@ -28122,70 +28123,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-113" : [ "live.slider[37]", "Sub", 0 ]
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "orchestre.js",
-				"bootpath" : "~/Workspace/Lechantdufilament/javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "X.groove.maxpat",
-				"bootpath" : "/Users/Shared/Max 7/Examples/sequencing-looping/CyclistMusic/lib/abstractions",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "X.note2number-C3.txt",
-				"bootpath" : "/Users/Shared/Max 7/Examples/sequencing-looping/CyclistMusic/lib/others",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "X.number2note-C3.txt",
-				"bootpath" : "/Users/Shared/Max 7/Examples/sequencing-looping/CyclistMusic/lib/others",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "X.Groover.xml",
-				"bootpath" : "/Users/Shared/Max 7/Examples/sequencing-looping/CyclistMusic/lib/presets",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "SpacesChanger.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "spaces.txt",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.receive.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.model.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.parameter.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.remote.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "Jamoma_highlighted_orange",
 				"default" : 				{
