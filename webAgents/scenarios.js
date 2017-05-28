@@ -4,6 +4,7 @@ var agents = [],
     scenari = []
 
 var scenario = {
+  protoAgent:agent,
   agents:[],
   sel:-1,
   changeSel:function() { //TODO use that in other scenarios (see tourneur)
@@ -11,6 +12,10 @@ var scenario = {
     else {
       this.sel = (this.sel + 1) % this.agents.length
     }
+  },
+  getSel:function() {
+    if (sel != -1 ) return this.agents[this.sel]
+    else return this.protoAgent //TODO should I rename all the protoAgents
   },
   init:function() {
     this.agents = [] // Create copy into new scenario to prevent modifying prototype
@@ -39,6 +44,7 @@ var tourneur = Object.create(scenario)
 Object.assign(tourneur,
   {
     derviche:Object.create(agent),
+    protoAgent:this.derviche,
     mkTraj:function(rad) {
       var center = [(space.lamps[0]-1)/2, (space.lamps[1]-1)/2]
       return [
@@ -193,6 +199,7 @@ Object.assign(errants, //TODO many things are more or less copy of tourneur => g
   {
     n:0,
     errant:Object.create(agent),
+    protoAgent:this.errant,
     add:function() {
       this.agents = this.agents.slice() // copy to prevent modifying proto
       var newAgent = Object.create(this.errant)

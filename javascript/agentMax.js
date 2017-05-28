@@ -482,13 +482,18 @@ var agents = [],
     scenari = []
 
 var scenario = {
+  protoAgent:agent,
   agents:[],
   sel:-1,
   changeSel:function() { //TODO use that in other scenarios (see tourneur)
     if (!this.agents.length) this.sel = -1
     else {
-      this.sel = ++this.sel % this.agents.length
+      this.sel = (this.sel + 1) % this.agents.length
     }
+  },
+  getSel:function() {
+    if (sel != -1 ) return this.agents[this.sel]
+    else return this.protoAgent //TODO should I rename all the protoAgents
   },
   init:function() {
     this.agents = [] // Create copy into new scenario to prevent modifying prototype
@@ -517,6 +522,7 @@ var tourneur = Object.create(scenario)
 Object.assign(tourneur,
   {
     derviche:Object.create(agent),
+    protoAgent:this.derviche,
     mkTraj:function(rad) {
       var center = [(space.lamps[0]-1)/2, (space.lamps[1]-1)/2]
       return [
@@ -671,6 +677,7 @@ Object.assign(errants, //TODO many things are more or less copy of tourneur => g
   {
     n:0,
     errant:Object.create(agent),
+    protoAgent:this.errant,
     add:function() {
       this.agents = this.agents.slice() // copy to prevent modifying proto
       var newAgent = Object.create(this.errant)
@@ -812,7 +819,7 @@ function tourneurChange() {tourneur.changeSel()}
 function tourneurRm() {tourneur.removeSel()}
 
 function tourneurReverseSel () {
-  tourneur.agents[tourneur.sel].trajectReverse()
+  tourneur.getSel().trajectReverse()
 }
 
 function tourneurTeleport (rad) {tourneur.tpSel(rad)}
@@ -822,15 +829,15 @@ function tourneurSub(e) { //TODO sub per agent and sub per scenario, how to mix 
 }
 
 function tourneurVitesseSel (v) {
-  tourneur.agents[tourneur.sel].maxV = v
+  tourneur.getSel().maxV = v
 }
 
 function tourneurSizeSel (s) {
-  tourneur.agents[tourneur.sel].s = s
+  tourneur.getSel().s = s
 }
   
 function tourneurStopSolo(x,y) {
-  var ag = tourneur.agents[tourneur.sel]
+  var ag = tourneur.getSel()
   ag.trajectory.push([(x-1)*space.dist, (y-1)*space.dist])
   ag.trajectMode = 3
 }
@@ -890,43 +897,43 @@ function errantDel() {
 }
 
 function errantLapsFrames(l) {
-  errants.agents[errants.sel].wanderLaps = l
+  errants.getSel().wanderLaps = l
 }
 
 function errantDistance(d) {
-  errants.agents[errants.sel].wanderDistance = d
+  errants.getSel().wanderDistance = d
 }
 
 function errantRadius(r) {
-  errants.agents[errants.sel].wanderRadius = r
+  errants.getSel().wanderRadius = r
 }
 
 function errantDiff(d) {
-  errants.agents[errants.sel].wanderDiff = d*Math.PI/180
+  errants.getSel().wanderDiff = d*Math.PI/180
 }
 
 function errantMass(m) {
-  errants.agents[errants.sel].mass = m
+  errants.getSel().mass = m
 }
 
 function errantVelocity(maxV) {
-  errants.agents[errants.sel].maxV = maxV
+  errants.getSel().maxV = maxV
 }
 
 function errantForce(maxF) {
-  errants.agents[errants.sel].maxF = maxF
+  errants.getSel().maxF = maxF
 }
 
 function errantEnergy(e) {
-  errants.agents[errants.sel].e = e
+  errants.getSel().e = e
 }
 
 function errantSize(s) {
-  errants.agents[errants.sel].s = s
+  errants.getSel().s = s
 }
   
 function errantMode(m) { // 0:inside, 1:fold, 2:wrap, 3:clip
-  var ag = errants.agents[errants.sel]
+  var ag = errants.getSel()
   if (m == 0) {
     ag.forces = ["inside"]
     ag.lates = []

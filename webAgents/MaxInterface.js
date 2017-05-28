@@ -62,7 +62,7 @@ var MaxInterface = {
   tourneurRm:tourneur.removeSel,
   
   tourneurReverseSel:function() {
-    tourneur.agents[tourneur.sel].trajectReverse()
+    tourneur.getSel().trajectReverse()
   },
   
   tourneurTeleport:tourneur.tpSel,
@@ -72,15 +72,15 @@ var MaxInterface = {
   },
   
   tourneurVitesseSel:function(v) {
-    tourneur.agents[tourneur.sel].maxV = v
+    tourneur.getSel().maxV = v
   },
   
   tourneurSizeSel:function(s) {
-    tourneur.agents[tourneur.sel].s = s
+    tourneur.getSel().s = s
   },
   
   tourneurStopSolo:function(x,y) {
-    var ag = tourneur.agents[tourneur.sel]
+    var ag = tourneur.getSel()
     ag.trajectory.push([(x-1)*space.dist, (y-1)*space.dist])
     ag.trajectMode = 3
   }
@@ -141,43 +141,43 @@ var MaxInterface = {
   },
 
   errantLapsFrames:function(l) {
-    errants.agents[errants.sel].wanderLaps = l
+    errants.getSel().wanderLaps = l
   },
 
   errantDistance:function(d) {
-    errants.agents[errants.sel].wanderDistance = d
+    errants.getSel().wanderDistance = d
   },
 
   errantRadius:function(r) {
-    errants.agents[errants.sel].wanderRadius = r
+    errants.getSel().wanderRadius = r
   },
 
   errantDiff:function(d) {
-    errants.agents[errants.sel].wanderDiff = d*Math.PI/180
+    errants.getSel().wanderDiff = d*Math.PI/180
   },
 
   errantMass:function(m) {
-    errants.agents[errants.sel].mass = m
+    errants.getSel().mass = m
   },
 
   errantVelocity:function(maxV) {
-    errants.agents[errants.sel].maxV = maxV
+    errants.getSel().maxV = maxV
   },
 
   errantForce:function(maxF) {
-    errants.agents[errants.sel].maxF = maxF
+    errants.getSel().maxF = maxF
   },
 
   errantEnergy:function(e) {
-    errants.agents[errants.sel].e = e
+    errants.getSel().e = e
   },
 
   errantSize:function(s) {
-    errants.agents[errants.sel].s = s
+    errants.getSel().s = s
   },
   
   errantMode:function(m) { // 0:inside, 1:fold, 2:wrap, 3:clip
-    var ag = errants.agents[errants.sel]
+    var ag = errants.getSel()
     if (m == 0) {
       ag.forces = ["inside"]
       ag.lates = []
