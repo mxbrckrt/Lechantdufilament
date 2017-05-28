@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 311.0, 302.0, 738.0, 783.0 ],
+		"rect" : [ 227.0, 79.0, 738.0, 783.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -93,12 +93,12 @@
 				"box" : 				{
 					"id" : "obj-153",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 3,
-					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 1462.0, 543.348999, 77.0, 22.0 ],
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 1462.0, 543.348999, 36.0, 22.0 ],
 					"style" : "",
-					"text" : "sel 0 1"
+					"text" : "sel 0"
 				}
 
 			}
@@ -3723,7 +3723,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 210.0, 540.0, 298.0, 22.0 ],
 									"style" : "",
-									"text" : "rolloff 50."
+									"text" : "blurall 0."
 								}
 
 							}
@@ -4655,8 +4655,8 @@
 								"name" : "receive&send",
 								"default" : 								{
 									"accentcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
-									"fontsize" : [ 12.0 ],
-									"fontname" : [ "Arial" ]
+									"fontname" : [ "Arial" ],
+									"fontsize" : [ 12.0 ]
 								}
 ,
 								"parentstyle" : "",
