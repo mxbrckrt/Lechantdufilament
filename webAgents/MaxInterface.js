@@ -80,7 +80,7 @@ var MaxInterface = {
   },
   
   tourneurStopSolo:function(x,y) {
-    var ag = tourneur.agent[tourneur.sel]
+    var ag = tourneur.agents[tourneur.sel]
     ag.trajectory.push([(x-1)*space.dist, (y-1)*space.dist])
     ag.trajectMode = 3
   }
