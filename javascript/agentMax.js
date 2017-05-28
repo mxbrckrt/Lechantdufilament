@@ -492,7 +492,7 @@ var scenario = {
     }
   },
   getSel:function() {
-    if (sel != -1 ) return this.agents[this.sel]
+    if (this.sel != -1 ) return this.agents[this.sel]
     else return this.protoAgent //TODO should I rename all the protoAgents
   },
   init:function() {
