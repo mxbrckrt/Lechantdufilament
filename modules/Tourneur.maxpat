@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 358.0, 348.0, 1015.0, 603.0 ],
+		"rect" : [ 387.0, 195.0, 1015.0, 603.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -43,9 +43,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 642.541138, 143.141907, 404.0, 22.0 ],
+					"patching_rect" : [ 642.541138, 143.141907, 432.0, 22.0 ],
 					"style" : "Jamoma_highlighted_orange",
-					"text" : "j.parameter SizeSel @type float @priority 6 @range 0. 9. @clipmode both"
+					"text" : "j.parameter SizeSel @type decimal @priority 6 @range 0. 9. @clipmode both"
 				}
 
 			}
@@ -61,7 +61,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1279.333374, 483.718689, 185.0, 22.0 ],
-					"presentation_rect" : [ 1284.666626, 489.677307, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "j.send /Agents/agentParameters"
 				}
@@ -75,7 +74,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1279.333374, 444.628601, 113.0, 22.0 ],
-					"presentation_rect" : [ 1284.666626, 450.587219, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "tourneurSizeSel $1"
 				}
@@ -123,7 +121,7 @@
 
 					}
 ,
-					"varname" : "live.slider[14]"
+					"varname" : "live.slider[16]"
 				}
 
 			}
@@ -139,7 +137,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1245.666626, 275.677307, 185.0, 22.0 ],
-					"presentation_rect" : [ 874.541138, 191.209595, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "j.send /Agents/agentParameters"
 				}
@@ -200,7 +197,7 @@
 
 					}
 ,
-					"varname" : "live.slider[1]"
+					"varname" : "live.slider[14]"
 				}
 
 			}
@@ -211,9 +208,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 642.541138, 112.141907, 433.0, 22.0 ],
+					"patching_rect" : [ 642.541138, 112.141907, 461.0, 22.0 ],
 					"style" : "Jamoma_highlighted_orange",
-					"text" : "j.parameter VitesseSel @type float @priority 6 @range 0. 200. @clipmode both"
+					"text" : "j.parameter VitesseSel @type decimal @priority 6 @range 0. 200. @clipmode both"
 				}
 
 			}
@@ -730,9 +727,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 148.541138, 105.141907, 450.0, 22.0 ],
+					"patching_rect" : [ 148.541138, 105.141907, 468.0, 22.0 ],
 					"style" : "Jamoma_highlighted_orange",
-					"text" : "j.parameter Sub @type float @priority 6 @range 0. 1. @clipmode both @default 1."
+					"text" : "j.parameter Sub @type decimal @priority 6 @range 0. 1. @clipmode both @default 1."
 				}
 
 			}
@@ -769,9 +766,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 642.541138, 13.688416, 475.0, 22.0 ],
+					"patching_rect" : [ 642.541138, 13.688416, 503.0, 22.0 ],
 					"style" : "Jamoma_highlighted_orange",
-					"text" : "j.parameter Distance @type float @priority 6 @range 1. 4. @clipmode both @default 4."
+					"text" : "j.parameter Distance @type decimal @priority 6 @range 1. 4. @clipmode both @default 4."
 				}
 
 			}
@@ -1276,6 +1273,40 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-71" : [ "live.slider[33]", "SubTourneur", 0 ],
+			"obj-28" : [ "live.slider[14]", "VitesseSel", 0 ],
+			"obj-29" : [ "live.text[11]", "live.text[3]", 0 ],
+			"obj-6" : [ "live.slider[1]", "Distance", 0 ],
+			"obj-32" : [ "live.text[5]", "live.text[3]", 0 ],
+			"obj-26" : [ "live.text[7]", "live.text[3]", 0 ],
+			"obj-19" : [ "live.text[10]", "live.text[3]", 0 ],
+			"obj-34" : [ "live.text[6]", "live.text[3]", 0 ],
+			"obj-42" : [ "live.slider[16]", "SizeSel", 0 ]
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "j.send.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.model.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.parameter.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.remote.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.receive.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "Jamoma_highlighted_orange",
 				"default" : 				{
@@ -1288,12 +1319,12 @@
 , 			{
 				"name" : "patchLCDF",
 				"default" : 				{
-					"accentcolor" : [ 0.556863, 0.556863, 0.556863, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.15 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontname" : [ "Helvetica Neue Bold" ],
 					"fontface" : [ 3 ],
 					"fontsize" : [ 18.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 0.15 ],
-					"fontname" : [ "Helvetica Neue Bold" ]
+					"accentcolor" : [ 0.556863, 0.556863, 0.556863, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
