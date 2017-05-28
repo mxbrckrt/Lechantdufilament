@@ -412,7 +412,7 @@ agent.goNdie = function() {
 // ONLY
 agent.trajectory = [[0,0], [200,200]]
 agent.trajectPoint = 1
-agent.trajectMode = 0 // 0 : One shot then die, 1 : Loop, 2 : Auto-reverse
+agent.trajectMode = 0 // 0 : One shot then die, 1 : Loop, 2 : Auto-reverse, 3 : Solo Stay
 agent.trajectForward = true
 agent.traject = function() {
   if (v2D.equal(this.p, this.trajectory[this.trajectPoint])) {
@@ -429,6 +429,15 @@ agent.traject = function() {
           case 2:                                             // Reverse
             this.trajectPoint -= 2
             this.trajectForward = false
+            break;
+          case 3:
+            this.trajectory = [this.trajectory[this.trajectory.length -1]]
+            this.trajectPoint = 0
+            for (var i = 0 ; i < tourneur.agents.length ; i++) {
+              if (tourneur.agents[i] != this) tourneur.agents[i].toDie = true
+            }
+            tourneur.agents = [this]
+            tourneur.sel = 0
         }
       }
     } else {                                                      // Backward
@@ -444,6 +453,15 @@ agent.traject = function() {
           case 2:                                             // Reverse
             this.trajectPoint = 0
             this.trajectForward = true
+            break;
+          case 3:
+            this.trajectory = [this.trajectory[this.trajectory.length -1]]
+            this.trajectPoint = 0
+            for (var i = 0 ; i < tourneur.agents.length ; i++) {
+              if (tourneur.agents[i] != this) tourneur.agents[i].toDie = true
+            }
+            tourneur.agents = [this]
+            tourneur.sel = 0
         }
       }
     }
@@ -809,6 +827,12 @@ function tourneurVitesseSel (v) {
 
 function tourneurSizeSel (s) {
   tourneur.agents[tourneur.sel].s = s
+}
+  
+function tourneurStopSolo(x,y) {
+  var ag = tourneur.agent[tourneur.sel]
+  ag.trajectory.push([(x-1)*space.dist, (y-1)*space.dist])
+  ag.trajectMode = 3
 }
 
 //////////////////// Sorbet

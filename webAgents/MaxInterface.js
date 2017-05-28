@@ -78,6 +78,12 @@ var MaxInterface = {
   tourneurSizeSel:function(s) {
     tourneur.agents[tourneur.sel].s = s
   },
+  
+  tourneurStopSolo:function(x,y) {
+    var ag = tourneur.agent[tourneur.sel]
+    ag.trajectory.push([(x-1)*space.dist, (y-1)*space.dist])
+    ag.trajectMode = 3
+  }
 
 //////////////////// Sorbet
 
