@@ -322,5 +322,6 @@ agent.traject = function() {
 }
 agent.trajectReverse = function() {
   this.trajectPoint = (this.trajectPoint + (this.trajectForward ? -1 : 1)) % this.trajectory.length
+  if (this.trajectPoint < 0) this.trajectPoint += this.trajectory.length
   this.trajectForward = !this.trajectForward
 }
