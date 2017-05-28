@@ -115,7 +115,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 190.0, 175.25, 123.0, 40.0 ],
 					"style" : "",
-					"text" : "Souris",
+					"text" : "(S)ouris",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -3723,7 +3723,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 210.0, 540.0, 298.0, 22.0 ],
 									"style" : "",
-									"text" : "blurall 0."
+									"text" : "rolloff 37.734249"
 								}
 
 							}
@@ -5314,9 +5314,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 434.524261, 747.817017, 283.499969, 35.0 ],
+					"patching_rect" : [ 434.524261, 747.817017, 444.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter Intensite @priority 2 @type decimal @range 0 255 @clipmode both @default 255"
+					"text" : "j.parameter Intensite @priority 2 @type decimal @range 0. 255. @clipmode both @default 255."
 				}
 
 			}

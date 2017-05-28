@@ -109,9 +109,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 74.541138, 159.496216, 462.0, 22.0 ],
+					"patching_rect" : [ 74.541138, 159.496216, 401.0, 22.0 ],
 					"style" : "Jamoma_highlighted_orange",
-					"text" : "j.parameter Mode @type integer @priority 6 @range 0 3 @clipmode both @default 0"
+					"text" : "j.parameter Mode @type integer @priority 6 @range 0 3 @clipmode both"
 				}
 
 			}
@@ -2926,17 +2926,17 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-171" : [ "live.slider[26]", "Radius", 0 ],
-			"obj-32" : [ "live.text[3]", "live.text[3]", 0 ],
-			"obj-168" : [ "live.slider[25]", "Distance", 0 ],
 			"obj-166" : [ "live.slider[24]", "Masse", 0 ],
 			"obj-150" : [ "live.slider[22]", "Changement direction", 0 ],
 			"obj-13" : [ "live.slider[15]", "Taille", 0 ],
-			"obj-178" : [ "live.slider[27]", "Diff", 0 ],
 			"obj-34" : [ "live.text[9]", "live.text[3]", 0 ],
-			"obj-22" : [ "live.slider[12]", "Force", 0 ],
 			"obj-24" : [ "live.slider[17]", "Energie", 0 ],
-			"obj-188" : [ "live.slider[28]", "Vélocité", 0 ]
+			"obj-22" : [ "live.slider[12]", "Force", 0 ],
+			"obj-188" : [ "live.slider[28]", "Vélocité", 0 ],
+			"obj-171" : [ "live.slider[26]", "Radius", 0 ],
+			"obj-168" : [ "live.slider[25]", "Distance", 0 ],
+			"obj-32" : [ "live.text[3]", "live.text[3]", 0 ],
+			"obj-178" : [ "live.slider[27]", "Diff", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
