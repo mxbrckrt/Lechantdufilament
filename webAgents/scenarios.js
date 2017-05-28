@@ -81,7 +81,7 @@ Object.assign(tourneur,
     removeSel:function() {
       this.agents[this.sel].toDie = true
       this.agents.splice(this.sel, 1)
-      this.sel--
+      this.changeSel()
     }
   }
 )
