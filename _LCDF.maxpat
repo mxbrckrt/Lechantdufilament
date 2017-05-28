@@ -2012,7 +2012,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 315.0, 84.0, 48.0, 35.0 ],
 									"style" : "",
-									"text" : "0 107 1"
+									"text" : "0 103 1"
 								}
 
 							}
@@ -3907,7 +3907,7 @@
 					"name" : "Algo.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"offset" : [ 1.0, 1.0 ],
+					"offset" : [ -335.0, 1.0 ],
 					"patching_rect" : [ 618.0, 112.107361, 240.0, 48.825562 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 492.0, 65.0, 338.0, 320.5 ],
@@ -4428,7 +4428,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 110.0, 159.0, 1309.0, 659.0 ],
+						"rect" : [ 68.0, 82.0, 1309.0, 659.0 ],
 						"bgcolor" : [ 0.861592, 0.861592, 0.861592, 1.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
