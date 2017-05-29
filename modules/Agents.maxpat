@@ -117,7 +117,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 484.0, 430.834839, 406.0, 22.0 ],
 					"style" : "Jamoma_highlighted_orange",
-					"text" : "j.parameter Panic @type integer @priority 6 @range 0 1 @clipmode both"
+					"text" : "j.parameter Panic @type none @priority 6 @range 0 1 @clipmode both"
 				}
 
 			}

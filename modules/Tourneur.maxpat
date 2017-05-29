@@ -243,7 +243,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 642.541138, 172.141907, 419.0, 22.0 ],
 					"style" : "Jamoma_highlighted_orange",
-					"text" : "j.parameter StopSolo @type integer @priority 6 @range 0 1 @clipmode both"
+					"text" : "j.parameter StopSolo @type none @priority 6 @range 0 1 @clipmode both"
 				}
 
 			}
@@ -530,7 +530,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 642.541138, 81.141907, 479.0, 22.0 ],
 					"style" : "Jamoma_highlighted_orange",
-					"text" : "j.parameter ReverseSel @type integer @priority 6 @range 0 1 @clipmode both"
+					"text" : "j.parameter ReverseSel @type none @priority 6 @range 0 1 @clipmode both"
 				}
 
 			}
@@ -543,7 +543,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 148.541138, 74.141907, 413.0, 22.0 ],
 					"style" : "Jamoma_highlighted_orange",
-					"text" : "j.parameter Change @type integer @priority 6 @range 0 1 @clipmode both"
+					"text" : "j.parameter Change @type none @priority 6 @range 0 1 @clipmode both"
 				}
 
 			}
@@ -556,7 +556,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 642.541138, 47.141907, 413.0, 22.0 ],
 					"style" : "Jamoma_highlighted_orange",
-					"text" : "j.parameter Teleport @type integer @priority 6 @range 0 1 @clipmode both"
+					"text" : "j.parameter Teleport @type none @priority 6 @range 0 1 @clipmode both"
 				}
 
 			}
@@ -953,7 +953,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 148.541138, 44.141907, 391.0, 22.0 ],
 					"style" : "Jamoma_highlighted_orange",
-					"text" : "j.parameter Rm @type integer @priority 6 @range 0 1 @clipmode both"
+					"text" : "j.parameter Rm @type none @priority 6 @range 0 1 @clipmode both"
 				}
 
 			}
@@ -966,7 +966,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 148.541138, 13.688416, 391.0, 22.0 ],
 					"style" : "Jamoma_highlighted_orange",
-					"text" : "j.parameter Add @type integer @priority 6 @range 0 1 @clipmode both"
+					"text" : "j.parameter Add @type none @priority 6 @range 0 1 @clipmode both"
 				}
 
 			}
