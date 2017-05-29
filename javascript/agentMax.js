@@ -495,6 +495,13 @@ var scenario = {
     if (this.sel != -1 ) return this.agents[this.sel]
     else return this.protoAgent //TODO should I rename all the protoAgents
   },
+  removeSel:function() {
+    if (this.sel != -1) {
+      this.agents[this.sel].toDie = true
+      this.agents.splice(this.sel, 1)
+      this.changeSel()
+    }
+  },
   init:function() {
     this.agents = [] // Create copy into new scenario to prevent modifying prototype
   },
@@ -532,7 +539,8 @@ Object.assign(tourneur,
       ]
     },
     tpSel:function(rad) {
-      var ag = this.agents[this.sel],
+      if (this.sel == -1) return;
+      var ag = this.getSel(),
           side = ag.trajectForward ? ag.trajectPoint - 1 : ag.trajectPoint,
           d = space.dist * (ag.rad - rad)
       switch (side) { // beware, is p own property of ag ?
@@ -560,11 +568,6 @@ Object.assign(tourneur,
       ag.rad = rad
       this.sel = this.agents.push(ag) - 1
       agents.push(ag)
-    },
-    removeSel:function() {
-      this.agents[this.sel].toDie = true
-      this.agents.splice(this.sel, 1)
-      this.changeSel()
     }
   }
 )
@@ -689,11 +692,6 @@ Object.assign(errants, //TODO many things are more or less copy of tourneur => g
     },
     remove:function() { //TODO should select which errant to remove
       removeFrom(agents, this.agents.shift())
-    },
-    removeSel:function() {
-      this.agents[this.sel].toDie = true
-      this.agents.splice(this.sel, 1)
-      this.sel--
     }
   }
 )
