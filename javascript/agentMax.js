@@ -821,6 +821,8 @@ function lamps(lx, ly) {
 function tourneurAdd(rad) {if (ready) tourneur.add(rad)}
 
 function tourneurChange() {if (ready) tourneur.changeSel()}
+  
+function tourneurPrep() {if (ready) tourneur.sel = -1}
 
 function tourneurRm() {if (ready) tourneur.removeSel()}
 
@@ -901,6 +903,8 @@ function errantAdd() {
 function errantChange() {
   if (ready) errants.changeSel()
 }
+  
+function errantPrep() {if (ready) errants.sel = -1}
 
 function errantDel() {
   if (ready) errants.removeSel()
