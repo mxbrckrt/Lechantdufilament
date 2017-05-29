@@ -522,7 +522,6 @@ var tourneur = Object.create(scenario)
 Object.assign(tourneur,
   {
     derviche:Object.create(agent),
-    protoAgent:this.derviche,
     mkTraj:function(rad) {
       var center = [(space.lamps[0]-1)/2, (space.lamps[1]-1)/2]
       return [
@@ -576,6 +575,7 @@ Object.assign(tourneur.derviche,
     trajectMode:1
   }
 )
+tourneur.protoAgent = tourneur.derviche
 
 var balayage = Object.create(scenario) //TODO Use traject
 Object.assign(balayage,
@@ -677,7 +677,6 @@ Object.assign(errants, //TODO many things are more or less copy of tourneur => g
   {
     n:0,
     errant:Object.create(agent),
-    protoAgent:this.errant,
     add:function() {
       this.agents = this.agents.slice() // copy to prevent modifying proto
       var newAgent = Object.create(this.errant)
@@ -724,6 +723,7 @@ Object.assign(errants.errant,
     lates:[]
   }
 )
+errants.protoAgent = errants.errant
 
 
 var seeker = {
