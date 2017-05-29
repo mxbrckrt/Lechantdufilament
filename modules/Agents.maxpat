@@ -39,6 +39,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 685.0, 28.0, 71.0, 22.0 ],
+					"style" : "",
+					"text" : "r vizuAgent"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -471,7 +484,7 @@
 					"name" : "AgentsOffsetPatch.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"offset" : [ 1.0, 1.0 ],
+					"offset" : [ -1050.0, 1.0 ],
 					"patching_rect" : [ 605.0, 149.107361, 240.0, 48.825562 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 80.5, 61.0, 990.0, 205.5 ],
@@ -487,7 +500,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 814.026123, 31.746277, 49.0, 22.0 ],
+					"patching_rect" : [ 116.026123, 21.246277, 49.0, 22.0 ],
 					"style" : "Jamoma_highlighted_orange",
 					"text" : "j.model"
 				}
@@ -513,7 +526,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-136",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -585,7 +598,7 @@
 					"relative" : 1,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.slider[23]",
+							"parameter_longname" : "live.slider[36]",
 							"parameter_shortname" : "AgentSub",
 							"parameter_type" : 0,
 							"parameter_mmax" : 1.0,
@@ -676,7 +689,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-17",
@@ -3192,7 +3204,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 880.414917, 31.746277, 27.0, 29.0 ],
+					"patching_rect" : [ 63.414917, 17.746277, 27.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.5, 1.0, 1067.0, 302.0 ],
 					"proportion" : 0.39,
@@ -3349,6 +3361,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-30", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-150", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -3367,104 +3388,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-139::obj-129::obj-92" : [ "live.slider[20]", "Sorbet-temps-creation", 0 ],
-			"obj-139::obj-120::obj-24" : [ "live.slider[17]", "Energie", 0 ],
-			"obj-139::obj-2::obj-42" : [ "live.slider[16]", "SizeSel", 0 ],
-			"obj-139::obj-129::obj-7" : [ "live.slider[8]", "Sorbet-Formation", 0 ],
-			"obj-139::obj-2::obj-32" : [ "live.text[5]", "live.text[3]", 0 ],
-			"obj-139::obj-120::obj-188" : [ "live.slider[28]", "Vélocité", 0 ],
-			"obj-139::obj-120::obj-178" : [ "live.slider[27]", "Diff", 0 ],
-			"obj-139::obj-2::obj-19" : [ "live.text[10]", "live.text[3]", 0 ],
-			"obj-139::obj-120::obj-34" : [ "live.text[9]", "live.text[3]", 0 ],
-			"obj-139::obj-2::obj-34" : [ "live.text[6]", "live.text[3]", 0 ],
-			"obj-139::obj-2::obj-28" : [ "live.slider[14]", "VitesseSel", 0 ],
-			"obj-3" : [ "live.text[14]", "live.text[3]", 0 ],
-			"obj-139::obj-2::obj-26" : [ "live.text[7]", "live.text[3]", 0 ],
-			"obj-139::obj-2::obj-6" : [ "live.slider[1]", "Distance", 0 ],
-			"obj-139::obj-120::obj-171" : [ "live.slider[26]", "Radius", 0 ],
-			"obj-139::obj-129::obj-101" : [ "live.slider[13]", "Taille", 0 ],
-			"obj-139::obj-129::obj-19" : [ "live.slider[7]", "Temps-inter-sorbets", 0 ],
-			"obj-139::obj-120::obj-168" : [ "live.slider[25]", "Distance", 0 ],
-			"obj-139::obj-120::obj-22" : [ "live.slider[12]", "Force", 0 ],
-			"obj-139::obj-2::obj-29" : [ "live.text[11]", "live.text[3]", 0 ],
-			"obj-139::obj-129::obj-9" : [ "live.text[4]", "live.text", 0 ],
-			"obj-150" : [ "live.slider[30]", "Vitesse Agents", 0 ],
-			"obj-139::obj-129::obj-1" : [ "live.slider[21]", "Sorbet-Fonte", 0 ],
-			"obj-139::obj-129::obj-90" : [ "live.slider[9]", "Sorbet-Energie", 0 ],
-			"obj-139::obj-2::obj-71" : [ "live.slider[33]", "SubTourneur", 0 ],
-			"obj-139::obj-120::obj-13" : [ "live.slider[15]", "Taille", 0 ],
-			"obj-139::obj-120::obj-166" : [ "live.slider[24]", "Masse", 0 ],
-			"obj-139::obj-120::obj-69" : [ "live.text[16]", "live.text[3]", 0 ],
-			"obj-139::obj-120::obj-150" : [ "live.slider[22]", "Changement direction", 0 ],
-			"obj-113" : [ "live.slider[23]", "AgentSub", 0 ],
-			"obj-139::obj-120::obj-32" : [ "live.text[3]", "live.text[3]", 0 ]
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "agentMax.js",
-				"bootpath" : "~/Workspace/Lechantdufilament/javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "-rs.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "AgentsOffsetPatch.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Sorbet.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Errant.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "randBetween.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Tourneur.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/modules",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.receive.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.remote.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.model.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.send.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.parameter.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "Jamoma_highlighted_orange",
 				"default" : 				{
