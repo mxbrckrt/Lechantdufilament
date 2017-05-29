@@ -801,7 +801,7 @@ var test = {
 
 ready = false //TODO crappy !!! Divergence avec MaxInterface
 
-function ready() {
+function init() {
   ready = true
 }
 
