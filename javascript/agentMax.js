@@ -683,12 +683,14 @@ Object.assign(errants, //TODO many things are more or less copy of tourneur => g
     add:function() {
       this.agents = this.agents.slice() // copy to prevent modifying proto
       var newAgent = Object.create(this.errant)
+      /* Old current sélection before sel in scenario
       Object.assign(newAgent, this.current)
       this.current = newAgent
       this.current.p = [Math.random()*space.lamps[0]*space.dist,
                         Math.random()*space.lamps[1]*space.dist]
-      this.sel = this.agents.push(this.current) - 1 //TODO pushing into prototype ? see scenario.init
-      agents.push(this.current)
+                        //TODO is it still useful ? */
+      this.sel = this.agents.push(newAgent) - 1 //TODO pushing into prototype ? see scenario.init
+      agents.push(newAgent)
     },
     remove:function() { //TODO should select which errant to remove
       removeFrom(agents, this.agents.shift())
