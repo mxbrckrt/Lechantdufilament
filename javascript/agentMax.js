@@ -799,6 +799,12 @@ var test = {
 
 // Author : Clément Bossut
 
+ready = false //TODO crappy !!! Divergence avec MaxInterface
+
+function ready() {
+  ready = true
+}
+
 //todo function to modify a parameter change("parameter",value)
 
 function change(parameter, value) {
@@ -812,17 +818,17 @@ function lamps(lx, ly) {
 
 //////////////////// Tourneur
   
-function tourneurAdd(rad) {tourneur.add(rad)}
+function tourneurAdd(rad) {if (ready) tourneur.add(rad)}
 
-function tourneurChange() {tourneur.changeSel()}
+function tourneurChange() {if (ready) tourneur.changeSel()}
 
-function tourneurRm() {tourneur.removeSel()}
+function tourneurRm() {if (ready) tourneur.removeSel()}
 
 function tourneurReverseSel () {
-  tourneur.getSel().trajectReverse()
+  if (ready) tourneur.getSel().trajectReverse()
 }
 
-function tourneurTeleport (rad) {tourneur.tpSel(rad)}
+function tourneurTeleport (rad) {if (ready) tourneur.tpSel(rad)}
 
 function tourneurSub(e) { //TODO sub per agent and sub per scenario, how to mix the two ?
   tourneur.derviche.e = e
@@ -837,9 +843,11 @@ function tourneurSizeSel (s) {
 }
   
 function tourneurStopSolo(x,y) {
-  var ag = tourneur.getSel()
-  ag.trajectory.push([(x-1)*space.dist, (y-1)*space.dist])
-  ag.trajectMode = 3
+  if (ready) {
+    var ag = tourneur.getSel()
+    ag.trajectory.push([(x-1)*space.dist, (y-1)*space.dist])
+    ag.trajectMode = 3
+  }
 }
 
 //////////////////// Sorbet
@@ -847,8 +855,10 @@ function tourneurStopSolo(x,y) {
 var incFrames, decFrames
 
 function sorbet(toggle) {
-  if (toggle) danseDuSorbet.play()
-  else danseDuSorbet.stop()
+  if (ready) {
+    if (toggle) danseDuSorbet.play()
+    else danseDuSorbet.stop()
+  }
 }
 
 function sorbetSize(s) {
@@ -885,15 +895,15 @@ function sorbetLapsFrames(l) {
 /////////////////// Errant
 
 function errantAdd() {
-  errants.add()
+  if (ready) errants.add()
 }
   
 function errantChange() {
-  errants.changeSel()
+  if (ready) errants.changeSel()
 }
 
 function errantDel() {
-  errants.removeSel()
+  if (ready) errants.removeSel()
 }
 
 function errantLapsFrames(l) {

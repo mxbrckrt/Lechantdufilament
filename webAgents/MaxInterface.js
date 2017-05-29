@@ -15,9 +15,14 @@ include("scenarios")
 outlets = 2
 setoutletassist(1,"agents")
 setoutletassist(0,"bang when finished")
+ready = false
+
+function ready() {
+  ready = true
+}
 
 function anything() { //TODO Should use apply to call functions with any args number
-  MaxInterface[messagename](arguments[0])
+  if (ready()) MaxInterface[messagename](arguments[0])
 }
 
 function bang() {
