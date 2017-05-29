@@ -82,6 +82,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "none",
 					"id" : "obj-33",
 					"maxclass" : "number",
 					"numinlets" : 1,
@@ -478,7 +479,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 89.0, 308.751251, 29.5, 22.0 ],
 					"style" : "",
-					"text" : "2"
+					"text" : "3"
 				}
 
 			}
@@ -1003,7 +1004,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u205010650"
+													"varname" : "u137010691"
 												}
 
 											}
@@ -5106,7 +5107,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 945.0, 464.0, 153.0, 20.0 ],
 									"style" : "",
-									"text" : "4n 1"
+									"text" : "activate 1"
 								}
 
 							}
@@ -8020,7 +8021,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u893010642"
+													"varname" : "u170010683"
 												}
 
 											}
@@ -12123,7 +12124,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 517.0, 464.0, 153.0, 20.0 ],
 									"style" : "",
-									"text" : "4n 1"
+									"text" : "activate 1"
 								}
 
 							}
@@ -12574,7 +12575,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u659010639"
+													"varname" : "u950010680"
 												}
 
 											}
@@ -16677,7 +16678,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 81.0, 464.0, 153.0, 20.0 ],
 									"style" : "",
-									"text" : "4n 1"
+									"text" : "activate 1"
 								}
 
 							}
@@ -17128,7 +17129,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u676010636"
+													"varname" : "u416010677"
 												}
 
 											}
@@ -21230,7 +21231,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 517.0, 203.0, 153.0, 20.0 ],
 									"style" : "",
-									"text" : "4n 1"
+									"text" : "activate 1"
 								}
 
 							}
@@ -21808,7 +21809,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u549010633"
+													"varname" : "u189010674"
 												}
 
 											}
@@ -25911,7 +25912,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 81.0, 203.0, 153.0, 20.0 ],
 									"style" : "",
-									"text" : "4n 1"
+									"text" : "activate 1"
 								}
 
 							}
