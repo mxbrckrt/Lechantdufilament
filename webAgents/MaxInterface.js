@@ -64,6 +64,8 @@ var MaxInterface = {
   
   tourneurChange:tourneur.changeSel,
   
+  tourneurPrep:function() {tourneur.sel = -1},
+  
   tourneurRm:tourneur.removeSel,
   
   tourneurReverseSel:function() {
@@ -140,6 +142,8 @@ var MaxInterface = {
   errantChange:function() {
     errants.changeSel()
   },
+  
+  tourneurPrep:function() {tourneur.sel = -1},
 
   errantDel:function() {
     errants.removeSel()
