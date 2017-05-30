@@ -38,6 +38,34 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-53",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 196.0, 394.751251, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 2.509888, 147.751251, 49.0, 20.0 ],
+					"style" : "",
+					"text" : "moins"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 126.0, 282.751251, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 8.509888, 57.751251, 29.0, 20.0 ],
+					"style" : "",
+					"text" : "fOn"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 16.0,
 					"id" : "obj-50",
@@ -202,7 +230,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 730.52002, 25.0, 46.0, 59.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 14.509888, 29.5, 74.0, 161.0 ],
+					"presentation_rect" : [ 54.509888, 30.751251, 50.0, 161.0 ],
 					"relative" : 1,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -492,6 +520,8 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 221.0, 310.751251, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 2.509888, 169.751251, 45.996094, 22.0 ],
 					"style" : ""
 				}
 
@@ -518,6 +548,8 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 126.0, 308.751251, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 8.509888, 83.751251, 25.996094, 22.0 ],
 					"style" : ""
 				}
 
@@ -1004,7 +1036,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u137010691"
+													"varname" : "u123017549"
 												}
 
 											}
@@ -5107,7 +5139,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 945.0, 464.0, 153.0, 20.0 ],
 									"style" : "",
-									"text" : "activate 1"
+									"text" : "4n 1"
 								}
 
 							}
@@ -8021,7 +8053,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u170010683"
+													"varname" : "u128017541"
 												}
 
 											}
@@ -12124,7 +12156,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 517.0, 464.0, 153.0, 20.0 ],
 									"style" : "",
-									"text" : "activate 1"
+									"text" : "4n 1"
 								}
 
 							}
@@ -12575,7 +12607,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u950010680"
+													"varname" : "u514017538"
 												}
 
 											}
@@ -16678,7 +16710,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 81.0, 464.0, 153.0, 20.0 ],
 									"style" : "",
-									"text" : "activate 1"
+									"text" : "4n 1"
 								}
 
 							}
@@ -17129,7 +17161,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u416010677"
+													"varname" : "u797017535"
 												}
 
 											}
@@ -21231,7 +21263,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 517.0, 203.0, 153.0, 20.0 ],
 									"style" : "",
-									"text" : "activate 1"
+									"text" : "4n 1"
 								}
 
 							}
@@ -21373,9 +21405,9 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 739.0, 138.0, 151.0, 32.0 ],
 									"saved_object_attributes" : 									{
-										"client_rect" : [ 217, 99, 707, 589 ],
+										"client_rect" : [ 218, 50, 590, 567 ],
 										"parameter_enable" : 0,
-										"storage_rect" : [ 842, 68, 1334, 357 ]
+										"storage_rect" : [ 220, 49, 877, 199 ]
 									}
 ,
 									"style" : "",
@@ -21809,7 +21841,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u189010674"
+													"varname" : "u325017532"
 												}
 
 											}
@@ -25912,7 +25944,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 81.0, 203.0, 153.0, 20.0 ],
 									"style" : "",
-									"text" : "activate 1"
+									"text" : "4n 1"
 								}
 
 							}
@@ -28124,6 +28156,70 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-113" : [ "live.slider[37]", "Sub", 0 ]
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "orchestre.js",
+				"bootpath" : "~/Workspace/Lechantdufilament/javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "X.groove.maxpat",
+				"bootpath" : "/Users/Shared/Max 7/Examples/sequencing-looping/CyclistMusic/lib/abstractions",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "X.note2number-C3.txt",
+				"bootpath" : "/Users/Shared/Max 7/Examples/sequencing-looping/CyclistMusic/lib/others",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "X.number2note-C3.txt",
+				"bootpath" : "/Users/Shared/Max 7/Examples/sequencing-looping/CyclistMusic/lib/others",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "X.Groover.xml",
+				"bootpath" : "/Users/Shared/Max 7/Examples/sequencing-looping/CyclistMusic/lib/presets",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "SpacesChanger.maxpat",
+				"bootpath" : "~/Workspace/Lechantdufilament/modules",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "spaces.txt",
+				"bootpath" : "~/Workspace/Lechantdufilament/coll",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.receive.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.model.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.parameter.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.remote.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "Jamoma_highlighted_orange",
 				"default" : 				{
